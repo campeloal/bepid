@@ -9,12 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ITViewController : UIViewController
-{
-    IBOutlet UITextField *txtIdade;
-    IBOutlet UITextField *txtTel;
-    IBOutlet UITextField *envSucesso;
-    IBOutlet UISlider *slider;
-}
+
 
 @property(nonatomic,retain) IBOutlet UITextField *txtIdade;
 @property(nonatomic,retain) IBOutlet UITextField *envSucesso;
