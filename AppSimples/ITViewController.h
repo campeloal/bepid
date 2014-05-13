@@ -20,6 +20,7 @@
 - (IBAction) saveData:(id)sender;
 - (BOOL) checkEnv;
 - (NSString*) saveFilePath;
--(void) dismissKeyboard;
+-(IBAction) dismissKeyboard;
+-(BOOL) appendData:(NSMutableArray*) data;
 
 @end

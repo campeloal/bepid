@@ -21,23 +21,22 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+   /* [super viewDidLoad];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     
     [self.view addGestureRecognizer:tap];
+    */
 }
 
--(void)dismissKeyboard {
+-(IBAction)dismissKeyboard {
     [_txtTel resignFirstResponder];
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(IBAction)updateAge:(id)sender
@@ -51,14 +50,16 @@
 -(NSString*)saveFilePath
 {
     NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    return [[path objectAtIndex:0] stringByAppendingPathComponent:@"data.plist"];
+    return [[path objectAtIndex:0] stringByAppendingPathComponent:@"historico.plist"];
 }
 
 -(IBAction)saveData:(id)sender
 {
     NSMutableArray *data = [[NSMutableArray alloc] init];
+    NSDate* todayData = [[NSDate alloc] init];
     [data addObject: _txtIdade.text];
     [data addObject: _txtTel.text];
+    [data addObject:todayData];
     
     [data writeToFile:[self saveFilePath] atomically:YES];
     
@@ -71,6 +72,16 @@
     }
 }
 
+-(BOOL) appendData:(NSMutableArray *)data
+{
+     NSDate* todayData = [[NSDate alloc] init];
+    [data addObject: _txtIdade];
+    [data addObject: _txtTel];
+    [data addObject:todayData];
+    
+    return YES;
+}
+
 -(BOOL) checkEnv
 {
     NSArray *files = [[NSArray alloc] initWithContentsOfFile: [self saveFilePath]];
@@ -79,6 +90,11 @@
         return YES;
     }
         return NO;
+}
+
+-(BOOL) shouldAutorotate
+{
+    return NO;
 }
 
 @end
