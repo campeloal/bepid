@@ -25,6 +25,9 @@
 - (IBAction) saveData:(id)sender;
 - (BOOL) checkEnv;
 - (NSString*) saveFilePath;
+<<<<<<< HEAD
 -(void) dismissKeyboard;
+=======
+>>>>>>> 287c6578c1d7cd8dfbe89b4af6c85561ddef1112
 
 @end
