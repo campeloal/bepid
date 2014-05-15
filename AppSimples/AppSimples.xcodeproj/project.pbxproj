@@ -20,6 +20,10 @@
 		128C802919217A140097A15B /* AppSimples.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 128C802719217A140097A15B /* AppSimples.xcdatamodeld */; };
 		128C8041192186610097A15B /* ITViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 128C803F192186600097A15B /* ITViewController.m */; };
 		128C8042192186610097A15B /* ITViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128C8040192186600097A15B /* ITViewController.xib */; };
+		E003FD4B1922AF54006ABB87 /* thumb_SugimoriPokeBall.png in Resources */ = {isa = PBXBuildFile; fileRef = E003FD4A1922AF54006ABB87 /* thumb_SugimoriPokeBall.png */; };
+		E003FD4D1922AF67006ABB87 /* Srt-Viper-Gts-Launch-Edition-960x640-jpe.png in Resources */ = {isa = PBXBuildFile; fileRef = E003FD4C1922AF67006ABB87 /* Srt-Viper-Gts-Launch-Edition-960x640-jpe.png */; };
+		E01E5D781922A93800E8B115 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01E5D771922A93800E8B115 /* Images.xcassets */; };
+		E0ABA7FB1922BC6B00F3111E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E0ABA7FA1922BC6B00F3111E /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		128C803E192186600097A15B /* ITViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITViewController.h; sourceTree = "<group>"; };
 		128C803F192186600097A15B /* ITViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITViewController.m; sourceTree = "<group>"; };
 		128C8040192186600097A15B /* ITViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ITViewController.xib; sourceTree = "<group>"; };
+		E003FD4A1922AF54006ABB87 /* thumb_SugimoriPokeBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = thumb_SugimoriPokeBall.png; path = ../../../Downloads/thumb_SugimoriPokeBall.png; sourceTree = "<group>"; };
+		E003FD4C1922AF67006ABB87 /* Srt-Viper-Gts-Launch-Edition-960x640-jpe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Srt-Viper-Gts-Launch-Edition-960x640-jpe.png"; path = "../../../Downloads/Srt-Viper-Gts-Launch-Edition-960x640-jpe.png"; sourceTree = "<group>"; };
+		E01E5D771922A93800E8B115 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0ABA7FA1922BC6B00F3111E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../Downloads/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,9 @@
 		128C800119217A130097A15B = {
 			isa = PBXGroup;
 			children = (
+				E0ABA7FA1922BC6B00F3111E /* logo.png */,
+				E003FD4C1922AF67006ABB87 /* Srt-Viper-Gts-Launch-Edition-960x640-jpe.png */,
+				E003FD4A1922AF54006ABB87 /* thumb_SugimoriPokeBall.png */,
 				128C803E192186600097A15B /* ITViewController.h */,
 				128C803F192186600097A15B /* ITViewController.m */,
 				128C8040192186600097A15B /* ITViewController.xib */,
@@ -96,6 +107,7 @@
 				128C801F19217A140097A15B /* AppDelegate.m */,
 				128C802719217A140097A15B /* AppSimples.xcdatamodeld */,
 				128C801619217A140097A15B /* Supporting Files */,
+				E01E5D771922A93800E8B115 /* Images.xcassets */,
 			);
 			path = AppSimples;
 			sourceTree = "<group>";
@@ -165,9 +177,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0ABA7FB1922BC6B00F3111E /* logo.png in Resources */,
+				E003FD4D1922AF67006ABB87 /* Srt-Viper-Gts-Launch-Edition-960x640-jpe.png in Resources */,
+				E003FD4B1922AF54006ABB87 /* thumb_SugimoriPokeBall.png in Resources */,
 				128C801A19217A140097A15B /* InfoPlist.strings in Resources */,
 				128C802219217A140097A15B /* Default.png in Resources */,
 				128C802419217A140097A15B /* Default@2x.png in Resources */,
+				E01E5D781922A93800E8B115 /* Images.xcassets in Resources */,
 				128C802619217A140097A15B /* Default-568h@2x.png in Resources */,
 				128C8042192186610097A15B /* ITViewController.xib in Resources */,
 			);
@@ -300,6 +316,7 @@
 				128C802E19217A140097A15B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
