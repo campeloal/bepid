@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0A8C6F819269336000712F0 /* AddAutorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A8C6F619269336000712F0 /* AddAutorViewController.m */; };
+		E0A8C6F919269336000712F0 /* AddAutorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A8C6F719269336000712F0 /* AddAutorViewController.xib */; };
+		E0A8C7001926A018000712F0 /* UnicoAutorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A8C6FE1926A018000712F0 /* UnicoAutorViewController.m */; };
+		E0A8C7011926A018000712F0 /* UnicoAutorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A8C6FF1926A018000712F0 /* UnicoAutorViewController.xib */; };
+		E0A8C7041926AF55000712F0 /* Autor.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A8C7031926AF55000712F0 /* Autor.m */; };
 		E0B083DD19252FEC00E4EC39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B083DC19252FEC00E4EC39 /* Foundation.framework */; };
 		E0B083DF19252FEC00E4EC39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B083DE19252FEC00E4EC39 /* CoreGraphics.framework */; };
 		E0B083E119252FEC00E4EC39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B083E019252FEC00E4EC39 /* UIKit.framework */; };
@@ -36,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0A8C6F519269336000712F0 /* AddAutorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAutorViewController.h; sourceTree = "<group>"; };
+		E0A8C6F619269336000712F0 /* AddAutorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAutorViewController.m; sourceTree = "<group>"; };
+		E0A8C6F719269336000712F0 /* AddAutorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAutorViewController.xib; sourceTree = "<group>"; };
+		E0A8C6FD1926A018000712F0 /* UnicoAutorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnicoAutorViewController.h; sourceTree = "<group>"; };
+		E0A8C6FE1926A018000712F0 /* UnicoAutorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnicoAutorViewController.m; sourceTree = "<group>"; };
+		E0A8C6FF1926A018000712F0 /* UnicoAutorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnicoAutorViewController.xib; sourceTree = "<group>"; };
+		E0A8C7021926AF55000712F0 /* Autor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Autor.h; sourceTree = "<group>"; };
+		E0A8C7031926AF55000712F0 /* Autor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Autor.m; sourceTree = "<group>"; };
 		E0B083D919252FEC00E4EC39 /* App2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0B083DC19252FEC00E4EC39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0B083DE19252FEC00E4EC39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -84,15 +97,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0A8C6FA19269F74000712F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0B0840B1925300E00E4EC39 /* LibViewController.h */,
+				E0B0840C1925300E00E4EC39 /* LibViewController.m */,
+				E0A8C6F519269336000712F0 /* AddAutorViewController.h */,
+				E0A8C6F619269336000712F0 /* AddAutorViewController.m */,
+				E0A8C6FD1926A018000712F0 /* UnicoAutorViewController.h */,
+				E0A8C6FE1926A018000712F0 /* UnicoAutorViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E0A8C6FB19269F97000712F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0B0843119253BE800E4EC39 /* Publicacao.h */,
+				E0B0843219253BE800E4EC39 /* Publicacao.m */,
+				E0A8C7021926AF55000712F0 /* Autor.h */,
+				E0A8C7031926AF55000712F0 /* Autor.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E0A8C6FC19269FA2000712F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0A8C6FF1926A018000712F0 /* UnicoAutorViewController.xib */,
+				E0B0840D1925300E00E4EC39 /* LibViewController.xib */,
+				E0A8C6F719269336000712F0 /* AddAutorViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E0B083D019252FEC00E4EC39 = {
 			isa = PBXGroup;
 			children = (
+				E0A8C6FC19269FA2000712F0 /* View */,
+				E0A8C6FB19269F97000712F0 /* Model */,
+				E0A8C6FA19269F74000712F0 /* Controllers */,
 				E0B084341925465700E4EC39 /* 4818-open-book-design-2.png */,
-				E0B0843119253BE800E4EC39 /* Publicacao.h */,
-				E0B0843219253BE800E4EC39 /* Publicacao.m */,
-				E0B0840B1925300E00E4EC39 /* LibViewController.h */,
-				E0B0840C1925300E00E4EC39 /* LibViewController.m */,
-				E0B0840D1925300E00E4EC39 /* LibViewController.xib */,
 				E0B083E219252FEC00E4EC39 /* App2 */,
 				E0B083FB19252FEC00E4EC39 /* App2Tests */,
 				E0B083DB19252FEC00E4EC39 /* Frameworks */,
@@ -236,7 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0B084351925465700E4EC39 /* 4818-open-book-design-2.png in Resources */,
+				E0A8C6F919269336000712F0 /* AddAutorViewController.xib in Resources */,
 				E0B083E719252FEC00E4EC39 /* InfoPlist.strings in Resources */,
+				E0A8C7011926A018000712F0 /* UnicoAutorViewController.xib in Resources */,
 				E0B0840F1925300E00E4EC39 /* LibViewController.xib in Resources */,
 				E0B083EF19252FEC00E4EC39 /* Images.xcassets in Resources */,
 			);
@@ -260,7 +307,10 @@
 				E0B083ED19252FEC00E4EC39 /* AppDelegate.m in Sources */,
 				E0B0840E1925300E00E4EC39 /* LibViewController.m in Sources */,
 				E0B0843319253BE800E4EC39 /* Publicacao.m in Sources */,
+				E0A8C7001926A018000712F0 /* UnicoAutorViewController.m in Sources */,
 				E0B083E919252FEC00E4EC39 /* main.m in Sources */,
+				E0A8C6F819269336000712F0 /* AddAutorViewController.m in Sources */,
+				E0A8C7041926AF55000712F0 /* Autor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

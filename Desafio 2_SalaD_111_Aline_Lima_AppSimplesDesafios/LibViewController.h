@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Publicacao.h"
+#import "AddAutorViewController.h"
 
 @interface LibViewController : UIViewController
 {
@@ -26,6 +27,7 @@
 -(IBAction)dismissKeyboard:(id)sender;
 -(IBAction)saveBook:(id)sender;
 -(IBAction)chooseBookPeriodic:(id)sender;
+-(IBAction)goToAutorController:(id)sender;
 -(void) printData;
 -(void) createBook;
 -(BOOL) checkFormat;

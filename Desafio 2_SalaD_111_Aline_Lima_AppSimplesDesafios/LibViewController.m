@@ -44,7 +44,7 @@
 {
     book = [[NSMutableArray alloc] init];
     [book addObject:_titulo.text];
-    [book addObject:_autores.text];
+    //[book addObject:_autores.text];
     [book addObject:_isbn.text];
     [book addObject:_registro.text];
 }
@@ -113,7 +113,7 @@
 -(BOOL) checkFieldIsEmpty
 {
     if(([_titulo.text isEqualToString:@"Insira título"]) || ([_registro.text isEqualToString:@"Insira registro"]) ||
-                                                 ([_autores.text isEqualToString:@"Insira autor"]) ||
+                                                 /*([_autores.text isEqualToString:@"Insira autor"]) || */
                                                  ([_isbn.text isEqualToString:@"Insira isbn"]))
     {
         _error_message.text = @"*os campos não podem estar vazios";
@@ -153,6 +153,12 @@
     else{
         isBook = NO;
     }
+}
+
+-(IBAction)goToAutorController:(id)sender
+{
+    AddAutorViewController *avc = [[AddAutorViewController alloc] init];
+    [self.navigationController pushViewController:avc animated:YES];
 }
 
 @end
