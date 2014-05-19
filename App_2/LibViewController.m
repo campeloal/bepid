@@ -142,6 +142,7 @@
 
 -(IBAction)goToAutorController:(id)sender
 {
+
     [self.navigationController pushViewController:avc animated:YES];
 }
 
