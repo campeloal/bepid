@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA5F30F7192A8BDF00748830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30F6192A8BDF00748830 /* Foundation.framework */; };
+		FA5F30F9192A8BDF00748830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30F8192A8BDF00748830 /* CoreGraphics.framework */; };
+		FA5F30FB192A8BDF00748830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30FA192A8BDF00748830 /* UIKit.framework */; };
+		FA5F3101192A8BDF00748830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA5F30FF192A8BDF00748830 /* InfoPlist.strings */; };
+		FA5F3103192A8BDF00748830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F3102192A8BDF00748830 /* main.m */; };
+		FA5F3107192A8BDF00748830 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F3106192A8BDF00748830 /* AppDelegate.m */; };
+		FA5F3109192A8BDF00748830 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5F3108192A8BDF00748830 /* Images.xcassets */; };
+		FA5F3110192A8BDF00748830 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F310F192A8BDF00748830 /* XCTest.framework */; };
+		FA5F3111192A8BDF00748830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30F6192A8BDF00748830 /* Foundation.framework */; };
+		FA5F3112192A8BDF00748830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30FA192A8BDF00748830 /* UIKit.framework */; };
+		FA5F311A192A8BDF00748830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA5F3118192A8BDF00748830 /* InfoPlist.strings */; };
+		FA5F311C192A8BDF00748830 /* Desafio_DrawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F311B192A8BDF00748830 /* Desafio_DrawTests.m */; };
+		FA5F312F192A8C5E00748830 /* ALDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F3126192A8C5E00748830 /* ALDrawViewController.m */; };
+		FA5F3130192A8C5E00748830 /* ALShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F3128192A8C5E00748830 /* ALShapeView.m */; };
+		FA5F3131192A8C5E00748830 /* ALShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F312A192A8C5E00748830 /* ALShapeViewController.m */; };
+		FA5F3135192A8CF500748830 /* ALDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5F3134192A8CF500748830 /* ALDrawViewController.xib */; };
+		FAB37528192AB8A400D42B58 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB37527192AB8A400D42B58 /* Shape.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA5F3113192A8BDF00748830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA5F30EB192A8BDF00748830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5F30F2192A8BDF00748830;
+			remoteInfo = Desafio_Draw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA5F30F3192A8BDF00748830 /* Desafio_Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio_Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5F30F6192A8BDF00748830 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA5F30F8192A8BDF00748830 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FA5F30FA192A8BDF00748830 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FA5F30FE192A8BDF00748830 /* Desafio_Draw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio_Draw-Info.plist"; sourceTree = "<group>"; };
+		FA5F3100192A8BDF00748830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA5F3102192A8BDF00748830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA5F3104192A8BDF00748830 /* Desafio_Draw-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desafio_Draw-Prefix.pch"; sourceTree = "<group>"; };
+		FA5F3105192A8BDF00748830 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA5F3106192A8BDF00748830 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA5F3108192A8BDF00748830 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FA5F310E192A8BDF00748830 /* Desafio_DrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Desafio_DrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5F310F192A8BDF00748830 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FA5F3117192A8BDF00748830 /* Desafio_DrawTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio_DrawTests-Info.plist"; sourceTree = "<group>"; };
+		FA5F3119192A8BDF00748830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA5F311B192A8BDF00748830 /* Desafio_DrawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_DrawTests.m; sourceTree = "<group>"; };
+		FA5F3125192A8C5E00748830 /* ALDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDrawViewController.h; sourceTree = "<group>"; };
+		FA5F3126192A8C5E00748830 /* ALDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDrawViewController.m; sourceTree = "<group>"; };
+		FA5F3127192A8C5E00748830 /* ALShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALShapeView.h; sourceTree = "<group>"; };
+		FA5F3128192A8C5E00748830 /* ALShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALShapeView.m; sourceTree = "<group>"; };
+		FA5F3129192A8C5E00748830 /* ALShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALShapeViewController.h; sourceTree = "<group>"; };
+		FA5F312A192A8C5E00748830 /* ALShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALShapeViewController.m; sourceTree = "<group>"; };
+		FA5F3134192A8CF500748830 /* ALDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALDrawViewController.xib; sourceTree = "<group>"; };
+		FAB37526192AB8A400D42B58 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		FAB37527192AB8A400D42B58 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA5F30F0192A8BDF00748830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F30F9192A8BDF00748830 /* CoreGraphics.framework in Frameworks */,
+				FA5F30FB192A8BDF00748830 /* UIKit.framework in Frameworks */,
+				FA5F30F7192A8BDF00748830 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5F310B192A8BDF00748830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F3110192A8BDF00748830 /* XCTest.framework in Frameworks */,
+				FA5F3112192A8BDF00748830 /* UIKit.framework in Frameworks */,
+				FA5F3111192A8BDF00748830 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA5F30EA192A8BDF00748830 = {
+			isa = PBXGroup;
+			children = (
+				FAB37525192AB88100D42B58 /* Model */,
+				FA5F3137192A972400748830 /* View */,
+				FA5F3136192A970800748830 /* Controller */,
+				FA5F30FC192A8BDF00748830 /* Desafio_Draw */,
+				FA5F3115192A8BDF00748830 /* Desafio_DrawTests */,
+				FA5F30F5192A8BDF00748830 /* Frameworks */,
+				FA5F30F4192A8BDF00748830 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA5F30F4192A8BDF00748830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F30F3192A8BDF00748830 /* Desafio_Draw.app */,
+				FA5F310E192A8BDF00748830 /* Desafio_DrawTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA5F30F5192A8BDF00748830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F30F6192A8BDF00748830 /* Foundation.framework */,
+				FA5F30F8192A8BDF00748830 /* CoreGraphics.framework */,
+				FA5F30FA192A8BDF00748830 /* UIKit.framework */,
+				FA5F310F192A8BDF00748830 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA5F30FC192A8BDF00748830 /* Desafio_Draw */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F3105192A8BDF00748830 /* AppDelegate.h */,
+				FA5F3106192A8BDF00748830 /* AppDelegate.m */,
+				FA5F3108192A8BDF00748830 /* Images.xcassets */,
+				FA5F30FD192A8BDF00748830 /* Supporting Files */,
+			);
+			path = Desafio_Draw;
+			sourceTree = "<group>";
+		};
+		FA5F30FD192A8BDF00748830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F30FE192A8BDF00748830 /* Desafio_Draw-Info.plist */,
+				FA5F30FF192A8BDF00748830 /* InfoPlist.strings */,
+				FA5F3102192A8BDF00748830 /* main.m */,
+				FA5F3104192A8BDF00748830 /* Desafio_Draw-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA5F3115192A8BDF00748830 /* Desafio_DrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F311B192A8BDF00748830 /* Desafio_DrawTests.m */,
+				FA5F3116192A8BDF00748830 /* Supporting Files */,
+			);
+			path = Desafio_DrawTests;
+			sourceTree = "<group>";
+		};
+		FA5F3116192A8BDF00748830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F3117192A8BDF00748830 /* Desafio_DrawTests-Info.plist */,
+				FA5F3118192A8BDF00748830 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA5F3136192A970800748830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F3129192A8C5E00748830 /* ALShapeViewController.h */,
+				FA5F312A192A8C5E00748830 /* ALShapeViewController.m */,
+				FA5F3125192A8C5E00748830 /* ALDrawViewController.h */,
+				FA5F3126192A8C5E00748830 /* ALDrawViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FA5F3137192A972400748830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA5F3134192A8CF500748830 /* ALDrawViewController.xib */,
+				FA5F3127192A8C5E00748830 /* ALShapeView.h */,
+				FA5F3128192A8C5E00748830 /* ALShapeView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FAB37525192AB88100D42B58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAB37526192AB8A400D42B58 /* Shape.h */,
+				FAB37527192AB8A400D42B58 /* Shape.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA5F30F2192A8BDF00748830 /* Desafio_Draw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5F311F192A8BDF00748830 /* Build configuration list for PBXNativeTarget "Desafio_Draw" */;
+			buildPhases = (
+				FA5F30EF192A8BDF00748830 /* Sources */,
+				FA5F30F0192A8BDF00748830 /* Frameworks */,
+				FA5F30F1192A8BDF00748830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Desafio_Draw;
+			productName = Desafio_Draw;
+			productReference = FA5F30F3192A8BDF00748830 /* Desafio_Draw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA5F310D192A8BDF00748830 /* Desafio_DrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA5F3122192A8BDF00748830 /* Build configuration list for PBXNativeTarget "Desafio_DrawTests" */;
+			buildPhases = (
+				FA5F310A192A8BDF00748830 /* Sources */,
+				FA5F310B192A8BDF00748830 /* Frameworks */,
+				FA5F310C192A8BDF00748830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA5F3114192A8BDF00748830 /* PBXTargetDependency */,
+			);
+			name = Desafio_DrawTests;
+			productName = Desafio_DrawTests;
+			productReference = FA5F310E192A8BDF00748830 /* Desafio_DrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA5F30EB192A8BDF00748830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FA5F310D192A8BDF00748830 = {
+						TestTargetID = FA5F30F2192A8BDF00748830;
+					};
+				};
+			};
+			buildConfigurationList = FA5F30EE192A8BDF00748830 /* Build configuration list for PBXProject "Desafio_Draw" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA5F30EA192A8BDF00748830;
+			productRefGroup = FA5F30F4192A8BDF00748830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA5F30F2192A8BDF00748830 /* Desafio_Draw */,
+				FA5F310D192A8BDF00748830 /* Desafio_DrawTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA5F30F1192A8BDF00748830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F3101192A8BDF00748830 /* InfoPlist.strings in Resources */,
+				FA5F3109192A8BDF00748830 /* Images.xcassets in Resources */,
+				FA5F3135192A8CF500748830 /* ALDrawViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5F310C192A8BDF00748830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F311A192A8BDF00748830 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA5F30EF192A8BDF00748830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F3131192A8C5E00748830 /* ALShapeViewController.m in Sources */,
+				FA5F3107192A8BDF00748830 /* AppDelegate.m in Sources */,
+				FA5F3130192A8C5E00748830 /* ALShapeView.m in Sources */,
+				FAB37528192AB8A400D42B58 /* Shape.m in Sources */,
+				FA5F312F192A8C5E00748830 /* ALDrawViewController.m in Sources */,
+				FA5F3103192A8BDF00748830 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA5F310A192A8BDF00748830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA5F311C192A8BDF00748830 /* Desafio_DrawTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA5F3114192A8BDF00748830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA5F30F2192A8BDF00748830 /* Desafio_Draw */;
+			targetProxy = FA5F3113192A8BDF00748830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA5F30FF192A8BDF00748830 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5F3100192A8BDF00748830 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA5F3118192A8BDF00748830 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5F3119192A8BDF00748830 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA5F311D192A8BDF00748830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA5F311E192A8BDF00748830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA5F3120192A8BDF00748830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio_Draw/Desafio_Draw-Prefix.pch";
+				INFOPLIST_FILE = "Desafio_Draw/Desafio_Draw-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA5F3121192A8BDF00748830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio_Draw/Desafio_Draw-Prefix.pch";
+				INFOPLIST_FILE = "Desafio_Draw/Desafio_Draw-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FA5F3123192A8BDF00748830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio_Draw.app/Desafio_Draw";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio_Draw/Desafio_Draw-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Desafio_DrawTests/Desafio_DrawTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FA5F3124192A8BDF00748830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio_Draw.app/Desafio_Draw";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio_Draw/Desafio_Draw-Prefix.pch";
+				INFOPLIST_FILE = "Desafio_DrawTests/Desafio_DrawTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA5F30EE192A8BDF00748830 /* Build configuration list for PBXProject "Desafio_Draw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5F311D192A8BDF00748830 /* Debug */,
+				FA5F311E192A8BDF00748830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5F311F192A8BDF00748830 /* Build configuration list for PBXNativeTarget "Desafio_Draw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5F3120192A8BDF00748830 /* Debug */,
+				FA5F3121192A8BDF00748830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA5F3122192A8BDF00748830 /* Build configuration list for PBXNativeTarget "Desafio_DrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA5F3123192A8BDF00748830 /* Debug */,
+				FA5F3124192A8BDF00748830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA5F30EB192A8BDF00748830 /* Project object */;
+}
