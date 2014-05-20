@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Alex De Souza Campelo Lima. All rights reserved.
 //
 
-#import "ALDrawViewController.h"
+#import "DRAWViewController.h"
 
-@interface ALDrawViewController ()
+@interface DRAWViewController ()
 
 @end
 
-@implementation ALDrawViewController
+@implementation DRAWViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +29,6 @@
     // Do any additional setup after loading the view from its nib.
     color = [UIColor blackColor];
     isRect = YES;
-    shapeVC = [[ALShapeViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,15 +39,8 @@
 
 -(IBAction)goToDrawView:(id)sender
 {
-    
-    [shapeVC setX:[_x.text floatValue]];
-    [shapeVC setY:[_y.text floatValue]];
-    [shapeVC setWidth:[_width.text floatValue]];
-    [shapeVC setHeight:[_height.text floatValue]];
-    [shapeVC setIsRect:isRect];
-    [shapeVC setColor:color];
-    
-    [self.navigationController pushViewController:shapeVC animated:YES];
+    [self createNewView];
+    [self.navigationController pushViewController:rectVC animated:YES];
 }
 
 -(IBAction)dismissKeyboard:(id)sender
@@ -56,10 +48,45 @@
     [self.view endEditing:YES];
 }
 
--(IBAction)setColor:(id)sender
+-(void) createNewView
 {
-    UIButton *button = (UIButton*) sender;
-    color = button.backgroundColor;
+//    CGRect frame = CGRectMake([self.x.text floatValue], [self.y.text floatValue], [self.width.text floatValue], [self.height.text floatValue]);
+//    rectVC = [[RECTViewController alloc] init];
+//    rectView = [[RECTView alloc] initWithFrame:frame];
+//    rectView.backgroundColor = color;
+//    [rectVC.view addSubview:rectView];
+    
+    
+    rectVC = [[RECTViewController alloc] init];
+    eliView = [[ELIView alloc] init];
+    //eliView.backgroundColor = color;
+    [rectVC.view addSubview:eliView];
+}
+
+
+-(IBAction)drawGreen:(id)sender
+{
+    color = [UIColor greenColor];
+}
+
+-(IBAction)drawYellow:(id)sender
+{
+    color = [UIColor yellowColor];
+}
+
+-(IBAction)drawBlue:(id)sender
+{
+    color = [UIColor blueColor];
+}
+
+-(IBAction)drawRed:(id)sender
+{
+    color = [UIColor redColor];
+}
+
+-(IBAction)drawBlack:(id)sender
+{
+    color = [UIColor blackColor];
 }
 
 - (IBAction)chooseForm:(id)sender {

@@ -11,8 +11,11 @@
 #import "Shape.h"
 
 @interface ALShapeViewController : UIViewController
+{
+    NSMutableArray *shapes;
+}
 
-@property (nonatomic, retain) NSMutableArray *shapes;
+@property (nonatomic, retain) NSMutableArray *views;
 @property (nonatomic, retain) UIColor *color;
 @property (nonatomic) float x;
 @property (nonatomic) float y;
@@ -20,6 +23,8 @@
 @property (nonatomic) float height;
 @property (nonatomic, retain) ALShapeView *sv;
 @property (nonatomic) BOOL isRect;
+
+-(void) createView;
 
 
 @end

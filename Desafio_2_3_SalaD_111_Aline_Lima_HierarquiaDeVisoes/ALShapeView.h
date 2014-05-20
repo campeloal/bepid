@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Shape.h"
 
 @interface ALShapeView : UIView
+
 @property (nonatomic, retain) NSMutableArray *shapes;
-@property (nonatomic, retain) UIColor *color;
-@property (nonatomic) float x;
-@property (nonatomic) float y;
-@property (nonatomic) float width;
-@property (nonatomic) float height;
-@property (nonatomic) BOOL isRect;
 
 @end

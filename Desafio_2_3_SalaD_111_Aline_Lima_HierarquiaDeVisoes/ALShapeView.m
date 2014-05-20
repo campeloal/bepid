@@ -23,34 +23,27 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-//    if([_shapes count] > 0)
-//    {
-//        for(int i = 0; i < [_shapes count]; i++)
-//        {
-//            NSLog(@" ENTREI PORRA");
-//            CGContextRef context = UIGraphicsGetCurrentContext();
-//            CGContextSetLineWidth(context, 4.0);
-//            CGContextSetStrokeColorWithColor(context, _color.CGColor);
-//            CGContextAddEllipseInRect(context, [[_shapes objectAtIndex:i] CGRectValue]);
-//            CGContextStrokePath(context);
-//        }
-//    }
-    
-    if(_isRect == 1)
+    for(Shape *shape in _shapes)
+    {
+        
+    if([shape isRect] == 1)
     {
         CGContextRef context = UIGraphicsGetCurrentContext();
-        CGRect rectangle = CGRectMake(_x,_y,_width,_height);
-        CGContextSetFillColorWithColor(context, _color.CGColor);
+        CGRect rectangle = CGRectMake([shape x],[shape y],[shape width],[shape height]);
+        CGContextSetFillColorWithColor(context, [shape color].CGColor);
         CGContextFillRect(context, rectangle);
     }
     else
     {
         CGContextRef context = UIGraphicsGetCurrentContext();
         CGContextSetLineWidth(context, 4.0);
-        CGContextSetStrokeColorWithColor(context, _color.CGColor);
-        CGRect ellipse = CGRectMake(_x, _y, _width, _height);
+        CGContextSetStrokeColorWithColor(context, [shape color].CGColor);
+        CGRect ellipse = CGRectMake([shape x], [shape y], [shape width], [shape height]);
         CGContextAddEllipseInRect(context, ellipse);
         CGContextStrokePath(context);
+        CGContextSetFillColorWithColor(context, [shape color].CGColor);
+        CGContextFillEllipseInRect(context, ellipse);
+    }
     }
 }
 

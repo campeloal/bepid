@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E073FB04192A8D49000E9975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FB03192A8D49000E9975 /* Foundation.framework */; };
+		E073FB06192A8D49000E9975 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FB05192A8D49000E9975 /* CoreGraphics.framework */; };
+		E073FB08192A8D49000E9975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FB07192A8D49000E9975 /* UIKit.framework */; };
+		E073FB0E192A8D49000E9975 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E073FB0C192A8D49000E9975 /* InfoPlist.strings */; };
+		E073FB10192A8D49000E9975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB0F192A8D49000E9975 /* main.m */; };
+		E073FB14192A8D4A000E9975 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB13192A8D4A000E9975 /* AppDelegate.m */; };
+		E073FB16192A8D4A000E9975 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E073FB15192A8D4A000E9975 /* Images.xcassets */; };
+		E073FB1D192A8D4A000E9975 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FB1C192A8D4A000E9975 /* XCTest.framework */; };
+		E073FB1E192A8D4A000E9975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FB03192A8D49000E9975 /* Foundation.framework */; };
+		E073FB1F192A8D4A000E9975 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FB07192A8D49000E9975 /* UIKit.framework */; };
+		E073FB27192A8D4A000E9975 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E073FB25192A8D4A000E9975 /* InfoPlist.strings */; };
+		E073FB29192A8D4A000E9975 /* Desafio2_HierVisaoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB28192A8D4A000E9975 /* Desafio2_HierVisaoTests.m */; };
+		E073FB38192A8DEF000E9975 /* DRAWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB36192A8DEF000E9975 /* DRAWViewController.m */; };
+		E073FB39192A8DEF000E9975 /* DRAWViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E073FB37192A8DEF000E9975 /* DRAWViewController.xib */; };
+		E073FB43192A906F000E9975 /* RECTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB41192A906F000E9975 /* RECTViewController.m */; };
+		E073FB47192A9259000E9975 /* RECTView.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB46192A9259000E9975 /* RECTView.m */; };
+		E073FB4C192A9E6C000E9975 /* ELIView.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB4B192A9E6C000E9975 /* ELIView.m */; };
+		E073FB4F192A9E9C000E9975 /* ELIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FB4E192A9E9C000E9975 /* ELIViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E073FB20192A8D4A000E9975 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E073FAF8192A8D49000E9975 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E073FAFF192A8D49000E9975;
+			remoteInfo = Desafio2_HierVisao;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E073FB00192A8D49000E9975 /* Desafio2_HierVisao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio2_HierVisao.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E073FB03192A8D49000E9975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E073FB05192A8D49000E9975 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E073FB07192A8D49000E9975 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E073FB0B192A8D49000E9975 /* Desafio2_HierVisao-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio2_HierVisao-Info.plist"; sourceTree = "<group>"; };
+		E073FB0D192A8D49000E9975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E073FB0F192A8D49000E9975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E073FB11192A8D49000E9975 /* Desafio2_HierVisao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desafio2_HierVisao-Prefix.pch"; sourceTree = "<group>"; };
+		E073FB12192A8D49000E9975 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E073FB13192A8D4A000E9975 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E073FB15192A8D4A000E9975 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E073FB1B192A8D4A000E9975 /* Desafio2_HierVisaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Desafio2_HierVisaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E073FB1C192A8D4A000E9975 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E073FB24192A8D4A000E9975 /* Desafio2_HierVisaoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio2_HierVisaoTests-Info.plist"; sourceTree = "<group>"; };
+		E073FB26192A8D4A000E9975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E073FB28192A8D4A000E9975 /* Desafio2_HierVisaoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio2_HierVisaoTests.m; sourceTree = "<group>"; };
+		E073FB35192A8DEF000E9975 /* DRAWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRAWViewController.h; sourceTree = "<group>"; };
+		E073FB36192A8DEF000E9975 /* DRAWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRAWViewController.m; sourceTree = "<group>"; };
+		E073FB37192A8DEF000E9975 /* DRAWViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DRAWViewController.xib; sourceTree = "<group>"; };
+		E073FB40192A906F000E9975 /* RECTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECTViewController.h; sourceTree = "<group>"; };
+		E073FB41192A906F000E9975 /* RECTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECTViewController.m; sourceTree = "<group>"; };
+		E073FB45192A9259000E9975 /* RECTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECTView.h; sourceTree = "<group>"; };
+		E073FB46192A9259000E9975 /* RECTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECTView.m; sourceTree = "<group>"; };
+		E073FB4A192A9E6C000E9975 /* ELIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELIView.h; sourceTree = "<group>"; };
+		E073FB4B192A9E6C000E9975 /* ELIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELIView.m; sourceTree = "<group>"; };
+		E073FB4D192A9E9C000E9975 /* ELIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELIViewController.h; sourceTree = "<group>"; };
+		E073FB4E192A9E9C000E9975 /* ELIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELIViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E073FAFD192A8D49000E9975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E073FB06192A8D49000E9975 /* CoreGraphics.framework in Frameworks */,
+				E073FB08192A8D49000E9975 /* UIKit.framework in Frameworks */,
+				E073FB04192A8D49000E9975 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E073FB18192A8D4A000E9975 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E073FB1D192A8D4A000E9975 /* XCTest.framework in Frameworks */,
+				E073FB1F192A8D4A000E9975 /* UIKit.framework in Frameworks */,
+				E073FB1E192A8D4A000E9975 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E073FAF7192A8D49000E9975 = {
+			isa = PBXGroup;
+			children = (
+				E073FB49192A9C42000E9975 /* View */,
+				E073FB48192A9C3A000E9975 /* Controller */,
+				E073FB09192A8D49000E9975 /* Desafio2_HierVisao */,
+				E073FB22192A8D4A000E9975 /* Desafio2_HierVisaoTests */,
+				E073FB02192A8D49000E9975 /* Frameworks */,
+				E073FB01192A8D49000E9975 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E073FB01192A8D49000E9975 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB00192A8D49000E9975 /* Desafio2_HierVisao.app */,
+				E073FB1B192A8D4A000E9975 /* Desafio2_HierVisaoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E073FB02192A8D49000E9975 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB03192A8D49000E9975 /* Foundation.framework */,
+				E073FB05192A8D49000E9975 /* CoreGraphics.framework */,
+				E073FB07192A8D49000E9975 /* UIKit.framework */,
+				E073FB1C192A8D4A000E9975 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E073FB09192A8D49000E9975 /* Desafio2_HierVisao */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB12192A8D49000E9975 /* AppDelegate.h */,
+				E073FB13192A8D4A000E9975 /* AppDelegate.m */,
+				E073FB15192A8D4A000E9975 /* Images.xcassets */,
+				E073FB0A192A8D49000E9975 /* Supporting Files */,
+			);
+			path = Desafio2_HierVisao;
+			sourceTree = "<group>";
+		};
+		E073FB0A192A8D49000E9975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB0B192A8D49000E9975 /* Desafio2_HierVisao-Info.plist */,
+				E073FB0C192A8D49000E9975 /* InfoPlist.strings */,
+				E073FB0F192A8D49000E9975 /* main.m */,
+				E073FB11192A8D49000E9975 /* Desafio2_HierVisao-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E073FB22192A8D4A000E9975 /* Desafio2_HierVisaoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB28192A8D4A000E9975 /* Desafio2_HierVisaoTests.m */,
+				E073FB23192A8D4A000E9975 /* Supporting Files */,
+			);
+			path = Desafio2_HierVisaoTests;
+			sourceTree = "<group>";
+		};
+		E073FB23192A8D4A000E9975 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB24192A8D4A000E9975 /* Desafio2_HierVisaoTests-Info.plist */,
+				E073FB25192A8D4A000E9975 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E073FB48192A9C3A000E9975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB40192A906F000E9975 /* RECTViewController.h */,
+				E073FB41192A906F000E9975 /* RECTViewController.m */,
+				E073FB35192A8DEF000E9975 /* DRAWViewController.h */,
+				E073FB36192A8DEF000E9975 /* DRAWViewController.m */,
+				E073FB4D192A9E9C000E9975 /* ELIViewController.h */,
+				E073FB4E192A9E9C000E9975 /* ELIViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E073FB49192A9C42000E9975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E073FB45192A9259000E9975 /* RECTView.h */,
+				E073FB46192A9259000E9975 /* RECTView.m */,
+				E073FB37192A8DEF000E9975 /* DRAWViewController.xib */,
+				E073FB4A192A9E6C000E9975 /* ELIView.h */,
+				E073FB4B192A9E6C000E9975 /* ELIView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E073FAFF192A8D49000E9975 /* Desafio2_HierVisao */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E073FB2C192A8D4A000E9975 /* Build configuration list for PBXNativeTarget "Desafio2_HierVisao" */;
+			buildPhases = (
+				E073FAFC192A8D49000E9975 /* Sources */,
+				E073FAFD192A8D49000E9975 /* Frameworks */,
+				E073FAFE192A8D49000E9975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Desafio2_HierVisao;
+			productName = Desafio2_HierVisao;
+			productReference = E073FB00192A8D49000E9975 /* Desafio2_HierVisao.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E073FB1A192A8D4A000E9975 /* Desafio2_HierVisaoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E073FB2F192A8D4A000E9975 /* Build configuration list for PBXNativeTarget "Desafio2_HierVisaoTests" */;
+			buildPhases = (
+				E073FB17192A8D4A000E9975 /* Sources */,
+				E073FB18192A8D4A000E9975 /* Frameworks */,
+				E073FB19192A8D4A000E9975 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E073FB21192A8D4A000E9975 /* PBXTargetDependency */,
+			);
+			name = Desafio2_HierVisaoTests;
+			productName = Desafio2_HierVisaoTests;
+			productReference = E073FB1B192A8D4A000E9975 /* Desafio2_HierVisaoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E073FAF8192A8D49000E9975 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E073FB1A192A8D4A000E9975 = {
+						TestTargetID = E073FAFF192A8D49000E9975;
+					};
+				};
+			};
+			buildConfigurationList = E073FAFB192A8D49000E9975 /* Build configuration list for PBXProject "Desafio2_HierVisao" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E073FAF7192A8D49000E9975;
+			productRefGroup = E073FB01192A8D49000E9975 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E073FAFF192A8D49000E9975 /* Desafio2_HierVisao */,
+				E073FB1A192A8D4A000E9975 /* Desafio2_HierVisaoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E073FAFE192A8D49000E9975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E073FB0E192A8D49000E9975 /* InfoPlist.strings in Resources */,
+				E073FB16192A8D4A000E9975 /* Images.xcassets in Resources */,
+				E073FB39192A8DEF000E9975 /* DRAWViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E073FB19192A8D4A000E9975 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E073FB27192A8D4A000E9975 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E073FAFC192A8D49000E9975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E073FB4F192A9E9C000E9975 /* ELIViewController.m in Sources */,
+				E073FB43192A906F000E9975 /* RECTViewController.m in Sources */,
+				E073FB4C192A9E6C000E9975 /* ELIView.m in Sources */,
+				E073FB14192A8D4A000E9975 /* AppDelegate.m in Sources */,
+				E073FB38192A8DEF000E9975 /* DRAWViewController.m in Sources */,
+				E073FB10192A8D49000E9975 /* main.m in Sources */,
+				E073FB47192A9259000E9975 /* RECTView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E073FB17192A8D4A000E9975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E073FB29192A8D4A000E9975 /* Desafio2_HierVisaoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E073FB21192A8D4A000E9975 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E073FAFF192A8D49000E9975 /* Desafio2_HierVisao */;
+			targetProxy = E073FB20192A8D4A000E9975 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E073FB0C192A8D49000E9975 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E073FB0D192A8D49000E9975 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E073FB25192A8D4A000E9975 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E073FB26192A8D4A000E9975 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E073FB2A192A8D4A000E9975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E073FB2B192A8D4A000E9975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E073FB2D192A8D4A000E9975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio2_HierVisao/Desafio2_HierVisao-Prefix.pch";
+				INFOPLIST_FILE = "Desafio2_HierVisao/Desafio2_HierVisao-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E073FB2E192A8D4A000E9975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio2_HierVisao/Desafio2_HierVisao-Prefix.pch";
+				INFOPLIST_FILE = "Desafio2_HierVisao/Desafio2_HierVisao-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E073FB30192A8D4A000E9975 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio2_HierVisao.app/Desafio2_HierVisao";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio2_HierVisao/Desafio2_HierVisao-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Desafio2_HierVisaoTests/Desafio2_HierVisaoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E073FB31192A8D4A000E9975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio2_HierVisao.app/Desafio2_HierVisao";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio2_HierVisao/Desafio2_HierVisao-Prefix.pch";
+				INFOPLIST_FILE = "Desafio2_HierVisaoTests/Desafio2_HierVisaoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E073FAFB192A8D49000E9975 /* Build configuration list for PBXProject "Desafio2_HierVisao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E073FB2A192A8D4A000E9975 /* Debug */,
+				E073FB2B192A8D4A000E9975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E073FB2C192A8D4A000E9975 /* Build configuration list for PBXNativeTarget "Desafio2_HierVisao" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E073FB2D192A8D4A000E9975 /* Debug */,
+				E073FB2E192A8D4A000E9975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E073FB2F192A8D4A000E9975 /* Build configuration list for PBXNativeTarget "Desafio2_HierVisaoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E073FB30192A8D4A000E9975 /* Debug */,
+				E073FB31192A8D4A000E9975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E073FAF8192A8D49000E9975 /* Project object */;
+}

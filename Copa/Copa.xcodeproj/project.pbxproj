@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0AF026B192BDF710066A753 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AF026A192BDF710066A753 /* Foundation.framework */; };
+		E0AF026D192BDF710066A753 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AF026C192BDF710066A753 /* CoreGraphics.framework */; };
+		E0AF026F192BDF710066A753 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AF026E192BDF710066A753 /* UIKit.framework */; };
+		E0AF0275192BDF710066A753 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AF0273192BDF710066A753 /* InfoPlist.strings */; };
+		E0AF0277192BDF710066A753 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF0276192BDF710066A753 /* main.m */; };
+		E0AF027B192BDF710066A753 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF027A192BDF710066A753 /* AppDelegate.m */; };
+		E0AF027D192BDF710066A753 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AF027C192BDF710066A753 /* Images.xcassets */; };
+		E0AF0284192BDF710066A753 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AF0283192BDF710066A753 /* XCTest.framework */; };
+		E0AF0285192BDF710066A753 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AF026A192BDF710066A753 /* Foundation.framework */; };
+		E0AF0286192BDF710066A753 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AF026E192BDF710066A753 /* UIKit.framework */; };
+		E0AF028E192BDF710066A753 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AF028C192BDF710066A753 /* InfoPlist.strings */; };
+		E0AF0290192BDF710066A753 /* CopaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF028F192BDF710066A753 /* CopaTests.m */; };
+		E0AF029B192BDFA30066A753 /* DrawFlagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF029A192BDFA30066A753 /* DrawFlagsViewController.m */; };
+		E0AF029E192BE04D0066A753 /* JapanView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF029D192BE04D0066A753 /* JapanView.m */; };
+		E0AF02A1192BE2BE0066A753 /* ItalyView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02A0192BE2BE0066A753 /* ItalyView.m */; };
+		E0AF02A7192BE45F0066A753 /* SwitzView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02A6192BE45F0066A753 /* SwitzView.m */; };
+		E0AF02AF192BE6140066A753 /* ChileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02AE192BE6140066A753 /* ChileView.m */; };
+		E0AF02B2192BEC1A0066A753 /* GreeceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02B1192BEC1A0066A753 /* GreeceView.m */; };
+		E0AF02B5192BF0F20066A753 /* BrazilView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02B4192BF0F20066A753 /* BrazilView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0AF0287192BDF710066A753 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0AF025F192BDF710066A753 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0AF0266192BDF710066A753;
+			remoteInfo = Copa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0AF0267192BDF710066A753 /* Copa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Copa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AF026A192BDF710066A753 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0AF026C192BDF710066A753 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0AF026E192BDF710066A753 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0AF0272192BDF710066A753 /* Copa-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Copa-Info.plist"; sourceTree = "<group>"; };
+		E0AF0274192BDF710066A753 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AF0276192BDF710066A753 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0AF0278192BDF710066A753 /* Copa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Copa-Prefix.pch"; sourceTree = "<group>"; };
+		E0AF0279192BDF710066A753 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0AF027A192BDF710066A753 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0AF027C192BDF710066A753 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0AF0282192BDF710066A753 /* CopaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AF0283192BDF710066A753 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0AF028B192BDF710066A753 /* CopaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CopaTests-Info.plist"; sourceTree = "<group>"; };
+		E0AF028D192BDF710066A753 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AF028F192BDF710066A753 /* CopaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopaTests.m; sourceTree = "<group>"; };
+		E0AF0299192BDFA30066A753 /* DrawFlagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawFlagsViewController.h; sourceTree = "<group>"; };
+		E0AF029A192BDFA30066A753 /* DrawFlagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawFlagsViewController.m; sourceTree = "<group>"; };
+		E0AF029C192BE04D0066A753 /* JapanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JapanView.h; sourceTree = "<group>"; };
+		E0AF029D192BE04D0066A753 /* JapanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JapanView.m; sourceTree = "<group>"; };
+		E0AF029F192BE2BE0066A753 /* ItalyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItalyView.h; sourceTree = "<group>"; };
+		E0AF02A0192BE2BE0066A753 /* ItalyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItalyView.m; sourceTree = "<group>"; };
+		E0AF02A5192BE45F0066A753 /* SwitzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitzView.h; sourceTree = "<group>"; };
+		E0AF02A6192BE45F0066A753 /* SwitzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitzView.m; sourceTree = "<group>"; };
+		E0AF02AD192BE6140066A753 /* ChileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChileView.h; sourceTree = "<group>"; };
+		E0AF02AE192BE6140066A753 /* ChileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChileView.m; sourceTree = "<group>"; };
+		E0AF02B0192BEC1A0066A753 /* GreeceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeceView.h; sourceTree = "<group>"; };
+		E0AF02B1192BEC1A0066A753 /* GreeceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreeceView.m; sourceTree = "<group>"; };
+		E0AF02B3192BF0F20066A753 /* BrazilView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrazilView.h; sourceTree = "<group>"; };
+		E0AF02B4192BF0F20066A753 /* BrazilView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrazilView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0AF0264192BDF710066A753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AF026D192BDF710066A753 /* CoreGraphics.framework in Frameworks */,
+				E0AF026F192BDF710066A753 /* UIKit.framework in Frameworks */,
+				E0AF026B192BDF710066A753 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AF027F192BDF710066A753 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AF0284192BDF710066A753 /* XCTest.framework in Frameworks */,
+				E0AF0286192BDF710066A753 /* UIKit.framework in Frameworks */,
+				E0AF0285192BDF710066A753 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0AF025E192BDF710066A753 = {
+			isa = PBXGroup;
+			children = (
+				E0AF02A9192BE4A50066A753 /* Controller */,
+				E0AF02A8192BE49D0066A753 /* View */,
+				E0AF0270192BDF710066A753 /* Copa */,
+				E0AF0289192BDF710066A753 /* CopaTests */,
+				E0AF0269192BDF710066A753 /* Frameworks */,
+				E0AF0268192BDF710066A753 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0AF0268192BDF710066A753 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF0267192BDF710066A753 /* Copa.app */,
+				E0AF0282192BDF710066A753 /* CopaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0AF0269192BDF710066A753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF026A192BDF710066A753 /* Foundation.framework */,
+				E0AF026C192BDF710066A753 /* CoreGraphics.framework */,
+				E0AF026E192BDF710066A753 /* UIKit.framework */,
+				E0AF0283192BDF710066A753 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0AF0270192BDF710066A753 /* Copa */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF0279192BDF710066A753 /* AppDelegate.h */,
+				E0AF027A192BDF710066A753 /* AppDelegate.m */,
+				E0AF027C192BDF710066A753 /* Images.xcassets */,
+				E0AF0271192BDF710066A753 /* Supporting Files */,
+			);
+			path = Copa;
+			sourceTree = "<group>";
+		};
+		E0AF0271192BDF710066A753 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF0272192BDF710066A753 /* Copa-Info.plist */,
+				E0AF0273192BDF710066A753 /* InfoPlist.strings */,
+				E0AF0276192BDF710066A753 /* main.m */,
+				E0AF0278192BDF710066A753 /* Copa-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AF0289192BDF710066A753 /* CopaTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF028F192BDF710066A753 /* CopaTests.m */,
+				E0AF028A192BDF710066A753 /* Supporting Files */,
+			);
+			path = CopaTests;
+			sourceTree = "<group>";
+		};
+		E0AF028A192BDF710066A753 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF028B192BDF710066A753 /* CopaTests-Info.plist */,
+				E0AF028C192BDF710066A753 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AF02A8192BE49D0066A753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF02A5192BE45F0066A753 /* SwitzView.h */,
+				E0AF02A6192BE45F0066A753 /* SwitzView.m */,
+				E0AF029F192BE2BE0066A753 /* ItalyView.h */,
+				E0AF02A0192BE2BE0066A753 /* ItalyView.m */,
+				E0AF029C192BE04D0066A753 /* JapanView.h */,
+				E0AF029D192BE04D0066A753 /* JapanView.m */,
+				E0AF02AD192BE6140066A753 /* ChileView.h */,
+				E0AF02AE192BE6140066A753 /* ChileView.m */,
+				E0AF02B0192BEC1A0066A753 /* GreeceView.h */,
+				E0AF02B1192BEC1A0066A753 /* GreeceView.m */,
+				E0AF02B3192BF0F20066A753 /* BrazilView.h */,
+				E0AF02B4192BF0F20066A753 /* BrazilView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E0AF02A9192BE4A50066A753 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF0299192BDFA30066A753 /* DrawFlagsViewController.h */,
+				E0AF029A192BDFA30066A753 /* DrawFlagsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0AF0266192BDF710066A753 /* Copa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AF0293192BDF710066A753 /* Build configuration list for PBXNativeTarget "Copa" */;
+			buildPhases = (
+				E0AF0263192BDF710066A753 /* Sources */,
+				E0AF0264192BDF710066A753 /* Frameworks */,
+				E0AF0265192BDF710066A753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Copa;
+			productName = Copa;
+			productReference = E0AF0267192BDF710066A753 /* Copa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0AF0281192BDF710066A753 /* CopaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AF0296192BDF710066A753 /* Build configuration list for PBXNativeTarget "CopaTests" */;
+			buildPhases = (
+				E0AF027E192BDF710066A753 /* Sources */,
+				E0AF027F192BDF710066A753 /* Frameworks */,
+				E0AF0280192BDF710066A753 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0AF0288192BDF710066A753 /* PBXTargetDependency */,
+			);
+			name = CopaTests;
+			productName = CopaTests;
+			productReference = E0AF0282192BDF710066A753 /* CopaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0AF025F192BDF710066A753 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E0AF0281192BDF710066A753 = {
+						TestTargetID = E0AF0266192BDF710066A753;
+					};
+				};
+			};
+			buildConfigurationList = E0AF0262192BDF710066A753 /* Build configuration list for PBXProject "Copa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0AF025E192BDF710066A753;
+			productRefGroup = E0AF0268192BDF710066A753 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0AF0266192BDF710066A753 /* Copa */,
+				E0AF0281192BDF710066A753 /* CopaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0AF0265192BDF710066A753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AF0275192BDF710066A753 /* InfoPlist.strings in Resources */,
+				E0AF027D192BDF710066A753 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AF0280192BDF710066A753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AF028E192BDF710066A753 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0AF0263192BDF710066A753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AF02A1192BE2BE0066A753 /* ItalyView.m in Sources */,
+				E0AF027B192BDF710066A753 /* AppDelegate.m in Sources */,
+				E0AF02B5192BF0F20066A753 /* BrazilView.m in Sources */,
+				E0AF02A7192BE45F0066A753 /* SwitzView.m in Sources */,
+				E0AF0277192BDF710066A753 /* main.m in Sources */,
+				E0AF029B192BDFA30066A753 /* DrawFlagsViewController.m in Sources */,
+				E0AF02AF192BE6140066A753 /* ChileView.m in Sources */,
+				E0AF02B2192BEC1A0066A753 /* GreeceView.m in Sources */,
+				E0AF029E192BE04D0066A753 /* JapanView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AF027E192BDF710066A753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AF0290192BDF710066A753 /* CopaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0AF0288192BDF710066A753 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0AF0266192BDF710066A753 /* Copa */;
+			targetProxy = E0AF0287192BDF710066A753 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0AF0273192BDF710066A753 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AF0274192BDF710066A753 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0AF028C192BDF710066A753 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AF028D192BDF710066A753 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0AF0291192BDF710066A753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0AF0292192BDF710066A753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0AF0294192BDF710066A753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Copa/Copa-Prefix.pch";
+				INFOPLIST_FILE = "Copa/Copa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0AF0295192BDF710066A753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Copa/Copa-Prefix.pch";
+				INFOPLIST_FILE = "Copa/Copa-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0AF0297192BDF710066A753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Copa.app/Copa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Copa/Copa-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CopaTests/CopaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0AF0298192BDF710066A753 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Copa.app/Copa";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Copa/Copa-Prefix.pch";
+				INFOPLIST_FILE = "CopaTests/CopaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0AF0262192BDF710066A753 /* Build configuration list for PBXProject "Copa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AF0291192BDF710066A753 /* Debug */,
+				E0AF0292192BDF710066A753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AF0293192BDF710066A753 /* Build configuration list for PBXNativeTarget "Copa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AF0294192BDF710066A753 /* Debug */,
+				E0AF0295192BDF710066A753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0AF0296192BDF710066A753 /* Build configuration list for PBXNativeTarget "CopaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AF0297192BDF710066A753 /* Debug */,
+				E0AF0298192BDF710066A753 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0AF025F192BDF710066A753 /* Project object */;
+}

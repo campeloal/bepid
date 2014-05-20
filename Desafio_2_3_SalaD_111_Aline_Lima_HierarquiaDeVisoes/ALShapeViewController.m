@@ -27,7 +27,7 @@
 {
     self = [super init];
     if (self) {
-        _shapes = [[NSMutableArray alloc] init];
+        shapes = [[NSMutableArray alloc] init];
         _sv = [[ALShapeView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     }
     return self;
@@ -49,54 +49,28 @@
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [_sv setX:_x];
-    [_sv setY:_y];
-    [_sv setWidth:_width];
-    [_sv setHeight:_height];
-    [_sv setColor:_color];
-    [_sv setIsRect:_isRect];
-    [_sv setNeedsDisplay];
-    _sv.backgroundColor = [UIColor whiteColor];
     
-    if([_shapes count] > 0)
-    {
-        for(Shape* shape in _shapes)
-        {
-            NSLog(@"Entei");
-            [_sv setX: [shape x]];
-            [_sv setY: [shape y]];
-            [_sv setWidth:[shape width]];
-            [_sv setHeight:[shape height]];
-            [_sv setColor:[shape color]];
-            [_sv setIsRect:[shape isRect]];
-            [_sv setNeedsDisplay];
-        }
-    }
-    Shape *shape = [[Shape alloc] init];
-    if(_isRect)
-    {
-        [shape setColor:_color];
-        [shape setX: _x];
-        [shape setY: _y];
-        [shape setWidth:_width];
-        [shape setHeight:_height];
-        [shape setIsRect:_isRect];
-        [_shapes addObject: shape];
-    }
-    else
-    {
-        [shape setColor:_color];
-        [shape setX: _x];
-        [shape setY: _y];
-        [shape setWidth:_width];
-        [shape setHeight:_height];
-        [shape setIsRect:_isRect];
-        [_shapes addObject: shape];
-    }
-    
-    [self.view addSubview:_sv];
 }
 
+-(void) createView
+{
+    
+    Shape *singleShape = [[Shape alloc] init];
+    [singleShape setX:_x];
+    [singleShape setY:_y];
+    [singleShape setWidth:_width];
+    [singleShape setHeight:_height];
+    [singleShape setIsRect:_isRect];
+    [singleShape setColor:_color];
+    [shapes addObject:singleShape];
+    [_sv setShapes:shapes];
+    [_sv setNeedsDisplay];
+    _sv.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:_sv];
+    
+    
+
+}
 
 
 @end

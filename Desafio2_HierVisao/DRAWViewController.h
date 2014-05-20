@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ALShapeViewController.h"
+#import "RECTViewController.h"
+#import "ELIViewController.h"
+#import "RECTView.h"
+#import "ELIView.h"
 
-@interface ALDrawViewController : UIViewController
+@interface DRAWViewController : UIViewController
 {
-    ALShapeViewController *shapeVC;
+    RECTViewController *rectVC;
+    RECTView *rectView;
+    
+    ELIView *eliView;
     UIColor *color;
     BOOL isRect;
 }
@@ -24,6 +30,10 @@
 -(IBAction)goToDrawView:(id)sender;
 -(IBAction)dismissKeyboard:(id)sender;
 - (IBAction)chooseForm:(id)sender;
--(IBAction)setColor:(id)sender;
+-(IBAction)drawGreen:(id)sender;
+-(IBAction)drawYellow:(id)sender;
+-(IBAction)drawBlue:(id)sender;
+-(IBAction)drawRed:(id)sender;
+-(IBAction)drawBlack:(id)sender;
 
 @end

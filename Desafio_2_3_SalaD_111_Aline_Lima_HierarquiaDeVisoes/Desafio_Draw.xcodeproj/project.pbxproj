@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0AF025D192BDBC30066A753 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF025C192BDBC30066A753 /* Shape.m */; };
 		FA5F30F7192A8BDF00748830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30F6192A8BDF00748830 /* Foundation.framework */; };
 		FA5F30F9192A8BDF00748830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30F8192A8BDF00748830 /* CoreGraphics.framework */; };
 		FA5F30FB192A8BDF00748830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30FA192A8BDF00748830 /* UIKit.framework */; };
@@ -19,11 +20,9 @@
 		FA5F3112192A8BDF00748830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5F30FA192A8BDF00748830 /* UIKit.framework */; };
 		FA5F311A192A8BDF00748830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA5F3118192A8BDF00748830 /* InfoPlist.strings */; };
 		FA5F311C192A8BDF00748830 /* Desafio_DrawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F311B192A8BDF00748830 /* Desafio_DrawTests.m */; };
-		FA5F312F192A8C5E00748830 /* ALDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F3126192A8C5E00748830 /* ALDrawViewController.m */; };
 		FA5F3130192A8C5E00748830 /* ALShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F3128192A8C5E00748830 /* ALShapeView.m */; };
 		FA5F3131192A8C5E00748830 /* ALShapeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5F312A192A8C5E00748830 /* ALShapeViewController.m */; };
 		FA5F3135192A8CF500748830 /* ALDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5F3134192A8CF500748830 /* ALDrawViewController.xib */; };
-		FAB37528192AB8A400D42B58 /* Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = FAB37527192AB8A400D42B58 /* Shape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0AF025B192BDBC30066A753 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		E0AF025C192BDBC30066A753 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 		FA5F30F3192A8BDF00748830 /* Desafio_Draw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio_Draw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA5F30F6192A8BDF00748830 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA5F30F8192A8BDF00748830 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,15 +54,11 @@
 		FA5F3117192A8BDF00748830 /* Desafio_DrawTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio_DrawTests-Info.plist"; sourceTree = "<group>"; };
 		FA5F3119192A8BDF00748830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA5F311B192A8BDF00748830 /* Desafio_DrawTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_DrawTests.m; sourceTree = "<group>"; };
-		FA5F3125192A8C5E00748830 /* ALDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDrawViewController.h; sourceTree = "<group>"; };
-		FA5F3126192A8C5E00748830 /* ALDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDrawViewController.m; sourceTree = "<group>"; };
 		FA5F3127192A8C5E00748830 /* ALShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALShapeView.h; sourceTree = "<group>"; };
 		FA5F3128192A8C5E00748830 /* ALShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALShapeView.m; sourceTree = "<group>"; };
 		FA5F3129192A8C5E00748830 /* ALShapeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALShapeViewController.h; sourceTree = "<group>"; };
 		FA5F312A192A8C5E00748830 /* ALShapeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALShapeViewController.m; sourceTree = "<group>"; };
 		FA5F3134192A8CF500748830 /* ALDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALDrawViewController.xib; sourceTree = "<group>"; };
-		FAB37526192AB8A400D42B58 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
-		FAB37527192AB8A400D42B58 /* Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0AF025A192BDBB20066A753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0AF025B192BDBC30066A753 /* Shape.h */,
+				E0AF025C192BDBC30066A753 /* Shape.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		FA5F30EA192A8BDF00748830 = {
 			isa = PBXGroup;
 			children = (
-				FAB37525192AB88100D42B58 /* Model */,
+				E0AF025A192BDBB20066A753 /* Model */,
 				FA5F3137192A972400748830 /* View */,
 				FA5F3136192A970800748830 /* Controller */,
 				FA5F30FC192A8BDF00748830 /* Desafio_Draw */,
@@ -166,8 +172,6 @@
 			children = (
 				FA5F3129192A8C5E00748830 /* ALShapeViewController.h */,
 				FA5F312A192A8C5E00748830 /* ALShapeViewController.m */,
-				FA5F3125192A8C5E00748830 /* ALDrawViewController.h */,
-				FA5F3126192A8C5E00748830 /* ALDrawViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -180,15 +184,6 @@
 				FA5F3128192A8C5E00748830 /* ALShapeView.m */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		FAB37525192AB88100D42B58 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FAB37526192AB8A400D42B58 /* Shape.h */,
-				FAB37527192AB8A400D42B58 /* Shape.m */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,9 +285,8 @@
 				FA5F3131192A8C5E00748830 /* ALShapeViewController.m in Sources */,
 				FA5F3107192A8BDF00748830 /* AppDelegate.m in Sources */,
 				FA5F3130192A8C5E00748830 /* ALShapeView.m in Sources */,
-				FAB37528192AB8A400D42B58 /* Shape.m in Sources */,
-				FA5F312F192A8C5E00748830 /* ALDrawViewController.m in Sources */,
 				FA5F3103192A8BDF00748830 /* main.m in Sources */,
+				E0AF025D192BDBC30066A753 /* Shape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

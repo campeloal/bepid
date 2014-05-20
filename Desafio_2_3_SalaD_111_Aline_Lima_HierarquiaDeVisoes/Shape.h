@@ -2,7 +2,7 @@
 //  Shape.h
 //  Desafio_Draw
 //
-//  Created by Alex on 5/19/14.
+//  Created by Alex De Souza Campelo Lima on 5/20/14.
 //  Copyright (c) 2014 Alex. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 @interface Shape : NSObject
 
+@property (nonatomic, retain) NSMutableArray *shapes;
 @property (nonatomic, retain) UIColor *color;
 @property (nonatomic) float x;
 @property (nonatomic) float y;
