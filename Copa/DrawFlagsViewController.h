@@ -13,6 +13,7 @@
 #import "ChileView.h"
 #import "GreeceView.h"
 #import "BrazilView.h"
+#import "SouthKoreaView.h"
 
 @interface DrawFlagsViewController : UIViewController
 
@@ -22,5 +23,6 @@
 @property (nonatomic, retain) ChileView* chileFlag;
 @property (nonatomic, retain) GreeceView* greeceFlag;
 @property (nonatomic, retain) BrazilView* brazilFlag;
+@property (nonatomic, retain) SouthKoreaView* skoreaFlag;
 
 @end
