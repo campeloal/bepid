@@ -26,6 +26,7 @@
 		E0AF02AF192BE6140066A753 /* ChileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02AE192BE6140066A753 /* ChileView.m */; };
 		E0AF02B2192BEC1A0066A753 /* GreeceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02B1192BEC1A0066A753 /* GreeceView.m */; };
 		E0AF02B5192BF0F20066A753 /* BrazilView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF02B4192BF0F20066A753 /* BrazilView.m */; };
+		E0AFEAEA192D1951002C3503 /* SouthKoreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AFEAE9192D1951002C3503 /* SouthKoreaView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		E0AF02B1192BEC1A0066A753 /* GreeceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreeceView.m; sourceTree = "<group>"; };
 		E0AF02B3192BF0F20066A753 /* BrazilView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrazilView.h; sourceTree = "<group>"; };
 		E0AF02B4192BF0F20066A753 /* BrazilView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrazilView.m; sourceTree = "<group>"; };
+		E0AFEAE8192D1951002C3503 /* SouthKoreaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SouthKoreaView.h; sourceTree = "<group>"; };
+		E0AFEAE9192D1951002C3503 /* SouthKoreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SouthKoreaView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +185,8 @@
 				E0AF02B1192BEC1A0066A753 /* GreeceView.m */,
 				E0AF02B3192BF0F20066A753 /* BrazilView.h */,
 				E0AF02B4192BF0F20066A753 /* BrazilView.m */,
+				E0AFEAE8192D1951002C3503 /* SouthKoreaView.h */,
+				E0AFEAE9192D1951002C3503 /* SouthKoreaView.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				E0AF02B5192BF0F20066A753 /* BrazilView.m in Sources */,
 				E0AF02A7192BE45F0066A753 /* SwitzView.m in Sources */,
 				E0AF0277192BDF710066A753 /* main.m in Sources */,
+				E0AFEAEA192D1951002C3503 /* SouthKoreaView.m in Sources */,
 				E0AF029B192BDFA30066A753 /* DrawFlagsViewController.m in Sources */,
 				E0AF02AF192BE6140066A753 /* ChileView.m in Sources */,
 				E0AF02B2192BEC1A0066A753 /* GreeceView.m in Sources */,
@@ -497,6 +503,7 @@
 				E0AF0295192BDF710066A753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0AF0296192BDF710066A753 /* Build configuration list for PBXNativeTarget "CopaTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +512,7 @@
 				E0AF0298192BDF710066A753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

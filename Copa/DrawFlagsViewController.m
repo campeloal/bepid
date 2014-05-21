@@ -32,6 +32,7 @@
         _chileFlag = [[ChileView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
         _greeceFlag = [[GreeceView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
         _brazilFlag = [[BrazilView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+        _skoreaFlag = [[SouthKoreaView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     }
     return self;
 }
@@ -57,6 +58,8 @@
     [_greeceFlag setNeedsDisplay];
     _brazilFlag.opaque = NO;
     [_brazilFlag setNeedsDisplay];
+    _skoreaFlag.opaque = NO;
+    [_skoreaFlag setNeedsDisplay];
     
     [self.view addSubview:_japanFlag];
     [self.view addSubview:_italyFlag];
@@ -64,6 +67,7 @@
     [self.view addSubview:_chileFlag];
     [self.view addSubview:_greeceFlag];
     [self.view addSubview:_brazilFlag];
+    [self.view addSubview:_skoreaFlag];
 }
 
 - (void)didReceiveMemoryWarning
