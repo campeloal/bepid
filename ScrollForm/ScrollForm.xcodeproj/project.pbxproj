@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0B7822D192E5EC1001413B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B7822C192E5EC1001413B7 /* Foundation.framework */; };
+		E0B7822F192E5EC1001413B7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B7822E192E5EC1001413B7 /* CoreGraphics.framework */; };
+		E0B78231192E5EC1001413B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B78230192E5EC1001413B7 /* UIKit.framework */; };
+		E0B78237192E5EC1001413B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B78235192E5EC1001413B7 /* InfoPlist.strings */; };
+		E0B78239192E5EC1001413B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B78238192E5EC1001413B7 /* main.m */; };
+		E0B7823D192E5EC1001413B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B7823C192E5EC1001413B7 /* AppDelegate.m */; };
+		E0B7823F192E5EC1001413B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B7823E192E5EC1001413B7 /* Images.xcassets */; };
+		E0B78246192E5EC1001413B7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B78245192E5EC1001413B7 /* XCTest.framework */; };
+		E0B78247192E5EC1001413B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B7822C192E5EC1001413B7 /* Foundation.framework */; };
+		E0B78248192E5EC1001413B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B78230192E5EC1001413B7 /* UIKit.framework */; };
+		E0B78250192E5EC1001413B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B7824E192E5EC1001413B7 /* InfoPlist.strings */; };
+		E0B78252192E5EC1001413B7 /* ScrollFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B78251192E5EC1001413B7 /* ScrollFormTests.m */; };
+		E0B78262192E5F00001413B7 /* ALScrollPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B7825C192E5F00001413B7 /* ALScrollPageViewController.m */; };
+		E0B78263192E5F00001413B7 /* ALScrollPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B7825D192E5F00001413B7 /* ALScrollPageViewController.xib */; };
+		E0B78264192E5F00001413B7 /* BrazilView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B7825F192E5F00001413B7 /* BrazilView.m */; };
+		E0B78265192E5F00001413B7 /* ChileView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B78261192E5F00001413B7 /* ChileView.m */; };
+		E0B78268192E5F30001413B7 /* GreeceView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B78267192E5F30001413B7 /* GreeceView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0B78249192E5EC1001413B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0B78221192E5EC1001413B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0B78228192E5EC1001413B7;
+			remoteInfo = ScrollForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0B78229192E5EC1001413B7 /* ScrollForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B7822C192E5EC1001413B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0B7822E192E5EC1001413B7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0B78230192E5EC1001413B7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0B78234192E5EC1001413B7 /* ScrollForm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollForm-Info.plist"; sourceTree = "<group>"; };
+		E0B78236192E5EC1001413B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0B78238192E5EC1001413B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0B7823A192E5EC1001413B7 /* ScrollForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrollForm-Prefix.pch"; sourceTree = "<group>"; };
+		E0B7823B192E5EC1001413B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0B7823C192E5EC1001413B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0B7823E192E5EC1001413B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0B78244192E5EC1001413B7 /* ScrollFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B78245192E5EC1001413B7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0B7824D192E5EC1001413B7 /* ScrollFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrollFormTests-Info.plist"; sourceTree = "<group>"; };
+		E0B7824F192E5EC1001413B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0B78251192E5EC1001413B7 /* ScrollFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollFormTests.m; sourceTree = "<group>"; };
+		E0B7825B192E5F00001413B7 /* ALScrollPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALScrollPageViewController.h; sourceTree = "<group>"; };
+		E0B7825C192E5F00001413B7 /* ALScrollPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALScrollPageViewController.m; sourceTree = "<group>"; };
+		E0B7825D192E5F00001413B7 /* ALScrollPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ALScrollPageViewController.xib; sourceTree = "<group>"; };
+		E0B7825E192E5F00001413B7 /* BrazilView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrazilView.h; sourceTree = "<group>"; };
+		E0B7825F192E5F00001413B7 /* BrazilView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrazilView.m; sourceTree = "<group>"; };
+		E0B78260192E5F00001413B7 /* ChileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChileView.h; sourceTree = "<group>"; };
+		E0B78261192E5F00001413B7 /* ChileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChileView.m; sourceTree = "<group>"; };
+		E0B78266192E5F30001413B7 /* GreeceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreeceView.h; sourceTree = "<group>"; };
+		E0B78267192E5F30001413B7 /* GreeceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreeceView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0B78226192E5EC1001413B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B7822F192E5EC1001413B7 /* CoreGraphics.framework in Frameworks */,
+				E0B78231192E5EC1001413B7 /* UIKit.framework in Frameworks */,
+				E0B7822D192E5EC1001413B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B78241192E5EC1001413B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B78246192E5EC1001413B7 /* XCTest.framework in Frameworks */,
+				E0B78248192E5EC1001413B7 /* UIKit.framework in Frameworks */,
+				E0B78247192E5EC1001413B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0B78220192E5EC1001413B7 = {
+			isa = PBXGroup;
+			children = (
+				E0B78266192E5F30001413B7 /* GreeceView.h */,
+				E0B78267192E5F30001413B7 /* GreeceView.m */,
+				E0B7825B192E5F00001413B7 /* ALScrollPageViewController.h */,
+				E0B7825C192E5F00001413B7 /* ALScrollPageViewController.m */,
+				E0B7825D192E5F00001413B7 /* ALScrollPageViewController.xib */,
+				E0B7825E192E5F00001413B7 /* BrazilView.h */,
+				E0B7825F192E5F00001413B7 /* BrazilView.m */,
+				E0B78260192E5F00001413B7 /* ChileView.h */,
+				E0B78261192E5F00001413B7 /* ChileView.m */,
+				E0B78232192E5EC1001413B7 /* ScrollForm */,
+				E0B7824B192E5EC1001413B7 /* ScrollFormTests */,
+				E0B7822B192E5EC1001413B7 /* Frameworks */,
+				E0B7822A192E5EC1001413B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0B7822A192E5EC1001413B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0B78229192E5EC1001413B7 /* ScrollForm.app */,
+				E0B78244192E5EC1001413B7 /* ScrollFormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0B7822B192E5EC1001413B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0B7822C192E5EC1001413B7 /* Foundation.framework */,
+				E0B7822E192E5EC1001413B7 /* CoreGraphics.framework */,
+				E0B78230192E5EC1001413B7 /* UIKit.framework */,
+				E0B78245192E5EC1001413B7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B78232192E5EC1001413B7 /* ScrollForm */ = {
+			isa = PBXGroup;
+			children = (
+				E0B7823B192E5EC1001413B7 /* AppDelegate.h */,
+				E0B7823C192E5EC1001413B7 /* AppDelegate.m */,
+				E0B7823E192E5EC1001413B7 /* Images.xcassets */,
+				E0B78233192E5EC1001413B7 /* Supporting Files */,
+			);
+			path = ScrollForm;
+			sourceTree = "<group>";
+		};
+		E0B78233192E5EC1001413B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0B78234192E5EC1001413B7 /* ScrollForm-Info.plist */,
+				E0B78235192E5EC1001413B7 /* InfoPlist.strings */,
+				E0B78238192E5EC1001413B7 /* main.m */,
+				E0B7823A192E5EC1001413B7 /* ScrollForm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0B7824B192E5EC1001413B7 /* ScrollFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0B78251192E5EC1001413B7 /* ScrollFormTests.m */,
+				E0B7824C192E5EC1001413B7 /* Supporting Files */,
+			);
+			path = ScrollFormTests;
+			sourceTree = "<group>";
+		};
+		E0B7824C192E5EC1001413B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0B7824D192E5EC1001413B7 /* ScrollFormTests-Info.plist */,
+				E0B7824E192E5EC1001413B7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0B78228192E5EC1001413B7 /* ScrollForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B78255192E5EC1001413B7 /* Build configuration list for PBXNativeTarget "ScrollForm" */;
+			buildPhases = (
+				E0B78225192E5EC1001413B7 /* Sources */,
+				E0B78226192E5EC1001413B7 /* Frameworks */,
+				E0B78227192E5EC1001413B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrollForm;
+			productName = ScrollForm;
+			productReference = E0B78229192E5EC1001413B7 /* ScrollForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0B78243192E5EC1001413B7 /* ScrollFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B78258192E5EC1001413B7 /* Build configuration list for PBXNativeTarget "ScrollFormTests" */;
+			buildPhases = (
+				E0B78240192E5EC1001413B7 /* Sources */,
+				E0B78241192E5EC1001413B7 /* Frameworks */,
+				E0B78242192E5EC1001413B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0B7824A192E5EC1001413B7 /* PBXTargetDependency */,
+			);
+			name = ScrollFormTests;
+			productName = ScrollFormTests;
+			productReference = E0B78244192E5EC1001413B7 /* ScrollFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0B78221192E5EC1001413B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E0B78243192E5EC1001413B7 = {
+						TestTargetID = E0B78228192E5EC1001413B7;
+					};
+				};
+			};
+			buildConfigurationList = E0B78224192E5EC1001413B7 /* Build configuration list for PBXProject "ScrollForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0B78220192E5EC1001413B7;
+			productRefGroup = E0B7822A192E5EC1001413B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0B78228192E5EC1001413B7 /* ScrollForm */,
+				E0B78243192E5EC1001413B7 /* ScrollFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0B78227192E5EC1001413B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B78237192E5EC1001413B7 /* InfoPlist.strings in Resources */,
+				E0B78263192E5F00001413B7 /* ALScrollPageViewController.xib in Resources */,
+				E0B7823F192E5EC1001413B7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B78242192E5EC1001413B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B78250192E5EC1001413B7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0B78225192E5EC1001413B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B7823D192E5EC1001413B7 /* AppDelegate.m in Sources */,
+				E0B78268192E5F30001413B7 /* GreeceView.m in Sources */,
+				E0B78265192E5F00001413B7 /* ChileView.m in Sources */,
+				E0B78239192E5EC1001413B7 /* main.m in Sources */,
+				E0B78264192E5F00001413B7 /* BrazilView.m in Sources */,
+				E0B78262192E5F00001413B7 /* ALScrollPageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B78240192E5EC1001413B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B78252192E5EC1001413B7 /* ScrollFormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0B7824A192E5EC1001413B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0B78228192E5EC1001413B7 /* ScrollForm */;
+			targetProxy = E0B78249192E5EC1001413B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0B78235192E5EC1001413B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B78236192E5EC1001413B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0B7824E192E5EC1001413B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B7824F192E5EC1001413B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0B78253192E5EC1001413B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0B78254192E5EC1001413B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0B78256192E5EC1001413B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollForm/ScrollForm-Prefix.pch";
+				INFOPLIST_FILE = "ScrollForm/ScrollForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0B78257192E5EC1001413B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollForm/ScrollForm-Prefix.pch";
+				INFOPLIST_FILE = "ScrollForm/ScrollForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0B78259192E5EC1001413B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollForm.app/ScrollForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollForm/ScrollForm-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ScrollFormTests/ScrollFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0B7825A192E5EC1001413B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrollForm.app/ScrollForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrollForm/ScrollForm-Prefix.pch";
+				INFOPLIST_FILE = "ScrollFormTests/ScrollFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0B78224192E5EC1001413B7 /* Build configuration list for PBXProject "ScrollForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B78253192E5EC1001413B7 /* Debug */,
+				E0B78254192E5EC1001413B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0B78255192E5EC1001413B7 /* Build configuration list for PBXNativeTarget "ScrollForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B78256192E5EC1001413B7 /* Debug */,
+				E0B78257192E5EC1001413B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0B78258192E5EC1001413B7 /* Build configuration list for PBXNativeTarget "ScrollFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B78259192E5EC1001413B7 /* Debug */,
+				E0B7825A192E5EC1001413B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0B78221192E5EC1001413B7 /* Project object */;
+}

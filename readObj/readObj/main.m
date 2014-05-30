@@ -7,40 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Object.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        NSMutableArray *vertices = [[NSMutableArray alloc] init];
-//        NSMutableArray *faces = [[NSMutableArray alloc] init];
-//        NSMutableArray *normals = [[NSMutableArray alloc] init];
-//        NSMutableArray *textures = [[NSMutableArray alloc] init];
-//        NSMutableArray *indexes = [[NSMutableArray alloc] init];
+        Object *object = [[Object alloc] init];
         
-        NSArray* path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSError *error;
-        NSString *objString = [[path objectAtIndex:0] stringByAppendingPathComponent:@"teste.obj"];
-        NSString *objFile = [NSString stringWithContentsOfFile:objString encoding:NSUTF8StringEncoding error:&error];
+        [object loadObj];
         
-        NSLog(@"%@", objString);
-        if(error)
-        {
-            NSLog(@"Nao consegui abrir o arquivo");
-        }
-        
-        for (NSString *line in [objFile componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]]) {
-            NSArray *fields = [line componentsSeparatedByString:@" "];
-            
-            if([[fields objectAtIndex:0] isEqualToString: @"v"])
-            {
-                [vertices addObjectsFromArray:fields];
             }
-        }
-        
-        NSLog(@"%@", vertices);
-    }
     return 0;
 }
+
 

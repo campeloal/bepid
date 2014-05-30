@@ -10,6 +10,7 @@
 		E073FAE9192A83E3000E9975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E073FAE8192A83E3000E9975 /* Foundation.framework */; };
 		E073FAEC192A83E3000E9975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E073FAEB192A83E3000E9975 /* main.m */; };
 		E073FAF0192A83E3000E9975 /* readObj.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E073FAEF192A83E3000E9975 /* readObj.1 */; };
+		E0A427391938F4740007D331 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A427381938F4740007D331 /* Object.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,8 @@
 		E073FAEE192A83E3000E9975 /* readObj-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "readObj-Prefix.pch"; sourceTree = "<group>"; };
 		E073FAEF192A83E3000E9975 /* readObj.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = readObj.1; sourceTree = "<group>"; };
 		E073FAF6192A845C000E9975 /* teste.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = teste.obj; sourceTree = "<group>"; };
+		E0A427371938F4740007D331 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		E0A427381938F4740007D331 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				E073FAEF192A83E3000E9975 /* readObj.1 */,
 				E073FAED192A83E3000E9975 /* Supporting Files */,
 				E073FAF6192A845C000E9975 /* teste.obj */,
+				E0A427371938F4740007D331 /* Object.h */,
+				E0A427381938F4740007D331 /* Object.m */,
 			);
 			path = readObj;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E073FAEC192A83E3000E9975 /* main.m in Sources */,
+				E0A427391938F4740007D331 /* Object.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +261,7 @@
 				E073FAF5192A83E3000E9975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

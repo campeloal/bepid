@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0B32C431935085C00738BD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C421935085C00738BD2 /* Foundation.framework */; };
+		E0B32C451935085C00738BD2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C441935085C00738BD2 /* CoreGraphics.framework */; };
+		E0B32C471935085C00738BD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C461935085C00738BD2 /* UIKit.framework */; };
+		E0B32C4D1935085C00738BD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B32C4B1935085C00738BD2 /* InfoPlist.strings */; };
+		E0B32C4F1935085C00738BD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B32C4E1935085C00738BD2 /* main.m */; };
+		E0B32C531935085C00738BD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B32C521935085C00738BD2 /* AppDelegate.m */; };
+		E0B32C551935085C00738BD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B32C541935085C00738BD2 /* Images.xcassets */; };
+		E0B32C5C1935085C00738BD2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C5B1935085C00738BD2 /* XCTest.framework */; };
+		E0B32C5D1935085C00738BD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C421935085C00738BD2 /* Foundation.framework */; };
+		E0B32C5E1935085C00738BD2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C461935085C00738BD2 /* UIKit.framework */; };
+		E0B32C661935085C00738BD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0B32C641935085C00738BD2 /* InfoPlist.strings */; };
+		E0B32C681935085C00738BD2 /* VolumeShutterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B32C671935085C00738BD2 /* VolumeShutterTests.m */; };
+		E0B32C721935086A00738BD2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B32C711935086A00738BD2 /* AVFoundation.framework */; };
+		E0B32C771935089800738BD2 /* VolumeShutterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B32C751935089800738BD2 /* VolumeShutterViewController.m */; };
+		E0B32C781935089800738BD2 /* VolumeShutterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0B32C761935089800738BD2 /* VolumeShutterViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0B32C5F1935085C00738BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0B32C371935085C00738BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0B32C3E1935085C00738BD2;
+			remoteInfo = VolumeShutter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0B32C3F1935085C00738BD2 /* VolumeShutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolumeShutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B32C421935085C00738BD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0B32C441935085C00738BD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0B32C461935085C00738BD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0B32C4A1935085C00738BD2 /* VolumeShutter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeShutter-Info.plist"; sourceTree = "<group>"; };
+		E0B32C4C1935085C00738BD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0B32C4E1935085C00738BD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0B32C501935085C00738BD2 /* VolumeShutter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VolumeShutter-Prefix.pch"; sourceTree = "<group>"; };
+		E0B32C511935085C00738BD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E0B32C521935085C00738BD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E0B32C541935085C00738BD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0B32C5A1935085C00738BD2 /* VolumeShutterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeShutterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B32C5B1935085C00738BD2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0B32C631935085C00738BD2 /* VolumeShutterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolumeShutterTests-Info.plist"; sourceTree = "<group>"; };
+		E0B32C651935085C00738BD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0B32C671935085C00738BD2 /* VolumeShutterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolumeShutterTests.m; sourceTree = "<group>"; };
+		E0B32C711935086A00738BD2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E0B32C741935089800738BD2 /* VolumeShutterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolumeShutterViewController.h; sourceTree = "<group>"; };
+		E0B32C751935089800738BD2 /* VolumeShutterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolumeShutterViewController.m; sourceTree = "<group>"; };
+		E0B32C761935089800738BD2 /* VolumeShutterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolumeShutterViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0B32C3C1935085C00738BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B32C721935086A00738BD2 /* AVFoundation.framework in Frameworks */,
+				E0B32C451935085C00738BD2 /* CoreGraphics.framework in Frameworks */,
+				E0B32C471935085C00738BD2 /* UIKit.framework in Frameworks */,
+				E0B32C431935085C00738BD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B32C571935085C00738BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B32C5C1935085C00738BD2 /* XCTest.framework in Frameworks */,
+				E0B32C5E1935085C00738BD2 /* UIKit.framework in Frameworks */,
+				E0B32C5D1935085C00738BD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0B32C361935085C00738BD2 = {
+			isa = PBXGroup;
+			children = (
+				E0B32C731935087400738BD2 /* Controllers */,
+				E0B32C481935085C00738BD2 /* VolumeShutter */,
+				E0B32C611935085C00738BD2 /* VolumeShutterTests */,
+				E0B32C411935085C00738BD2 /* Frameworks */,
+				E0B32C401935085C00738BD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0B32C401935085C00738BD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C3F1935085C00738BD2 /* VolumeShutter.app */,
+				E0B32C5A1935085C00738BD2 /* VolumeShutterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0B32C411935085C00738BD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C711935086A00738BD2 /* AVFoundation.framework */,
+				E0B32C421935085C00738BD2 /* Foundation.framework */,
+				E0B32C441935085C00738BD2 /* CoreGraphics.framework */,
+				E0B32C461935085C00738BD2 /* UIKit.framework */,
+				E0B32C5B1935085C00738BD2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B32C481935085C00738BD2 /* VolumeShutter */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C511935085C00738BD2 /* AppDelegate.h */,
+				E0B32C521935085C00738BD2 /* AppDelegate.m */,
+				E0B32C541935085C00738BD2 /* Images.xcassets */,
+				E0B32C491935085C00738BD2 /* Supporting Files */,
+			);
+			path = VolumeShutter;
+			sourceTree = "<group>";
+		};
+		E0B32C491935085C00738BD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C4A1935085C00738BD2 /* VolumeShutter-Info.plist */,
+				E0B32C4B1935085C00738BD2 /* InfoPlist.strings */,
+				E0B32C4E1935085C00738BD2 /* main.m */,
+				E0B32C501935085C00738BD2 /* VolumeShutter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0B32C611935085C00738BD2 /* VolumeShutterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C671935085C00738BD2 /* VolumeShutterTests.m */,
+				E0B32C621935085C00738BD2 /* Supporting Files */,
+			);
+			path = VolumeShutterTests;
+			sourceTree = "<group>";
+		};
+		E0B32C621935085C00738BD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C631935085C00738BD2 /* VolumeShutterTests-Info.plist */,
+				E0B32C641935085C00738BD2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0B32C731935087400738BD2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0B32C741935089800738BD2 /* VolumeShutterViewController.h */,
+				E0B32C751935089800738BD2 /* VolumeShutterViewController.m */,
+				E0B32C761935089800738BD2 /* VolumeShutterViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0B32C3E1935085C00738BD2 /* VolumeShutter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B32C6B1935085C00738BD2 /* Build configuration list for PBXNativeTarget "VolumeShutter" */;
+			buildPhases = (
+				E0B32C3B1935085C00738BD2 /* Sources */,
+				E0B32C3C1935085C00738BD2 /* Frameworks */,
+				E0B32C3D1935085C00738BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolumeShutter;
+			productName = VolumeShutter;
+			productReference = E0B32C3F1935085C00738BD2 /* VolumeShutter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0B32C591935085C00738BD2 /* VolumeShutterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0B32C6E1935085C00738BD2 /* Build configuration list for PBXNativeTarget "VolumeShutterTests" */;
+			buildPhases = (
+				E0B32C561935085C00738BD2 /* Sources */,
+				E0B32C571935085C00738BD2 /* Frameworks */,
+				E0B32C581935085C00738BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0B32C601935085C00738BD2 /* PBXTargetDependency */,
+			);
+			name = VolumeShutterTests;
+			productName = VolumeShutterTests;
+			productReference = E0B32C5A1935085C00738BD2 /* VolumeShutterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0B32C371935085C00738BD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E0B32C591935085C00738BD2 = {
+						TestTargetID = E0B32C3E1935085C00738BD2;
+					};
+				};
+			};
+			buildConfigurationList = E0B32C3A1935085C00738BD2 /* Build configuration list for PBXProject "VolumeShutter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0B32C361935085C00738BD2;
+			productRefGroup = E0B32C401935085C00738BD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0B32C3E1935085C00738BD2 /* VolumeShutter */,
+				E0B32C591935085C00738BD2 /* VolumeShutterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0B32C3D1935085C00738BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B32C4D1935085C00738BD2 /* InfoPlist.strings in Resources */,
+				E0B32C551935085C00738BD2 /* Images.xcassets in Resources */,
+				E0B32C781935089800738BD2 /* VolumeShutterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B32C581935085C00738BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B32C661935085C00738BD2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0B32C3B1935085C00738BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B32C531935085C00738BD2 /* AppDelegate.m in Sources */,
+				E0B32C4F1935085C00738BD2 /* main.m in Sources */,
+				E0B32C771935089800738BD2 /* VolumeShutterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0B32C561935085C00738BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B32C681935085C00738BD2 /* VolumeShutterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0B32C601935085C00738BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0B32C3E1935085C00738BD2 /* VolumeShutter */;
+			targetProxy = E0B32C5F1935085C00738BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0B32C4B1935085C00738BD2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B32C4C1935085C00738BD2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0B32C641935085C00738BD2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0B32C651935085C00738BD2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0B32C691935085C00738BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0B32C6A1935085C00738BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0B32C6C1935085C00738BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeShutter/VolumeShutter-Prefix.pch";
+				INFOPLIST_FILE = "VolumeShutter/VolumeShutter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0B32C6D1935085C00738BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeShutter/VolumeShutter-Prefix.pch";
+				INFOPLIST_FILE = "VolumeShutter/VolumeShutter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0B32C6F1935085C00738BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolumeShutter.app/VolumeShutter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeShutter/VolumeShutter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VolumeShutterTests/VolumeShutterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0B32C701935085C00738BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolumeShutter.app/VolumeShutter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolumeShutter/VolumeShutter-Prefix.pch";
+				INFOPLIST_FILE = "VolumeShutterTests/VolumeShutterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0B32C3A1935085C00738BD2 /* Build configuration list for PBXProject "VolumeShutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B32C691935085C00738BD2 /* Debug */,
+				E0B32C6A1935085C00738BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0B32C6B1935085C00738BD2 /* Build configuration list for PBXNativeTarget "VolumeShutter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B32C6C1935085C00738BD2 /* Debug */,
+				E0B32C6D1935085C00738BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0B32C6E1935085C00738BD2 /* Build configuration list for PBXNativeTarget "VolumeShutterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B32C6F1935085C00738BD2 /* Debug */,
+				E0B32C701935085C00738BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0B32C371935085C00738BD2 /* Project object */;
+}
