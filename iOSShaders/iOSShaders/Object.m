@@ -14,8 +14,11 @@
     NSMutableArray *normals;
     NSMutableArray *textures;
     BOOL hasTexture;
-    int i;
+    int indexCoord;
+    
 }
+
+static GLfloat finalVertices[NUMBER_POLYGONS];
 
 - (instancetype)init
 {
@@ -27,8 +30,9 @@
         textures = [[NSMutableArray alloc] init];
         hasTexture = NO;
         _totalNumberVertices = 0;
-        i = 0;
+        indexCoord = 0;
     }
+    
     return self;
 }
 
@@ -76,7 +80,7 @@
         
     }
     _totalNumberVertices = _totalNumberVertices*3;
-    NSLog(@"Buffer: %@", _verticesToAddBuffer);
+    //NSLog(@"Buffer: %@", _verticesToAddBuffer);
 
 }
 
@@ -97,7 +101,7 @@
     
 }
 
--(void) readFacesWithIndex: (NSString*) indices  withDelimiter: (NSString*) delimiter
+-(void)  readFacesWithIndex: (NSString*) indices  withDelimiter: (NSString*) delimiter
 {
     NSArray *indicesPerVertex = [indices componentsSeparatedByString:@" "];
     NSMutableArray *mutIndicesPerVertex = [[NSMutableArray alloc] initWithArray:indicesPerVertex];
@@ -131,9 +135,29 @@
         [allNormals addObject:normal2];
         [allNormals addObject:normal3];
         
-        [_verticesToAddBuffer addObjectsFromArray:allVertices];
-        [_verticesToAddBuffer addObjectsFromArray:allNormals];
+        int numberCoordinates;
         
+        if (hasTexture) {
+            numberCoordinates = 8;
+        }
+        else
+        {
+            numberCoordinates = 6;
+        }
+        
+        
+        finalVertices[indexCoord*numberCoordinates] = [[allVertices objectAtIndex:0] floatValue];
+        
+        finalVertices[indexCoord*numberCoordinates + 1] = [[allVertices objectAtIndex:1] floatValue];
+        
+        finalVertices[indexCoord*numberCoordinates + 2] = [[allVertices objectAtIndex:2] floatValue];
+        
+        finalVertices[indexCoord*numberCoordinates + 3] = [[allNormals objectAtIndex:0] floatValue];
+        
+        finalVertices[indexCoord*numberCoordinates + 4] = [[allNormals objectAtIndex:1] floatValue];
+        
+        finalVertices[indexCoord*numberCoordinates + 5] = [[allNormals objectAtIndex:2] floatValue];
+    
         if(hasTexture)
         {
             int textureIndex = [values[2] intValue];
@@ -147,12 +171,19 @@
             [allTextures addObject:texture1];
             [allTextures addObject:texture2];
             
-            [_verticesToAddBuffer addObjectsFromArray:allTextures];
+            finalVertices[indexCoord*numberCoordinates + 6] = [[allNormals objectAtIndex:0] floatValue];
+            finalVertices[indexCoord*numberCoordinates + 7] = [[allNormals objectAtIndex:1] floatValue];
         }
-    
+        indexCoord++;
     }
-
+    
 }
 
+
+-(GLfloat*) generateArray
+{
+    
+    return finalVertices;
+}
 
 @end

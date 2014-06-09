@@ -52,6 +52,7 @@
 		12985D54193EBEB100DC212C /* toon.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 12985D4A193EBEB100DC212C /* toon.vsh */; };
 		12985D5C193EE2C800DC212C /* hand_2500.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D5B193EE2C800DC212C /* hand_2500.obj */; };
 		12985D5E193EE2D300DC212C /* hand_10000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D5D193EE2D300DC212C /* hand_10000.obj */; };
+		54A363221940088F009873E5 /* hand_170000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 54A363211940088F009873E5 /* hand_170000.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		12985D4A193EBEB100DC212C /* toon.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = toon.vsh; sourceTree = "<group>"; };
 		12985D5B193EE2C800DC212C /* hand_2500.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_2500.obj; sourceTree = "<group>"; };
 		12985D5D193EE2D300DC212C /* hand_10000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_10000.obj; sourceTree = "<group>"; };
+		54A363211940088F009873E5 /* hand_170000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_170000.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		12985D24193EAE8000DC212C /* Objs */ = {
 			isa = PBXGroup;
 			children = (
+				54A363211940088F009873E5 /* hand_170000.obj */,
 				12985D5D193EE2D300DC212C /* hand_10000.obj */,
 				12985D5B193EE2C800DC212C /* hand_2500.obj */,
 				12985D2D193EBE8500DC212C /* hand_100000.obj */,
@@ -332,6 +335,7 @@
 				12985D4B193EBEB100DC212C /* flat.fsh in Resources */,
 				12985D4C193EBEB100DC212C /* flat.vsh in Resources */,
 				12985D4D193EBEB100DC212C /* gouraud.fsh in Resources */,
+				54A363221940088F009873E5 /* hand_170000.obj in Resources */,
 				12985D4E193EBEB100DC212C /* gouraud.vsh in Resources */,
 				12985D4F193EBEB100DC212C /* phong.fsh in Resources */,
 				12985D50193EBEB100DC212C /* phong.vsh in Resources */,
@@ -488,6 +492,7 @@
 				12985D14193E933900DC212C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

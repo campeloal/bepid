@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#define NUMBER_POLYGONS  60662 * 6 * 3
 
 @interface Object : NSObject
 
@@ -14,7 +15,7 @@
 @property (nonatomic) int totalNumberVertices;
 
 -(void) loadObj:(NSString*) name;
-
+-(GLfloat*) generateArray;
 
 
 @end

@@ -69,7 +69,7 @@ enum
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
     object = [[Object alloc] init];
-    [object loadObj:@"hand_10000"];
+    [object loadObj:@"hand_60000"];
     
     
     [self setupGL];
@@ -121,13 +121,8 @@ enum
     self.effect.light0.enabled = GL_TRUE;
     self.effect.light0.diffuseColor = GLKVector4Make(1.0f, 0.4f, 0.4f, 1.0f);
     
-    NSMutableArray *vertices = [object verticesToAddBuffer];
-    GLfloat array[[vertices count]];
     
-    for(int i =0; i < [vertices count]; i++)
-    {
-        array[i] = [[vertices objectAtIndex:i] floatValue];
-    }
+    GLfloat *ar = [object generateArray];
     
     _numberPoly.text = [NSString stringWithFormat:@"Number of Polygons: %d", [object totalNumberVertices]/3];
     
@@ -138,7 +133,7 @@ enum
     
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(array), array, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, NUMBER_POLYGONS*4, ar, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
