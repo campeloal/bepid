@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12A3614B195B9C1B007585DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3614A195B9C1B007585DA /* UIKit.framework */; };
+		12A3614D195B9C1B007585DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3614C195B9C1B007585DA /* Foundation.framework */; };
+		12A3614F195B9C1B007585DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3614E195B9C1B007585DA /* CoreGraphics.framework */; };
+		12A36155195B9C1B007585DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12A36153195B9C1B007585DA /* InfoPlist.strings */; };
+		12A36157195B9C1B007585DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A36156195B9C1B007585DA /* main.m */; };
+		12A3615B195B9C1B007585DA /* ASCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A3615A195B9C1B007585DA /* ASCAppDelegate.m */; };
+		12A3615D195B9C1B007585DA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A3615C195B9C1B007585DA /* Default.png */; };
+		12A3615F195B9C1B007585DA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A3615E195B9C1B007585DA /* Default@2x.png */; };
+		12A36161195B9C1B007585DA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12A36160195B9C1B007585DA /* Default-568h@2x.png */; };
+		12A36164195B9C1B007585DA /* ASCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A36163195B9C1B007585DA /* ASCViewController.m */; };
+		12A36167195B9C1B007585DA /* ASCViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12A36165195B9C1B007585DA /* ASCViewController_iPhone.xib */; };
+		12A36172195BAB10007585DA /* ASCFormulario.m in Sources */ = {isa = PBXBuildFile; fileRef = 12A36171195BAB10007585DA /* ASCFormulario.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12A36147195B9C1B007585DA /* DesafioTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A3614A195B9C1B007585DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12A3614C195B9C1B007585DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12A3614E195B9C1B007585DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12A36152195B9C1B007585DA /* DesafioTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesafioTextField-Info.plist"; sourceTree = "<group>"; };
+		12A36154195B9C1B007585DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12A36156195B9C1B007585DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12A36158195B9C1B007585DA /* DesafioTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesafioTextField-Prefix.pch"; sourceTree = "<group>"; };
+		12A36159195B9C1B007585DA /* ASCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCAppDelegate.h; sourceTree = "<group>"; };
+		12A3615A195B9C1B007585DA /* ASCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCAppDelegate.m; sourceTree = "<group>"; };
+		12A3615C195B9C1B007585DA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		12A3615E195B9C1B007585DA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		12A36160195B9C1B007585DA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		12A36162195B9C1B007585DA /* ASCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCViewController.h; sourceTree = "<group>"; };
+		12A36163195B9C1B007585DA /* ASCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCViewController.m; sourceTree = "<group>"; };
+		12A36166195B9C1B007585DA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ASCViewController_iPhone.xib; sourceTree = "<group>"; };
+		12A36170195BAB10007585DA /* ASCFormulario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCFormulario.h; sourceTree = "<group>"; };
+		12A36171195BAB10007585DA /* ASCFormulario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCFormulario.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12A36144195B9C1B007585DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A3614B195B9C1B007585DA /* UIKit.framework in Frameworks */,
+				12A3614D195B9C1B007585DA /* Foundation.framework in Frameworks */,
+				12A3614F195B9C1B007585DA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A3613E195B9C1B007585DA = {
+			isa = PBXGroup;
+			children = (
+				12A36150195B9C1B007585DA /* DesafioTextField */,
+				12A36149195B9C1B007585DA /* Frameworks */,
+				12A36148195B9C1B007585DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12A36148195B9C1B007585DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12A36147195B9C1B007585DA /* DesafioTextField.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12A36149195B9C1B007585DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12A3614A195B9C1B007585DA /* UIKit.framework */,
+				12A3614C195B9C1B007585DA /* Foundation.framework */,
+				12A3614E195B9C1B007585DA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12A36150195B9C1B007585DA /* DesafioTextField */ = {
+			isa = PBXGroup;
+			children = (
+				12A36159195B9C1B007585DA /* ASCAppDelegate.h */,
+				12A3615A195B9C1B007585DA /* ASCAppDelegate.m */,
+				12A36162195B9C1B007585DA /* ASCViewController.h */,
+				12A36163195B9C1B007585DA /* ASCViewController.m */,
+				12A36165195B9C1B007585DA /* ASCViewController_iPhone.xib */,
+				12A36151195B9C1B007585DA /* Supporting Files */,
+				12A36170195BAB10007585DA /* ASCFormulario.h */,
+				12A36171195BAB10007585DA /* ASCFormulario.m */,
+			);
+			path = DesafioTextField;
+			sourceTree = "<group>";
+		};
+		12A36151195B9C1B007585DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12A36152195B9C1B007585DA /* DesafioTextField-Info.plist */,
+				12A36153195B9C1B007585DA /* InfoPlist.strings */,
+				12A36156195B9C1B007585DA /* main.m */,
+				12A36158195B9C1B007585DA /* DesafioTextField-Prefix.pch */,
+				12A3615C195B9C1B007585DA /* Default.png */,
+				12A3615E195B9C1B007585DA /* Default@2x.png */,
+				12A36160195B9C1B007585DA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12A36146195B9C1B007585DA /* DesafioTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12A3616D195B9C1B007585DA /* Build configuration list for PBXNativeTarget "DesafioTextField" */;
+			buildPhases = (
+				12A36143195B9C1B007585DA /* Sources */,
+				12A36144195B9C1B007585DA /* Frameworks */,
+				12A36145195B9C1B007585DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioTextField;
+			productName = DesafioTextField;
+			productReference = 12A36147195B9C1B007585DA /* DesafioTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12A3613F195B9C1B007585DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ASC;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = BEPiD;
+			};
+			buildConfigurationList = 12A36142195B9C1B007585DA /* Build configuration list for PBXProject "DesafioTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12A3613E195B9C1B007585DA;
+			productRefGroup = 12A36148195B9C1B007585DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12A36146195B9C1B007585DA /* DesafioTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12A36145195B9C1B007585DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A36155195B9C1B007585DA /* InfoPlist.strings in Resources */,
+				12A3615D195B9C1B007585DA /* Default.png in Resources */,
+				12A3615F195B9C1B007585DA /* Default@2x.png in Resources */,
+				12A36161195B9C1B007585DA /* Default-568h@2x.png in Resources */,
+				12A36167195B9C1B007585DA /* ASCViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12A36143195B9C1B007585DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12A36157195B9C1B007585DA /* main.m in Sources */,
+				12A3615B195B9C1B007585DA /* ASCAppDelegate.m in Sources */,
+				12A36164195B9C1B007585DA /* ASCViewController.m in Sources */,
+				12A36172195BAB10007585DA /* ASCFormulario.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		12A36153195B9C1B007585DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A36154195B9C1B007585DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12A36165195B9C1B007585DA /* ASCViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12A36166195B9C1B007585DA /* en */,
+			);
+			name = ASCViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12A3616B195B9C1B007585DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12A3616C195B9C1B007585DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12A3616E195B9C1B007585DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DesafioTextField/DesafioTextField-Prefix.pch";
+				INFOPLIST_FILE = "DesafioTextField/DesafioTextField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12A3616F195B9C1B007585DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DesafioTextField/DesafioTextField-Prefix.pch";
+				INFOPLIST_FILE = "DesafioTextField/DesafioTextField-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12A36142195B9C1B007585DA /* Build configuration list for PBXProject "DesafioTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A3616B195B9C1B007585DA /* Debug */,
+				12A3616C195B9C1B007585DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12A3616D195B9C1B007585DA /* Build configuration list for PBXNativeTarget "DesafioTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12A3616E195B9C1B007585DA /* Debug */,
+				12A3616F195B9C1B007585DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12A3613F195B9C1B007585DA /* Project object */;
+}
