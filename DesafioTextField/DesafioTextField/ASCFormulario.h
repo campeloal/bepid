@@ -10,7 +10,10 @@
 
 @interface ASCFormulario : NSObject
 
+@property (nonatomic) NSDate *dataAtual;
+
 -(void) salvarFormulario;
 -(void) adicionarDadosNome: (NSString*) nome Cpf: (int) cpf Tel: (int) tel Senha: (int) senha;
+-(BOOL) registerFilter:(UITextField*) field WithMask: (NSString *) mask;
 
 @end

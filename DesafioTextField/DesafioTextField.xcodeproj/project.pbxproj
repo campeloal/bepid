@@ -307,6 +307,7 @@
 				12A3616F195B9C1B007585DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

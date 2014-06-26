@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASCViewController : UIViewController<UIAlertViewDelegate>
+@interface ASCViewController : UIViewController<UIAlertViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *cpf;
 @property (weak, nonatomic) IBOutlet UITextField *nome;
 @property (weak, nonatomic) IBOutlet UITextField *telefone;

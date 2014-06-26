@@ -38,6 +38,28 @@
     [formulario addObject:[NSNumber numberWithInt:cpf]];
     [formulario addObject:[NSNumber numberWithInt:tel]];
     [formulario addObject:[NSNumber numberWithInt:senha]];
+    _dataAtual = [NSDate date];
+    [formulario addObject: _dataAtual];
+}
+
+-(BOOL) registerFilter:(UITextField*) field WithMask: (NSString *) mask
+{
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:mask
+                                                                           options:NSRegularExpressionCaseInsensitive
+                                                                             error:nil];
+    NSString *registroText = field.text;
+    NSArray *matches = [regex matchesInString:registroText
+                                      options:0
+                                        range:NSMakeRange(0, [registroText length])];
+    if([matches count] == 1)
+    {
+        return YES;
+    }
+    else
+    {
+        return NO;
+    }
+    
 }
 
 -(void) salvarFormulario
