@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0AA03D9196B1EF000CE0F16 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AA03D8196B1EF000CE0F16 /* block.png */; };
+		E0AA03DB196B335A00CE0F16 /* ground.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AA03DA196B335A00CE0F16 /* ground.png */; };
+		E0AAEDAD1963474B003F1EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDAC1963474B003F1EBA /* Foundation.framework */; };
+		E0AAEDAF1963474B003F1EBA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDAE1963474B003F1EBA /* CoreGraphics.framework */; };
+		E0AAEDB11963474B003F1EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDB01963474B003F1EBA /* UIKit.framework */; };
+		E0AAEDB31963474B003F1EBA /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDB21963474B003F1EBA /* SpriteKit.framework */; };
+		E0AAEDB91963474B003F1EBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AAEDB71963474B003F1EBA /* InfoPlist.strings */; };
+		E0AAEDBB1963474B003F1EBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AAEDBA1963474B003F1EBA /* main.m */; };
+		E0AAEDBF1963474B003F1EBA /* ASCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AAEDBE1963474B003F1EBA /* ASCAppDelegate.m */; };
+		E0AAEDC81963474B003F1EBA /* ASCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AAEDC71963474B003F1EBA /* ASCViewController.m */; };
+		E0AAEDCB1963474B003F1EBA /* ASCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AAEDCA1963474B003F1EBA /* ASCMyScene.m */; };
+		E0AAEDCF1963474B003F1EBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AAEDCE1963474B003F1EBA /* Images.xcassets */; };
+		E0AAEDD61963474B003F1EBA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDD51963474B003F1EBA /* XCTest.framework */; };
+		E0AAEDD71963474B003F1EBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDAC1963474B003F1EBA /* Foundation.framework */; };
+		E0AAEDD81963474B003F1EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDB01963474B003F1EBA /* UIKit.framework */; };
+		E0AAEDE01963474B003F1EBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AAEDDE1963474B003F1EBA /* InfoPlist.strings */; };
+		E0AAEDE21963474B003F1EBA /* VolleyballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AAEDE11963474B003F1EBA /* VolleyballGameTests.m */; };
+		E0ADA96A1964732F002B77AD /* ASCMyScene.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0ADA9681964732F002B77AD /* ASCMyScene.xib */; };
+		E0ADA96D19647954002B77AD /* ASCMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ADA96C19647954002B77AD /* ASCMotion.m */; };
+		E0ADA97319649C9E002B77AD /* ASCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ADA97219649C9E002B77AD /* ASCPlayer.m */; };
+		E0AE61E01965C2FA0006B3A6 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61DF1965C2FA0006B3A6 /* ball.png */; };
+		E0AE61E61965C3DB0006B3A6 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61E51965C3DB0006B3A6 /* player.png */; };
+		E0AE61E81965D0E00006B3A6 /* net.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61E71965D0E00006B3A6 /* net.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0AAEDD91963474B003F1EBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0AAEDA11963474B003F1EBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0AAEDA81963474B003F1EBA;
+			remoteInfo = VolleyballGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0AA03D8196B1EF000CE0F16 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		E0AA03DA196B335A00CE0F16 /* ground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ground.png; sourceTree = "<group>"; };
+		E0AAEDA91963474B003F1EBA /* VolleyballGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VolleyballGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AAEDAC1963474B003F1EBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0AAEDAE1963474B003F1EBA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0AAEDB01963474B003F1EBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0AAEDB21963474B003F1EBA /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		E0AAEDB61963474B003F1EBA /* VolleyballGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolleyballGame-Info.plist"; sourceTree = "<group>"; };
+		E0AAEDB81963474B003F1EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AAEDBA1963474B003F1EBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0AAEDBC1963474B003F1EBA /* VolleyballGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VolleyballGame-Prefix.pch"; sourceTree = "<group>"; };
+		E0AAEDBD1963474B003F1EBA /* ASCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCAppDelegate.h; sourceTree = "<group>"; };
+		E0AAEDBE1963474B003F1EBA /* ASCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCAppDelegate.m; sourceTree = "<group>"; };
+		E0AAEDC61963474B003F1EBA /* ASCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCViewController.h; sourceTree = "<group>"; };
+		E0AAEDC71963474B003F1EBA /* ASCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCViewController.m; sourceTree = "<group>"; };
+		E0AAEDC91963474B003F1EBA /* ASCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCMyScene.h; sourceTree = "<group>"; };
+		E0AAEDCA1963474B003F1EBA /* ASCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCMyScene.m; sourceTree = "<group>"; };
+		E0AAEDCE1963474B003F1EBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0AAEDD41963474B003F1EBA /* VolleyballGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolleyballGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AAEDD51963474B003F1EBA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0AAEDDD1963474B003F1EBA /* VolleyballGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolleyballGameTests-Info.plist"; sourceTree = "<group>"; };
+		E0AAEDDF1963474B003F1EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AAEDE11963474B003F1EBA /* VolleyballGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolleyballGameTests.m; sourceTree = "<group>"; };
+		E0ADA9681964732F002B77AD /* ASCMyScene.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ASCMyScene.xib; path = ../ASCMyScene.xib; sourceTree = "<group>"; };
+		E0ADA96B19647954002B77AD /* ASCMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCMotion.h; sourceTree = "<group>"; };
+		E0ADA96C19647954002B77AD /* ASCMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCMotion.m; sourceTree = "<group>"; };
+		E0ADA97119649C9E002B77AD /* ASCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCPlayer.h; sourceTree = "<group>"; };
+		E0ADA97219649C9E002B77AD /* ASCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCPlayer.m; sourceTree = "<group>"; };
+		E0AE61DF1965C2FA0006B3A6 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		E0AE61E51965C3DB0006B3A6 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		E0AE61E71965D0E00006B3A6 /* net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = net.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0AAEDA61963474B003F1EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AAEDAF1963474B003F1EBA /* CoreGraphics.framework in Frameworks */,
+				E0AAEDB11963474B003F1EBA /* UIKit.framework in Frameworks */,
+				E0AAEDB31963474B003F1EBA /* SpriteKit.framework in Frameworks */,
+				E0AAEDAD1963474B003F1EBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AAEDD11963474B003F1EBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AAEDD61963474B003F1EBA /* XCTest.framework in Frameworks */,
+				E0AAEDD81963474B003F1EBA /* UIKit.framework in Frameworks */,
+				E0AAEDD71963474B003F1EBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0AAEDA01963474B003F1EBA = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDB41963474B003F1EBA /* VolleyballGame */,
+				E0AAEDDB1963474B003F1EBA /* VolleyballGameTests */,
+				E0AAEDAB1963474B003F1EBA /* Frameworks */,
+				E0AAEDAA1963474B003F1EBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0AAEDAA1963474B003F1EBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDA91963474B003F1EBA /* VolleyballGame.app */,
+				E0AAEDD41963474B003F1EBA /* VolleyballGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0AAEDAB1963474B003F1EBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDAC1963474B003F1EBA /* Foundation.framework */,
+				E0AAEDAE1963474B003F1EBA /* CoreGraphics.framework */,
+				E0AAEDB01963474B003F1EBA /* UIKit.framework */,
+				E0AAEDB21963474B003F1EBA /* SpriteKit.framework */,
+				E0AAEDD51963474B003F1EBA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0AAEDB41963474B003F1EBA /* VolleyballGame */ = {
+			isa = PBXGroup;
+			children = (
+				E0ADA97019647D72002B77AD /* Controller */,
+				E0ADA96F19647D68002B77AD /* View */,
+				E0ADA96E19647D5E002B77AD /* Model */,
+				E0AAEDBD1963474B003F1EBA /* ASCAppDelegate.h */,
+				E0AAEDBE1963474B003F1EBA /* ASCAppDelegate.m */,
+				E0AAEDCE1963474B003F1EBA /* Images.xcassets */,
+				E0AAEDB51963474B003F1EBA /* Supporting Files */,
+			);
+			path = VolleyballGame;
+			sourceTree = "<group>";
+		};
+		E0AAEDB51963474B003F1EBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AA03DA196B335A00CE0F16 /* ground.png */,
+				E0AA03D8196B1EF000CE0F16 /* block.png */,
+				E0AE61E71965D0E00006B3A6 /* net.png */,
+				E0AE61E51965C3DB0006B3A6 /* player.png */,
+				E0AE61DF1965C2FA0006B3A6 /* ball.png */,
+				E0AAEDB61963474B003F1EBA /* VolleyballGame-Info.plist */,
+				E0AAEDB71963474B003F1EBA /* InfoPlist.strings */,
+				E0AAEDBA1963474B003F1EBA /* main.m */,
+				E0AAEDBC1963474B003F1EBA /* VolleyballGame-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AAEDDB1963474B003F1EBA /* VolleyballGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDE11963474B003F1EBA /* VolleyballGameTests.m */,
+				E0AAEDDC1963474B003F1EBA /* Supporting Files */,
+			);
+			path = VolleyballGameTests;
+			sourceTree = "<group>";
+		};
+		E0AAEDDC1963474B003F1EBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDDD1963474B003F1EBA /* VolleyballGameTests-Info.plist */,
+				E0AAEDDE1963474B003F1EBA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0ADA96E19647D5E002B77AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0ADA96B19647954002B77AD /* ASCMotion.h */,
+				E0ADA96C19647954002B77AD /* ASCMotion.m */,
+				E0ADA97119649C9E002B77AD /* ASCPlayer.h */,
+				E0ADA97219649C9E002B77AD /* ASCPlayer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E0ADA96F19647D68002B77AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDC91963474B003F1EBA /* ASCMyScene.h */,
+				E0AAEDCA1963474B003F1EBA /* ASCMyScene.m */,
+				E0ADA9681964732F002B77AD /* ASCMyScene.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E0ADA97019647D72002B77AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0AAEDC61963474B003F1EBA /* ASCViewController.h */,
+				E0AAEDC71963474B003F1EBA /* ASCViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0AAEDA81963474B003F1EBA /* VolleyballGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AAEDE51963474B003F1EBA /* Build configuration list for PBXNativeTarget "VolleyballGame" */;
+			buildPhases = (
+				E0AAEDA51963474B003F1EBA /* Sources */,
+				E0AAEDA61963474B003F1EBA /* Frameworks */,
+				E0AAEDA71963474B003F1EBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VolleyballGame;
+			productName = VolleyballGame;
+			productReference = E0AAEDA91963474B003F1EBA /* VolleyballGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0AAEDD31963474B003F1EBA /* VolleyballGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AAEDE81963474B003F1EBA /* Build configuration list for PBXNativeTarget "VolleyballGameTests" */;
+			buildPhases = (
+				E0AAEDD01963474B003F1EBA /* Sources */,
+				E0AAEDD11963474B003F1EBA /* Frameworks */,
+				E0AAEDD21963474B003F1EBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0AAEDDA1963474B003F1EBA /* PBXTargetDependency */,
+			);
+			name = VolleyballGameTests;
+			productName = VolleyballGameTests;
+			productReference = E0AAEDD41963474B003F1EBA /* VolleyballGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0AAEDA11963474B003F1EBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ASC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E0AAEDD31963474B003F1EBA = {
+						TestTargetID = E0AAEDA81963474B003F1EBA;
+					};
+				};
+			};
+			buildConfigurationList = E0AAEDA41963474B003F1EBA /* Build configuration list for PBXProject "VolleyballGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0AAEDA01963474B003F1EBA;
+			productRefGroup = E0AAEDAA1963474B003F1EBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0AAEDA81963474B003F1EBA /* VolleyballGame */,
+				E0AAEDD31963474B003F1EBA /* VolleyballGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0AAEDA71963474B003F1EBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AE61E61965C3DB0006B3A6 /* player.png in Resources */,
+				E0AA03D9196B1EF000CE0F16 /* block.png in Resources */,
+				E0ADA96A1964732F002B77AD /* ASCMyScene.xib in Resources */,
+				E0AAEDCF1963474B003F1EBA /* Images.xcassets in Resources */,
+				E0AA03DB196B335A00CE0F16 /* ground.png in Resources */,
+				E0AE61E81965D0E00006B3A6 /* net.png in Resources */,
+				E0AE61E01965C2FA0006B3A6 /* ball.png in Resources */,
+				E0AAEDB91963474B003F1EBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AAEDD21963474B003F1EBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AAEDE01963474B003F1EBA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0AAEDA51963474B003F1EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0ADA97319649C9E002B77AD /* ASCPlayer.m in Sources */,
+				E0AAEDBF1963474B003F1EBA /* ASCAppDelegate.m in Sources */,
+				E0ADA96D19647954002B77AD /* ASCMotion.m in Sources */,
+				E0AAEDBB1963474B003F1EBA /* main.m in Sources */,
+				E0AAEDCB1963474B003F1EBA /* ASCMyScene.m in Sources */,
+				E0AAEDC81963474B003F1EBA /* ASCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AAEDD01963474B003F1EBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AAEDE21963474B003F1EBA /* VolleyballGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0AAEDDA1963474B003F1EBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0AAEDA81963474B003F1EBA /* VolleyballGame */;
+			targetProxy = E0AAEDD91963474B003F1EBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0AAEDB71963474B003F1EBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AAEDB81963474B003F1EBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0AAEDDE1963474B003F1EBA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AAEDDF1963474B003F1EBA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0AAEDE31963474B003F1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0AAEDE41963474B003F1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0AAEDE61963474B003F1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolleyballGame/VolleyballGame-Prefix.pch";
+				INFOPLIST_FILE = "VolleyballGame/VolleyballGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0AAEDE71963474B003F1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolleyballGame/VolleyballGame-Prefix.pch";
+				INFOPLIST_FILE = "VolleyballGame/VolleyballGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0AAEDE91963474B003F1EBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolleyballGame.app/VolleyballGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolleyballGame/VolleyballGame-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VolleyballGameTests/VolleyballGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0AAEDEA1963474B003F1EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VolleyballGame.app/VolleyballGame";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VolleyballGame/VolleyballGame-Prefix.pch";
+				INFOPLIST_FILE = "VolleyballGameTests/VolleyballGameTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0AAEDA41963474B003F1EBA /* Build configuration list for PBXProject "VolleyballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AAEDE31963474B003F1EBA /* Debug */,
+				E0AAEDE41963474B003F1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AAEDE51963474B003F1EBA /* Build configuration list for PBXNativeTarget "VolleyballGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AAEDE61963474B003F1EBA /* Debug */,
+				E0AAEDE71963474B003F1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AAEDE81963474B003F1EBA /* Build configuration list for PBXNativeTarget "VolleyballGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AAEDE91963474B003F1EBA /* Debug */,
+				E0AAEDEA1963474B003F1EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0AAEDA11963474B003F1EBA /* Project object */;
+}
