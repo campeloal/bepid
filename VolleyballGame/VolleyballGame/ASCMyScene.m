@@ -20,14 +20,16 @@
         
         self.backgroundColor = [SKColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
         
-        player = [[ASCPlayer alloc] init];
+        player = [[ASCPlayer alloc] initInPosition:CGPointMake(self.frame.size.width, 50)];
         
         _currentLocation = [player player].position;
         
         self.physicsWorld.gravity = CGVectorMake(10.0f,0.0f);
         self.physicsWorld.contactDelegate = self;
         
-        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+        CGRect screen = self.frame;
+        
+        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:screen];
         
         [self addChild:[player player]];
         [self addChild:[player ball]];
@@ -39,15 +41,21 @@
 
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
-    if((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == ballCategory))
+    if(((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == ballCategory)) || ((contact.bodyA.categoryBitMask == ballCategory) && (contact.bodyB.categoryBitMask == playerCategory)))
     {
         [player ballCollision];
     }
+    else if ((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == netCategory))
+    {
+        [player netCollision];
+    }
+    
 }
 
 
 -(void)update:(CFTimeInterval)currentTime {
     [player setCurrentLocation:_currentLocation];
+    player.accY = self.accY;
     [player update:currentTime];
 }
 

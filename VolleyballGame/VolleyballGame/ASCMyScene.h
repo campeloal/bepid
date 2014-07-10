@@ -11,6 +11,7 @@
 @interface ASCMyScene : SKScene<SKPhysicsContactDelegate>
 
 @property CGPoint currentLocation;
+@property float accY;
 
 -(void) jump;
 

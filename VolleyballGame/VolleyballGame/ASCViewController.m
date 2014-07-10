@@ -54,6 +54,7 @@
         if(fabs(accY) > POSITION_DELTA)
         {
             scene.currentLocation = CGPointMake(scene.currentLocation.x,scene.currentLocation.y+ accY*SPEED);
+            scene.accY = accY;
         }
 
 }

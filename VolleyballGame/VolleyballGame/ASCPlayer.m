@@ -7,38 +7,43 @@
 //
 
 #import "ASCPlayer.h"
+#define SPEED_RUN 20
+#define SPEED_COLLISON 1000
+#define BALL_DIRECTION_IMPULSE 800
 
 @implementation ASCPlayer
 
-- (instancetype)init
+- (instancetype)initInPosition: (CGPoint) position
 {
     self = [super init];
     if(self)
     {
         _player = [SKSpriteNode spriteNodeWithImageNamed:@"player"];
         
-        _player.position = CGPointMake([[UIScreen mainScreen] bounds].size.width - _player.size.height/2, 50);
+        _player.position = CGPointMake(position.x - _player.size.height/2, position.y);
         
         _player.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.frame.size];
-        _player.physicsBody.affectedByGravity = NO;
+        _player.physicsBody.affectedByGravity = YES;
         _player.physicsBody.dynamic = YES;
         _player.physicsBody.allowsRotation = NO;
         _player.physicsBody.friction = 0.0;
         _player.physicsBody.categoryBitMask = playerCategory;
         _player.physicsBody.contactTestBitMask = playerCategory | netCategory | ballCategory;
+        _player.name = @"player";
         
         _ball = [SKSpriteNode spriteNodeWithImageNamed:@"ball"];
         _ball.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:_ball.frame.size.width/2];
         _ball.physicsBody.dynamic = YES;
         _ball.physicsBody.categoryBitMask = ballCategory;
         _ball.physicsBody.contactTestBitMask = ballCategory | playerCategory | netCategory;
-        _ball.position = CGPointMake(100, 50);
+        _ball.position = CGPointMake(10, self.frame.size.height/3);
         _ball.xScale = 0.1;
         _ball.yScale = 0.1;
         _ball.physicsBody.friction = 0.0;
-        _ball.physicsBody.linearDamping = 0.0f;
+        //_ball.physicsBody.linearDamping = 0.0f;
         _ball.physicsBody.allowsRotation = NO;
-        //_ball.physicsBody.restitution = 1.0f;
+        _ball.name = @"ball";
+        _ball.physicsBody.restitution = 1.0f;
         _ball.physicsBody.affectedByGravity = YES;
         
         _net = [SKSpriteNode spriteNodeWithImageNamed:@"net"];
@@ -50,6 +55,7 @@
         _net.physicsBody.categoryBitMask = netCategory;
         _net.physicsBody.contactTestBitMask = netCategory | playerCategory | ballCategory;
         _net.physicsBody.friction = 0.0;
+        _net.name = @"net";
     
         
     }
@@ -59,49 +65,61 @@
 
 -(void)update:(CFTimeInterval)currentTime {
  
-    //_player.position = _currentLocation;
-    _player.physicsBody.velocity = CGVectorMake(0,_currentLocation.y - _player.position.y);
-    //[self confineToBounds:_player];
+    _player.physicsBody.velocity = CGVectorMake(_player.physicsBody.velocity.dx,_player.physicsBody.velocity.dy + _accY*SPEED_RUN);
     
+//    SKNode* ball = [self childNodeWithName: @"ball"];
+//    static int maxSpeed = 1000;
+//    float speed = sqrt(ball.physicsBody.velocity.dx*ball.physicsBody.velocity.dx + ball.physicsBody.velocity.dy * ball.physicsBody.velocity.dy);
+//    if (speed > maxSpeed) {
+//        ball.physicsBody.linearDamping = 0.4f;
+//    } else {
+//        ball.physicsBody.linearDamping = 0.0f;
+//    }
 }
 
 -(void) ballCollision
 {
-    _ball.physicsBody.velocity = CGVectorMake(-100,0);
-    [_ball.physicsBody applyImpulse:CGVectorMake(-1000, 0)];
+    CGVector reflecDir = CGVectorMake(_ball.position.x - _player.position.x, _ball.position.y - _ball.position.y);
+    
+    if(reflecDir.dx > 0)
+    {
+        reflecDir.dx = BALL_DIRECTION_IMPULSE;
+    }
+    else
+    {
+        reflecDir.dx = -BALL_DIRECTION_IMPULSE;
+    }
+    
+    if(reflecDir.dy > 0)
+    {
+        reflecDir.dy = BALL_DIRECTION_IMPULSE;
+    }
+    else
+    {
+        reflecDir.dy = -BALL_DIRECTION_IMPULSE;
+    }
+    
+    _ball.physicsBody.velocity = reflecDir;
+    [_ball.physicsBody applyImpulse:reflecDir];
 }
 
 -(void) jump
 {
-    
-    float originalX = _player.position.x;
-    SKAction *jump = [SKAction moveToX:-15 duration:.3];
-    SKAction *down = [SKAction moveToX:originalX duration:.3];
-    SKAction *action = [SKAction sequence:@[jump, down]];
-    
-    [_player runAction:action];
+     _player.physicsBody.velocity = CGVectorMake(-1000,_player.physicsBody.velocity.dy);
     
 }
 
-- (void)confineToBounds: (SKSpriteNode *) object {
-    
-    CGPoint correctedPos = object.position;
-    BOOL changePos = NO;
-    float xLeft = 0;
-    float xRight = [[UIScreen mainScreen] bounds].size.height;
-    float yUp = 0;
-    float yDown = [[UIScreen mainScreen] bounds].size.width;
-    
-    if(correctedPos.x + object.frame.size.height <= yUp) {correctedPos.x = yUp; changePos = YES;}
-    if(correctedPos.x >= yDown) {correctedPos.x = yDown; changePos = YES;}
-    if(correctedPos.y <= xLeft) {correctedPos.y = xLeft + object.frame.size.width/2; changePos = YES;}
-    if(correctedPos.y >= xRight) {correctedPos.y = xRight - object.frame.size.width/2; changePos = YES;}
-    
-    if(changePos)
+
+-(void) netCollision
+{
+    if(_net.position.y < _player.position.y)
     {
-        object.position = correctedPos;
+        _player.physicsBody.velocity = CGVectorMake(_player.physicsBody.velocity.dx,_player.physicsBody.velocity.dy + fabs(_accY)*SPEED_COLLISON);
     }
-    
+    else
+    {
+        _player.physicsBody.velocity = CGVectorMake(_player.physicsBody.velocity.dx,_player.physicsBody.velocity.dy - fabs(_accY)*SPEED_COLLISON);
+    }
 }
 
 

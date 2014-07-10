@@ -15,12 +15,15 @@ static const uint32_t netCategory     =  0x1 << 2;
 @interface ASCPlayer : SKScene
 
 @property CGPoint currentLocation;
+@property float accY;
 @property (nonatomic) SKSpriteNode *player;
 @property (nonatomic) SKSpriteNode *ball;
 @property (nonatomic) SKSpriteNode *net;
 
+- (instancetype)initInPosition: (CGPoint) position;
 -(void)update:(CFTimeInterval)currentTime;
 -(void) ballCollision;
 -(void) jump;
+-(void) netCollision;
 
 @end
