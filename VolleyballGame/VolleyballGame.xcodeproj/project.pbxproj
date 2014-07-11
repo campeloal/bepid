@@ -30,6 +30,7 @@
 		E0AE61E01965C2FA0006B3A6 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61DF1965C2FA0006B3A6 /* ball.png */; };
 		E0AE61E61965C3DB0006B3A6 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61E51965C3DB0006B3A6 /* player.png */; };
 		E0AE61E81965D0E00006B3A6 /* net.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61E71965D0E00006B3A6 /* net.png */; };
+		E0B03ECF197024B900900C6D /* ASCCourt.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B03ECE197024B900900C6D /* ASCCourt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		E0AE61DF1965C2FA0006B3A6 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		E0AE61E51965C3DB0006B3A6 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
 		E0AE61E71965D0E00006B3A6 /* net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = net.png; sourceTree = "<group>"; };
+		E0B03ECD197024B900900C6D /* ASCCourt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCCourt.h; sourceTree = "<group>"; };
+		E0B03ECE197024B900900C6D /* ASCCourt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCCourt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				E0ADA96C19647954002B77AD /* ASCMotion.m */,
 				E0ADA97119649C9E002B77AD /* ASCPlayer.h */,
 				E0ADA97219649C9E002B77AD /* ASCPlayer.m */,
+				E0B03ECD197024B900900C6D /* ASCCourt.h */,
+				E0B03ECE197024B900900C6D /* ASCCourt.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				E0ADA96D19647954002B77AD /* ASCMotion.m in Sources */,
 				E0AAEDBB1963474B003F1EBA /* main.m in Sources */,
 				E0AAEDCB1963474B003F1EBA /* ASCMyScene.m in Sources */,
+				E0B03ECF197024B900900C6D /* ASCCourt.m in Sources */,
 				E0AAEDC81963474B003F1EBA /* ASCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

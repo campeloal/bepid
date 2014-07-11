@@ -8,10 +8,12 @@
 
 #import "ASCMyScene.h"
 #import "ASCPlayer.h"
+#import "ASCCourt.h"
 
 @implementation ASCMyScene
 {
     ASCPlayer *player;
+    ASCCourt *court;
 }
 
 -(id)initWithSize:(CGSize)size {    
@@ -22,18 +24,25 @@
         
         player = [[ASCPlayer alloc] initInPosition:CGPointMake(self.frame.size.width, 50)];
         
+        court = [[ASCCourt alloc] init];
+        [court createBoundariesInsideScreen:self.frame];
+        
         _currentLocation = [player player].position;
         
         self.physicsWorld.gravity = CGVectorMake(10.0f,0.0f);
         self.physicsWorld.contactDelegate = self;
         
-        CGRect screen = self.frame;
+        //CGRect screen = self.frame;
         
-        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:screen];
+        //self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:screen];
         
         [self addChild:[player player]];
-        [self addChild:[player ball]];
-        [self addChild: [player net]];
+        [self addChild:[court ball]];
+        [self addChild: [court net]];
+        [self addChild: [court roundNet]];
+        [self addChild:[court floor]];
+        [self addChild:[court leftWall]];
+        [self addChild:[court rightWall]];
 
     }
     return self;
@@ -41,13 +50,18 @@
 
 -(void) didBeginContact:(SKPhysicsContact *)contact
 {
+    
     if(((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == ballCategory)) || ((contact.bodyA.categoryBitMask == ballCategory) && (contact.bodyB.categoryBitMask == playerCategory)))
     {
-        [player ballCollision];
+        [court ballCollision:[player player]];
     }
-    else if ((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == netCategory))
+    else if (((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == netCategory)) || ((contact.bodyA.categoryBitMask == netCategory) && (contact.bodyB.categoryBitMask == playerCategory)))
     {
-        [player netCollision];
+        [court netCollision:[player player] Acceleration:self.accY Round:NO];
+    }
+    else if ((contact.bodyA.categoryBitMask == playerCategory) && (contact.bodyB.categoryBitMask == roundNetCategory))
+    {
+        [court netCollision:[player player] Acceleration:self.accY Round:YES];
     }
     
 }
