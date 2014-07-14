@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/Test/Source/TestList.cpp \
+  ../../Test/Source/TestList.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtmul.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtmulQV3.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtmulV3Q.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtdot.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtnorm.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3dot.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3sdiv.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3norm.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3cross.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3triple.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3interp.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3lerp.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3skew.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3div.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3rotate.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_maxdot.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_mindot.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_dot3.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3transpose.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3transposeTimes.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3timesTranspose.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulM.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulM1M2.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulMV.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulVM.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3setRot.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3getRot.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_btDbvt.h \
+  /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_quat_aos_neon.h \
+  ../../src/LinearMath/btScalar.h

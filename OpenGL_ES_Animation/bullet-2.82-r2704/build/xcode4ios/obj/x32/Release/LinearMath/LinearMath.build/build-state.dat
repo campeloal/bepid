@@ -1,0 +1,280 @@
+TLinearMath
+v6
+r1
+cCheck dependencies
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c0000000053713640000000000000036B
+t1399928384
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053713641000000000000019E
+t1399928385
+s414
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/LinearMath_xcode4.LinkFileList
+c0000000053C5740B0000000000000574
+t1405449227
+s1396
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o
+t1405449227
+s8228
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o
+t1405449228
+s180236
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o
+t1405449228
+s243364
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o
+t1405449227
+s36080
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o
+t1405449227
+s43056
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o
+t1405449227
+s32468
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o
+t1405449227
+s22488
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o
+t1405449228
+s31284
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a
+t2
+s0
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp
+c000000004FCFFC3E000000000000113A
+t1339030590
+s4410
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp
+c00000000504B9AAA0000000000006E5D
+t1347132074
+s28253
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp
+c0000000050CF82C7000000000000DFDA
+t1355776711
+s57306
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp
+c00000000499C911300000000000013EE
+t1234997523
+s5102
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp
+c0000000050C232640000000000000A81
+t1354904164
+s2689
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp
+c000000004E5C58E00000000000004100
+t1314674912
+s16640
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp
+c000000005234A20D000000000002CD2E
+t1379181069
+s183598
+
+N/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp
+c000000005267057B0000000000011028
+t1382483323
+s69672
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd810348bab75b941^118a358bab75b941^---0#1#1#--18"Check dependencies36"B3CD73B8-3B49-4EAD-8656-650C38BD735A-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.208647
+e427142027.389042
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp285"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compilerf0c3358bab75b941^e599638bab75b941^---0#0#1#-19%DVTDocumentLocation2@120"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp0000000000000000^3636"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o36"3B3716DC-4FB8-403F-BB77-A61AC20B016B-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.208603
+e427142028.298596
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btMinMax.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedObjectArray.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp273"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler5dc2358bab75b941^2e714c8cab75b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp0000000000000000^3600"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHull.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o36"5B561704-3032-4B63-A3D3-AA9FC4A518D4-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.209500
+e427142028.622892
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btMinMax.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedObjectArray.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp289"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler62dc358bab75b941^9b749f8cab75b941^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp0000000000000000^3648"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btConvexHullComputer.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o36"5449DCA2-386C-4A0D-9B24-2BA10F370DA5-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.211199
+e427142027.609970
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btMinMax.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedObjectArray.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp277"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compilerbaf5368bab75b941^ee779c8bab75b941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp0000000000000000^3612"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btGeometryUtil.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o36"38521D90-28F7-48F3-9FB5-68792D2EF34B-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.389292
+e427142027.740505
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btMatrix3x3.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btMinMax.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuaternion.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuadWord.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp289"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler9608648bab75b941^6891bd8bab75b941^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp0000000000000000^3648"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btPolarDecomposition.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o36"043871E7-3E71-45C7-BB59-CE44E6DD6A50-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.612543
+e427142027.886243
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp271"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compilerf8fc9c8bab75b941^48e1e28bab75b941^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp0000000000000000^3594"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btQuickprof.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o36"80E94E7D-E432-43C8-93FE-D062952709C4-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.742002
+e427142027.849647
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp273"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compilerb422be8bab75b941^fb3dd98bab75b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp0000000000000000^3600"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btSerializer.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o36"64F6CE96-B006-49F5-91EE-5F2916027195-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s427142027.850010
+e427142028.133558
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btScalar.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btMinMax.h
+d/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp267"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compilere4bad98bab75b941^3238228cab75b941^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp0000000000000000^3582"[1mCompileC[0m obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o [1m/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp[0m normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=7.1 -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/include -I../../src -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -ffast-math -MMD -MT dependencies -MF /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.d --serialize-diagnostics /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.dia -c /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/src/LinearMath/btVector3.cpp -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o36"7C417074-DC9D-4660-B40D-09B7277F7655-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+
+CLibtool /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a normal armv7
+s427142028.625114
+e427142028.632139
+r1
+xLibtool
+x/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a
+xnormal
+xarmv7
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"[1mLibtool[0m /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a normal armv7131"[1mLibtool[0m /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a normal armv7761ba08cab75b941^aad3a18cab75b941^---0#0#1#--1162"[1mLibtool[0m /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a normal armv7    cd /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios    export IPHONEOS_DEPLOYMENT_TARGET=7.1    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/texbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib -filelist /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/LinearMath_xcode4.LinkFileList -o /Users/alcampelo/Documents/code/bepid/OpenGL_ES_Animation/bullet-2.82-r2704/lib/libLinearMath_xcode4.a36"5B67E04C-E396-4167-B554-3EC9FF0257D5-
+b112E87AD-AD81-450C-B975-A0C8E51DB442
+

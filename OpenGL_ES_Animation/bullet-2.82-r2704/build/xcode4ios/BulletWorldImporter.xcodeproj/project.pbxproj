@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C530F80271585225740AB4 /* btBulletWorldImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55DA7C926D063380362B73B5 /* btBulletWorldImporter.cpp */; };
+		16BF79A5538906EF42422E6E /* btWorldImporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF384D502D6C85285A4750 /* btWorldImporter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55DA7C926D063380362B73B5 /* btBulletWorldImporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "btBulletWorldImporter.cpp"; path = "../../Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.cpp"; sourceTree = "<group>"; };
+		50CE0B9C70023DBC18D7733F /* btBulletWorldImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "btBulletWorldImporter.h"; path = "../../Extras/Serialize/BulletWorldImporter/btBulletWorldImporter.h"; sourceTree = "<group>"; };
+		3BDF384D502D6C85285A4750 /* btWorldImporter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "btWorldImporter.cpp"; path = "../../Extras/Serialize/BulletWorldImporter/btWorldImporter.cpp"; sourceTree = "<group>"; };
+		73B311787A3F7B1467526A4A /* btWorldImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "btWorldImporter.h"; path = "../../Extras/Serialize/BulletWorldImporter/btWorldImporter.h"; sourceTree = "<group>"; };
+		0AF85616490042726D3D4383 /* libBulletWorldImporter_xcode4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libBulletWorldImporter_xcode4.a"; path = "libBulletWorldImporter_xcode4.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		510D4891404B2148238B37BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66B903495B43321D493D79B2 /* BulletWorldImporter */ = {
+			isa = PBXGroup;
+			children = (
+				544057B67CF00D3D5280612D /* Extras */,
+				341C2BDA7FE2767D41AF7346 /* Products */,
+			);
+			name = "BulletWorldImporter";
+			sourceTree = "<group>";
+		};
+		544057B67CF00D3D5280612D /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				5C2C07FB295E6FE5290D339C /* Serialize */,
+			);
+			name = "Extras";
+			sourceTree = "<group>";
+		};
+		5C2C07FB295E6FE5290D339C /* Serialize */ = {
+			isa = PBXGroup;
+			children = (
+				03042033272320D279415B9B /* BulletWorldImporter */,
+			);
+			name = "Serialize";
+			sourceTree = "<group>";
+		};
+		03042033272320D279415B9B /* BulletWorldImporter */ = {
+			isa = PBXGroup;
+			children = (
+				55DA7C926D063380362B73B5 /* btBulletWorldImporter.cpp */,
+				50CE0B9C70023DBC18D7733F /* btBulletWorldImporter.h */,
+				3BDF384D502D6C85285A4750 /* btWorldImporter.cpp */,
+				73B311787A3F7B1467526A4A /* btWorldImporter.h */,
+			);
+			name = "BulletWorldImporter";
+			sourceTree = "<group>";
+		};
+		341C2BDA7FE2767D41AF7346 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AF85616490042726D3D4383 /* libBulletWorldImporter_xcode4.a */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BA470B06B6B6BA6190C6943 /* BulletWorldImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 035571350F5470EB1173551E /* Build configuration list for PBXNativeTarget "BulletWorldImporter" */;
+			buildPhases = (
+				25BA6EFC6B6F64CB04E31100 /* Resources */,
+				246446E84DDA2A9473666DB0 /* Sources */,
+				510D4891404B2148238B37BF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BulletWorldImporter";
+			productName = "BulletWorldImporter";
+			productReference = 0AF85616490042726D3D4383 /* libBulletWorldImporter_xcode4.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "BulletWorldImporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 66B903495B43321D493D79B2 /* BulletWorldImporter */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BA470B06B6B6BA6190C6943 /* libBulletWorldImporter_xcode4.a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25BA6EFC6B6F64CB04E31100 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		246446E84DDA2A9473666DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C530F80271585225740AB4 /* btBulletWorldImporter.cpp in Sources */,
+				16BF79A5538906EF42422E6E /* btWorldImporter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		728F3959311F11C31FC21AA9 /* Release Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CONFIGURATION_BUILD_DIR = "../../Extras/lib";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "BulletWorldImporter_xcode4";
+			};
+			name = "Release Native 32-bit";
+		};
+		22A85E0318F0634A27791131 /* Release Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CONFIGURATION_BUILD_DIR = "../../Extras/lib";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "BulletWorldImporter_xcode4_x64_release";
+			};
+			name = "Release Native 64-bit";
+		};
+		3783123A2B41486D23980D0B /* Debug Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Extras/lib";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "BulletWorldImporter_xcode4_debug";
+			};
+			name = "Debug Native 32-bit";
+		};
+		4ABF79427ECE41CA56B53881 /* Debug Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../Extras/lib";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "BulletWorldImporter_xcode4_x64_debug";
+			};
+			name = "Debug Native 64-bit";
+		};
+		54C21A0B5DCA0D5F036040A9 /* Release Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "i386";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Extras/Serialize/BulletFileLoader",
+					"../../src",
+				);
+				OBJROOT = "obj/x32/Release/BulletWorldImporter";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../Extras/lib";
+			};
+			name = "Release Native 32-bit";
+		};
+		40F13DEA0DEB5E6011940BB3 /* Release Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Extras/Serialize/BulletFileLoader",
+					"../../src",
+				);
+				OBJROOT = "obj/x64/Release/BulletWorldImporter";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../Extras/lib";
+			};
+			name = "Release Native 64-bit";
+		};
+		768E1FF7229C5E350E010F88 /* Debug Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "i386";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Extras/Serialize/BulletFileLoader",
+					"../../src",
+				);
+				OBJROOT = "obj/x32/Debug/BulletWorldImporter";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../Extras/lib";
+			};
+			name = "Debug Native 32-bit";
+		};
+		1F547EFE7490334669022964 /* Debug Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../Extras/Serialize/BulletFileLoader",
+					"../../src",
+				);
+				OBJROOT = "obj/x64/Debug/BulletWorldImporter";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../Extras/lib";
+			};
+			name = "Debug Native 64-bit";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		035571350F5470EB1173551E /* Build configuration list for PBXNativeTarget "libBulletWorldImporter_xcode4.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728F3959311F11C31FC21AA9 /* Release Native 32-bit */,
+				22A85E0318F0634A27791131 /* Release Native 64-bit */,
+				3783123A2B41486D23980D0B /* Debug Native 32-bit */,
+				4ABF79427ECE41CA56B53881 /* Debug Native 64-bit */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Native 32-bit";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "BulletWorldImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54C21A0B5DCA0D5F036040A9 /* Release Native 32-bit */,
+				40F13DEA0DEB5E6011940BB3 /* Release Native 64-bit */,
+				768E1FF7229C5E350E010F88 /* Debug Native 32-bit */,
+				1F547EFE7490334669022964 /* Debug Native 64-bit */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Native 32-bit";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

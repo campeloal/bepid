@@ -9,6 +9,7 @@
 #import "ASCPlayer.h"
 #define SPEED_RUN 40
 #define JUMP_VELOCITY -600
+#define MASS 1000
 
 @implementation ASCPlayer
 
@@ -29,6 +30,7 @@
         _player.physicsBody.categoryBitMask = playerCat;
         _player.physicsBody.contactTestBitMask = playerCat | netCat | ballCat | floorCat | leftWallCat | rightWallCat | roundNetCat;
         _player.name = @"player";
+        _player.physicsBody.mass = MASS;
         _player.xScale = 1.3;
         _player.yScale = 1.3;
     

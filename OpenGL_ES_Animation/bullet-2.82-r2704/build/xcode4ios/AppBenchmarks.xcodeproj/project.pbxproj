@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C11BAB0C8F1BC333DF027F /* BenchmarkDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 377573812E3118E11B666499 /* BenchmarkDemo.cpp */; };
+		4E137AB3383F41541BF92203 /* Win32BenchmarkDemo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67416BC43F2D3CD80F5067C1 /* Win32BenchmarkDemo.cpp */; };
+		66AE63530E300139695E55E1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21AD0BB268210B45160A1090 /* main.cpp */; };
+		420C3D5338510C3842A8380D /* libBulletDynamics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 643E4DD56AF50E6919B601F8 /* libBulletDynamics.a */; };
+		16AA249A7CAE2D0E30D933F3 /* libBulletCollision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2B42EB11045DE1671C77F9 /* libBulletCollision.a */; };
+		247D11111BA107333C0D2EFA /* libLinearMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5628180B16A761F464C37C4D /* libLinearMath.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3245032D210363D3597A7FE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D5448C44E1183C35206D2D /* BulletDynamics.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23B77BC160A46ECC3A724C4F;
+			remoteInfo = "libBulletDynamics_xcode4.a";
+		};
+		3E7D1977718F7D631A04136D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D5448C44E1183C35206D2D /* BulletDynamics.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 73A769E832EF6BED169316B1;
+			remoteInfo = "libBulletDynamics_xcode4.a";
+		};
+		26BF68EB26195A216C2871F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACE0F2C34EA2AE87CA95043 /* BulletCollision.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C766A793FA91D6A5648324D;
+			remoteInfo = "libBulletCollision_xcode4.a";
+		};
+		7BC37E767792204A7B233A58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACE0F2C34EA2AE87CA95043 /* BulletCollision.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A0A45B23F511C8D1E146F37;
+			remoteInfo = "libBulletCollision_xcode4.a";
+		};
+		450353ED7D6D34270FF815AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52427BB075CA5928732F27F1 /* LinearMath.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D232CBC793B383C6FFE14AE;
+			remoteInfo = "libLinearMath_xcode4.a";
+		};
+		175F732D4C81698C696166D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52427BB075CA5928732F27F1 /* LinearMath.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 581C42AF28F848DD286A6CA9;
+			remoteInfo = "libLinearMath_xcode4.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		377573812E3118E11B666499 /* BenchmarkDemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "BenchmarkDemo.cpp"; path = "../../Demos/Benchmarks/BenchmarkDemo.cpp"; sourceTree = "<group>"; };
+		7179433102E71CC14FB048DC /* BenchmarkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BenchmarkDemo.h"; path = "../../Demos/Benchmarks/BenchmarkDemo.h"; sourceTree = "<group>"; };
+		67416BC43F2D3CD80F5067C1 /* Win32BenchmarkDemo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Win32BenchmarkDemo.cpp"; path = "../../Demos/Benchmarks/Win32BenchmarkDemo.cpp"; sourceTree = "<group>"; };
+		21AD0BB268210B45160A1090 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "main.cpp"; path = "../../Demos/Benchmarks/main.cpp"; sourceTree = "<group>"; };
+		6E15466A76D4128768060C85 /* AppBenchmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "AppBenchmarks.app"; path = "AppBenchmarks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D5448C44E1183C35206D2D /* BulletDynamics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "BulletDynamics.xcodeproj"; path = "BulletDynamics.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		7ACE0F2C34EA2AE87CA95043 /* BulletCollision.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "BulletCollision.xcodeproj"; path = "BulletCollision.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		52427BB075CA5928732F27F1 /* LinearMath.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "LinearMath.xcodeproj"; path = "LinearMath.xcodeproj"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25E50B0701DA483111C07585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420C3D5338510C3842A8380D /* libBulletDynamics.a in Frameworks */,
+				16AA249A7CAE2D0E30D933F3 /* libBulletCollision.a in Frameworks */,
+				247D11111BA107333C0D2EFA /* libLinearMath.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55E763AA555F62080D521811 /* AppBenchmarks */ = {
+			isa = PBXGroup;
+			children = (
+				27BD09AF4199478D37AD596C /* Demos */,
+				33D048B571EA3A055869090B /* Products */,
+				666D37F431BE34E5293843F3 /* Projects */,
+			);
+			name = "AppBenchmarks";
+			sourceTree = "<group>";
+		};
+		27BD09AF4199478D37AD596C /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				54196B500B4F0CDE4371425C /* Benchmarks */,
+			);
+			name = "Demos";
+			sourceTree = "<group>";
+		};
+		54196B500B4F0CDE4371425C /* Benchmarks */ = {
+			isa = PBXGroup;
+			children = (
+				377573812E3118E11B666499 /* BenchmarkDemo.cpp */,
+				7179433102E71CC14FB048DC /* BenchmarkDemo.h */,
+				67416BC43F2D3CD80F5067C1 /* Win32BenchmarkDemo.cpp */,
+				21AD0BB268210B45160A1090 /* main.cpp */,
+			);
+			name = "Benchmarks";
+			sourceTree = "<group>";
+		};
+		33D048B571EA3A055869090B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E15466A76D4128768060C85 /* AppBenchmarks.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		666D37F431BE34E5293843F3 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				27D5448C44E1183C35206D2D /* BulletDynamics.xcodeproj */,
+				7ACE0F2C34EA2AE87CA95043 /* BulletCollision.xcodeproj */,
+				52427BB075CA5928732F27F1 /* LinearMath.xcodeproj */,
+			);
+			name = "Projects";
+			sourceTree = "<group>";
+		};
+		5EB610F5010F3AB62F5A57A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				643E4DD56AF50E6919B601F8 /* libBulletDynamics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73A175662AD041F605635F6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B2B42EB11045DE1671C77F9 /* libBulletCollision.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4814494B0CE25B766006621E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5628180B16A761F464C37C4D /* libLinearMath.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FAD3799300B28745A4B115C /* AppBenchmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22105A9C41C310685B29012D /* Build configuration list for PBXNativeTarget "AppBenchmarks" */;
+			buildPhases = (
+				39AC50F0408F293C48C723B4 /* Resources */,
+				3C44381C54FA78A555F40979 /* Sources */,
+				25E50B0701DA483111C07585 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F7E488D4C4813B816BF7D26 /* PBXTargetDependency */,
+				0018553313B83F43722E4D71 /* PBXTargetDependency */,
+				40275CDA08AF22045B337EDE /* PBXTargetDependency */,
+			);
+			name = "AppBenchmarks";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "AppBenchmarks";
+			productReference = 6E15466A76D4128768060C85 /* AppBenchmarks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "AppBenchmarks" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 55E763AA555F62080D521811 /* AppBenchmarks */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5EB610F5010F3AB62F5A57A1 /* Products */;
+					ProjectRef = 27D5448C44E1183C35206D2D /* BulletDynamics.xcodeproj */;
+				},
+				{
+					ProductGroup = 73A175662AD041F605635F6F /* Products */;
+					ProjectRef = 7ACE0F2C34EA2AE87CA95043 /* BulletCollision.xcodeproj */;
+				},
+				{
+					ProductGroup = 4814494B0CE25B766006621E /* Products */;
+					ProjectRef = 52427BB075CA5928732F27F1 /* LinearMath.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1FAD3799300B28745A4B115C /* AppBenchmarks.app */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		643E4DD56AF50E6919B601F8 /* libBulletDynamics.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../lib/libBulletDynamics.a";
+			remoteRef = 3245032D210363D3597A7FE9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1B2B42EB11045DE1671C77F9 /* libBulletCollision.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../lib/libBulletCollision.a";
+			remoteRef = 26BF68EB26195A216C2871F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5628180B16A761F464C37C4D /* libLinearMath.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "../../lib/libLinearMath.a";
+			remoteRef = 450353ED7D6D34270FF815AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39AC50F0408F293C48C723B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C44381C54FA78A555F40979 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C11BAB0C8F1BC333DF027F /* BenchmarkDemo.cpp in Sources */,
+				4E137AB3383F41541BF92203 /* Win32BenchmarkDemo.cpp in Sources */,
+				66AE63530E300139695E55E1 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin PBXTargetDependency section */
+		0F7E488D4C4813B816BF7D26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libBulletDynamics.a";
+			targetProxy = 3E7D1977718F7D631A04136D /* PBXContainerItemProxy */;
+		};
+		0018553313B83F43722E4D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libBulletCollision.a";
+			targetProxy = 7BC37E767792204A7B233A58 /* PBXContainerItemProxy */;
+		};
+		40275CDA08AF22045B337EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libLinearMath.a";
+			targetProxy = 175F732D4C81698C696166D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14A3785870F5158B023A3F02 /* Release Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CONFIGURATION_BUILD_DIR = "../../bin";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "AppBenchmarks_xcode4";
+			};
+			name = "Release Native 32-bit";
+		};
+		249F53834DE3736F03D66C26 /* Release Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				CONFIGURATION_BUILD_DIR = "../../bin";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "AppBenchmarks_xcode4_x64_release";
+			};
+			name = "Release Native 64-bit";
+		};
+		355E50B8117D4B4F47BA0536 /* Debug Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../bin";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "AppBenchmarks_xcode4_debug";
+			};
+			name = "Debug Native 32-bit";
+		};
+		3CFB248C233B1B440F217FCD /* Debug Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../../bin";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = "AppBenchmarks_xcode4_x64_debug";
+			};
+			name = "Debug Native 64-bit";
+		};
+		36CA08A0685B35EB70D14B3B /* Release Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "i386";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../src",
+				);
+				OBJROOT = "obj/x32/Release/AppBenchmarks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../bin";
+			};
+			name = "Release Native 32-bit";
+		};
+		6B0055C06884607B5C0773C9 /* Release Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../src",
+				);
+				OBJROOT = "obj/x64/Release/AppBenchmarks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../bin";
+			};
+			name = "Release Native 64-bit";
+		};
+		509A6F5F00EF62CA64794F54 /* Debug Native 32-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "i386";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../src",
+				);
+				OBJROOT = "obj/x32/Debug/AppBenchmarks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../bin";
+			};
+			name = "Debug Native 32-bit";
+		};
+		172F1D6F02CD027D5D164F91 /* Debug Native 64-bit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "../../Test/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				SDKROOT = iphoneos;
+				ARCHS = "armv7";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7";
+				SDKROOT = macosx;
+				ARCHS = "x86_64";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../../src",
+				);
+				OBJROOT = "obj/x64/Debug/AppBenchmarks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-ffast-math",
+				);
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				SYMROOT = "../../bin";
+			};
+			name = "Debug Native 64-bit";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22105A9C41C310685B29012D /* Build configuration list for PBXNativeTarget "AppBenchmarks.app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14A3785870F5158B023A3F02 /* Release Native 32-bit */,
+				249F53834DE3736F03D66C26 /* Release Native 64-bit */,
+				355E50B8117D4B4F47BA0536 /* Debug Native 32-bit */,
+				3CFB248C233B1B440F217FCD /* Debug Native 64-bit */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Native 32-bit";
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "AppBenchmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CA08A0685B35EB70D14B3B /* Release Native 32-bit */,
+				6B0055C06884607B5C0773C9 /* Release Native 64-bit */,
+				509A6F5F00EF62CA64794F54 /* Debug Native 32-bit */,
+				172F1D6F02CD027D5D164F91 /* Debug Native 64-bit */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Native 32-bit";
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

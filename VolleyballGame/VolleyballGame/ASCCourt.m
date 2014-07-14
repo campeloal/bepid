@@ -103,51 +103,62 @@
 {
     if(!isRound)
     {
-        if(_net.position.y < objectToCollide.position.y)
-        {
-            objectToCollide.physicsBody.velocity = CGVectorMake(objectToCollide.physicsBody.velocity.dx,objectToCollide.physicsBody.velocity.dy + fabs(accY)*WALL_IMPULSE);
-        }
-        else
-        {
-            objectToCollide.physicsBody.velocity = CGVectorMake(objectToCollide.physicsBody.velocity.dx,objectToCollide.physicsBody.velocity.dy - fabs(accY)*WALL_IMPULSE);
-        }
+        [self wallCollsion:objectToCollide Acceleration:accY];
     }
     else
     {
-        if(objectToCollide.position.x  > _roundNet.position.x)
-        {
-            if(objectToCollide.position.y > _roundNet.position.y)
-            {
-                //+ + pulo baixo direita
-                objectToCollide.physicsBody.velocity = CGVectorMake(ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
-                [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
-            }
-            else
-            {
-                //+ - pulo baixo esquerda
-                objectToCollide.physicsBody.velocity = CGVectorMake(ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
-                [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
-            }
-        }
-        else
-        {
-        
-            if(objectToCollide.position.y > _roundNet.position.y)
-            {
-                //- + pulo alto direita
-                 objectToCollide.physicsBody.velocity = CGVectorMake(-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
-                [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
-            }
-            else
-            {
-               // - - pulo alto esquerda
-                 objectToCollide.physicsBody.velocity = CGVectorMake(-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
-                [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
-            }
-        }
+        [self roundWallCollision:objectToCollide];
         
         
     }
 }
+
+-(void) wallCollsion: (SKSpriteNode*) objectToCollide Acceleration: (float) accY
+{
+    if(_net.position.y < objectToCollide.position.y)
+    {
+        objectToCollide.physicsBody.velocity = CGVectorMake(objectToCollide.physicsBody.velocity.dx,objectToCollide.physicsBody.velocity.dy + fabs(accY)*WALL_IMPULSE);
+    }
+    else
+    {
+        objectToCollide.physicsBody.velocity = CGVectorMake(objectToCollide.physicsBody.velocity.dx,objectToCollide.physicsBody.velocity.dy - fabs(accY)*WALL_IMPULSE);
+    }
+}
+
+-(void) roundWallCollision: (SKSpriteNode*) objectToCollide
+{
+    if(objectToCollide.position.x  > _roundNet.position.x)
+    {
+        if(objectToCollide.position.y > _roundNet.position.y)
+        {
+            //+ + pulo baixo direita
+            objectToCollide.physicsBody.velocity = CGVectorMake(ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
+            [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
+        }
+        else
+        {
+            //+ - pulo baixo esquerda
+            objectToCollide.physicsBody.velocity = CGVectorMake(ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
+            [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
+        }
+    }
+    else
+    {
+        
+        if(objectToCollide.position.y > _roundNet.position.y)
+        {
+            //- + pulo alto direita
+            objectToCollide.physicsBody.velocity = CGVectorMake(-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
+            [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
+        }
+        else
+        {
+            // - - pulo alto esquerda
+            objectToCollide.physicsBody.velocity = CGVectorMake(-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dx),-ROUND_WALL_IMPULSE*fabs(objectToCollide.physicsBody.velocity.dy));
+            [objectToCollide.physicsBody applyImpulse:objectToCollide.physicsBody.velocity];
+        }
+    }
+}
+
 
 @end
