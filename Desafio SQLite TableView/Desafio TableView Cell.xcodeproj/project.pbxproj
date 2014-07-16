@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0AD5B441976F71200C16830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5B431976F71200C16830 /* Foundation.framework */; };
+		E0AD5B461976F71200C16830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5B451976F71200C16830 /* CoreGraphics.framework */; };
+		E0AD5B481976F71200C16830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5B471976F71200C16830 /* UIKit.framework */; };
+		E0AD5B4E1976F71200C16830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B4C1976F71200C16830 /* InfoPlist.strings */; };
+		E0AD5B501976F71200C16830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5B4F1976F71200C16830 /* main.m */; };
+		E0AD5B541976F71200C16830 /* ASCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5B531976F71200C16830 /* ASCAppDelegate.m */; };
+		E0AD5B561976F71200C16830 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B551976F71200C16830 /* Images.xcassets */; };
+		E0AD5B5D1976F71200C16830 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5B5C1976F71200C16830 /* XCTest.framework */; };
+		E0AD5B5E1976F71200C16830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5B431976F71200C16830 /* Foundation.framework */; };
+		E0AD5B5F1976F71200C16830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5B471976F71200C16830 /* UIKit.framework */; };
+		E0AD5B671976F71200C16830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B651976F71200C16830 /* InfoPlist.strings */; };
+		E0AD5B691976F71200C16830 /* Desafio_TableView_CellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5B681976F71200C16830 /* Desafio_TableView_CellTests.m */; };
+		E0AD5B741976F75A00C16830 /* Principal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B731976F75A00C16830 /* Principal.storyboard */; };
+		E0AD5B7A1976F85F00C16830 /* Barack-Obama.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B761976F85F00C16830 /* Barack-Obama.jpg */; };
+		E0AD5B7B1976F85F00C16830 /* bill-gates.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B771976F85F00C16830 /* bill-gates.jpg */; };
+		E0AD5B7C1976F85F00C16830 /* Brad-Paisley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B781976F85F00C16830 /* Brad-Paisley.jpg */; };
+		E0AD5B7D1976F85F00C16830 /* Brad-Pitt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B791976F85F00C16830 /* Brad-Pitt.jpg */; };
+		E0AD5B801976F86800C16830 /* evangeline-lilly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B7E1976F86800C16830 /* evangeline-lilly.jpg */; };
+		E0AD5B811976F86800C16830 /* halle-berry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B7F1976F86800C16830 /* halle-berry.jpg */; };
+		E0AD5B851976F87100C16830 /* Mila-Kunis.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B821976F87100C16830 /* Mila-Kunis.jpg */; };
+		E0AD5B861976F87100C16830 /* miranda-lambert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B831976F87100C16830 /* miranda-lambert.jpg */; };
+		E0AD5B871976F87100C16830 /* Patricia-Beck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B841976F87100C16830 /* Patricia-Beck.jpg */; };
+		E0AD5B8B1976F87A00C16830 /* sara_evans.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B881976F87A00C16830 /* sara_evans.jpg */; };
+		E0AD5B8C1976F87A00C16830 /* steve_jobs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B891976F87A00C16830 /* steve_jobs.jpg */; };
+		E0AD5B8D1976F87A00C16830 /* taylor-swift.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B8A1976F87A00C16830 /* taylor-swift.jpg */; };
+		E0AD5B901976F8AB00C16830 /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5B8F1976F8AB00C16830 /* contacts.plist */; };
+		E0AD5B941976F90700C16830 /* ASCContatosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5B931976F90600C16830 /* ASCContatosTableViewController.m */; };
+		E0AD5B971976F92100C16830 /* ASCCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5B961976F92100C16830 /* ASCCustomTableViewCell.m */; };
+		E0AD5B9A1976FDD300C16830 /* ASCDetalhesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5B991976FDD300C16830 /* ASCDetalhesViewController.m */; };
+		E0AD5BDE19770C7600C16830 /* ASCDatabaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5BDD19770C7600C16830 /* ASCDatabaseViewController.m */; };
+		E0AD5BE019770F7D00C16830 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BDF19770F7D00C16830 /* libsqlite3.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0AD5B601976F71200C16830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0AD5B381976F71200C16830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0AD5B3F1976F71200C16830;
+			remoteInfo = "Desafio TableView Cell";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0AD5B401976F71200C16830 /* Desafio TableView Cell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio TableView Cell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AD5B431976F71200C16830 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0AD5B451976F71200C16830 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0AD5B471976F71200C16830 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0AD5B4B1976F71200C16830 /* Desafio TableView Cell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio TableView Cell-Info.plist"; sourceTree = "<group>"; };
+		E0AD5B4D1976F71200C16830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AD5B4F1976F71200C16830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0AD5B511976F71200C16830 /* Desafio TableView Cell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desafio TableView Cell-Prefix.pch"; sourceTree = "<group>"; };
+		E0AD5B521976F71200C16830 /* ASCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCAppDelegate.h; sourceTree = "<group>"; };
+		E0AD5B531976F71200C16830 /* ASCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCAppDelegate.m; sourceTree = "<group>"; };
+		E0AD5B551976F71200C16830 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0AD5B5B1976F71200C16830 /* Desafio TableView CellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio TableView CellTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AD5B5C1976F71200C16830 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0AD5B641976F71200C16830 /* Desafio TableView CellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio TableView CellTests-Info.plist"; sourceTree = "<group>"; };
+		E0AD5B661976F71200C16830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AD5B681976F71200C16830 /* Desafio_TableView_CellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_TableView_CellTests.m; sourceTree = "<group>"; };
+		E0AD5B731976F75A00C16830 /* Principal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Principal.storyboard; sourceTree = "<group>"; };
+		E0AD5B761976F85F00C16830 /* Barack-Obama.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Barack-Obama.jpg"; sourceTree = "<group>"; };
+		E0AD5B771976F85F00C16830 /* bill-gates.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bill-gates.jpg"; sourceTree = "<group>"; };
+		E0AD5B781976F85F00C16830 /* Brad-Paisley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brad-Paisley.jpg"; sourceTree = "<group>"; };
+		E0AD5B791976F85F00C16830 /* Brad-Pitt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Brad-Pitt.jpg"; sourceTree = "<group>"; };
+		E0AD5B7E1976F86800C16830 /* evangeline-lilly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "evangeline-lilly.jpg"; sourceTree = "<group>"; };
+		E0AD5B7F1976F86800C16830 /* halle-berry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "halle-berry.jpg"; sourceTree = "<group>"; };
+		E0AD5B821976F87100C16830 /* Mila-Kunis.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mila-Kunis.jpg"; sourceTree = "<group>"; };
+		E0AD5B831976F87100C16830 /* miranda-lambert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "miranda-lambert.jpg"; sourceTree = "<group>"; };
+		E0AD5B841976F87100C16830 /* Patricia-Beck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Patricia-Beck.jpg"; sourceTree = "<group>"; };
+		E0AD5B881976F87A00C16830 /* sara_evans.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sara_evans.jpg; sourceTree = "<group>"; };
+		E0AD5B891976F87A00C16830 /* steve_jobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steve_jobs.jpg; sourceTree = "<group>"; };
+		E0AD5B8A1976F87A00C16830 /* taylor-swift.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "taylor-swift.jpg"; sourceTree = "<group>"; };
+		E0AD5B8F1976F8AB00C16830 /* contacts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = contacts.plist; sourceTree = "<group>"; };
+		E0AD5B921976F90600C16830 /* ASCContatosTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCContatosTableViewController.h; sourceTree = "<group>"; };
+		E0AD5B931976F90600C16830 /* ASCContatosTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCContatosTableViewController.m; sourceTree = "<group>"; };
+		E0AD5B951976F92100C16830 /* ASCCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCCustomTableViewCell.h; sourceTree = "<group>"; };
+		E0AD5B961976F92100C16830 /* ASCCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCCustomTableViewCell.m; sourceTree = "<group>"; };
+		E0AD5B981976FDD300C16830 /* ASCDetalhesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCDetalhesViewController.h; sourceTree = "<group>"; };
+		E0AD5B991976FDD300C16830 /* ASCDetalhesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCDetalhesViewController.m; sourceTree = "<group>"; };
+		E0AD5BDC19770C7600C16830 /* ASCDatabaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCDatabaseViewController.h; sourceTree = "<group>"; };
+		E0AD5BDD19770C7600C16830 /* ASCDatabaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCDatabaseViewController.m; sourceTree = "<group>"; };
+		E0AD5BDF19770F7D00C16830 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0AD5B3D1976F71200C16830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BE019770F7D00C16830 /* libsqlite3.dylib in Frameworks */,
+				E0AD5B461976F71200C16830 /* CoreGraphics.framework in Frameworks */,
+				E0AD5B481976F71200C16830 /* UIKit.framework in Frameworks */,
+				E0AD5B441976F71200C16830 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AD5B581976F71200C16830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5B5D1976F71200C16830 /* XCTest.framework in Frameworks */,
+				E0AD5B5F1976F71200C16830 /* UIKit.framework in Frameworks */,
+				E0AD5B5E1976F71200C16830 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0AD5B371976F71200C16830 = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B491976F71200C16830 /* Desafio TableView Cell */,
+				E0AD5B621976F71200C16830 /* Desafio TableView CellTests */,
+				E0AD5B421976F71200C16830 /* Frameworks */,
+				E0AD5B411976F71200C16830 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0AD5B411976F71200C16830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B401976F71200C16830 /* Desafio TableView Cell.app */,
+				E0AD5B5B1976F71200C16830 /* Desafio TableView CellTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0AD5B421976F71200C16830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BDF19770F7D00C16830 /* libsqlite3.dylib */,
+				E0AD5B431976F71200C16830 /* Foundation.framework */,
+				E0AD5B451976F71200C16830 /* CoreGraphics.framework */,
+				E0AD5B471976F71200C16830 /* UIKit.framework */,
+				E0AD5B5C1976F71200C16830 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0AD5B491976F71200C16830 /* Desafio TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B911976F8D800C16830 /* Controller */,
+				E0AD5B8E1976F87E00C16830 /* Database */,
+				E0AD5B751976F85200C16830 /* Images */,
+				E0AD5B721976F73100C16830 /* View */,
+				E0AD5B521976F71200C16830 /* ASCAppDelegate.h */,
+				E0AD5B531976F71200C16830 /* ASCAppDelegate.m */,
+				E0AD5B551976F71200C16830 /* Images.xcassets */,
+				E0AD5B4A1976F71200C16830 /* Supporting Files */,
+			);
+			path = "Desafio TableView Cell";
+			sourceTree = "<group>";
+		};
+		E0AD5B4A1976F71200C16830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B4B1976F71200C16830 /* Desafio TableView Cell-Info.plist */,
+				E0AD5B4C1976F71200C16830 /* InfoPlist.strings */,
+				E0AD5B4F1976F71200C16830 /* main.m */,
+				E0AD5B511976F71200C16830 /* Desafio TableView Cell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AD5B621976F71200C16830 /* Desafio TableView CellTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B681976F71200C16830 /* Desafio_TableView_CellTests.m */,
+				E0AD5B631976F71200C16830 /* Supporting Files */,
+			);
+			path = "Desafio TableView CellTests";
+			sourceTree = "<group>";
+		};
+		E0AD5B631976F71200C16830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B641976F71200C16830 /* Desafio TableView CellTests-Info.plist */,
+				E0AD5B651976F71200C16830 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AD5B721976F73100C16830 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B731976F75A00C16830 /* Principal.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E0AD5B751976F85200C16830 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B881976F87A00C16830 /* sara_evans.jpg */,
+				E0AD5B891976F87A00C16830 /* steve_jobs.jpg */,
+				E0AD5B8A1976F87A00C16830 /* taylor-swift.jpg */,
+				E0AD5B821976F87100C16830 /* Mila-Kunis.jpg */,
+				E0AD5B831976F87100C16830 /* miranda-lambert.jpg */,
+				E0AD5B841976F87100C16830 /* Patricia-Beck.jpg */,
+				E0AD5B7E1976F86800C16830 /* evangeline-lilly.jpg */,
+				E0AD5B7F1976F86800C16830 /* halle-berry.jpg */,
+				E0AD5B761976F85F00C16830 /* Barack-Obama.jpg */,
+				E0AD5B771976F85F00C16830 /* bill-gates.jpg */,
+				E0AD5B781976F85F00C16830 /* Brad-Paisley.jpg */,
+				E0AD5B791976F85F00C16830 /* Brad-Pitt.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E0AD5B8E1976F87E00C16830 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B8F1976F8AB00C16830 /* contacts.plist */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		E0AD5B911976F8D800C16830 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5B921976F90600C16830 /* ASCContatosTableViewController.h */,
+				E0AD5B931976F90600C16830 /* ASCContatosTableViewController.m */,
+				E0AD5B951976F92100C16830 /* ASCCustomTableViewCell.h */,
+				E0AD5B961976F92100C16830 /* ASCCustomTableViewCell.m */,
+				E0AD5B981976FDD300C16830 /* ASCDetalhesViewController.h */,
+				E0AD5B991976FDD300C16830 /* ASCDetalhesViewController.m */,
+				E0AD5BDC19770C7600C16830 /* ASCDatabaseViewController.h */,
+				E0AD5BDD19770C7600C16830 /* ASCDatabaseViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0AD5B3F1976F71200C16830 /* Desafio TableView Cell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AD5B6C1976F71200C16830 /* Build configuration list for PBXNativeTarget "Desafio TableView Cell" */;
+			buildPhases = (
+				E0AD5B3C1976F71200C16830 /* Sources */,
+				E0AD5B3D1976F71200C16830 /* Frameworks */,
+				E0AD5B3E1976F71200C16830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desafio TableView Cell";
+			productName = "Desafio TableView Cell";
+			productReference = E0AD5B401976F71200C16830 /* Desafio TableView Cell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0AD5B5A1976F71200C16830 /* Desafio TableView CellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AD5B6F1976F71200C16830 /* Build configuration list for PBXNativeTarget "Desafio TableView CellTests" */;
+			buildPhases = (
+				E0AD5B571976F71200C16830 /* Sources */,
+				E0AD5B581976F71200C16830 /* Frameworks */,
+				E0AD5B591976F71200C16830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0AD5B611976F71200C16830 /* PBXTargetDependency */,
+			);
+			name = "Desafio TableView CellTests";
+			productName = "Desafio TableView CellTests";
+			productReference = E0AD5B5B1976F71200C16830 /* Desafio TableView CellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0AD5B381976F71200C16830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ASC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E0AD5B5A1976F71200C16830 = {
+						TestTargetID = E0AD5B3F1976F71200C16830;
+					};
+				};
+			};
+			buildConfigurationList = E0AD5B3B1976F71200C16830 /* Build configuration list for PBXProject "Desafio TableView Cell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0AD5B371976F71200C16830;
+			productRefGroup = E0AD5B411976F71200C16830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0AD5B3F1976F71200C16830 /* Desafio TableView Cell */,
+				E0AD5B5A1976F71200C16830 /* Desafio TableView CellTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0AD5B3E1976F71200C16830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5B861976F87100C16830 /* miranda-lambert.jpg in Resources */,
+				E0AD5B8B1976F87A00C16830 /* sara_evans.jpg in Resources */,
+				E0AD5B7A1976F85F00C16830 /* Barack-Obama.jpg in Resources */,
+				E0AD5B8C1976F87A00C16830 /* steve_jobs.jpg in Resources */,
+				E0AD5B8D1976F87A00C16830 /* taylor-swift.jpg in Resources */,
+				E0AD5B4E1976F71200C16830 /* InfoPlist.strings in Resources */,
+				E0AD5B871976F87100C16830 /* Patricia-Beck.jpg in Resources */,
+				E0AD5B901976F8AB00C16830 /* contacts.plist in Resources */,
+				E0AD5B7C1976F85F00C16830 /* Brad-Paisley.jpg in Resources */,
+				E0AD5B561976F71200C16830 /* Images.xcassets in Resources */,
+				E0AD5B801976F86800C16830 /* evangeline-lilly.jpg in Resources */,
+				E0AD5B851976F87100C16830 /* Mila-Kunis.jpg in Resources */,
+				E0AD5B811976F86800C16830 /* halle-berry.jpg in Resources */,
+				E0AD5B7D1976F85F00C16830 /* Brad-Pitt.jpg in Resources */,
+				E0AD5B741976F75A00C16830 /* Principal.storyboard in Resources */,
+				E0AD5B7B1976F85F00C16830 /* bill-gates.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AD5B591976F71200C16830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5B671976F71200C16830 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0AD5B3C1976F71200C16830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5B971976F92100C16830 /* ASCCustomTableViewCell.m in Sources */,
+				E0AD5BDE19770C7600C16830 /* ASCDatabaseViewController.m in Sources */,
+				E0AD5B941976F90700C16830 /* ASCContatosTableViewController.m in Sources */,
+				E0AD5B541976F71200C16830 /* ASCAppDelegate.m in Sources */,
+				E0AD5B501976F71200C16830 /* main.m in Sources */,
+				E0AD5B9A1976FDD300C16830 /* ASCDetalhesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AD5B571976F71200C16830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5B691976F71200C16830 /* Desafio_TableView_CellTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0AD5B611976F71200C16830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0AD5B3F1976F71200C16830 /* Desafio TableView Cell */;
+			targetProxy = E0AD5B601976F71200C16830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0AD5B4C1976F71200C16830 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AD5B4D1976F71200C16830 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0AD5B651976F71200C16830 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AD5B661976F71200C16830 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0AD5B6A1976F71200C16830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0AD5B6B1976F71200C16830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0AD5B6D1976F71200C16830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio TableView Cell/Desafio TableView Cell-Prefix.pch";
+				INFOPLIST_FILE = "Desafio TableView Cell/Desafio TableView Cell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0AD5B6E1976F71200C16830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio TableView Cell/Desafio TableView Cell-Prefix.pch";
+				INFOPLIST_FILE = "Desafio TableView Cell/Desafio TableView Cell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0AD5B701976F71200C16830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio TableView Cell.app/Desafio TableView Cell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio TableView Cell/Desafio TableView Cell-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Desafio TableView CellTests/Desafio TableView CellTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0AD5B711976F71200C16830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio TableView Cell.app/Desafio TableView Cell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio TableView Cell/Desafio TableView Cell-Prefix.pch";
+				INFOPLIST_FILE = "Desafio TableView CellTests/Desafio TableView CellTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0AD5B3B1976F71200C16830 /* Build configuration list for PBXProject "Desafio TableView Cell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AD5B6A1976F71200C16830 /* Debug */,
+				E0AD5B6B1976F71200C16830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AD5B6C1976F71200C16830 /* Build configuration list for PBXNativeTarget "Desafio TableView Cell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AD5B6D1976F71200C16830 /* Debug */,
+				E0AD5B6E1976F71200C16830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AD5B6F1976F71200C16830 /* Build configuration list for PBXNativeTarget "Desafio TableView CellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AD5B701976F71200C16830 /* Debug */,
+				E0AD5B711976F71200C16830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0AD5B381976F71200C16830 /* Project object */;
+}

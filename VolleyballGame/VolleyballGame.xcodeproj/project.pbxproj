@@ -24,7 +24,7 @@
 		E0AAEDD81963474B003F1EBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AAEDB01963474B003F1EBA /* UIKit.framework */; };
 		E0AAEDE01963474B003F1EBA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AAEDDE1963474B003F1EBA /* InfoPlist.strings */; };
 		E0AAEDE21963474B003F1EBA /* VolleyballGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AAEDE11963474B003F1EBA /* VolleyballGameTests.m */; };
-		E0ADA96A1964732F002B77AD /* ASCMyScene.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0ADA9681964732F002B77AD /* ASCMyScene.xib */; };
+		E0AC2EDC1975C37D00365A5E /* ASCMyScene.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AC2EDB1975C37D00365A5E /* ASCMyScene.xib */; };
 		E0ADA96D19647954002B77AD /* ASCMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ADA96C19647954002B77AD /* ASCMotion.m */; };
 		E0ADA97319649C9E002B77AD /* ASCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ADA97219649C9E002B77AD /* ASCPlayer.m */; };
 		E0AE61E01965C2FA0006B3A6 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AE61DF1965C2FA0006B3A6 /* ball.png */; };
@@ -67,7 +67,7 @@
 		E0AAEDDD1963474B003F1EBA /* VolleyballGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VolleyballGameTests-Info.plist"; sourceTree = "<group>"; };
 		E0AAEDDF1963474B003F1EBA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0AAEDE11963474B003F1EBA /* VolleyballGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolleyballGameTests.m; sourceTree = "<group>"; };
-		E0ADA9681964732F002B77AD /* ASCMyScene.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ASCMyScene.xib; path = ../ASCMyScene.xib; sourceTree = "<group>"; };
+		E0AC2EDB1975C37D00365A5E /* ASCMyScene.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCMyScene.xib; sourceTree = "<group>"; };
 		E0ADA96B19647954002B77AD /* ASCMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCMotion.h; sourceTree = "<group>"; };
 		E0ADA96C19647954002B77AD /* ASCMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCMotion.m; sourceTree = "<group>"; };
 		E0ADA97119649C9E002B77AD /* ASCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCPlayer.h; sourceTree = "<group>"; };
@@ -199,9 +199,9 @@
 		E0ADA96F19647D68002B77AD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0AC2EDB1975C37D00365A5E /* ASCMyScene.xib */,
 				E0AAEDC91963474B003F1EBA /* ASCMyScene.h */,
 				E0AAEDCA1963474B003F1EBA /* ASCMyScene.m */,
-				E0ADA9681964732F002B77AD /* ASCMyScene.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 			files = (
 				E0AE61E61965C3DB0006B3A6 /* player.png in Resources */,
 				E0AA03D9196B1EF000CE0F16 /* block.png in Resources */,
-				E0ADA96A1964732F002B77AD /* ASCMyScene.xib in Resources */,
+				E0AC2EDC1975C37D00365A5E /* ASCMyScene.xib in Resources */,
 				E0AAEDCF1963474B003F1EBA /* Images.xcassets in Resources */,
 				E0AA03DB196B335A00CE0F16 /* ground.png in Resources */,
 				E0AE61E81965D0E00006B3A6 /* net.png in Resources */,

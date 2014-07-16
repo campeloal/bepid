@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E0AD5BA81977088100C16830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BA71977088100C16830 /* Foundation.framework */; };
+		E0AD5BAA1977088100C16830 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BA91977088100C16830 /* CoreGraphics.framework */; };
+		E0AD5BAC1977088100C16830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BAB1977088100C16830 /* UIKit.framework */; };
+		E0AD5BB21977088100C16830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5BB01977088100C16830 /* InfoPlist.strings */; };
+		E0AD5BB41977088100C16830 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5BB31977088100C16830 /* main.m */; };
+		E0AD5BB81977088100C16830 /* ASCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5BB71977088100C16830 /* ASCAppDelegate.m */; };
+		E0AD5BBA1977088100C16830 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5BB91977088100C16830 /* Images.xcassets */; };
+		E0AD5BC11977088100C16830 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BC01977088100C16830 /* XCTest.framework */; };
+		E0AD5BC21977088100C16830 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BA71977088100C16830 /* Foundation.framework */; };
+		E0AD5BC31977088100C16830 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AD5BAB1977088100C16830 /* UIKit.framework */; };
+		E0AD5BCB1977088100C16830 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AD5BC91977088100C16830 /* InfoPlist.strings */; };
+		E0AD5BCD1977088100C16830 /* Desafio_SQLite_TableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD5BCC1977088100C16830 /* Desafio_SQLite_TableViewTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0AD5BC41977088100C16830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0AD5B9C1977088100C16830 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0AD5BA31977088100C16830;
+			remoteInfo = "Desafio SQLite TableView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E0AD5BA41977088100C16830 /* Desafio SQLite TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio SQLite TableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AD5BA71977088100C16830 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E0AD5BA91977088100C16830 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E0AD5BAB1977088100C16830 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0AD5BAF1977088100C16830 /* Desafio SQLite TableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio SQLite TableView-Info.plist"; sourceTree = "<group>"; };
+		E0AD5BB11977088100C16830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AD5BB31977088100C16830 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E0AD5BB51977088100C16830 /* Desafio SQLite TableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Desafio SQLite TableView-Prefix.pch"; sourceTree = "<group>"; };
+		E0AD5BB61977088100C16830 /* ASCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCAppDelegate.h; sourceTree = "<group>"; };
+		E0AD5BB71977088100C16830 /* ASCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCAppDelegate.m; sourceTree = "<group>"; };
+		E0AD5BB91977088100C16830 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E0AD5BBF1977088100C16830 /* Desafio SQLite TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Desafio SQLite TableViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0AD5BC01977088100C16830 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E0AD5BC81977088100C16830 /* Desafio SQLite TableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio SQLite TableViewTests-Info.plist"; sourceTree = "<group>"; };
+		E0AD5BCA1977088100C16830 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AD5BCC1977088100C16830 /* Desafio_SQLite_TableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_SQLite_TableViewTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0AD5BA11977088100C16830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BAA1977088100C16830 /* CoreGraphics.framework in Frameworks */,
+				E0AD5BAC1977088100C16830 /* UIKit.framework in Frameworks */,
+				E0AD5BA81977088100C16830 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AD5BBC1977088100C16830 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BC11977088100C16830 /* XCTest.framework in Frameworks */,
+				E0AD5BC31977088100C16830 /* UIKit.framework in Frameworks */,
+				E0AD5BC21977088100C16830 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E0AD5B9B1977088100C16830 = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BAD1977088100C16830 /* Desafio SQLite TableView */,
+				E0AD5BC61977088100C16830 /* Desafio SQLite TableViewTests */,
+				E0AD5BA61977088100C16830 /* Frameworks */,
+				E0AD5BA51977088100C16830 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0AD5BA51977088100C16830 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BA41977088100C16830 /* Desafio SQLite TableView.app */,
+				E0AD5BBF1977088100C16830 /* Desafio SQLite TableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0AD5BA61977088100C16830 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BA71977088100C16830 /* Foundation.framework */,
+				E0AD5BA91977088100C16830 /* CoreGraphics.framework */,
+				E0AD5BAB1977088100C16830 /* UIKit.framework */,
+				E0AD5BC01977088100C16830 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0AD5BAD1977088100C16830 /* Desafio SQLite TableView */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BB61977088100C16830 /* ASCAppDelegate.h */,
+				E0AD5BB71977088100C16830 /* ASCAppDelegate.m */,
+				E0AD5BB91977088100C16830 /* Images.xcassets */,
+				E0AD5BAE1977088100C16830 /* Supporting Files */,
+			);
+			path = "Desafio SQLite TableView";
+			sourceTree = "<group>";
+		};
+		E0AD5BAE1977088100C16830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BAF1977088100C16830 /* Desafio SQLite TableView-Info.plist */,
+				E0AD5BB01977088100C16830 /* InfoPlist.strings */,
+				E0AD5BB31977088100C16830 /* main.m */,
+				E0AD5BB51977088100C16830 /* Desafio SQLite TableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AD5BC61977088100C16830 /* Desafio SQLite TableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BCC1977088100C16830 /* Desafio_SQLite_TableViewTests.m */,
+				E0AD5BC71977088100C16830 /* Supporting Files */,
+			);
+			path = "Desafio SQLite TableViewTests";
+			sourceTree = "<group>";
+		};
+		E0AD5BC71977088100C16830 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0AD5BC81977088100C16830 /* Desafio SQLite TableViewTests-Info.plist */,
+				E0AD5BC91977088100C16830 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E0AD5BA31977088100C16830 /* Desafio SQLite TableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AD5BD01977088100C16830 /* Build configuration list for PBXNativeTarget "Desafio SQLite TableView" */;
+			buildPhases = (
+				E0AD5BA01977088100C16830 /* Sources */,
+				E0AD5BA11977088100C16830 /* Frameworks */,
+				E0AD5BA21977088100C16830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desafio SQLite TableView";
+			productName = "Desafio SQLite TableView";
+			productReference = E0AD5BA41977088100C16830 /* Desafio SQLite TableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0AD5BBE1977088100C16830 /* Desafio SQLite TableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0AD5BD31977088100C16830 /* Build configuration list for PBXNativeTarget "Desafio SQLite TableViewTests" */;
+			buildPhases = (
+				E0AD5BBB1977088100C16830 /* Sources */,
+				E0AD5BBC1977088100C16830 /* Frameworks */,
+				E0AD5BBD1977088100C16830 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0AD5BC51977088100C16830 /* PBXTargetDependency */,
+			);
+			name = "Desafio SQLite TableViewTests";
+			productName = "Desafio SQLite TableViewTests";
+			productReference = E0AD5BBF1977088100C16830 /* Desafio SQLite TableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0AD5B9C1977088100C16830 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ASC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
+				TargetAttributes = {
+					E0AD5BBE1977088100C16830 = {
+						TestTargetID = E0AD5BA31977088100C16830;
+					};
+				};
+			};
+			buildConfigurationList = E0AD5B9F1977088100C16830 /* Build configuration list for PBXProject "Desafio SQLite TableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E0AD5B9B1977088100C16830;
+			productRefGroup = E0AD5BA51977088100C16830 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E0AD5BA31977088100C16830 /* Desafio SQLite TableView */,
+				E0AD5BBE1977088100C16830 /* Desafio SQLite TableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E0AD5BA21977088100C16830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BB21977088100C16830 /* InfoPlist.strings in Resources */,
+				E0AD5BBA1977088100C16830 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AD5BBD1977088100C16830 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BCB1977088100C16830 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0AD5BA01977088100C16830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BB81977088100C16830 /* ASCAppDelegate.m in Sources */,
+				E0AD5BB41977088100C16830 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0AD5BBB1977088100C16830 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0AD5BCD1977088100C16830 /* Desafio_SQLite_TableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0AD5BC51977088100C16830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0AD5BA31977088100C16830 /* Desafio SQLite TableView */;
+			targetProxy = E0AD5BC41977088100C16830 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0AD5BB01977088100C16830 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AD5BB11977088100C16830 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E0AD5BC91977088100C16830 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0AD5BCA1977088100C16830 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0AD5BCE1977088100C16830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E0AD5BCF1977088100C16830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0AD5BD11977088100C16830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio SQLite TableView/Desafio SQLite TableView-Prefix.pch";
+				INFOPLIST_FILE = "Desafio SQLite TableView/Desafio SQLite TableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E0AD5BD21977088100C16830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio SQLite TableView/Desafio SQLite TableView-Prefix.pch";
+				INFOPLIST_FILE = "Desafio SQLite TableView/Desafio SQLite TableView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E0AD5BD41977088100C16830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio SQLite TableView.app/Desafio SQLite TableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio SQLite TableView/Desafio SQLite TableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Desafio SQLite TableViewTests/Desafio SQLite TableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E0AD5BD51977088100C16830 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Desafio SQLite TableView.app/Desafio SQLite TableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Desafio SQLite TableView/Desafio SQLite TableView-Prefix.pch";
+				INFOPLIST_FILE = "Desafio SQLite TableViewTests/Desafio SQLite TableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0AD5B9F1977088100C16830 /* Build configuration list for PBXProject "Desafio SQLite TableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AD5BCE1977088100C16830 /* Debug */,
+				E0AD5BCF1977088100C16830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0AD5BD01977088100C16830 /* Build configuration list for PBXNativeTarget "Desafio SQLite TableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AD5BD11977088100C16830 /* Debug */,
+				E0AD5BD21977088100C16830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E0AD5BD31977088100C16830 /* Build configuration list for PBXNativeTarget "Desafio SQLite TableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0AD5BD41977088100C16830 /* Debug */,
+				E0AD5BD51977088100C16830 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E0AD5B9C1977088100C16830 /* Project object */;
+}
