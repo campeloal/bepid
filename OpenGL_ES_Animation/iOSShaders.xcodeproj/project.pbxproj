@@ -42,6 +42,9 @@
 		12985D5E193EE2D300DC212C /* hand_10000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D5D193EE2D300DC212C /* hand_10000.obj */; };
 		E08BFFC919424D9800CB9526 /* Srt-Viper-Gts-Launch-Edition-960x640.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E08BFFC819424D9800CB9526 /* Srt-Viper-Gts-Launch-Edition-960x640.jpeg */; };
 		E0AB086D195DFA7100ED4EE6 /* hand_10000_rot.obj in Resources */ = {isa = PBXBuildFile; fileRef = E0AB086C195DFA7100ED4EE6 /* hand_10000_rot.obj */; };
+		E0ADA567197D8525002A1EA3 /* BulletCollision in Resources */ = {isa = PBXBuildFile; fileRef = E0ADA564197D8525002A1EA3 /* BulletCollision */; };
+		E0ADA568197D8525002A1EA3 /* BulletDynamics in Resources */ = {isa = PBXBuildFile; fileRef = E0ADA565197D8525002A1EA3 /* BulletDynamics */; };
+		E0ADA569197D8525002A1EA3 /* LinearMath in Resources */ = {isa = PBXBuildFile; fileRef = E0ADA566197D8525002A1EA3 /* LinearMath */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +90,9 @@
 		12985D5D193EE2D300DC212C /* hand_10000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_10000.obj; sourceTree = "<group>"; };
 		E08BFFC819424D9800CB9526 /* Srt-Viper-Gts-Launch-Edition-960x640.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Srt-Viper-Gts-Launch-Edition-960x640.jpeg"; sourceTree = "<group>"; };
 		E0AB086C195DFA7100ED4EE6 /* hand_10000_rot.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_10000_rot.obj; sourceTree = "<group>"; };
+		E0ADA564197D8525002A1EA3 /* BulletCollision */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BulletCollision; path = "bullet-2.82-r2704/src/BulletCollision"; sourceTree = SOURCE_ROOT; };
+		E0ADA565197D8525002A1EA3 /* BulletDynamics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BulletDynamics; path = "bullet-2.82-r2704/src/BulletDynamics"; sourceTree = SOURCE_ROOT; };
+		E0ADA566197D8525002A1EA3 /* LinearMath */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LinearMath; path = "bullet-2.82-r2704/src/LinearMath"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		12985CF1193E933900DC212C /* iOSShaders */ = {
 			isa = PBXGroup;
 			children = (
+				E0ADA563197D84FC002A1EA3 /* Libraries */,
 				12985D2B193EBAC500DC212C /* Shaders */,
 				12985D27193EB17200DC212C /* Controller */,
 				12985D26193EB16700DC212C /* Model */,
@@ -225,6 +232,16 @@
 			name = Shaders;
 			sourceTree = "<group>";
 		};
+		E0ADA563197D84FC002A1EA3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E0ADA564197D8525002A1EA3 /* BulletCollision */,
+				E0ADA565197D8525002A1EA3 /* BulletDynamics */,
+				E0ADA566197D8525002A1EA3 /* LinearMath */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,8 +301,10 @@
 				12985D06193E933900DC212C /* Shader.vsh in Resources */,
 				E0AB086D195DFA7100ED4EE6 /* hand_10000_rot.obj in Resources */,
 				12985D0C193E933900DC212C /* ViewController_iPhone.xib in Resources */,
+				E0ADA568197D8525002A1EA3 /* BulletDynamics in Resources */,
 				12985D0F193E933900DC212C /* ViewController_iPad.xib in Resources */,
 				12985D1E193EAE4400DC212C /* add_press.png in Resources */,
+				E0ADA569197D8525002A1EA3 /* LinearMath in Resources */,
 				12985D1F193EAE4400DC212C /* add.png in Resources */,
 				12985D22193EAE5100DC212C /* dec_press.png in Resources */,
 				12985D23193EAE5100DC212C /* dec.png in Resources */,
@@ -301,6 +320,7 @@
 				12985D53193EBEB100DC212C /* toon.fsh in Resources */,
 				12985D54193EBEB100DC212C /* toon.vsh in Resources */,
 				12985D5E193EE2D300DC212C /* hand_10000.obj in Resources */,
+				E0ADA567197D8525002A1EA3 /* BulletCollision in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +433,11 @@
 				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSShaders/iOSShaders-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../src",
+				);
 				INFOPLIST_FILE = "iOSShaders/iOSShaders-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +453,11 @@
 				ARCHS = armv7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSShaders/iOSShaders-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../src",
+				);
 				INFOPLIST_FILE = "iOSShaders/iOSShaders-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
