@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8BDEB500-B9AE-4017-B433-343AE16B6B47</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Physics</string>
+	<key>IDESourceControlProjectPath</key>
+	<string>Physics.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2B9C531F-A2F7-4537-9FF2-BF231AED6C7D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/campeloal/bepid.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2B9C531F-A2F7-4537-9FF2-BF231AED6C7D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2B9C531F-A2F7-4537-9FF2-BF231AED6C7D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhysicsPlusBullet</string>
+		</dict>
+	</array>
+</dict>
+</plist>
