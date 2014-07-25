@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ASCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1x6-AY-clW">
+                                <rect key="frame" x="20" y="20" width="280" height="338"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcD-uJ-bz9">
+                                <rect key="frame" x="20" y="377" width="122" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="dAL-BY-g3V"/>
+                                    <constraint firstAttribute="height" constant="47" id="wBu-wN-fCG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Headline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFontStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0CN-XY-TMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jeh-16-gyv">
+                                <rect key="frame" x="20" y="432" width="122" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="h9z-Lp-HZ8"/>
+                                    <constraint firstAttribute="height" constant="47" id="hPD-2G-xW8"/>
+                                </constraints>
+                                <state key="normal" title="Subheadline">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFontStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ESJ-8b-818"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zim-n7-22e">
+                                <rect key="frame" x="20" y="487" width="122" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="A6W-HD-bT3"/>
+                                    <constraint firstAttribute="width" constant="122" id="NY6-qQ-uAP"/>
+                                </constraints>
+                                <state key="normal" title="Body">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFontStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4uI-Ap-Zwm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxE-05-UCj">
+                                <rect key="frame" x="186" y="487" width="114" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="Cbf-My-EhS"/>
+                                    <constraint firstAttribute="height" constant="47" id="aul-Qa-TGO"/>
+                                </constraints>
+                                <state key="normal" title="Caption 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFontStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bmg-RY-BVE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujt-NY-Nhb">
+                                <rect key="frame" x="186" y="432" width="114" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="ITv-ZF-sI8"/>
+                                    <constraint firstAttribute="width" constant="114" id="XZV-fo-5bn"/>
+                                </constraints>
+                                <state key="normal" title="Caption 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFontStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8JL-yT-88i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="air-cx-K1p">
+                                <rect key="frame" x="186" y="377" width="114" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="6ZI-Ic-bc2"/>
+                                    <constraint firstAttribute="width" constant="114" id="zg4-H4-lRW"/>
+                                </constraints>
+                                <state key="normal" title="Footnote">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeFontStyle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Mz-jC-Bgi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="mxE-05-UCj" secondAttribute="bottom" constant="34" id="5Qh-hT-PZN"/>
+                            <constraint firstItem="1x6-AY-clW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="IsK-4B-S8F"/>
+                            <constraint firstItem="mcD-uJ-bz9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="JFS-HN-px0"/>
+                            <constraint firstItem="Jeh-16-gyv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="KuS-iu-x6Z"/>
+                            <constraint firstAttribute="trailing" secondItem="mxE-05-UCj" secondAttribute="trailing" constant="20" id="Tgj-hQ-HKp"/>
+                            <constraint firstItem="Zim-n7-22e" firstAttribute="top" secondItem="Jeh-16-gyv" secondAttribute="bottom" constant="8" id="Xom-na-FVP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Zim-n7-22e" secondAttribute="bottom" constant="34" id="XyC-da-lYb"/>
+                            <constraint firstAttribute="trailing" secondItem="1x6-AY-clW" secondAttribute="trailing" constant="20" id="ZRL-UA-yPv"/>
+                            <constraint firstItem="ujt-NY-Nhb" firstAttribute="top" secondItem="air-cx-K1p" secondAttribute="bottom" constant="8" id="ayH-Pn-zLR"/>
+                            <constraint firstItem="mcD-uJ-bz9" firstAttribute="top" secondItem="1x6-AY-clW" secondAttribute="bottom" constant="19" id="bbp-73-GJ7"/>
+                            <constraint firstItem="Zim-n7-22e" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="hJK-5k-KGn"/>
+                            <constraint firstAttribute="trailing" secondItem="ujt-NY-Nhb" secondAttribute="trailing" constant="20" id="hzT-eq-PAY"/>
+                            <constraint firstItem="Jeh-16-gyv" firstAttribute="top" secondItem="mcD-uJ-bz9" secondAttribute="bottom" constant="8" id="iBY-wt-zcL"/>
+                            <constraint firstItem="1x6-AY-clW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="qWs-u3-Pyg"/>
+                            <constraint firstAttribute="trailing" secondItem="air-cx-K1p" secondAttribute="trailing" constant="20" id="y0D-VT-tM5"/>
+                            <constraint firstItem="mxE-05-UCj" firstAttribute="top" secondItem="ujt-NY-Nhb" secondAttribute="bottom" constant="8" id="y3q-Oe-vvw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bt1" destination="mcD-uJ-bz9" id="RqP-xw-uPa"/>
+                        <outlet property="bt2" destination="Jeh-16-gyv" id="nNj-ri-106"/>
+                        <outlet property="bt3" destination="Zim-n7-22e" id="icN-dK-Aoj"/>
+                        <outlet property="bt4" destination="air-cx-K1p" id="bta-XC-Xv1"/>
+                        <outlet property="bt5" destination="ujt-NY-Nhb" id="0ws-Jn-XEI"/>
+                        <outlet property="bt6" destination="mxE-05-UCj" id="OGh-sG-DCl"/>
+                        <outlet property="text" destination="1x6-AY-clW" id="rnG-mq-gR5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
