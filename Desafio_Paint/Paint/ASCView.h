@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASCShape.h"
 
-@interface ASCView : UIView
+@interface ASCView : UIView<UIGestureRecognizerDelegate>
 
 @property (nonatomic) NSMutableArray *finishedShapes;
 @property (nonatomic) NSMutableArray *shapesProperties;
 @property (nonatomic) NSString* path;
+@property (nonatomic) ASCShape *selectedShape;
 
 -(NSString*) getPath;
 

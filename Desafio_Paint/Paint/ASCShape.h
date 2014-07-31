@@ -14,7 +14,10 @@
 @property (nonatomic) CGFloat angle;
 @property (nonatomic) CGPoint end;
 @property (nonatomic) CGRect rect;
+@property (nonatomic) CGPoint center;
+@property (nonatomic) float thickness;
 @property (nonatomic) BOOL isCircle;
 
 -(void) stroke;
+-(BOOL) havePoint: (CGPoint) point;
 @end
