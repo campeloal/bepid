@@ -25,6 +25,7 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
    NSMutableArray *spherePhysicsObjects;
 @property (strong, nonatomic, readwrite) 
    NSMutableArray *immovableBoxPhysicsObjects;
+@property (nonatomic) UITapGestureRecognizer *addObj;
    
 @end
 
@@ -457,6 +458,17 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
    
    // Become the first responder to receive motion events
    [self becomeFirstResponder];
+    
+    //_addObj = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addCube)];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addCube)];
+    [view addGestureRecognizer:tap];
+}
+
+-(void) addCube
+{
+    NSLog(@"oi");
+    [self scheduleAddRandomPhysicsBoxObject:nil];
 }
 
 
