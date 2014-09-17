@@ -16,15 +16,8 @@
 
 + (instancetype)randomItem
 {
-    static ASCItem *item = nil;
-    @synchronized(self) {
-        if (item == nil)
-        {
-            item = [[self alloc] initWithItemName: [self createName] value: (int) arc4random_uniform(15001) serialNumber: [self createSerialNumber]];
-
-        }
-    }
-    return item;
+    int value = (int) arc4random_uniform(15001);
+    return [[self alloc] initWithItemName: [self createName] value: value serialNumber: [self createSerialNumber]];
 }
 
 +(NSString*) createName
@@ -49,21 +42,20 @@
 {
     char finalChar;
     if (isLetter) {
-        NSString *letters = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-        finalChar = [letters characterAtIndex:arc4random_uniform(26)];
+        NSString *letters = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        finalChar = [letters characterAtIndex:arc4random()%[letters length]];
         return finalChar;
     }
     else
     {
         NSString *numbers = @"0123456789";
-        finalChar = [numbers characterAtIndex:arc4random_uniform(11)];
+        finalChar = [numbers characterAtIndex:arc4random()%[numbers length]];
         return finalChar;
     }
 }
 
 -(instancetype) initWithItemName:(NSString *)name value:(int)value serialNumber:(NSString *)sNumber
 {
-    
     self = [super init];
     if (self) {
         self.itemName = name;

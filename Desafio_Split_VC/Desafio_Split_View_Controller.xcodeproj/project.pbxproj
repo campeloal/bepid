@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12910B1319C8EFE00026333F /* ASCTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12910B1219C8EFE00026333F /* ASCTableViewController.xib */; };
+		12910B1519C8F05A0026333F /* ASCDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12910B1419C8F05A0026333F /* ASCDetailViewController.xib */; };
 		E0AC3E1919C8AE760020D354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AC3E1819C8AE760020D354 /* Foundation.framework */; };
 		E0AC3E1B19C8AE760020D354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AC3E1A19C8AE760020D354 /* CoreGraphics.framework */; };
 		E0AC3E1D19C8AE760020D354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AC3E1C19C8AE760020D354 /* UIKit.framework */; };
@@ -20,13 +22,9 @@
 		E0AC3E3C19C8AE770020D354 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3E3A19C8AE770020D354 /* InfoPlist.strings */; };
 		E0AC3E3E19C8AE770020D354 /* Desafio_Split_View_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E3D19C8AE770020D354 /* Desafio_Split_View_ControllerTests.m */; };
 		E0AC3E4C19C8AEE30020D354 /* ASCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E4B19C8AEE30020D354 /* ASCItem.m */; };
-		E0AC3E5119C8B5380020D354 /* ASCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3E4F19C8B5380020D354 /* ASCViewController.xib */; };
 		E0AC3E5419C8BB880020D354 /* ASCItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E5319C8BB880020D354 /* ASCItemStore.m */; };
 		E0AC3E5819C8C7000020D354 /* ASCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E5619C8C7000020D354 /* ASCDetailViewController.m */; };
-		E0AC3E5919C8C7000020D354 /* ASCDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3E5719C8C7000020D354 /* ASCDetailViewController.xib */; };
 		E0AC3E5D19C8CA380020D354 /* ASCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E5B19C8CA380020D354 /* ASCTableViewController.m */; };
-		E0AC3E5E19C8CA380020D354 /* ASCTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3E5C19C8CA380020D354 /* ASCTableViewController.xib */; };
-		E0AC3E6019C8D19A0020D354 /* pokemon.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3E5F19C8D19A0020D354 /* pokemon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12910B1219C8EFE00026333F /* ASCTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCTableViewController.xib; sourceTree = "<group>"; };
+		12910B1419C8F05A0026333F /* ASCDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCDetailViewController.xib; sourceTree = "<group>"; };
 		E0AC3E1519C8AE760020D354 /* Desafio_Split_View_Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio_Split_View_Controller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AC3E1819C8AE760020D354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0AC3E1A19C8AE760020D354 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,16 +58,12 @@
 		E0AC3E3D19C8AE770020D354 /* Desafio_Split_View_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_Split_View_ControllerTests.m; sourceTree = "<group>"; };
 		E0AC3E4A19C8AEE30020D354 /* ASCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCItem.h; sourceTree = "<group>"; };
 		E0AC3E4B19C8AEE30020D354 /* ASCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCItem.m; sourceTree = "<group>"; };
-		E0AC3E4F19C8B5380020D354 /* ASCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCViewController.xib; sourceTree = "<group>"; };
 		E0AC3E5219C8BB880020D354 /* ASCItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCItemStore.h; sourceTree = "<group>"; };
 		E0AC3E5319C8BB880020D354 /* ASCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCItemStore.m; sourceTree = "<group>"; };
 		E0AC3E5519C8C7000020D354 /* ASCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCDetailViewController.h; sourceTree = "<group>"; };
 		E0AC3E5619C8C7000020D354 /* ASCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCDetailViewController.m; sourceTree = "<group>"; };
-		E0AC3E5719C8C7000020D354 /* ASCDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCDetailViewController.xib; sourceTree = "<group>"; };
 		E0AC3E5A19C8CA380020D354 /* ASCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCTableViewController.h; sourceTree = "<group>"; };
 		E0AC3E5B19C8CA380020D354 /* ASCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCTableViewController.m; sourceTree = "<group>"; };
-		E0AC3E5C19C8CA380020D354 /* ASCTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCTableViewController.xib; sourceTree = "<group>"; };
-		E0AC3E5F19C8D19A0020D354 /* pokemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokemon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,16 +93,14 @@
 		E0AC3E0C19C8AE760020D354 = {
 			isa = PBXGroup;
 			children = (
-				E0AC3E5F19C8D19A0020D354 /* pokemon.png */,
+				12910B1419C8F05A0026333F /* ASCDetailViewController.xib */,
+				12910B1219C8EFE00026333F /* ASCTableViewController.xib */,
 				E0AC3E5A19C8CA380020D354 /* ASCTableViewController.h */,
 				E0AC3E5B19C8CA380020D354 /* ASCTableViewController.m */,
-				E0AC3E5C19C8CA380020D354 /* ASCTableViewController.xib */,
 				E0AC3E5519C8C7000020D354 /* ASCDetailViewController.h */,
 				E0AC3E5619C8C7000020D354 /* ASCDetailViewController.m */,
-				E0AC3E5719C8C7000020D354 /* ASCDetailViewController.xib */,
 				E0AC3E5219C8BB880020D354 /* ASCItemStore.h */,
 				E0AC3E5319C8BB880020D354 /* ASCItemStore.m */,
-				E0AC3E4F19C8B5380020D354 /* ASCViewController.xib */,
 				E0AC3E4A19C8AEE30020D354 /* ASCItem.h */,
 				E0AC3E4B19C8AEE30020D354 /* ASCItem.m */,
 				E0AC3E1E19C8AE760020D354 /* Desafio_Split_View_Controller */,
@@ -253,11 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AC3E2319C8AE770020D354 /* InfoPlist.strings in Resources */,
-				E0AC3E6019C8D19A0020D354 /* pokemon.png in Resources */,
-				E0AC3E5919C8C7000020D354 /* ASCDetailViewController.xib in Resources */,
 				E0AC3E2B19C8AE770020D354 /* Images.xcassets in Resources */,
-				E0AC3E5E19C8CA380020D354 /* ASCTableViewController.xib in Resources */,
-				E0AC3E5119C8B5380020D354 /* ASCViewController.xib in Resources */,
+				12910B1319C8EFE00026333F /* ASCTableViewController.xib in Resources */,
+				12910B1519C8F05A0026333F /* ASCDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Desafio_Split_View_Controller/Desafio_Split_View_Controller-Prefix.pch";
 				INFOPLIST_FILE = "Desafio_Split_View_Controller/Desafio_Split_View_Controller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -416,6 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Desafio_Split_View_Controller/Desafio_Split_View_Controller-Prefix.pch";
 				INFOPLIST_FILE = "Desafio_Split_View_Controller/Desafio_Split_View_Controller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -480,6 +474,7 @@
 				E0AC3E4319C8AE770020D354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0AC3E4419C8AE770020D354 /* Build configuration list for PBXNativeTarget "Desafio_Split_View_ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +483,7 @@
 				E0AC3E4619C8AE770020D354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

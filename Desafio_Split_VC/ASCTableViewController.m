@@ -13,6 +13,8 @@
 @interface ASCTableViewController ()
 
 @property (nonatomic) ASCItemStore *itemStored;
+@property (nonatomic) BOOL isEditing;
+@property (nonatomic) UIBarButtonItem *editButton;
 
 @end
 
@@ -28,11 +30,43 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    _isEditing = NO;
+    
     _itemStored = [ASCItemStore sharedStore];
     [_itemStored createItem];
     [_itemStored createItem];
     [_itemStored createItem];
     
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addItem)];
+    
+    _editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(editItem)];
+    
+    self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.leftBarButtonItem = _editButton;
+    
+}
+
+-(void) addItem
+{
+    [_itemStored createItem];
+    [_tbView reloadData];
+}
+
+-(void) editItem
+{
+    if (!_isEditing) {
+        [self setEditing:YES animated:YES];
+        _isEditing = YES;
+        UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(editItem)];
+        self.navigationItem.leftBarButtonItem = doneButton;
+    }
+    else
+    {
+        [self setEditing:NO animated:YES];
+        _isEditing = NO;
+        self.navigationItem.leftBarButtonItem = _editButton;
+    }
     
 }
 
@@ -52,8 +86,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     
-    //return [[_itemStored allItems] count];
-    return 1;
+    return [[_itemStored allItems] count];
 }
 
 
@@ -72,11 +105,7 @@
     
     NSString* itemName = [[[_itemStored allItems] objectAtIndex: index] getItemName];
     
-    NSLog(@"index %d name %@", index, itemName);
-    
     cell.textLabel.text = itemName;
-    UIImage *image = [UIImage imageNamed:@"pokemon.png"];
-    cell.imageView.image = image;
     
     return cell;
 
@@ -91,34 +120,41 @@
 }
 
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        [_itemStored removeItemAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    }
+    
 }
-*/
 
-/*
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
+    ASCItem* itemToMove = [[_itemStored allItems] objectAtIndex:fromIndexPath.row];
+    [_itemStored removeItemAtIndex:fromIndexPath.row];
+    
+    [_itemStored addItem:itemToMove AtIndex:toIndexPath.row];
+    
 }
-*/
 
-/*
+
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 
 #pragma mark - Table view delegate
@@ -126,14 +162,24 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    _detailViewController = [[ASCDetailViewController alloc] init];
     
-    // Pass the selected object to the new view controller.
+    if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone)
+    {
+        _detailViewController = [[ASCDetailViewController alloc] init];
+    }
     
-    // Push the view controller.
-    [self.navigationController pushViewController:_detailViewController animated:YES];
+    
+    _detailViewController.item = [[_itemStored allItems] objectAtIndex: indexPath.row];
+    
+    [_detailViewController refreshInfo];
+    
+    
+    if (!self.splitViewController) {
+        // Push the view controller.
+        [self.navigationController pushViewController:_detailViewController animated:YES];
+        
+    }
+    
 }
 
 

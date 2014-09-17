@@ -26,9 +26,10 @@
     UINavigationController *masterNav = [[UINavigationController alloc] initWithRootViewController:tvc];
     
     if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
-        UINavigationController *detailNav = [[UINavigationController alloc] initWithRootViewController:tvc];
+        UINavigationController *detailNav = [[UINavigationController alloc] initWithRootViewController:dvc];
         
         UISplitViewController *splitVC = [[UISplitViewController alloc] init];
+        splitVC.delegate = dvc;
         splitVC.viewControllers = @[masterNav, detailNav];
         
         self.window.rootViewController = splitVC;

@@ -45,4 +45,14 @@
     return itemStore;
 }
 
+-(void) removeItemAtIndex:(int)index
+{
+    [_privateItems removeObjectAtIndex:index];
+}
+
+-(void) addItem: (ASCItem*) newItem AtIndex:(int)index
+{
+    [_privateItems insertObject:newItem atIndex:index];
+}
+
 @end

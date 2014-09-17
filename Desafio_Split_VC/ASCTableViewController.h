@@ -11,6 +11,7 @@
 
 @interface ASCTableViewController : UITableViewController
 
-@property ASCDetailViewController *detailViewController;
+@property (nonatomic) ASCDetailViewController *detailViewController;
+@property (nonatomic) IBOutlet UITableView *tbView;
 
 @end

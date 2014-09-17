@@ -15,5 +15,7 @@
 
 +(instancetype) sharedStore;
 -(ASCItem *) createItem;
+-(void) removeItemAtIndex:(int) index;
+-(void) addItem: (ASCItem*) newItem AtIndex:(int) index;
 
 @end

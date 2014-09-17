@@ -13,4 +13,6 @@
 
 @property (nonatomic) ASCItem* item;
 
+-(void) refreshInfo;
+
 @end
