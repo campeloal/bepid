@@ -18,4 +18,8 @@
 -(void) removeItemAtIndex:(int) index;
 -(void) addItem: (ASCItem*) newItem AtIndex:(int) index;
 
+-(void) moveItem: (ASCItem*) newItem AtIndex:(int)index FromIndex: (int) fromIndex;
+
+-(BOOL) saveChanges;
+
 @end

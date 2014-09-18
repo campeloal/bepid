@@ -21,10 +21,11 @@
 		E0AC3E3419C8AE770020D354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AC3E1C19C8AE760020D354 /* UIKit.framework */; };
 		E0AC3E3C19C8AE770020D354 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AC3E3A19C8AE770020D354 /* InfoPlist.strings */; };
 		E0AC3E3E19C8AE770020D354 /* Desafio_Split_View_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E3D19C8AE770020D354 /* Desafio_Split_View_ControllerTests.m */; };
-		E0AC3E4C19C8AEE30020D354 /* ASCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E4B19C8AEE30020D354 /* ASCItem.m */; };
 		E0AC3E5419C8BB880020D354 /* ASCItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E5319C8BB880020D354 /* ASCItemStore.m */; };
 		E0AC3E5819C8C7000020D354 /* ASCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E5619C8C7000020D354 /* ASCDetailViewController.m */; };
 		E0AC3E5D19C8CA380020D354 /* ASCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AC3E5B19C8CA380020D354 /* ASCTableViewController.m */; };
+		E0AD500619CB5A9500E3B918 /* splitViewController.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0AD500419CB5A9500E3B918 /* splitViewController.xcdatamodeld */; };
+		E0AD500919CB5C3A00E3B918 /* ASCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD500819CB5C3A00E3B918 /* ASCItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +57,15 @@
 		E0AC3E3919C8AE770020D354 /* Desafio_Split_View_ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Desafio_Split_View_ControllerTests-Info.plist"; sourceTree = "<group>"; };
 		E0AC3E3B19C8AE770020D354 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0AC3E3D19C8AE770020D354 /* Desafio_Split_View_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Desafio_Split_View_ControllerTests.m; sourceTree = "<group>"; };
-		E0AC3E4A19C8AEE30020D354 /* ASCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCItem.h; sourceTree = "<group>"; };
-		E0AC3E4B19C8AEE30020D354 /* ASCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCItem.m; sourceTree = "<group>"; };
 		E0AC3E5219C8BB880020D354 /* ASCItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCItemStore.h; sourceTree = "<group>"; };
 		E0AC3E5319C8BB880020D354 /* ASCItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCItemStore.m; sourceTree = "<group>"; };
 		E0AC3E5519C8C7000020D354 /* ASCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCDetailViewController.h; sourceTree = "<group>"; };
 		E0AC3E5619C8C7000020D354 /* ASCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCDetailViewController.m; sourceTree = "<group>"; };
 		E0AC3E5A19C8CA380020D354 /* ASCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCTableViewController.h; sourceTree = "<group>"; };
 		E0AC3E5B19C8CA380020D354 /* ASCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCTableViewController.m; sourceTree = "<group>"; };
+		E0AD500519CB5A9500E3B918 /* splitViewController.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = splitViewController.xcdatamodel; sourceTree = "<group>"; };
+		E0AD500719CB5C3A00E3B918 /* ASCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCItem.h; sourceTree = "<group>"; };
+		E0AD500819CB5C3A00E3B918 /* ASCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,9 @@
 		E0AC3E0C19C8AE760020D354 = {
 			isa = PBXGroup;
 			children = (
+				E0AD500719CB5C3A00E3B918 /* ASCItem.h */,
+				E0AD500819CB5C3A00E3B918 /* ASCItem.m */,
+				E0AD500419CB5A9500E3B918 /* splitViewController.xcdatamodeld */,
 				12910B1419C8F05A0026333F /* ASCDetailViewController.xib */,
 				12910B1219C8EFE00026333F /* ASCTableViewController.xib */,
 				E0AC3E5A19C8CA380020D354 /* ASCTableViewController.h */,
@@ -101,8 +106,6 @@
 				E0AC3E5619C8C7000020D354 /* ASCDetailViewController.m */,
 				E0AC3E5219C8BB880020D354 /* ASCItemStore.h */,
 				E0AC3E5319C8BB880020D354 /* ASCItemStore.m */,
-				E0AC3E4A19C8AEE30020D354 /* ASCItem.h */,
-				E0AC3E4B19C8AEE30020D354 /* ASCItem.m */,
 				E0AC3E1E19C8AE760020D354 /* Desafio_Split_View_Controller */,
 				E0AC3E3719C8AE770020D354 /* Desafio_Split_View_ControllerTests */,
 				E0AC3E1719C8AE760020D354 /* Frameworks */,
@@ -269,8 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AC3E5419C8BB880020D354 /* ASCItemStore.m in Sources */,
-				E0AC3E4C19C8AEE30020D354 /* ASCItem.m in Sources */,
+				E0AD500919CB5C3A00E3B918 /* ASCItem.m in Sources */,
 				E0AC3E2919C8AE770020D354 /* ASCAppDelegate.m in Sources */,
+				E0AD500619CB5A9500E3B918 /* splitViewController.xcdatamodeld in Sources */,
 				E0AC3E2519C8AE770020D354 /* main.m in Sources */,
 				E0AC3E5819C8C7000020D354 /* ASCDetailViewController.m in Sources */,
 				E0AC3E5D19C8CA380020D354 /* ASCTableViewController.m in Sources */,
@@ -486,6 +490,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E0AD500419CB5A9500E3B918 /* splitViewController.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0AD500519CB5A9500E3B918 /* splitViewController.xcdatamodel */,
+			);
+			currentVersion = E0AD500519CB5A9500E3B918 /* splitViewController.xcdatamodel */;
+			path = splitViewController.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E0AC3E0D19C8AE760020D354 /* Project object */;
 }

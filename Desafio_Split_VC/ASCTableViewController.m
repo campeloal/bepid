@@ -33,9 +33,6 @@
     _isEditing = NO;
     
     _itemStored = [ASCItemStore sharedStore];
-    [_itemStored createItem];
-    [_itemStored createItem];
-    [_itemStored createItem];
     
     
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addItem)];
@@ -103,7 +100,7 @@
     
     int index = (int) indexPath.row;
     
-    NSString* itemName = [[[_itemStored allItems] objectAtIndex: index] getItemName];
+    NSString* itemName = [[[_itemStored allItems] objectAtIndex: index] description];
     
     cell.textLabel.text = itemName;
     
@@ -140,9 +137,11 @@
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
     ASCItem* itemToMove = [[_itemStored allItems] objectAtIndex:fromIndexPath.row];
-    [_itemStored removeItemAtIndex:fromIndexPath.row];
+  //  [_itemStored removeItemAtIndex:fromIndexPath.row];
     
-    [_itemStored addItem:itemToMove AtIndex:toIndexPath.row];
+  //  [_itemStored addItem:itemToMove AtIndex:toIndexPath.row];
+    
+    [_itemStored moveItem:itemToMove AtIndex:(int)toIndexPath.row FromIndex:(int) fromIndexPath.row];
     
 }
 

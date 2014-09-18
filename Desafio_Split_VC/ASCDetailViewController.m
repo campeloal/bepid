@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *serialNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
+@property (weak, nonatomic) IBOutlet UITextField *ownerField;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (nonatomic) UIPopoverController *popover;
 
@@ -40,12 +41,13 @@
 {
     if(_item)
     {
-        _nameField.text = [_item getItemName];
-        _serialNumberField.text = [_item getSerialNumber];
-        _valueField.text = [NSString stringWithFormat:@"%d",[_item getValue]];
+        _nameField.text = [_item itemName];
+        _serialNumberField.text = [_item serialNumber];
+        _valueField.text = [NSString stringWithFormat:@"%d",[_item value]];
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
         [formatter setDateFormat:@"dd-mm-YYYY"];
         _dateLabel.text = [formatter stringFromDate:[NSDate date]];
+        _ownerField.text = [_item owner];
     }
     
     if (_popover) {

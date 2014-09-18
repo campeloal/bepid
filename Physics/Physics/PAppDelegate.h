@@ -7,6 +7,7 @@
 
 #import <GLKit/GLKit.h>
 #import "PPhysicsObject.h"
+#include "btBulletDynamicsCommon.h"
 
 
 @interface PAppDelegate : UIResponder <UIApplicationDelegate>
@@ -30,5 +31,6 @@
 - (GLKVector3)physicsPositionForObject:(PPhysicsObject *)anObject;
 - (void)physicsSetPosition:(GLKVector3)aVelocity 
                   forObject:(PPhysicsObject *)anObject;
+-(void) setTransformationMatrix: (btRigidBody*) body;
 
 @end

@@ -26,11 +26,14 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
 @property (strong, nonatomic, readwrite) 
    NSMutableArray *immovableBoxPhysicsObjects;
 @property (nonatomic) UITapGestureRecognizer *addObj;
-   
+@property (nonatomic) GLKMatrix4 savedModelviewMatrix;
+
+
 @end
 
 
 @implementation PViewController
+
 
 @synthesize baseEffect = baseEffect_;
 @synthesize boxPhysicsObjects = boxPhysicsObjects_;
@@ -65,10 +68,11 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
          [self.immovableBoxPhysicsObjects addObject:anObject];
          
          [appDelegate physicsRegisterBoxObject:anObject
-             position:GLKVector3Make(i * 1.3f, -1.0f, j  * 1.4f) 
+             position:GLKVector3Make(i * 1.3f, -2.0f, j  * 1.4f)
              mass:0.0f]; // Objects with zero mass are immovable
        }
    }
+    
 }
 
 
@@ -309,7 +313,9 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
          1.0f, // Red 
          1.0f, // Green 
          1.0f, // Blue 
-         1.0f);// Alpha    
+         1.0f);// Alpha
+    
+    glLoadIdentity();
    
    // Enable use of positions 
    glEnableVertexAttribArray(      
@@ -334,6 +340,8 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
       GL_FALSE,            // no fixed point scaling
       3 * sizeof(float), // no gaps in data
       sphereNormals);
+    
+    
    for(PPhysicsObject *currentObject in self.spherePhysicsObjects)
    {
       self.baseEffect.transform.modelviewMatrix = 
@@ -370,7 +378,7 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
    // Set the projection to match the aspect ratio
    self.baseEffect.transform.projectionMatrix = 
    GLKMatrix4MakePerspective(
-      GLKMathDegreesToRadians(35.0f),// Standard field of view
+      GLKMathDegreesToRadians(60.0f),// Standard field of view
       aspectRatio,
       0.2f,     // Don't make near plane too close
       200.0f); // Far arbitrarily far enough to contain scene
@@ -382,14 +390,18 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
       1.0f, 
       0.4f,  
       0.0f);// Directional light
-      
+    
+    
    [self.baseEffect prepareToDraw];
 
    // Clear Frame Buffer (erase previous drawing)
    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
    
-   [self drawPhysicsSphereObjects];
-   [self drawPhysicsBoxObjects];      
+    self.baseEffect.transform.modelviewMatrix = _savedModelviewMatrix;
+    [self drawPhysicsSphereObjects];
+    self.baseEffect.transform.modelviewMatrix = GLKMatrix4Rotate(self.baseEffect.transform.modelviewMatrix, GLKMathDegreesToRadians(40), 0.0, 0.0, 1.0);
+    [self drawPhysicsBoxObjects];
+    
 }
 
 #pragma mark - View lifecycle
@@ -440,6 +452,11 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
          9.8, 9.8, 6.0, // Eye position
          0.0, 1.0, 0.0,  // Look-at position
          0.0, 1.0, 0.0); // Up direction
+    
+    self.baseEffect.transform.modelviewMatrix = GLKMatrix4MakeLookAt(0, 0, 15, 0, 0, 0, 0, 1, 0);
+    
+    _savedModelviewMatrix = self.baseEffect.transform.modelviewMatrix;
+    
 
    // Configure a light
    self.baseEffect.light0.enabled = GL_TRUE;
@@ -459,16 +476,14 @@ static const NSInteger PMAX_NUMBER_BLOCKS = 30;
    // Become the first responder to receive motion events
    [self becomeFirstResponder];
     
-    //_addObj = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addCube)];
-    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addCube)];
     [view addGestureRecognizer:tap];
 }
 
 -(void) addCube
 {
-    NSLog(@"oi");
-    [self scheduleAddRandomPhysicsBoxObject:nil];
+    //[self scheduleAddRandomPhysicsBoxObject:nil];
+     //self.baseEffect.transform.modelviewMatrix = GLKMatrix4Rotate(self.baseEffect.transform.modelviewMatrix, GLKMathDegreesToRadians(40), 0.0, 0.0, 1.0);
 }
 
 

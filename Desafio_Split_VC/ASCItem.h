@@ -2,30 +2,24 @@
 //  ASCItem.h
 //  Desafio_Split_View_Controller
 //
-//  Created by Alex De Souza Campelo Lima on 9/16/14.
+//  Created by Alex De Souza Campelo Lima on 9/18/14.
 //  Copyright (c) 2014 Alex De Souza Campelo Lima. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface ASCItem : NSObject
 
-@property (nonatomic, copy) NSString *itemName;
-@property (nonatomic, copy) NSString *serialNumber;
-@property (nonatomic) int value;
-@property (nonatomic,readonly) NSDate *dateCreated;
+@interface ASCItem : NSManagedObject
 
--(instancetype) initWithItemName: (NSString*) name
-                           value: (int) value
-                    serialNumber: (NSString*) sNumber;
+@property (nonatomic, retain) NSDate * dateCreated;
+@property (nonatomic, retain) NSString * itemName;
+@property (nonatomic, retain) NSString * serialNumber;
+@property (nonatomic, retain) NSString * owner;
+@property (nonatomic) int  value;
+@property (nonatomic) double orderingValue;
 
--(instancetype) initWithItemName: (NSString*) name;
-
-+(instancetype) randomItem;
-
--(NSString*) getItemName;
--(NSString*) getSerialNumber;
--(int) getValue;
+-(void) randomData;
 
 
 @end

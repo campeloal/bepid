@@ -6,7 +6,6 @@
 //
 
 #import "PAppDelegate.h"
-#include "btBulletDynamicsCommon.h"
 #include <map>
 
 
@@ -204,6 +203,33 @@ typedef std::map<PPhysicsObject *, btCollisionObject*>
    modelShapeMap[anObject] = [self physicsRegisterAABB:aabb
                                                position:position
                                                    mass:aMass];
+    
+}
+
+-(void) setTransformationMatrix: (btRigidBody*) body;
+{
+    
+    btTransform pos;
+    
+    btQuaternion quaternion;
+    
+    //4
+//    float angleDiff = rotationX - self.rotationX;
+//    btQuaternion diffRot = btQuaternion(btVector3(1,0,0), angleDiff);
+//    rot = diffRot * rot;
+    
+    quaternion.setRotation(btVector3(1,0,0), 45);
+    
+    pos.setRotation(quaternion);
+    
+    body->setWorldTransform(pos);
+    //pos.setIdentity();
+    
+    // mat is a btScalar * containing an OpenGL type matrix
+    //pos.setFromOpenGLMatrix(mat);
+    
+    // apply the transform to the object
+    //body->setWorldTransform(pos);
 }
 
 

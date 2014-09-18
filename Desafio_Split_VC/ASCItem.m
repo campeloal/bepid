@@ -2,43 +2,65 @@
 //  ASCItem.m
 //  Desafio_Split_View_Controller
 //
-//  Created by Alex De Souza Campelo Lima on 9/16/14.
+//  Created by Alex De Souza Campelo Lima on 9/18/14.
 //  Copyright (c) 2014 Alex De Souza Campelo Lima. All rights reserved.
 //
 
 #import "ASCItem.h"
 
-@interface ASCItem()
-
-@end
 
 @implementation ASCItem
 
-+ (instancetype)randomItem
+@dynamic dateCreated;
+@dynamic itemName;
+@dynamic serialNumber;
+@dynamic value;
+@dynamic orderingValue;
+@dynamic owner;
+
+-(void)awakeFromInsert
 {
-    int value = (int) arc4random_uniform(15001);
-    return [[self alloc] initWithItemName: [self createName] value: value serialNumber: [self createSerialNumber]];
+    [super awakeFromInsert];
+    
+    self.dateCreated = [NSDate date];
+
 }
 
-+(NSString*) createName
+- (void)randomData
+{
+
+    self.itemName = [self createDevice];
+    self.owner = [self createOwner];
+    self.serialNumber = [self createSerialNumber];
+    self.value = (int) arc4random_uniform(15001);
+    //self.orderingValue = (int) arc4random_uniform(100);
+    NSLog(@"ordering value %f", self.orderingValue);
+}
+
+-(NSString*) createOwner
 {
     NSArray *names = [[NSArray alloc] initWithObjects:@"Antônio",@"Bruno",@"Cézar",@"Daniel",@"Elton",@"Fábio",@"Guilherme", nil];
     NSString * name = [names objectAtIndex:arc4random_uniform((int) [names count])];
-    
+
+    return name;
+}
+
+-(NSString*) createDevice
+{
     NSArray *devices =[[NSArray alloc] initWithObjects:@"iPhone",@"iPad",@"iMac",@"MacBook",@"MacMini",@"Ipod",nil];
     
     NSString *device = [devices objectAtIndex:arc4random_uniform((int) [devices count])];
     
-    return [NSString stringWithFormat:@"%@%@%@",device,@" do ",name];
+    return device;
 }
 
-+(NSString*) createSerialNumber
+-(NSString*) createSerialNumber
 {
     
     return [NSString stringWithFormat:@"%c%c%c%c%c", [self getRandomCharacter:NO], [self getRandomCharacter:YES],[self getRandomCharacter:NO],[self getRandomCharacter:YES],[self getRandomCharacter:NO]];
 }
 
-+(char) getRandomCharacter: (BOOL) isLetter
+-(char) getRandomCharacter: (BOOL) isLetter
 {
     char finalChar;
     if (isLetter) {
@@ -54,46 +76,9 @@
     }
 }
 
--(instancetype) initWithItemName:(NSString *)name value:(int)value serialNumber:(NSString *)sNumber
+-(NSString*) description
 {
-    self = [super init];
-    if (self) {
-        self.itemName = name;
-        self.serialNumber = sNumber;
-        self.value = value;
-        
-        NSLog(@"item name: %@", self.itemName);
-        NSLog(@"item serial: %@", self.serialNumber);
-        NSLog(@"item value: %d", self.value);
-    }
-    return self;
+    return [NSString stringWithFormat:@"%@ do %@", self.itemName, self.owner ];
 }
-
--(NSString*) getItemName
-{
-    return self.itemName;
-}
-
--(NSString*) getSerialNumber
-{
-    return self.serialNumber;
-}
-
--(int) getValue
-{
-    return self.value;
-}
-
--(instancetype) initWithItemName:(NSString *)name
-{
-    
-    self = [super init];
-    if (self) {
-        self.itemName = name;
-    }
-    return self;
-}
-
-
 
 @end
