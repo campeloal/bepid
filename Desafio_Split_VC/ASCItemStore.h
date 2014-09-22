@@ -21,5 +21,6 @@
 -(void) moveItem: (ASCItem*) newItem AtIndex:(int)index FromIndex: (int) fromIndex;
 
 -(BOOL) saveChanges;
+-(void) saveOrderingValues;
 
 @end

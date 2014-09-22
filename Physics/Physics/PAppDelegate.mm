@@ -6,6 +6,7 @@
 //
 
 #import "PAppDelegate.h"
+#include "btBulletDynamicsCommon.h"
 #include <map>
 
 

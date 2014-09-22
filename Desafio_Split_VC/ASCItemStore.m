@@ -32,10 +32,6 @@
     
     newItem.orderingValue = _value;
     
-    if (!_privateItems) {
-        _privateItems = [[NSMutableArray alloc] init];
-    }
-    
     [newItem randomData];
     
     [_privateItems addObject:newItem];
@@ -74,7 +70,6 @@
     [_context deleteObject:_privateItems[fromIndex]];
     [_privateItems removeObjectAtIndex:fromIndex];
     [_privateItems insertObject:newItem atIndex:index];
-    [self saveChanges];
 }
 
 -(NSString*) itemArchivePath
@@ -105,6 +100,8 @@
         }
         
         self.privateItems = [[NSMutableArray alloc] initWithArray:result];
+        
+        _value = (int) [_privateItems count];
     }
 }
 
@@ -132,7 +129,6 @@
         _context = [[NSManagedObjectContext alloc] init];
         _context.persistentStoreCoordinator = psc;
         
-        _value = 0;
         
         [self loadAllItems];
     }
@@ -150,6 +146,14 @@
     }
     
     return successful;
+}
+
+-(void) saveOrderingValues
+{
+    for (int i = 0; i < [_privateItems count]; i++) {
+        ASCItem *item = [_privateItems objectAtIndex:i];
+        item.orderingValue = i;
+    }
 }
 
 @end
