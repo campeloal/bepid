@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/TestList.cpp \
+  ../../Test/Source/TestList.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtmul.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtmulQV3.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtmulV3Q.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtdot.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_qtnorm.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3dot.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3sdiv.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3norm.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3cross.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3triple.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3interp.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3lerp.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3skew.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3div.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_v3rotate.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_maxdot.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_mindot.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_dot3.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3transpose.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3transposeTimes.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3timesTranspose.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulM.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulM1M2.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulMV.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3mulVM.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3setRot.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_3x3getRot.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_btDbvt.h \
+  /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../Test/Source/Tests/Test_quat_aos_neon.h \
+  ../../src/LinearMath/btScalar.h

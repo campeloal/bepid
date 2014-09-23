@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6D0AA2F8-DA4C-4AAF-8141-77E88F8108E4</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Web_Service_Exemplo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>07DEC410-477E-43A7-AE7F-E1AD6131501C</key>
+		<string>https://github.com/campeloal/bepid.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Web_Service_Exemplo/Web_Service_Exemplo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>07DEC410-477E-43A7-AE7F-E1AD6131501C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/campeloal/bepid.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>07DEC410-477E-43A7-AE7F-E1AD6131501C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>07DEC410-477E-43A7-AE7F-E1AD6131501C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BEPiD</string>
+		</dict>
+	</array>
+</dict>
+</plist>

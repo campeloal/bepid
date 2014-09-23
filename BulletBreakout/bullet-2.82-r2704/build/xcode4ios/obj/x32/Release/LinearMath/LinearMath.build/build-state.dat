@@ -1,0 +1,302 @@
+TLinearMath
+v5
+r1
+cCheck dependencies
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/libLinearMath_xcode4.a normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk
+c0000000050ED385D0000000000000110
+t1357723741
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/stdio.h
+c0000000051B4C2050000000000004523
+t1370800645
+s17699
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/stdlib.h
+c0000000051B4C2050000000000003089
+t1370800645
+s12425
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/libLinearMath_xcode4.a
+t1411431614
+s576816
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp
+c000000004FCFFC3E000000000000113A
+t1339030590
+s4410
+i"btAlignedAllocator.h"
+i<malloc.h>
+i<stdlib.h>
+i<stdio.h>
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.h
+c00000000499C9113000000000000114F
+t1234997523
+s4431
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedObjectArray.h
+c000000004FCFFC3E0000000000002BCB
+t1339030590
+s11211
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp
+c00000000504B9AAA0000000000006E5D
+t1347132074
+s28253
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.h
+c000000004D96080C0000000000001D20
+t1301678092
+s7456
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp
+c0000000050CF82C7000000000000DFDA
+t1355776711
+s57306
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.h
+c000000004FCFFC3E0000000000000DA6
+t1339030590
+s3494
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp
+c00000000499C911300000000000013EE
+t1234997523
+s5102
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.h
+c00000000499C9113000000000000075E
+t1234997523
+s1886
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btMatrix3x3.h
+c000000005266CE54000000000000ADC0
+t1382469204
+s44480
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btMinMax.h
+c000000004EE6324700000000000006C6
+t1323708999
+s1734
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp
+c0000000050C232640000000000000A81
+t1354904164
+s2689
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.h
+c00000000504CD0560000000000000A2D
+t1347211350
+s2605
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuadWord.h
+c000000004FCFFC3E0000000000001C89
+t1339030590
+s7305
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuaternion.h
+c00000000525F04600000000000006E31
+t1381958752
+s28209
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp
+c000000004E5C58E00000000000004100
+t1314674912
+s16640
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.h
+c000000004E5C58E00000000000001410
+t1314674912
+s5136
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btScalar.h
+c000000005266CB8100000000000053B9
+t1382468481
+s21433
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp
+c000000005234A20D000000000002CD2E
+t1379181069
+s183598
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp
+c000000005267057B0000000000011028
+t1382483323
+s69672
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.h
+c000000005266CE540000000000009D3C
+t1382469204
+s40252
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/LinearMath_xcode4.LinkFileList
+c000000005420BCBC00000000000004D4
+t1411431612
+s1236
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o
+t1411431612
+s8748
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o
+t1411431612
+s164604
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o
+t1411431613
+s228520
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o
+t1411431612
+s33116
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o
+t1411431613
+s43964
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o
+t1411431613
+s34620
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o
+t1411431613
+s22436
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o
+t1411431614
+s32576
+
+N/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/src/LinearMath/btAlignedAllocator.h
+c00000000499C9113000000000000114F
+t1234997523
+s4431
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesc70f5d62f5d0b941^22e35d62f5d0b941^---0#1#0#--18"Check dependencies36"8AA8E574-BC87-460D-BE1A-F984632A78DA-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124412.166635
+e433124412.364097
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp96cb2a3cf4d0b941^fa455d3cf4d0b941^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp0000000000000000^3230"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o ../../src/LinearMath/btAlignedAllocator.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btAlignedAllocator.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btAlignedAllocator.o36"9C9C6B3D-70B3-47EE-9141-9B3171884364-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124412.166662
+e433124412.877046
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp98de2a3cf4d0b941^eb8fe03cf4d0b941^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp0000000000000000^3194"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o ../../src/LinearMath/btConvexHull.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHull.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHull.o36"57AD5C5C-0139-42CC-95CA-015BE2DF96C8-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124412.167064
+e433124413.942624
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp22de2a3cf4d0b941^185ef13df4d0b941^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp0000000000000000^3242"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o ../../src/LinearMath/btConvexHullComputer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btConvexHullComputer.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btConvexHullComputer.o36"E4CB0BD0-E50E-4B18-88A6-1C6925E2B8FA-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124412.365729
+e433124412.880723
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp9dbb5d3cf4d0b941^8673e13cf4d0b941^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp0000000000000000^3206"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o ../../src/LinearMath/btGeometryUtil.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btGeometryUtil.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btGeometryUtil.o36"5E7436FD-50E2-4AEE-9B36-AE0AFFC360D5-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124412.878815
+e433124413.142541
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp8e20e13cf4d0b941^e9b6243df4d0b941^---0#0#0#-19%DVTDocumentLocation2@133"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp0000000000000000^3242"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o ../../src/LinearMath/btPolarDecomposition.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btPolarDecomposition.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btPolarDecomposition.o36"2694E61C-D142-4E3F-8DD3-4039B49A225F-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124412.882869
+e433124413.142312
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp6d1fe23cf4d0b941^4ca8243df4d0b941^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp0000000000000000^3188"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o ../../src/LinearMath/btQuickprof.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btQuickprof.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btQuickprof.o36"24EF1079-2B1C-4B54-B9B8-4E397154C48B-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124413.143799
+e433124413.942635
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp9aef243df4d0b941^d108f23df4d0b941^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp0000000000000000^3194"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o ../../src/LinearMath/btSerializer.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btSerializer.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btSerializer.o36"A99ED6E7-AAC2-48C9-B443-07C2AE2F416C-
+
+CCompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s433124413.143998
+e433124414.194238
+r1
+xCompileC
+xobj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp
+xnormal
+xarmv7
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp7902253df4d0b941^e8bd313ef4d0b941^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp0000000000000000^3176"CompileC obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o ../../src/LinearMath/btVector3.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fno-rtti -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -miphoneos-version-min=6.1 -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-generated-files.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-own-target-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-all-target-headers.hmap -iquote /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/LinearMath_xcode4-project-headers.hmap -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/include -I../../src -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources/armv7 -I/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/DerivedSources -F/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -ffast-math -MMD -MT dependencies -MF /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.d --serialize-diagnostics /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.dia -c /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../src/LinearMath/btVector3.cpp -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/btVector3.o36"9571B225-71D2-48D7-8ECA-C706805C7237-
+
+CLibtool /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/libLinearMath_xcode4.a normal armv7
+s433124414.201448
+e433124414.212384
+r1
+xLibtool
+x/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/libLinearMath_xcode4.a
+xnormal
+xarmv7
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Libtool ../../lib/libLinearMath_xcode4.a normal armv709a9333ef4d0b941^dd5e363ef4d0b941^---0#0#0#--1005"Libtool ../../lib/libLinearMath_xcode4.a normal armv7    cd /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk -L/Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib -filelist /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/obj/x32/Release/LinearMath/LinearMath.build/Objects-normal/armv7/LinearMath_xcode4.LinkFileList -o /Users/teste/Downloads/BulletBreakout/bullet-2.82-r2704/build/xcode4ios/../../lib/libLinearMath_xcode4.a36"043A94FE-13C7-4BE0-8C5C-AADE477A732F-
+
