@@ -19,6 +19,7 @@
 }
 
 static GLfloat finalVertices[NUMBER_POLYGONS];
+static GLfloat onlyVertices[2800*VERTICES_PER_TRIANGLE*VERTEX_COORDINATES];
 
 - (instancetype)init
 {
@@ -157,6 +158,10 @@ static GLfloat finalVertices[NUMBER_POLYGONS];
         finalVertices[indexCoord*numberCoordinates + 4] = [[allNormals objectAtIndex:1] floatValue];
         
         finalVertices[indexCoord*numberCoordinates + 5] = [[allNormals objectAtIndex:2] floatValue];
+        
+        onlyVertices[indexCoord*numberCoordinates] = [[allVertices objectAtIndex:0] floatValue];
+        onlyVertices[indexCoord*numberCoordinates + 1] = [[allVertices objectAtIndex:1] floatValue];
+        onlyVertices[indexCoord*numberCoordinates + 2] = [[allVertices objectAtIndex:2] floatValue];
     
         if(hasTexture)
         {
@@ -174,11 +179,16 @@ static GLfloat finalVertices[NUMBER_POLYGONS];
             finalVertices[indexCoord*numberCoordinates + 6] = [[allNormals objectAtIndex:0] floatValue];
             finalVertices[indexCoord*numberCoordinates + 7] = [[allNormals objectAtIndex:1] floatValue];
         }
+        _totalNumberPositionVertices = indexCoord*numberCoordinates + 2;
         indexCoord++;
     }
     
 }
 
+-(GLfloat*) generateOnlyVertices
+{
+    return onlyVertices;
+}
 
 -(GLfloat*) generateArray
 {

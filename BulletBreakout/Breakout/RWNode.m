@@ -149,6 +149,7 @@
 // Quick hack to return a 2D bounding box for this object based on its width and height fields, in the Z=0 plane
 - (CGRect)boundingBoxWithModelViewMatrix:(GLKMatrix4)parentModelViewMatrix {
     
+    NSLog(@"oi");
     GLKMatrix4 modelViewMatrix = GLKMatrix4Multiply(parentModelViewMatrix, [self modelMatrix]);
     
     GLKVector4 lowerLeft = GLKVector4Make(-self.width/2, -self.height/2, 0, 1);

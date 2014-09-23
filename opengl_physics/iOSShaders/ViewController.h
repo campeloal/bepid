@@ -8,13 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-#import "Object.h"
 
 @interface ViewController : GLKViewController
-@property (weak, nonatomic) IBOutlet UIButton *addButton;
-@property (weak, nonatomic) IBOutlet UILabel *numberPoly;
-@property (weak, nonatomic) IBOutlet UIButton *decButton;
-- (IBAction)addPolygons:(id)sender;
-- (IBAction)decPolygons:(id)sender;
 
 @end

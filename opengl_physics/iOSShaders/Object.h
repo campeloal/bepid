@@ -7,15 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#define NUMBER_POLYGONS  60662 * 6 * 3
+#define TRIANGLES 60662
+#define VERTICES_PER_TRIANGLE 3
+#define VERTEX_COORDINATES 3
+#define NORMALS_COORDINATES 3
+#define TEXTURE_COORDINATES 2
+#define NUMBER_POLYGONS  60662 * (VERTEX_COORDINATES + NORMALS_COORDINATES) * VERTICES_PER_TRIANGLE
 
 @interface Object : NSObject
 
 @property (nonatomic,retain) NSMutableArray *verticesToAddBuffer;
 @property (nonatomic) int totalNumberVertices;
+@property (nonatomic) int totalNumberPositionVertices;
 
 -(void) loadObj:(NSString*) name;
 -(GLfloat*) generateArray;
+-(GLfloat*) generateOnlyVertices;
 
 
 @end
