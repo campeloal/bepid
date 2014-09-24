@@ -9,7 +9,6 @@
 #import "RObject.h"
 #import "Shader.h"
 #import "Object.h"
-#import "PObject.h"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
@@ -61,8 +60,8 @@ enum
         
         [self createBuffer];
         
-        _position = GLKVector3Make(0, 0, -4);
-        _rotationY = 3.14;
+        _position = GLKVector3Make(0, 0, 0);
+        _rotationY = 0.0;
         _rotationX = 0.0;
         _rotationZ = 0.0;
         _scale = 0.5;

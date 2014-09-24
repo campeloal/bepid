@@ -6,19 +6,25 @@
 //  Copyright (c) 2014 BEPiD. All rights reserved.
 //
 
-#import "PObject.h"
+#import "Physics.h"
 #include "btBulletDynamicsCommon.h"
 
-@interface PObject()
+@interface Physics()
     
 @end
 
-@implementation PObject{
+@implementation Physics{
     int _tag;
     btCollisionShape* _shape;
     btRigidBody* _body;
     float _rotationX, _rotationY, _rotationZ;
     GLKVector3 _position;
+    
+    btBroadphaseInterface*                  _broadphase;
+    btDefaultCollisionConfiguration*        _collisionConfiguration;
+    btCollisionDispatcher*                  _dispatcher;
+    btSequentialImpulseConstraintSolver*    _solver;
+    btDiscreteDynamicsWorld*                _world;
 }
 
 - (instancetype)initWithName:(const char *)name
@@ -38,11 +44,32 @@
         _rotationX = 0.0;
         _rotationZ = 0.0;
         
-        
+        [self initPhysics];
         [self createShapeWithVertices:vertices count:vertexCount isConvex:convex];
         [self createBodyWithMass:mass];
     }
     return self;
+}
+
+-(void)initPhysics
+{
+    
+    _broadphase = new btDbvtBroadphase();
+    
+    
+    _collisionConfiguration = new btDefaultCollisionConfiguration();
+    _dispatcher = new btCollisionDispatcher(_collisionConfiguration);
+    
+    
+    _solver = new btSequentialImpulseConstraintSolver();
+    
+    
+    _world = new btDiscreteDynamicsWorld(_dispatcher, _broadphase, _solver, _collisionConfiguration);
+    
+    
+    _world->setGravity(btVector3(0, -9.8, 0));
+    
+    
 }
 
 - (void)dealloc
@@ -52,7 +79,11 @@
         delete _body->getMotionState();
         delete _body;
     }
-    
+    delete _world;
+    delete _solver;
+    delete _collisionConfiguration;
+    delete _dispatcher;
+    delete _broadphase;
     delete _shape;
 }
 
@@ -131,13 +162,14 @@
     
     
     _body->setLinearFactor(btVector3(1,1,1));
+    
+    _world->addRigidBody(_body);
 }
 
-//1
+
 -(void)setPosition:(GLKVector3)position
 {
     
-    //3
     if (_body)
     {
         btTransform trans = _body->getWorldTransform();
@@ -146,15 +178,15 @@
     }
 }
 
-//4
+
 -(GLKVector3)position
 {
-        //5
+    
         btTransform trans = _body->getWorldTransform();
         return GLKVector3Make(trans.getOrigin().x(), trans.getOrigin().y(), trans.getOrigin().z());
 }
 
-//1
+
 -(void)setRotationX:(float)rotationX
 {
     
@@ -165,7 +197,7 @@
         btQuaternion rot = trans.getRotation();
         
         //4
-        float angleDiff = rotationX - self.rotationX;
+        float angleDiff = rotationX - _rotationX;
         btQuaternion diffRot = btQuaternion(btVector3(1,0,0), angleDiff);
         rot = diffRot * rot;
         
@@ -199,7 +231,7 @@
         btTransform trans = _body->getWorldTransform();
         btQuaternion rot = trans.getRotation();
         
-        float angleDiff = rotationY - self.rotationY;
+        float angleDiff = rotationY - _rotationY;
         btQuaternion diffRot = btQuaternion(btVector3(0,1,0), angleDiff);
         rot = diffRot * rot;
         
@@ -230,7 +262,7 @@
         btTransform trans = _body->getWorldTransform();
         btQuaternion rot = trans.getRotation();
         
-        float angleDiff = rotationZ - self.rotationZ;
+        float angleDiff = rotationZ - _rotationZ;
         btQuaternion diffRot = btQuaternion(btVector3(0,0,1), angleDiff);
         rot = diffRot * rot;
         
@@ -253,15 +285,59 @@
     return -1;
 }
 
--(btRigidBody*) getBody
-{
-    return _body;
-}
-
 -(void) updateWithDelta:(GLfloat)aDelta
 {
-    NSLog(@"Ball height: %f", _body->getWorldTransform().getOrigin().getY());
+    _world->stepSimulation(aDelta);
+    
+    float posX = _body->getWorldTransform().getOrigin().getX();
+    float posY = _body->getWorldTransform().getOrigin().getY();
+    float posZ = _body->getWorldTransform().getOrigin().getZ();
+    
+    _position.x = posX;
+    _position.y = posY;
+    _position.z = posZ;
+    
 }
 
+-(GLKVector3) getPosition
+{
+    return _position;
+}
 
+-(float) getRotationX
+{
+    return _rotationX;
+}
+
+-(float) getRotationY
+{
+    return _rotationY;
+}
+
+-(float) getRotationZ
+{
+    return _rotationZ;
+}
+
+-(void) setInitialRotationX: (float) x
+{
+    _rotationX = x;
+}
+
+-(void) setInitialRotationY: (float) y
+{
+    _rotationX = y;
+}
+
+-(void) setInitialRotationZ: (float) z
+{
+    _rotationZ = z;
+}
+
+-(void) setInitialPosition: (GLKVector3) position
+{
+    _position.x = position.x;
+    _position.y = position.y;
+    _position.z = position.z;
+}
 @end

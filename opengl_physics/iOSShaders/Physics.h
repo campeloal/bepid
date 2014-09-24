@@ -7,9 +7,8 @@
 //
 
 #import <GLKit/GLKit.h>
-//@class btRigidBody;
 
-@interface PObject : NSObject
+@interface Physics : NSObject
 
 - (instancetype)initWithName:(const char *)name
                         mass:(float)mass
@@ -20,9 +19,13 @@
 
 
 - (void)updateWithDelta:(GLfloat)aDelta;
-
-//-(btRigidBody*) getBody;
-
-
+-(GLKVector3) getPosition;
+-(float) getRotationX;
+-(float) getRotationY;
+-(float) getRotationZ;
+-(void) setInitialRotationX: (float) x;
+-(void) setInitialRotationY: (float) y;
+-(void) setInitialRotationZ: (float) z;
+-(void) setInitialPosition: (GLKVector3) position;
 
 @end

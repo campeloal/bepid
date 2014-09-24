@@ -57,7 +57,7 @@
 		E0AA222719D1F53D00CADA5D /* libBulletDynamics_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AA221C19D1F4D400CADA5D /* libBulletDynamics_xcode4.a */; };
 		E0AA222819D1F53D00CADA5D /* libLinearMath_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AA221F19D1F4D400CADA5D /* libLinearMath_xcode4.a */; };
 		E0AA222C19D2025200CADA5D /* RObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AA222B19D2025200CADA5D /* RObject.m */; };
-		E0AA223319D209AC00CADA5D /* PObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223219D209AC00CADA5D /* PObject.mm */; };
+		E0AA223319D209AC00CADA5D /* Physics.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223219D209AC00CADA5D /* Physics.mm */; };
 		E0AA223719D209F800CADA5D /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223619D209F800CADA5D /* GameScene.mm */; };
 		E0AD019119D2F82800585781 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD019019D2F82800585781 /* Ball.m */; };
 /* End PBXBuildFile section */
@@ -166,8 +166,8 @@
 		E0AA221419D1F4D300CADA5D /* LinearMath.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LinearMath.xcodeproj; path = "bullet-2.82-r2704/build/xcode4ios/LinearMath.xcodeproj"; sourceTree = "<group>"; };
 		E0AA222A19D2025200CADA5D /* RObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RObject.h; sourceTree = "<group>"; };
 		E0AA222B19D2025200CADA5D /* RObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RObject.m; sourceTree = "<group>"; };
-		E0AA223119D209AC00CADA5D /* PObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PObject.h; sourceTree = "<group>"; };
-		E0AA223219D209AC00CADA5D /* PObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PObject.mm; sourceTree = "<group>"; };
+		E0AA223119D209AC00CADA5D /* Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Physics.h; sourceTree = "<group>"; };
+		E0AA223219D209AC00CADA5D /* Physics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Physics.mm; sourceTree = "<group>"; };
 		E0AA223519D209F800CADA5D /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		E0AA223619D209F800CADA5D /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
 		E0AD018F19D2F82800585781 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
@@ -367,8 +367,8 @@
 		E0AA222D19D2097C00CADA5D /* Physics */ = {
 			isa = PBXGroup;
 			children = (
-				E0AA223119D209AC00CADA5D /* PObject.h */,
-				E0AA223219D209AC00CADA5D /* PObject.mm */,
+				E0AA223119D209AC00CADA5D /* Physics.h */,
+				E0AA223219D209AC00CADA5D /* Physics.mm */,
 			);
 			name = Physics;
 			sourceTree = "<group>";
@@ -534,7 +534,7 @@
 				12985D09193E933900DC212C /* ViewController.m in Sources */,
 				12985D17193E954400DC212C /* Object.m in Sources */,
 				12985D2A193EB19E00DC212C /* Shader.m in Sources */,
-				E0AA223319D209AC00CADA5D /* PObject.mm in Sources */,
+				E0AA223319D209AC00CADA5D /* Physics.mm in Sources */,
 				E0AA223719D209F800CADA5D /* GameScene.mm in Sources */,
 				E0AA222C19D2025200CADA5D /* RObject.m in Sources */,
 				E0AD019119D2F82800585781 /* Ball.m in Sources */,

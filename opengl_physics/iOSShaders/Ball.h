@@ -7,12 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PObject.h"
 #import "RObject.h"
 
 @interface Ball : NSObject
 
-@property (nonatomic) PObject *physhics;
 @property (nonatomic) RObject *render;
 
 @end

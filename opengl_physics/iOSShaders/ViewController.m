@@ -97,8 +97,8 @@
 {
     float aspect = fabsf(self.view.bounds.size.width / self.view.bounds.size.height);
     _gameScene.aspect = aspect;
-    [_gameScene updateRender];
     [_gameScene updatePhysicsWithDelta:3.5];
+    [_gameScene updateRender];
     
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "GameScene.h"
-#import "RObject.h"
+#import "Physics.h"
 #import "Ball.h"
 #include "btBulletDynamicsCommon.h"
 
@@ -16,16 +16,11 @@
         
     GLKMatrix4 _modelViewProjectionMatrix;
     GLKMatrix3 _normalMatrix;
-    RObject *rObject;
-    
-    btBroadphaseInterface*                  _broadphase;
-    btDefaultCollisionConfiguration*        _collisionConfiguration;
-    btCollisionDispatcher*                  _dispatcher;
-    btSequentialImpulseConstraintSolver*    _solver;
-    btDiscreteDynamicsWorld*                _world;
+
 }
 
 @property (nonatomic) Ball *ball;
+@property (nonatomic) Physics *physics;
 
 @end
 
@@ -36,41 +31,17 @@
     self = [super init];
     if (self) {
         _ball = [[Ball alloc] init];
-        [self initPhysics];
         
+        GLfloat *vertices = [_ball.render getVertices];
+        int numberVertices = [_ball.render numberPositionVertices];
+        
+        _physics = [[Physics alloc] initWithName:"ball" mass:10.0 convex:NO tag: 1 vertices: vertices vertexCount: numberVertices];
+        
+        [self setRotationX:0.0 Y:3.14 Z:0.0];
+        [self setPosition:GLKVector3Make(0.0, 0.0, -4)];
+
     }
     return self;
-}
-
--(void)initPhysics
-{
-
-    _broadphase = new btDbvtBroadphase();
-    
-
-    _collisionConfiguration = new btDefaultCollisionConfiguration();
-    _dispatcher = new btCollisionDispatcher(_collisionConfiguration);
-    
-
-    _solver = new btSequentialImpulseConstraintSolver();
-    
-
-    _world = new btDiscreteDynamicsWorld(_dispatcher, _broadphase, _solver, _collisionConfiguration);
-    
-
-    _world->setGravity(btVector3(0, -9.8, 0));
-    
-    
-}
-
-
-- (void)dealloc
-{
-    delete _world;
-    delete _solver;
-    delete _collisionConfiguration;
-    delete _dispatcher;
-    delete _broadphase;
 }
 
 -(void) drawObject
@@ -85,19 +56,49 @@
 -(void) updateRender
 {
     _ball.render.aspect = _aspect;
+    _ball.render.position = [_physics getPosition];
+    _ball.render.rotationX = [_physics getRotationX];
+    _ball.render.rotationY = [_physics getRotationY];
+    _ball.render.rotationZ = [_physics getRotationZ];
     [_ball.render update];
 }
 
 - (void)updatePhysicsWithDelta:(GLfloat)aDelta
 {
-    _world->stepSimulation(aDelta);
-    [_ball.physhics updateWithDelta:aDelta];
+    [_physics updateWithDelta:aDelta];
 }
 
 -(void) tearDownGL
 {
     [_ball.render tearDownGL];
 
+}
+
+-(void) setRotationX: (float) x Y: (float) y Z: (float) z
+{
+    //Physics
+    
+    [_physics setInitialRotationX:x];
+    [_physics setInitialRotationY:y];
+    [_physics setInitialRotationZ:z];
+    
+    //Render
+    _ball.render.rotationX = x;
+    _ball.render.rotationY = y;
+    _ball.render.rotationZ = z;
+    
+    
+}
+
+-(void) setPosition:(GLKVector3) position
+{
+    //Physics
+    
+    [_physics setInitialPosition:position];
+    
+    //Render
+    
+    _ball.render.position = position;
 }
 
 @end
