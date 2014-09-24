@@ -10,6 +10,8 @@
 
 @interface ASCLoginViewController : UIViewController<UIAlertViewDelegate>
 
+@property (nonatomic) NSString* ip;
+
 -(IBAction)dismissKeyboard:(id)sender;
 
 @end

@@ -7,16 +7,15 @@
 //
 
 #import "Ball.h"
-#define ballTag 0
 
 @implementation Ball
 
 - (instancetype)init
 {
-    self = [super init];
+    self = [super initWithObject:@"hand_2500" Shader:@"gouraud"];
     if (self) {
         
-        _render = [[RObject alloc] initWithObject:@"hand_2500" Shader:@"gouraud"];
+        
         
     }
     

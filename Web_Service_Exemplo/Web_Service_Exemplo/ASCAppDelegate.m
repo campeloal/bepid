@@ -8,6 +8,8 @@
 
 #import "ASCAppDelegate.h"
 #import "ASCLoginViewController.h"
+#import "ASCMainScreenViewController.h"
+
 
 @implementation ASCAppDelegate
 
@@ -15,11 +17,88 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.rootViewController = [[ASCLoginViewController alloc] init];
+    [self checkLogin];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+-(void) checkLogin
+{
+    NSInteger success = 0;
+    _ip = @"172.16.1.52";
+    
+    NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+    
+    // getting an NSString
+    NSString *post = [[NSString alloc] initWithFormat:@"username=%@&password=%@",[prefs stringForKey:@"username"],[prefs stringForKey:@"password"]];
+    NSLog(@"PostData: %@",post);
+    
+    NSString* address = [NSString stringWithFormat:@"http://%@:8888/jsonlogin.php", _ip];
+    
+    NSURL *url = [NSURL URLWithString:address];
+    
+    NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    
+    NSString *postLength = [NSString stringWithFormat:@"%lu", (unsigned long)[postData length]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:url];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength
+   forHTTPHeaderField: @"Content-Length"];
+    [request setValue:@"application/json"
+   forHTTPHeaderField:@"Accept"];
+    [request setValue:@"application/x-www-form-urlencoded"
+   forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+    
+    //[NSURLRequest setAllowsAnyHTTPCertificate:YES forHost:[url host]];
+    
+    NSError *error = [[NSError alloc] init];
+    NSHTTPURLResponse *response = nil;
+    NSData *urlData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    
+    //NSLog(@"error %@", error);
+    
+    NSLog(@"Response code: %ld", (long)[response statusCode]);
+    
+    if ([response statusCode] >= 200 && [response statusCode] < 300)
+    {
+        
+        NSString *responseData = [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
+        NSLog(@"Response ==> %@", responseData);
+        
+        NSError *error = nil;
+        NSDictionary *jsonData = [NSJSONSerialization JSONObjectWithData:urlData options: NSJSONReadingMutableContainers error: &error];
+        
+        success = [jsonData[@"success"] integerValue];
+        
+        NSLog(@"success: %ld", (long) success);
+        
+        if (success == 1) {
+            NSLog(@"Login SUCESS");
+            self.window.rootViewController = [[ASCMainScreenViewController alloc] init];
+            
+        }
+        else
+        {
+           ASCLoginViewController *login = [[ASCLoginViewController alloc] init];
+           login.ip = _ip;
+           self.window.rootViewController = login;
+        }
+        
+    }
+    else
+    {
+        ASCLoginViewController *login = [[ASCLoginViewController alloc] init];
+        login.ip = _ip;
+        self.window.rootViewController = login;
+    }
+    
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

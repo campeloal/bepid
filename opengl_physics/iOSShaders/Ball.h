@@ -6,11 +6,10 @@
 //  Copyright (c) 2014 BEPiD. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "RObject.h"
+#import <Foundation/Foundation.h>
 
-@interface Ball : NSObject
+@interface Ball : RObject
 
-@property (nonatomic) RObject *render;
 
 @end

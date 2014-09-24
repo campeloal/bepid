@@ -32,13 +32,16 @@
     if (self) {
         _ball = [[Ball alloc] init];
         
-        GLfloat *vertices = [_ball.render getVertices];
-        int numberVertices = [_ball.render numberPositionVertices];
+        GLfloat *ballVer = [_ball getVertices];
+        int ballNumberVer = [_ball numberPositionVertices];
         
-        _physics = [[Physics alloc] initWithName:"ball" mass:10.0 convex:NO tag: 1 vertices: vertices vertexCount: numberVertices];
+        _physics = [[Physics alloc] init];
+    
+        [_physics addObjectWithTag:1 Vertices:ballVer VertexCount:ballNumberVer isConvex:NO Mass:10.0];
         
         [self setRotationX:0.0 Y:3.14 Z:0.0];
         [self setPosition:GLKVector3Make(0.0, 0.0, -4)];
+        [self setScale:1.0];
 
     }
     return self;
@@ -49,18 +52,18 @@
     glClearColor(0.65f, 0.65f, 0.65f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
-    [_ball.render drawObject];
+    [_ball drawObject];
     
 }
 
 -(void) updateRender
 {
-    _ball.render.aspect = _aspect;
-    _ball.render.position = [_physics getPosition];
-    _ball.render.rotationX = [_physics getRotationX];
-    _ball.render.rotationY = [_physics getRotationY];
-    _ball.render.rotationZ = [_physics getRotationZ];
-    [_ball.render update];
+    _ball.aspect = _aspect;
+    _ball.position = [_physics getPosition];
+    _ball.rotationX = [_physics getRotationX];
+    _ball.rotationY = [_physics getRotationY];
+    _ball.rotationZ = [_physics getRotationZ];
+    [_ball update];
 }
 
 - (void)updatePhysicsWithDelta:(GLfloat)aDelta
@@ -70,7 +73,7 @@
 
 -(void) tearDownGL
 {
-    [_ball.render tearDownGL];
+    [_ball tearDownGL];
 
 }
 
@@ -83,9 +86,9 @@
     [_physics setInitialRotationZ:z];
     
     //Render
-    _ball.render.rotationX = x;
-    _ball.render.rotationY = y;
-    _ball.render.rotationZ = z;
+    _ball.rotationX = x;
+    _ball.rotationY = y;
+    _ball.rotationZ = z;
     
     
 }
@@ -98,7 +101,17 @@
     
     //Render
     
-    _ball.render.position = position;
+    _ball.position = position;
+}
+
+-(void) setScale: (float) scale
+{
+    //Physics
+    [_physics setScaleX:scale Y:scale Z:scale];
+    
+    //Render
+    _ball.scale = scale;
+    
 }
 
 @end

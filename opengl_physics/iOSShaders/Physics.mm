@@ -25,28 +25,17 @@
     btCollisionDispatcher*                  _dispatcher;
     btSequentialImpulseConstraintSolver*    _solver;
     btDiscreteDynamicsWorld*                _world;
+    NSMutableArray *physProperties;
+    NSDictionary *_objects;
 }
 
-- (instancetype)initWithName:(const char *)name
-                        mass:(float)mass
-                      convex:(BOOL)convex
-                         tag:(int)tag
-                    vertices:(GLfloat *)vertices
-                 vertexCount:(unsigned int)vertexCount
+- (instancetype)init
 {
     
     self = [super init];
     if (self) {
         
-        _tag = tag;
-        _position = GLKVector3Make(0, 0, -4);
-        _rotationY = 3.14;
-        _rotationX = 0.0;
-        _rotationZ = 0.0;
-        
         [self initPhysics];
-        [self createShapeWithVertices:vertices count:vertexCount isConvex:convex];
-        [self createBodyWithMass:mass];
     }
     return self;
 }
@@ -70,6 +59,23 @@
     _world->setGravity(btVector3(0, -9.8, 0));
     
     
+}
+
+-(void) addObjectWithTag: (int) tag
+                Vertices: (GLfloat*) vertices
+             VertexCount: (int) vertexCount
+                isConvex: (BOOL) convex
+                    Mass: (float) mass
+{
+    _tag = tag;
+    _position = GLKVector3Make(0, 0, -4);
+    _rotationY = 3.14;
+    _rotationX = 0.0;
+    _rotationZ = 0.0;
+    _objects = [[NSDictionary alloc] init];
+    
+    [self createShapeWithVertices:vertices count:vertexCount isConvex:convex];
+    [self createBodyWithMass:mass];
 }
 
 - (void)dealloc
@@ -127,7 +133,9 @@
         }
         
         _shape = new btBvhTriangleMeshShape(mesh, true);
+        
     }
+    
 }
 
 -(void)createBodyWithMass:(float)mass
@@ -339,5 +347,10 @@
     _position.x = position.x;
     _position.y = position.y;
     _position.z = position.z;
+}
+
+-(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ
+{
+    _shape->setLocalScaling(btVector3(scaleX, scaleY, scaleZ));
 }
 @end

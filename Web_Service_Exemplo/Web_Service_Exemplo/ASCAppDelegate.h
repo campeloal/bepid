@@ -11,5 +11,6 @@
 @interface ASCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) NSString* ip;
 
 @end

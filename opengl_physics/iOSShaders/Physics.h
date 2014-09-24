@@ -10,14 +10,12 @@
 
 @interface Physics : NSObject
 
-- (instancetype)initWithName:(const char *)name
-                        mass:(float)mass
-                      convex:(BOOL)convex
-                         tag:(int)tag
-                    vertices:(GLfloat *)vertices
-                 vertexCount:(unsigned int)vertexCount;
 
-
+-(void) addObjectWithTag: (int) tag
+                Vertices: (GLfloat*) vertices
+             VertexCount: (int) vertexCount
+                isConvex: (BOOL) convex
+                    Mass: (float) mass;
 - (void)updateWithDelta:(GLfloat)aDelta;
 -(GLKVector3) getPosition;
 -(float) getRotationX;
@@ -27,5 +25,6 @@
 -(void) setInitialRotationY: (float) y;
 -(void) setInitialRotationZ: (float) z;
 -(void) setInitialPosition: (GLKVector3) position;
+-(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ;
 
 @end

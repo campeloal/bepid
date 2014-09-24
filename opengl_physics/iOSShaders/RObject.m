@@ -64,7 +64,7 @@ enum
         _rotationY = 0.0;
         _rotationX = 0.0;
         _rotationZ = 0.0;
-        _scale = 0.5;
+        _scale = 1.0;
         
 
     }
