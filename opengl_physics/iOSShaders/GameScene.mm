@@ -37,7 +37,7 @@
         
         _physics = [[Physics alloc] init];
     
-        [_physics addObjectWithTag:1 Vertices:ballVer VertexCount:ballNumberVer isConvex:NO Mass:10.0];
+        [_physics addObjectWithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:NO Mass:10.0];
         
         [self setRotationX:0.0 Y:3.14 Z:0.0];
         [self setPosition:GLKVector3Make(0.0, 0.0, -4)];
@@ -59,10 +59,10 @@
 -(void) updateRender
 {
     _ball.aspect = _aspect;
-    _ball.position = [_physics getPosition];
-    _ball.rotationX = [_physics getRotationX];
-    _ball.rotationY = [_physics getRotationY];
-    _ball.rotationZ = [_physics getRotationZ];
+    _ball.position = [_physics positionForObject:@"ball"];
+    _ball.rotationX = [_physics getRotationXForObject:@"ball"];
+    _ball.rotationY = [_physics getRotationYForObject:@"ball"];
+    _ball.rotationZ = [_physics getRotationZForObject:@"ball"];
     [_ball update];
 }
 
@@ -81,9 +81,9 @@
 {
     //Physics
     
-    [_physics setInitialRotationX:x];
-    [_physics setInitialRotationY:y];
-    [_physics setInitialRotationZ:z];
+    [_physics setInitialRotationX:x ForObject:@"ball"];
+    [_physics setInitialRotationY:y ForObject:@"ball"];
+    [_physics setInitialRotationZ:z ForObject:@"ball"];
     
     //Render
     _ball.rotationX = x;
@@ -97,7 +97,7 @@
 {
     //Physics
     
-    [_physics setInitialPosition:position];
+    [_physics setInitialPosition:position ForObject:@"ball"];
     
     //Render
     
@@ -107,7 +107,7 @@
 -(void) setScale: (float) scale
 {
     //Physics
-    [_physics setScaleX:scale Y:scale Z:scale];
+    [_physics setScaleX:scale Y:scale Z:scale ForObject:@"ball"];
     
     //Render
     _ball.scale = scale;

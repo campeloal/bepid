@@ -14,7 +14,7 @@
 @end
 
 @implementation Physics{
-    int _tag;
+    NSString* _tag;
     btCollisionShape* _shape;
     btRigidBody* _body;
     float _rotationX, _rotationY, _rotationZ;
@@ -25,8 +25,8 @@
     btCollisionDispatcher*                  _dispatcher;
     btSequentialImpulseConstraintSolver*    _solver;
     btDiscreteDynamicsWorld*                _world;
-    NSMutableArray *physProperties;
-    NSDictionary *_objects;
+    NSMutableArray *_properties;
+    NSMutableDictionary *_objects;
 }
 
 - (instancetype)init
@@ -34,7 +34,8 @@
     
     self = [super init];
     if (self) {
-        
+        _properties = [[NSMutableArray alloc] init];
+        _objects = [[NSMutableDictionary alloc] init];
         [self initPhysics];
     }
     return self;
@@ -61,7 +62,7 @@
     
 }
 
--(void) addObjectWithTag: (int) tag
+-(void) addObjectWithTag: (NSString*) tag
                 Vertices: (GLfloat*) vertices
              VertexCount: (int) vertexCount
                 isConvex: (BOOL) convex
@@ -72,7 +73,12 @@
     _rotationY = 3.14;
     _rotationX = 0.0;
     _rotationZ = 0.0;
-    _objects = [[NSDictionary alloc] init];
+    _objects = [[NSMutableDictionary alloc] init];
+    
+    [_properties addObject:[NSNumber numberWithFloat:_rotationX]];
+    [_properties addObject:[NSNumber numberWithFloat:_rotationY]];
+    [_properties addObject:[NSNumber numberWithFloat:_rotationZ]];
+    
     
     [self createShapeWithVertices:vertices count:vertexCount isConvex:convex];
     [self createBodyWithMass:mass];
@@ -106,6 +112,7 @@
             btVector3 btv = btVector3(vertices[i*numberCoordinates + 0], vertices[i*numberCoordinates + 1], vertices[i*numberCoordinates + 2]);
             ((btConvexHullShape*)_shape)->addPoint(btv);
         }
+        
     }
     else
     {
@@ -133,8 +140,9 @@
         }
         
         _shape = new btBvhTriangleMeshShape(mesh, true);
-        
     }
+    
+    [_properties addObject: [NSValue valueWithPointer:_shape]];
     
 }
 
@@ -171,11 +179,22 @@
     
     _body->setLinearFactor(btVector3(1,1,1));
     
+    [_properties addObject:[NSValue valueWithPointer:_body]];
+    
+    [_objects setObject:_properties forKey:_tag];
+    
+    
+//    _rotationX = 0.0;
+//    _rotationY = 0.0;
+//    _rotationZ = 0.0;
+//    _body = nil;
+//    _shape = nil;
+    
     _world->addRigidBody(_body);
 }
 
 
--(void)setPosition:(GLKVector3)position
+-(void)setPosition:(GLKVector3)position ForObject: (NSString*) tag
 {
     
     if (_body)
@@ -187,15 +206,20 @@
 }
 
 
--(GLKVector3)position
+-(GLKVector3)positionForObject: (NSString*) tag
 {
     
-        btTransform trans = _body->getWorldTransform();
-        return GLKVector3Make(trans.getOrigin().x(), trans.getOrigin().y(), trans.getOrigin().z());
+    NSArray *prop = [_objects valueForKey:tag];
+    NSValue *bodyValue = [prop objectAtIndex:4];
+    
+    btRigidBody* localBody = (btRigidBody*)[bodyValue pointerValue];
+    
+    btTransform trans = localBody->getWorldTransform();
+    return GLKVector3Make(trans.getOrigin().x(), trans.getOrigin().y(), trans.getOrigin().z());
 }
 
 
--(void)setRotationX:(float)rotationX
+-(void)setRotationX:(float)rotationX ForObject: (NSString*) tag
 {
     
     if (_body)
@@ -216,7 +240,7 @@
 }
 
 
--(float)rotationX
+-(float)rotationXForObject: (NSString*) tag
 {
     if (_body)
     {
@@ -231,7 +255,7 @@
 
 }
 
--(void)setRotationY:(float)rotationY
+-(void)setRotationY:(float)rotationY ForObject: (NSString*) tag
 {
     
     if (_body)
@@ -248,7 +272,7 @@
     }
 }
 
--(float)rotationY
+-(float)rotationYForObject: (NSString*) tag
 {
     if (_body)
     {
@@ -262,7 +286,7 @@
     
 }
 
--(void)setRotationZ:(float)rotationZ
+-(void)setRotationZ:(float)rotationZ ForObject: (NSString*) tag
 {
     
     if (_body)
@@ -280,7 +304,7 @@
     }
 }
 
--(float)rotationZ
+-(float)rotationZForObject: (NSString*) tag
 {
     if (_body)
     {
@@ -297,59 +321,63 @@
 {
     _world->stepSimulation(aDelta);
     
-    float posX = _body->getWorldTransform().getOrigin().getX();
-    float posY = _body->getWorldTransform().getOrigin().getY();
-    float posZ = _body->getWorldTransform().getOrigin().getZ();
+    btRigidBody* localBody;
     
-    _position.x = posX;
-    _position.y = posY;
-    _position.z = posZ;
+    for(id obj in _objects) {
+        NSArray *prop = [_objects objectForKey:obj];
+        NSValue *bodyValue = [prop objectAtIndex:4];
+        localBody = (btRigidBody*)[bodyValue pointerValue];
+        
+        float posX = localBody->getWorldTransform().getOrigin().getX();
+        float posY = localBody->getWorldTransform().getOrigin().getY();
+        float posZ = localBody->getWorldTransform().getOrigin().getZ();
+        
+        _position.x = posX;
+        _position.y = posY;
+        _position.z = posZ;
+    }
     
 }
 
--(GLKVector3) getPosition
-{
-    return _position;
-}
 
--(float) getRotationX
+-(float) getRotationXForObject: (NSString*) tag
 {
     return _rotationX;
 }
 
--(float) getRotationY
+-(float) getRotationYForObject: (NSString*) tag
 {
     return _rotationY;
 }
 
--(float) getRotationZ
+-(float) getRotationZForObject: (NSString*) tag
 {
     return _rotationZ;
 }
 
--(void) setInitialRotationX: (float) x
+-(void) setInitialRotationX: (float) x ForObject: (NSString*) tag
 {
     _rotationX = x;
 }
 
--(void) setInitialRotationY: (float) y
+-(void) setInitialRotationY: (float) y ForObject: (NSString*) tag
 {
     _rotationX = y;
 }
 
--(void) setInitialRotationZ: (float) z
+-(void) setInitialRotationZ: (float) z ForObject: (NSString*) tag
 {
     _rotationZ = z;
 }
 
--(void) setInitialPosition: (GLKVector3) position
+-(void) setInitialPosition: (GLKVector3) position ForObject: (NSString*) tag
 {
     _position.x = position.x;
     _position.y = position.y;
     _position.z = position.z;
 }
 
--(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ
+-(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ ForObject: (NSString*) tag
 {
     _shape->setLocalScaling(btVector3(scaleX, scaleY, scaleZ));
 }
