@@ -32,6 +32,7 @@
     
     // getting an NSString
     NSString *post = [[NSString alloc] initWithFormat:@"username=%@&password=%@",[prefs stringForKey:@"username"],[prefs stringForKey:@"password"]];
+    
     NSLog(@"PostData: %@",post);
     
     NSString* address = [NSString stringWithFormat:@"http://%@:8888/jsonlogin.php", _ip];
@@ -78,14 +79,16 @@
         
         if (success == 1) {
             NSLog(@"Login SUCESS");
-            self.window.rootViewController = [[ASCMainScreenViewController alloc] init];
+            _nav = [[UINavigationController alloc] initWithRootViewController:[[ASCMainScreenViewController alloc] init]];
+            self.window.rootViewController = _nav;
             
         }
         else
         {
            ASCLoginViewController *login = [[ASCLoginViewController alloc] init];
            login.ip = _ip;
-           self.window.rootViewController = login;
+            _nav = [[UINavigationController alloc] initWithRootViewController:login];
+            self.window.rootViewController = _nav;
         }
         
     }
@@ -93,7 +96,11 @@
     {
         ASCLoginViewController *login = [[ASCLoginViewController alloc] init];
         login.ip = _ip;
-        self.window.rootViewController = login;
+        _nav = [[UINavigationController alloc] initWithRootViewController:login];
+        self.window.rootViewController = _nav;
+        
+//        _nav = [[UINavigationController alloc] initWithRootViewController:[[ASCMainScreenViewController alloc] init]];
+//        self.window.rootViewController = _nav;
     }
     
     

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Web_Service_Exemplo
+
+  Created by Alex De Souza Campelo Lima on 9/25/14.
+  Copyright (c) 2014 Alex De Souza Campelo Lima. All rights reserved.
+*/
+
+"user" = "Utilisateur";
+"password" = "Mot de Passe";
+"main_screen" = "Écran Principal";
+"send" = "Envoyer";
+"image_sent" = "Image Téléchargée";
+"login" = "Login";

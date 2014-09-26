@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASCMainScreenViewController : UIViewController
+@interface ASCMainScreenViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
+    
+    IBOutlet UIImageView *imageView;
+    
+    __weak IBOutlet UILabel *lblProcessado;
+}
+
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic)__weak IBOutlet UILabel *lblProcessado;
+
+-(IBAction)pushPick:(id)sender;
+-(IBAction)pushUpload:(id)sender;
 
 @end

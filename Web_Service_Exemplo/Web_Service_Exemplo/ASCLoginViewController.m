@@ -12,6 +12,9 @@
 @interface ASCLoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *user;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UILabel *userLabel;
+@property (weak, nonatomic) IBOutlet UILabel *passLabel;
+@property (weak, nonatomic) IBOutlet UIButton *sendButton;
 
 @end
 
@@ -30,7 +33,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = NSLocalizedString(@"login", nil);
+    _userLabel.text = NSLocalizedString(@"user",nil);
+    _passLabel.text = NSLocalizedString(@"password", nil);
     _password.secureTextEntry = YES;
+    _sendButton.titleLabel.text = NSLocalizedString(@"send", nil);
     [self retrieveLogin];
 }
 
@@ -139,7 +146,8 @@
         
         if (success) {
             [self saveLogin];
-            [self presentViewController:[[ASCMainScreenViewController alloc] init] animated:YES completion:nil];
+            
+            [self.navigationController pushViewController:[[ASCMainScreenViewController alloc] init] animated:YES];
         }
         
     }

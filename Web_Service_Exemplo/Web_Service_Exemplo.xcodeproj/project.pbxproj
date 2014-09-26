@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0A4D10719D4941F00E06F14 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0A4D10919D4941F00E06F14 /* Localizable.strings */; };
 		E0AB21F319D0B6FB007CE235 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB21F219D0B6FB007CE235 /* Foundation.framework */; };
 		E0AB21F519D0B6FB007CE235 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB21F419D0B6FB007CE235 /* CoreGraphics.framework */; };
 		E0AB21F719D0B6FB007CE235 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AB21F619D0B6FB007CE235 /* UIKit.framework */; };
@@ -36,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0A4D10819D4941F00E06F14 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0A4D10A19D4957600E06F14 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0A4D10B19D4957600E06F14 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0A4D10C19D4957600E06F14 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0A4D10D19D4975900E06F14 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0A4D10E19D4975900E06F14 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0A4D10F19D4975900E06F14 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0AB21EF19D0B6FB007CE235 /* Web_Service_Exemplo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Web_Service_Exemplo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AB21F219D0B6FB007CE235 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0AB21F419D0B6FB007CE235 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +66,9 @@
 		E0AB222619D0B84A007CE235 /* ASCMainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCMainScreenViewController.h; sourceTree = "<group>"; };
 		E0AB222719D0B84A007CE235 /* ASCMainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCMainScreenViewController.m; sourceTree = "<group>"; };
 		E0AB222819D0B84A007CE235 /* ASCMainScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASCMainScreenViewController.xib; sourceTree = "<group>"; };
+		E0AF813919D5D42D00D2C9A8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E0AF813A19D5D42D00D2C9A8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E0AF813B19D5D42D00D2C9A8 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0A4D10619D4937C00E06F14 /* Languages */ = {
+			isa = PBXGroup;
+			children = (
+				E0A4D10919D4941F00E06F14 /* Localizable.strings */,
+			);
+			name = Languages;
+			sourceTree = "<group>";
+		};
 		E0AB21E619D0B6FB007CE235 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +136,7 @@
 		E0AB21F819D0B6FB007CE235 /* Web_Service_Exemplo */ = {
 			isa = PBXGroup;
 			children = (
+				E0A4D10619D4937C00E06F14 /* Languages */,
 				E0AB220119D0B6FB007CE235 /* ASCAppDelegate.h */,
 				E0AB220219D0B6FB007CE235 /* ASCAppDelegate.m */,
 				E0AB220419D0B6FB007CE235 /* Images.xcassets */,
@@ -219,6 +239,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				pt,
+				fr,
+				es,
 			);
 			mainGroup = E0AB21E619D0B6FB007CE235;
 			productRefGroup = E0AB21F019D0B6FB007CE235 /* Products */;
@@ -236,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A4D10719D4941F00E06F14 /* Localizable.strings in Resources */,
 				E0AB21FD19D0B6FB007CE235 /* InfoPlist.strings in Resources */,
 				E0AB222519D0B720007CE235 /* ASCLoginViewController.xib in Resources */,
 				E0AB220519D0B6FB007CE235 /* Images.xcassets in Resources */,
@@ -284,10 +308,24 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E0A4D10919D4941F00E06F14 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0A4D10819D4941F00E06F14 /* en */,
+				E0A4D10A19D4957600E06F14 /* pt */,
+				E0A4D10D19D4975900E06F14 /* fr */,
+				E0AF813919D5D42D00D2C9A8 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E0AB21FB19D0B6FB007CE235 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E0AB21FC19D0B6FB007CE235 /* en */,
+				E0A4D10B19D4957600E06F14 /* pt */,
+				E0A4D10E19D4975900E06F14 /* fr */,
+				E0AF813A19D5D42D00D2C9A8 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -296,6 +334,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				E0AB221519D0B6FB007CE235 /* en */,
+				E0A4D10C19D4957600E06F14 /* pt */,
+				E0A4D10F19D4975900E06F14 /* fr */,
+				E0AF813B19D5D42D00D2C9A8 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -460,6 +501,7 @@
 				E0AB221D19D0B6FB007CE235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0AB221E19D0B6FB007CE235 /* Build configuration list for PBXNativeTarget "Web_Service_ExemploTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +510,7 @@
 				E0AB222019D0B6FB007CE235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

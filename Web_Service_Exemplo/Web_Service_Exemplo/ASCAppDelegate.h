@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic) NSString* ip;
+@property (nonatomic) UINavigationController *nav;
 
 @end
