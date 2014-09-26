@@ -15,16 +15,22 @@
                 Vertices: (GLfloat*) vertices
              VertexCount: (int) vertexCount
                 isConvex: (BOOL) convex
-                    Mass: (float) mass;
+                    Mass: (float) mass
+               RotationX: (float) rotationX
+               RotationY: (float) rotationY
+               RotationZ: (float) rotationZ
+                Position: (GLKVector3) position;
+
 - (void)updateWithDelta:(GLfloat)aDelta;
--(GLKVector3)positionForObject: (NSString*) tag;
+-(GLKVector3)getPositionForObject: (NSString*) tag;
 -(float) getRotationXForObject: (NSString*) tag;
 -(float) getRotationYForObject: (NSString*) tag;
 -(float) getRotationZForObject: (NSString*) tag;
--(void) setInitialRotationX: (float) x ForObject: (NSString*) tag;
--(void) setInitialRotationY: (float) y ForObject: (NSString*) tag;
--(void) setInitialRotationZ: (float) z ForObject: (NSString*) tag;
--(void) setInitialPosition: (GLKVector3) position ForObject: (NSString*) tag;
+
+-(void)setPosition:(GLKVector3)position ForObject: (NSString*) tag;
+-(void)setRotationX:(float)rotationX ForObject: (NSString*) tag;
+-(void)setRotationY:(float)rotationX ForObject: (NSString*) tag;
+-(void)setRotationZ:(float)rotationX ForObject: (NSString*) tag;
 -(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ ForObject: (NSString*) tag;
 
 @end

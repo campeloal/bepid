@@ -18,8 +18,8 @@
     
 }
 
-static GLfloat finalVertices[NUMBER_POLYGONS];
-static GLfloat onlyVertices[2800*VERTICES_PER_TRIANGLE*VERTEX_COORDINATES];
+ GLfloat finalVertices[NUMBER_POLYGONS];
+ GLfloat onlyVertices[2800*VERTICES_PER_TRIANGLE*VERTEX_COORDINATES];
 
 - (instancetype)init
 {

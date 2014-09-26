@@ -60,6 +60,7 @@
 		E0AA223319D209AC00CADA5D /* Physics.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223219D209AC00CADA5D /* Physics.mm */; };
 		E0AA223719D209F800CADA5D /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223619D209F800CADA5D /* GameScene.mm */; };
 		E0AD019119D2F82800585781 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD019019D2F82800585781 /* Ball.m */; };
+		E0AF813E19D6015200D2C9A8 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF813D19D6015200D2C9A8 /* Cube.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +173,8 @@
 		E0AA223619D209F800CADA5D /* GameScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GameScene.mm; sourceTree = "<group>"; };
 		E0AD018F19D2F82800585781 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		E0AD019019D2F82800585781 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		E0AF813C19D6015200D2C9A8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		E0AF813D19D6015200D2C9A8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +390,8 @@
 			children = (
 				E0AD018F19D2F82800585781 /* Ball.h */,
 				E0AD019019D2F82800585781 /* Ball.m */,
+				E0AF813C19D6015200D2C9A8 /* Cube.h */,
+				E0AF813D19D6015200D2C9A8 /* Cube.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -529,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AF813E19D6015200D2C9A8 /* Cube.m in Sources */,
 				12985CF8193E933900DC212C /* main.m in Sources */,
 				12985CFC193E933900DC212C /* AppDelegate.m in Sources */,
 				12985D09193E933900DC212C /* ViewController.m in Sources */,
