@@ -21,7 +21,7 @@
 }
 
 @property (nonatomic) Ball *ball;
-@property (nonatomic) Cube *ball2;
+@property (nonatomic) Cube *cube;
 @property (nonatomic) Physics *physics;
 
 @end
@@ -34,29 +34,28 @@
     if (self) {
         _ball = [[Ball alloc] init];
         
-        _ball2 = [[Cube alloc] init];
+        _cube = [[Cube alloc] init];
         
         GLfloat *ballVer = [_ball getVertices];
         int ballNumberVer = [_ball numberPositionVertices];
         
-        GLfloat *ball2Ver = [_ball2 getVertices];
-        int ball2NumberVer = [_ball2 numberPositionVertices];
+        GLfloat *cubeVer = [_cube getVertices];
+        int cubeNumberVer = [_cube numberPositionVertices];
         
         _physics = [[Physics alloc] init];
     
         [_physics addObjectWithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:NO Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 0.0, -4.0)];
         
-        [_physics setRotationY:3.14 ForObject:@"ball"];
+       // [_physics setRotationY:3.14 ForObject:@"ball"];
         
- //       [_physics addObjectWithTag:@"ball2" Vertices:ball2Ver VertexCount:ball2NumberVer isConvex:NO Mass:50.0 RotationX:90.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 0.0, -4)];
+        [_physics addObjectWithTag:@"cube" Vertices:cubeVer VertexCount:cubeNumberVer isConvex:NO Mass:50.0 RotationX:90.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 0.0, -4)];
         
- //       _ball2.position = GLKVector3Make(0.0, 50.0, 0.0);
+        _cube.position = GLKVector3Make(0.0, 0.0, -4.0);
         
-//        [self setPosition:GLKVector3Make(0.0, 3.0, -4)];
+        [self setPosition:GLKVector3Make(0.0, 3.0, -4)];
     
-//        [self setScale:1.0];
+       // [self setScale:1.0];
         
-        NSLog(@"porra");
 
     }
     return self;
@@ -68,7 +67,7 @@
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
     [_ball drawObject];
- //   [_ball2 drawObject];
+    [_cube drawObject];
     
 }
 
@@ -82,13 +81,13 @@
     
     [_ball update];
     
-//    _ball2.aspect = _aspect;
-//    _ball2.position = [_physics getPositionForObject:@"ball2"];
-//    _ball2.rotationX = [_physics getRotationXForObject:@"ball2"];
-//    _ball2.rotationY = [_physics getRotationYForObject:@"ball2"];
-//    _ball2.rotationZ = [_physics getRotationZForObject:@"ball2"];
-//    
-//    [_ball2 update];
+    _cube.aspect = _aspect;
+    _cube.position = [_physics getPositionForObject:@"cube"];
+    _cube.rotationX = [_physics getRotationXForObject:@"cube"];
+    _cube.rotationY = [_physics getRotationYForObject:@"cube"];
+    _cube.rotationZ = [_physics getRotationZForObject:@"cube"];
+    
+    [_cube update];
 }
 
 - (void)updatePhysicsWithDelta:(GLfloat)aDelta
@@ -99,7 +98,7 @@
 -(void) tearDownGL
 {
     [_ball tearDownGL];
-    [_ball2 tearDownGL];
+    [_cube tearDownGL];
 
 }
 

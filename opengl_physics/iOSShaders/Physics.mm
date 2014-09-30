@@ -26,7 +26,6 @@
     btCollisionDispatcher*                  _dispatcher;
     btSequentialImpulseConstraintSolver*    _solver;
     btDiscreteDynamicsWorld*                _world;
-    NSMutableArray *_properties;
     NSMutableDictionary *_objects;
 }
 
@@ -35,7 +34,6 @@
     
     self = [super init];
     if (self) {
-        _properties = [[NSMutableArray alloc] init];
         _objects = [[NSMutableDictionary alloc] init];
         [self initPhysics];
     }
@@ -74,15 +72,15 @@
                 Position: (GLKVector3) position
 {
     _tag = tag;
-
-    _objects = [[NSMutableDictionary alloc] init];
     
-    [_properties addObject:[NSNumber numberWithFloat:rotationX]];
-    [_properties addObject:[NSNumber numberWithFloat:rotationY]];
-    [_properties addObject:[NSNumber numberWithFloat:rotationZ]];
+    NSMutableArray *properties = [[NSMutableArray alloc] init];
+    [properties addObject:[NSNumber numberWithFloat:rotationX]];
+    [properties addObject:[NSNumber numberWithFloat:rotationY]];
+    [properties addObject:[NSNumber numberWithFloat:rotationZ]];
     
-    btCollisionShape* shape = [self createShapeWithVertices:vertices count:vertexCount isConvex:convex];
-    [self createBodyWithPosition:position Mass:mass RotationX:rotationX RotationY:rotationY RotationZ:rotationZ Shape:shape];
+    btCollisionShape* shape = [self createShapeWithVertices:vertices count:vertexCount isConvex:convex Properties:properties];
+    [self createBodyWithPosition:position Mass:mass RotationX:rotationX RotationY:rotationY RotationZ:rotationZ Shape:shape Properties: properties];
+    
 }
 
 - (void)dealloc
@@ -99,7 +97,7 @@
     delete _broadphase;
 }
 
--(btCollisionShape*)createShapeWithVertices:(GLfloat *)vertices count:(unsigned int)vertexCount isConvex:(BOOL)convex
+-(btCollisionShape*)createShapeWithVertices:(GLfloat *)vertices count:(unsigned int)vertexCount isConvex:(BOOL)convex Properties: (NSMutableArray*) properties
 {
     btCollisionShape* shape;
     if (convex)
@@ -142,13 +140,13 @@
         shape = new btBvhTriangleMeshShape(mesh, true);
     }
     
-    [_properties addObject: [NSValue valueWithPointer:shape]];
+    [properties addObject: [NSValue valueWithPointer:shape]];
     
     return shape;
     
 }
 
--(void)createBodyWithPosition: (GLKVector3) pos Mass:(float)mass RotationX: (float) rotX RotationY: (float) rotY RotationZ: (float) rotZ Shape: (btCollisionShape*) shape
+-(void)createBodyWithPosition: (GLKVector3) pos Mass:(float)mass RotationX: (float) rotX RotationY: (float) rotY RotationZ: (float) rotZ Shape: (btCollisionShape*) shape Properties: (NSMutableArray*) properties
 {
     
     btQuaternion rotation;
@@ -181,9 +179,9 @@
     
     body->setLinearFactor(btVector3(1,1,1));
     
-    [_properties addObject:[NSValue valueWithPointer:body]];
+    [properties addObject:[NSValue valueWithPointer:body]];
     
-    [_objects setObject:_properties forKey:_tag];
+    [_objects setObject:properties forKey:_tag];
     
     _world->addRigidBody(body);
     
@@ -195,7 +193,9 @@
     NSMutableArray *prop = [_objects valueForKey:tag];
     NSValue *bodyValue = [prop objectAtIndex:RIGID_BODY];
     btRigidBody* localBody = (btRigidBody*)[bodyValue pointerValue];
+
     btTransform trans = localBody->getWorldTransform();
+    
     trans.setOrigin(btVector3(position.x, position.y, position.z));
     localBody->setWorldTransform(trans);
 }
