@@ -44,9 +44,9 @@
         
         _physics = [[Physics alloc] init];
         
-        [self addObject:_ball WithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:YES Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 3.0, -4)];
+        [self addObject:_ball WithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:YES Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(-0.5, 3.0, -10)];
         
-        [self addObject:_cube WithTag:@"cube" Vertices:cubeVer VertexCount:cubeNumberVer isConvex:NO Mass:0.0 RotationX:0.0 RotationY:0.0 RotationZ:90.0 Position:GLKVector3Make(0.0, -1.0, -4)];
+        [self addObject:_cube WithTag:@"cube" Vertices:cubeVer VertexCount:cubeNumberVer isConvex:YES Mass:0.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(-0.5, -3.0, -10)];
     
         [self setScale:1.0];
         

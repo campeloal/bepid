@@ -12,7 +12,7 @@
 
 - (instancetype)init
 {
-    self = [super initWithObject:@"cube" Shader:@"gouraud"];
+    self = [super initWithObject:@"ball_200" Shader:@"gouraud"];
     if (self) {
         
         

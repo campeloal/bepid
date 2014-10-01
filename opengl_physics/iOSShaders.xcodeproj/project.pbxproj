@@ -25,21 +25,11 @@
 		12985D0F193E933900DC212C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12985D0D193E933900DC212C /* ViewController_iPad.xib */; };
 		12985D17193E954400DC212C /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 12985D16193E954400DC212C /* Object.m */; };
 		12985D19193E95A800DC212C /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D18193E95A800DC212C /* cube.obj */; };
-		12985D1B193E981000DC212C /* hand_1000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D1A193E981000DC212C /* hand_1000.obj */; };
 		12985D1E193EAE4400DC212C /* add_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 12985D1C193EAE4400DC212C /* add_press.png */; };
 		12985D1F193EAE4400DC212C /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 12985D1D193EAE4400DC212C /* add.png */; };
 		12985D22193EAE5100DC212C /* dec_press.png in Resources */ = {isa = PBXBuildFile; fileRef = 12985D20193EAE5100DC212C /* dec_press.png */; };
 		12985D23193EAE5100DC212C /* dec.png in Resources */ = {isa = PBXBuildFile; fileRef = 12985D21193EAE5100DC212C /* dec.png */; };
 		12985D2A193EB19E00DC212C /* Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = 12985D29193EB19E00DC212C /* Shader.m */; };
-		12985D37193EBE8600DC212C /* hand_100000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D2D193EBE8500DC212C /* hand_100000.obj */; };
-		12985D39193EBE8600DC212C /* hand_150000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D2F193EBE8500DC212C /* hand_150000.obj */; };
-		12985D3A193EBE8600DC212C /* hand_20000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D30193EBE8500DC212C /* hand_20000.obj */; };
-		12985D3B193EBE8600DC212C /* hand_30000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D31193EBE8500DC212C /* hand_30000.obj */; };
-		12985D3C193EBE8600DC212C /* hand_40000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D32193EBE8500DC212C /* hand_40000.obj */; };
-		12985D3D193EBE8600DC212C /* hand_50000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D33193EBE8600DC212C /* hand_50000.obj */; };
-		12985D3E193EBE8600DC212C /* hand_60000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D34193EBE8600DC212C /* hand_60000.obj */; };
-		12985D3F193EBE8600DC212C /* hand_80000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D35193EBE8600DC212C /* hand_80000.obj */; };
-		12985D40193EBE8600DC212C /* head_150000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D36193EBE8600DC212C /* head_150000.obj */; };
 		12985D4B193EBEB100DC212C /* flat.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 12985D41193EBEB100DC212C /* flat.fsh */; };
 		12985D4C193EBEB100DC212C /* flat.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 12985D42193EBEB100DC212C /* flat.vsh */; };
 		12985D4D193EBEB100DC212C /* gouraud.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 12985D43193EBEB100DC212C /* gouraud.fsh */; };
@@ -51,8 +41,8 @@
 		12985D53193EBEB100DC212C /* toon.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 12985D49193EBEB100DC212C /* toon.fsh */; };
 		12985D54193EBEB100DC212C /* toon.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 12985D4A193EBEB100DC212C /* toon.vsh */; };
 		12985D5C193EE2C800DC212C /* hand_2500.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D5B193EE2C800DC212C /* hand_2500.obj */; };
-		12985D5E193EE2D300DC212C /* hand_10000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 12985D5D193EE2D300DC212C /* hand_10000.obj */; };
-		54A363221940088F009873E5 /* hand_170000.obj in Resources */ = {isa = PBXBuildFile; fileRef = 54A363211940088F009873E5 /* hand_170000.obj */; };
+		129FDA6319DCC25D0018438F /* ball_200.obj in Resources */ = {isa = PBXBuildFile; fileRef = 129FDA6219DCC25D0018438F /* ball_200.obj */; };
+		129FDA6519DCC2730018438F /* plane.obj in Resources */ = {isa = PBXBuildFile; fileRef = 129FDA6419DCC2730018438F /* plane.obj */; };
 		E0AA222619D1F53D00CADA5D /* libBulletCollision_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AA221919D1F4D400CADA5D /* libBulletCollision_xcode4.a */; };
 		E0AA222719D1F53D00CADA5D /* libBulletDynamics_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AA221C19D1F4D400CADA5D /* libBulletDynamics_xcode4.a */; };
 		E0AA222819D1F53D00CADA5D /* libLinearMath_xcode4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AA221F19D1F4D400CADA5D /* libLinearMath_xcode4.a */; };
@@ -61,7 +51,6 @@
 		E0AA223719D209F800CADA5D /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223619D209F800CADA5D /* GameScene.mm */; };
 		E0AD019119D2F82800585781 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD019019D2F82800585781 /* Ball.m */; };
 		E0AF813E19D6015200D2C9A8 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF813D19D6015200D2C9A8 /* Cube.m */; };
-		E0AF898B19DC8F36001E8BE2 /* ball.obj in Resources */ = {isa = PBXBuildFile; fileRef = E0AF898A19DC8F36001E8BE2 /* ball.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,22 +123,12 @@
 		12985D15193E954400DC212C /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
 		12985D16193E954400DC212C /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
 		12985D18193E95A800DC212C /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
-		12985D1A193E981000DC212C /* hand_1000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_1000.obj; sourceTree = "<group>"; };
 		12985D1C193EAE4400DC212C /* add_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_press.png; sourceTree = "<group>"; };
 		12985D1D193EAE4400DC212C /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		12985D20193EAE5100DC212C /* dec_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dec_press.png; sourceTree = "<group>"; };
 		12985D21193EAE5100DC212C /* dec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dec.png; sourceTree = "<group>"; };
 		12985D28193EB19E00DC212C /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
 		12985D29193EB19E00DC212C /* Shader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shader.m; sourceTree = "<group>"; };
-		12985D2D193EBE8500DC212C /* hand_100000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_100000.obj; path = ../obj/hand_100000.obj; sourceTree = "<group>"; };
-		12985D2F193EBE8500DC212C /* hand_150000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_150000.obj; path = ../obj/hand_150000.obj; sourceTree = "<group>"; };
-		12985D30193EBE8500DC212C /* hand_20000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_20000.obj; path = ../obj/hand_20000.obj; sourceTree = "<group>"; };
-		12985D31193EBE8500DC212C /* hand_30000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_30000.obj; path = ../obj/hand_30000.obj; sourceTree = "<group>"; };
-		12985D32193EBE8500DC212C /* hand_40000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_40000.obj; path = ../obj/hand_40000.obj; sourceTree = "<group>"; };
-		12985D33193EBE8600DC212C /* hand_50000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_50000.obj; path = ../obj/hand_50000.obj; sourceTree = "<group>"; };
-		12985D34193EBE8600DC212C /* hand_60000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_60000.obj; path = ../obj/hand_60000.obj; sourceTree = "<group>"; };
-		12985D35193EBE8600DC212C /* hand_80000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = hand_80000.obj; path = ../obj/hand_80000.obj; sourceTree = "<group>"; };
-		12985D36193EBE8600DC212C /* head_150000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = head_150000.obj; path = ../obj/head_150000.obj; sourceTree = "<group>"; };
 		12985D41193EBEB100DC212C /* flat.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = flat.fsh; sourceTree = "<group>"; };
 		12985D42193EBEB100DC212C /* flat.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = flat.vsh; sourceTree = "<group>"; };
 		12985D43193EBEB100DC212C /* gouraud.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = gouraud.fsh; sourceTree = "<group>"; };
@@ -161,8 +140,8 @@
 		12985D49193EBEB100DC212C /* toon.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = toon.fsh; sourceTree = "<group>"; };
 		12985D4A193EBEB100DC212C /* toon.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = toon.vsh; sourceTree = "<group>"; };
 		12985D5B193EE2C800DC212C /* hand_2500.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_2500.obj; sourceTree = "<group>"; };
-		12985D5D193EE2D300DC212C /* hand_10000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_10000.obj; sourceTree = "<group>"; };
-		54A363211940088F009873E5 /* hand_170000.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hand_170000.obj; sourceTree = "<group>"; };
+		129FDA6219DCC25D0018438F /* ball_200.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ball_200.obj; sourceTree = "<group>"; };
+		129FDA6419DCC2730018438F /* plane.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plane.obj; sourceTree = "<group>"; };
 		E0AA220E19D1F4D300CADA5D /* BulletCollision.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BulletCollision.xcodeproj; path = "bullet-2.82-r2704/build/xcode4ios/BulletCollision.xcodeproj"; sourceTree = "<group>"; };
 		E0AA221119D1F4D300CADA5D /* BulletDynamics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BulletDynamics.xcodeproj; path = "bullet-2.82-r2704/build/xcode4ios/BulletDynamics.xcodeproj"; sourceTree = "<group>"; };
 		E0AA221419D1F4D300CADA5D /* LinearMath.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LinearMath.xcodeproj; path = "bullet-2.82-r2704/build/xcode4ios/LinearMath.xcodeproj"; sourceTree = "<group>"; };
@@ -176,7 +155,6 @@
 		E0AD019019D2F82800585781 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		E0AF813C19D6015200D2C9A8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
 		E0AF813D19D6015200D2C9A8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
-		E0AF898A19DC8F36001E8BE2 /* ball.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ball.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,21 +246,10 @@
 		12985D24193EAE8000DC212C /* Objs */ = {
 			isa = PBXGroup;
 			children = (
-				E0AF898A19DC8F36001E8BE2 /* ball.obj */,
-				54A363211940088F009873E5 /* hand_170000.obj */,
-				12985D5D193EE2D300DC212C /* hand_10000.obj */,
+				129FDA6419DCC2730018438F /* plane.obj */,
+				129FDA6219DCC25D0018438F /* ball_200.obj */,
 				12985D5B193EE2C800DC212C /* hand_2500.obj */,
-				12985D2D193EBE8500DC212C /* hand_100000.obj */,
-				12985D2F193EBE8500DC212C /* hand_150000.obj */,
-				12985D30193EBE8500DC212C /* hand_20000.obj */,
-				12985D31193EBE8500DC212C /* hand_30000.obj */,
-				12985D32193EBE8500DC212C /* hand_40000.obj */,
-				12985D33193EBE8600DC212C /* hand_50000.obj */,
-				12985D34193EBE8600DC212C /* hand_60000.obj */,
-				12985D35193EBE8600DC212C /* hand_80000.obj */,
-				12985D36193EBE8600DC212C /* head_150000.obj */,
 				12985D18193E95A800DC212C /* cube.obj */,
-				12985D1A193E981000DC212C /* hand_1000.obj */,
 			);
 			name = Objs;
 			sourceTree = "<group>";
@@ -500,25 +467,13 @@
 				12985D0C193E933900DC212C /* ViewController_iPhone.xib in Resources */,
 				12985D0F193E933900DC212C /* ViewController_iPad.xib in Resources */,
 				12985D19193E95A800DC212C /* cube.obj in Resources */,
-				12985D1B193E981000DC212C /* hand_1000.obj in Resources */,
-				E0AF898B19DC8F36001E8BE2 /* ball.obj in Resources */,
 				12985D1E193EAE4400DC212C /* add_press.png in Resources */,
 				12985D1F193EAE4400DC212C /* add.png in Resources */,
 				12985D22193EAE5100DC212C /* dec_press.png in Resources */,
 				12985D23193EAE5100DC212C /* dec.png in Resources */,
-				12985D37193EBE8600DC212C /* hand_100000.obj in Resources */,
-				12985D39193EBE8600DC212C /* hand_150000.obj in Resources */,
-				12985D3A193EBE8600DC212C /* hand_20000.obj in Resources */,
-				12985D3B193EBE8600DC212C /* hand_30000.obj in Resources */,
-				12985D3C193EBE8600DC212C /* hand_40000.obj in Resources */,
-				12985D3D193EBE8600DC212C /* hand_50000.obj in Resources */,
-				12985D3E193EBE8600DC212C /* hand_60000.obj in Resources */,
-				12985D3F193EBE8600DC212C /* hand_80000.obj in Resources */,
-				12985D40193EBE8600DC212C /* head_150000.obj in Resources */,
 				12985D4B193EBEB100DC212C /* flat.fsh in Resources */,
 				12985D4C193EBEB100DC212C /* flat.vsh in Resources */,
 				12985D4D193EBEB100DC212C /* gouraud.fsh in Resources */,
-				54A363221940088F009873E5 /* hand_170000.obj in Resources */,
 				12985D4E193EBEB100DC212C /* gouraud.vsh in Resources */,
 				12985D4F193EBEB100DC212C /* phong.fsh in Resources */,
 				12985D50193EBEB100DC212C /* phong.vsh in Resources */,
@@ -527,7 +482,8 @@
 				12985D53193EBEB100DC212C /* toon.fsh in Resources */,
 				12985D54193EBEB100DC212C /* toon.vsh in Resources */,
 				12985D5C193EE2C800DC212C /* hand_2500.obj in Resources */,
-				12985D5E193EE2D300DC212C /* hand_10000.obj in Resources */,
+				129FDA6319DCC25D0018438F /* ball_200.obj in Resources */,
+				129FDA6519DCC2730018438F /* plane.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
