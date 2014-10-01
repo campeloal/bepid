@@ -43,22 +43,26 @@
         int cubeNumberVer = [_cube numberPositionVertices];
         
         _physics = [[Physics alloc] init];
+        
+        [self addObject:_ball WithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:YES Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 3.0, -4)];
+        
+        [self addObject:_cube WithTag:@"cube" Vertices:cubeVer VertexCount:cubeNumberVer isConvex:NO Mass:0.0 RotationX:0.0 RotationY:0.0 RotationZ:90.0 Position:GLKVector3Make(0.0, -1.0, -4)];
     
-        [_physics addObjectWithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:NO Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 0.0, -4.0)];
-        
-       // [_physics setRotationY:3.14 ForObject:@"ball"];
-        
-        [_physics addObjectWithTag:@"cube" Vertices:cubeVer VertexCount:cubeNumberVer isConvex:NO Mass:50.0 RotationX:90.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 0.0, -4)];
-        
-        _cube.position = GLKVector3Make(0.0, 0.0, -4.0);
-        
-        [self setPosition:GLKVector3Make(0.0, 3.0, -4)];
-    
-       // [self setScale:1.0];
+        [self setScale:1.0];
         
 
     }
     return self;
+}
+
+-(void) addObject:(RObject*) object WithTag: (NSString*) tag Vertices:(GLfloat *)vertices VertexCount:(int)vertexCount isConvex:(BOOL)convex Mass:(float)mass RotationX:(float)rotationX RotationY:(float)rotationY RotationZ:(float)rotationZ Position:(GLKVector3)position
+{
+    [_physics addObjectWithTag:tag Vertices:vertices VertexCount:vertexCount isConvex:convex Mass:mass RotationX:rotationX RotationY:rotationY RotationZ:rotationZ Position:position];
+    
+    object.rotationX = rotationX;
+    object.rotationY = rotationY;
+    object.rotationZ = rotationZ;
+    object.position = position;
 }
 
 -(void) drawObject
@@ -82,10 +86,11 @@
     [_ball update];
     
     _cube.aspect = _aspect;
-    _cube.position = [_physics getPositionForObject:@"cube"];
-    _cube.rotationX = [_physics getRotationXForObject:@"cube"];
-    _cube.rotationY = [_physics getRotationYForObject:@"cube"];
-    _cube.rotationZ = [_physics getRotationZForObject:@"cube"];
+ //   NSLog(@"physics rotX %f", [_physics getRotationXForObject:@"cube"]);
+//    _cube.position = [_physics getPositionForObject:@"cube"];
+//    _cube.rotationX = [_physics getRotationXForObject:@"cube"];
+//    _cube.rotationY = [_physics getRotationYForObject:@"cube"];
+//    _cube.rotationZ = [_physics getRotationZForObject:@"cube"];
     
     [_cube update];
 }
@@ -106,9 +111,9 @@
 {
     //Physics
     
-    [_physics setRotationX:x ForObject:@"ball"];
-    [_physics setRotationY:y ForObject:@"ball"];
-    [_physics setRotationZ:z ForObject:@"ball"];
+    [_physics setRotationX:x ForObject:@"cube"];
+    [_physics setRotationY:y ForObject:@"cube"];
+    [_physics setRotationZ:z ForObject:@"cube"];
     
     //Render
     _ball.rotationX = x;

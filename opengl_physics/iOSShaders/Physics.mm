@@ -152,7 +152,6 @@
     btQuaternion rotation;
     rotation.setEulerZYX(rotZ, rotY, rotX);
     
-    
     btVector3 position = btVector3(pos.x, pos.y, pos.z);
     
     
@@ -167,8 +166,8 @@
     btRigidBody::btRigidBodyConstructionInfo bodyCI = btRigidBody::btRigidBodyConstructionInfo(bodyMass, motionState, shape, bodyInertia);
     
     
-    bodyCI.m_restitution = 1.0f;
-    bodyCI.m_friction = 0.5f;
+    bodyCI.m_restitution = 0.0f;
+    bodyCI.m_friction = 0.0f;
     
     
     btRigidBody* body = new btRigidBody(bodyCI);

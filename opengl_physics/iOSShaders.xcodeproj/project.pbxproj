@@ -61,6 +61,7 @@
 		E0AA223719D209F800CADA5D /* GameScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = E0AA223619D209F800CADA5D /* GameScene.mm */; };
 		E0AD019119D2F82800585781 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AD019019D2F82800585781 /* Ball.m */; };
 		E0AF813E19D6015200D2C9A8 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AF813D19D6015200D2C9A8 /* Cube.m */; };
+		E0AF898B19DC8F36001E8BE2 /* ball.obj in Resources */ = {isa = PBXBuildFile; fileRef = E0AF898A19DC8F36001E8BE2 /* ball.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 		E0AD019019D2F82800585781 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		E0AF813C19D6015200D2C9A8 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
 		E0AF813D19D6015200D2C9A8 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		E0AF898A19DC8F36001E8BE2 /* ball.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ball.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 		12985D24193EAE8000DC212C /* Objs */ = {
 			isa = PBXGroup;
 			children = (
+				E0AF898A19DC8F36001E8BE2 /* ball.obj */,
 				54A363211940088F009873E5 /* hand_170000.obj */,
 				12985D5D193EE2D300DC212C /* hand_10000.obj */,
 				12985D5B193EE2C800DC212C /* hand_2500.obj */,
@@ -498,6 +501,7 @@
 				12985D0F193E933900DC212C /* ViewController_iPad.xib in Resources */,
 				12985D19193E95A800DC212C /* cube.obj in Resources */,
 				12985D1B193E981000DC212C /* hand_1000.obj in Resources */,
+				E0AF898B19DC8F36001E8BE2 /* ball.obj in Resources */,
 				12985D1E193EAE4400DC212C /* add_press.png in Resources */,
 				12985D1F193EAE4400DC212C /* add.png in Resources */,
 				12985D22193EAE5100DC212C /* dec_press.png in Resources */,

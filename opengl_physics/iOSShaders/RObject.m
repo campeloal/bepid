@@ -118,7 +118,8 @@ enum
     glUniform4fv(lightPosAddr, 1, lightPos);
     
     int lightColorAddr = glGetUniformLocation([shader program], "lightColor");
-    float lightColor[4] = {0.53f,0.33f,0.33f,1.0};
+    //float lightColor[4] = {0.53f,0.33f,0.33f,1.0};
+    float lightColor[4] = {0.43f,0.23f,0.23f,1.0};
     glUniform4fv(lightColorAddr, 1, lightColor);
     
     int matAmbAddr = glGetUniformLocation([shader program], "matAmbient");
@@ -151,13 +152,15 @@ enum
 {
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65.0f), _aspect, 0.1f, 100.0f);
     
+    NSLog(@"rot %f", _rotationX);
+    
     // Compute the model view matrix for the object rendered with GLKit
     GLKMatrix4 modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -1.5f);
     modelViewMatrix = GLKMatrix4MakeTranslation(self.position.x,self.position.y, self.position.z);
     modelViewMatrix = GLKMatrix4Scale(modelViewMatrix, _scale, _scale, _scale);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotationX, 1.0f, 0.0f, 0.0f);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotationY, 0.0f, 1.0f, 0.0f);
-    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, _rotationZ, 0.0f, 0.0f, 1.0f);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, GLKMathDegreesToRadians(_rotationX), 1.0f, 0.0f, 0.0f);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, GLKMathDegreesToRadians(_rotationY), 0.0f, 1.0f, 0.0f);
+    modelViewMatrix = GLKMatrix4Rotate(modelViewMatrix, GLKMathDegreesToRadians(_rotationZ), 0.0f, 0.0f, 1.0f);
     
     
     _normalMatrix = GLKMatrix3InvertAndTranspose(GLKMatrix4GetMatrix3(modelViewMatrix), NULL);
