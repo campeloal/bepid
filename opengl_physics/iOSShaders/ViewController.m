@@ -44,7 +44,6 @@
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
-    
     [self setupGL];
     
    
@@ -81,7 +80,21 @@
     [EAGLContext setCurrentContext:self.context];
     
     _gameScene = [[GameScene alloc] init];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(decreaseRotation)];
+    
+    [self.view addGestureRecognizer:tap];
 
+}
+
+-(void) increaseRotation
+{
+    [_gameScene increaseRotationX];
+}
+
+-(void) decreaseRotation
+{
+    [_gameScene decreaseRotationX];
 }
 
 - (void)tearDownGL

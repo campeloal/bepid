@@ -17,5 +17,7 @@
 -(void) drawObject;
 -(void) updateRender;
 - (void)updatePhysicsWithDelta:(GLfloat)aDelta;
+-(void) increaseRotationX;
+-(void) decreaseRotationX;
 
 @end

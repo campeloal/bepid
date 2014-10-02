@@ -37,6 +37,8 @@
     // Increase the amount of rotation
     self.rotationY += M_PI_4 * aDelta;
     self.rotationZ+= M_PI_4 * aDelta;
+    
+    NSLog(@"brick y: %f", M_PI_4);
   
     [super updateWithDelta:aDelta];
     
