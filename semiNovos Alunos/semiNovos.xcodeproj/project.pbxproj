@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		078D6C7E19D9923F00E1FFAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6C7D19D9923F00E1FFAC /* main.m */; };
+		078D6C8119D9923F00E1FFAC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6C8019D9923F00E1FFAC /* AppDelegate.m */; };
+		078D6C8419D9923F00E1FFAC /* semiNovos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 078D6C8219D9923F00E1FFAC /* semiNovos.xcdatamodeld */; };
+		078D6C8A19D9923F00E1FFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 078D6C8819D9923F00E1FFAC /* Main.storyboard */; };
+		078D6C8C19D9923F00E1FFAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 078D6C8B19D9923F00E1FFAC /* Images.xcassets */; };
+		078D6C8F19D9923F00E1FFAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078D6C8D19D9923F00E1FFAC /* LaunchScreen.xib */; };
+		078D6C9B19D9923F00E1FFAC /* semiNovosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6C9A19D9923F00E1FFAC /* semiNovosTests.m */; };
+		078D6CAF19D9B82200E1FFAC /* CarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CAE19D9B82200E1FFAC /* CarTableViewController.m */; };
+		078D6CB219D9B8C400E1FFAC /* BrandTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CB119D9B8C400E1FFAC /* BrandTableViewController.m */; };
+		078D6CB519D9D16F00E1FFAC /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CB419D9D16F00E1FFAC /* MainTabBarController.m */; };
+		078D6CBD19D9D50700E1FFAC /* BrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CBB19D9D50700E1FFAC /* BrandViewController.m */; };
+		078D6CBE19D9D50700E1FFAC /* BrandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078D6CBC19D9D50700E1FFAC /* BrandViewController.xib */; };
+		078D6CC519D9E01C00E1FFAC /* BrandModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CC419D9E01C00E1FFAC /* BrandModel.m */; };
+		078D6CE719DB11D500E1FFAC /* CarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CE619DB11D500E1FFAC /* CarModel.m */; };
+		078D6CEE19DB18B800E1FFAC /* CarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CEC19DB18B800E1FFAC /* CarViewController.m */; };
+		078D6CEF19DB18B800E1FFAC /* CarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078D6CED19DB18B800E1FFAC /* CarViewController.xib */; };
+		078D6CF219DB4B6A00E1FFAC /* ClientTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CF119DB4B6A00E1FFAC /* ClientTableViewController.m */; };
+		078D6CF619DB4C0400E1FFAC /* ClientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CF519DB4C0400E1FFAC /* ClientModel.m */; };
+		078D6CFE19DB4D3F00E1FFAC /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6CFC19DB4D3F00E1FFAC /* ClientViewController.m */; };
+		078D6CFF19DB4D3F00E1FFAC /* ClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078D6CFD19DB4D3F00E1FFAC /* ClientViewController.xib */; };
+		078D6D2019DDCD6200E1FFAC /* ClientCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078D6D1E19DDCD6200E1FFAC /* ClientCarViewController.m */; };
+		078D6D2119DDCD6200E1FFAC /* ClientCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078D6D1F19DDCD6200E1FFAC /* ClientCarViewController.xib */; };
+		E00F8D7C19DF1FEA002D89C6 /* ImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E00F8D7B19DF1FEA002D89C6 /* ImageTransformer.m */; };
+		E00F8D7F19DF2228002D89C6 /* Brand.m in Sources */ = {isa = PBXBuildFile; fileRef = E00F8D7E19DF2228002D89C6 /* Brand.m */; };
+		E00F8D8219DF2228002D89C6 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = E00F8D8119DF2228002D89C6 /* Client.m */; };
+		E00F8D8519DF2228002D89C6 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = E00F8D8419DF2228002D89C6 /* Car.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		078D6C9519D9923F00E1FFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078D6C7019D9923F00E1FFAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078D6C7719D9923F00E1FFAC;
+			remoteInfo = semiNovos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		078D6C7819D9923F00E1FFAC /* semiNovos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = semiNovos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078D6C7C19D9923F00E1FFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078D6C7D19D9923F00E1FFAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		078D6C7F19D9923F00E1FFAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		078D6C8019D9923F00E1FFAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		078D6C8319D9923F00E1FFAC /* semiNovos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = semiNovos.xcdatamodel; sourceTree = "<group>"; };
+		078D6C8919D9923F00E1FFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		078D6C8B19D9923F00E1FFAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		078D6C8E19D9923F00E1FFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		078D6C9419D9923F00E1FFAC /* semiNovosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = semiNovosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		078D6C9919D9923F00E1FFAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078D6C9A19D9923F00E1FFAC /* semiNovosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = semiNovosTests.m; sourceTree = "<group>"; };
+		078D6CAD19D9B82200E1FFAC /* CarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarTableViewController.h; path = semiNovos/CarTableViewController.h; sourceTree = "<group>"; };
+		078D6CAE19D9B82200E1FFAC /* CarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarTableViewController.m; path = semiNovos/CarTableViewController.m; sourceTree = "<group>"; };
+		078D6CB019D9B8C400E1FFAC /* BrandTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandTableViewController.h; path = semiNovos/BrandTableViewController.h; sourceTree = "<group>"; };
+		078D6CB119D9B8C400E1FFAC /* BrandTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandTableViewController.m; path = semiNovos/BrandTableViewController.m; sourceTree = "<group>"; };
+		078D6CB319D9D16F00E1FFAC /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		078D6CB419D9D16F00E1FFAC /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		078D6CB619D9D29D00E1FFAC /* CreateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateDelegate.h; path = ../CreateDelegate.h; sourceTree = "<group>"; };
+		078D6CBA19D9D50700E1FFAC /* BrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BrandViewController.h; path = semiNovos/BrandViewController.h; sourceTree = "<group>"; };
+		078D6CBB19D9D50700E1FFAC /* BrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BrandViewController.m; path = semiNovos/BrandViewController.m; sourceTree = "<group>"; };
+		078D6CBC19D9D50700E1FFAC /* BrandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BrandViewController.xib; path = semiNovos/BrandViewController.xib; sourceTree = "<group>"; };
+		078D6CC319D9E01C00E1FFAC /* BrandModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandModel.h; sourceTree = "<group>"; };
+		078D6CC419D9E01C00E1FFAC /* BrandModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandModel.m; sourceTree = "<group>"; };
+		078D6CE519DB11D500E1FFAC /* CarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarModel.h; sourceTree = "<group>"; };
+		078D6CE619DB11D500E1FFAC /* CarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarModel.m; sourceTree = "<group>"; };
+		078D6CEB19DB18B800E1FFAC /* CarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarViewController.h; path = semiNovos/CarViewController.h; sourceTree = "<group>"; };
+		078D6CEC19DB18B800E1FFAC /* CarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarViewController.m; path = semiNovos/CarViewController.m; sourceTree = "<group>"; };
+		078D6CED19DB18B800E1FFAC /* CarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CarViewController.xib; path = semiNovos/CarViewController.xib; sourceTree = "<group>"; };
+		078D6CF019DB4B6A00E1FFAC /* ClientTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientTableViewController.h; path = semiNovos/ClientTableViewController.h; sourceTree = "<group>"; };
+		078D6CF119DB4B6A00E1FFAC /* ClientTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientTableViewController.m; path = semiNovos/ClientTableViewController.m; sourceTree = "<group>"; };
+		078D6CF419DB4C0400E1FFAC /* ClientModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientModel.h; sourceTree = "<group>"; };
+		078D6CF519DB4C0400E1FFAC /* ClientModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientModel.m; sourceTree = "<group>"; };
+		078D6CF819DB4D2200E1FFAC /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
+		078D6CFC19DB4D3F00E1FFAC /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		078D6CFD19DB4D3F00E1FFAC /* ClientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientViewController.xib; sourceTree = "<group>"; };
+		078D6D1D19DDCD6200E1FFAC /* ClientCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientCarViewController.h; sourceTree = "<group>"; };
+		078D6D1E19DDCD6200E1FFAC /* ClientCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientCarViewController.m; sourceTree = "<group>"; };
+		078D6D1F19DDCD6200E1FFAC /* ClientCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientCarViewController.xib; sourceTree = "<group>"; };
+		E00F8D7A19DF1FEA002D89C6 /* ImageTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformer.h; sourceTree = "<group>"; };
+		E00F8D7B19DF1FEA002D89C6 /* ImageTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformer.m; sourceTree = "<group>"; };
+		E00F8D7D19DF2228002D89C6 /* Brand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brand.h; sourceTree = "<group>"; };
+		E00F8D7E19DF2228002D89C6 /* Brand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brand.m; sourceTree = "<group>"; };
+		E00F8D8019DF2228002D89C6 /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		E00F8D8119DF2228002D89C6 /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		E00F8D8319DF2228002D89C6 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		E00F8D8419DF2228002D89C6 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078D6C7519D9923F00E1FFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078D6C9119D9923F00E1FFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078D6C6F19D9923F00E1FFAC = {
+			isa = PBXGroup;
+			children = (
+				078D6CF719DB4D0500E1FFAC /* Details */,
+				078D6C7A19D9923F00E1FFAC /* semiNovos */,
+				078D6CBF19D9DF8800E1FFAC /* Persistencia */,
+				078D6CC619D9FD1800E1FFAC /* Model Objects */,
+				078D6CF319DB4B7600E1FFAC /* Tables */,
+				078D6C9719D9923F00E1FFAC /* semiNovosTests */,
+				078D6C7919D9923F00E1FFAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		078D6C7919D9923F00E1FFAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078D6C7819D9923F00E1FFAC /* semiNovos.app */,
+				078D6C9419D9923F00E1FFAC /* semiNovosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		078D6C7A19D9923F00E1FFAC /* semiNovos */ = {
+			isa = PBXGroup;
+			children = (
+				078D6C7F19D9923F00E1FFAC /* AppDelegate.h */,
+				078D6C8019D9923F00E1FFAC /* AppDelegate.m */,
+				078D6C8819D9923F00E1FFAC /* Main.storyboard */,
+				078D6C8B19D9923F00E1FFAC /* Images.xcassets */,
+				078D6C8D19D9923F00E1FFAC /* LaunchScreen.xib */,
+				078D6C8219D9923F00E1FFAC /* semiNovos.xcdatamodeld */,
+				E00F8D7A19DF1FEA002D89C6 /* ImageTransformer.h */,
+				E00F8D7B19DF1FEA002D89C6 /* ImageTransformer.m */,
+				078D6CB619D9D29D00E1FFAC /* CreateDelegate.h */,
+				078D6C7B19D9923F00E1FFAC /* Supporting Files */,
+				078D6CB319D9D16F00E1FFAC /* MainTabBarController.h */,
+				078D6CB419D9D16F00E1FFAC /* MainTabBarController.m */,
+			);
+			path = semiNovos;
+			sourceTree = "<group>";
+		};
+		078D6C7B19D9923F00E1FFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				078D6C7C19D9923F00E1FFAC /* Info.plist */,
+				078D6C7D19D9923F00E1FFAC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		078D6C9719D9923F00E1FFAC /* semiNovosTests */ = {
+			isa = PBXGroup;
+			children = (
+				078D6C9A19D9923F00E1FFAC /* semiNovosTests.m */,
+				078D6C9819D9923F00E1FFAC /* Supporting Files */,
+			);
+			path = semiNovosTests;
+			sourceTree = "<group>";
+		};
+		078D6C9819D9923F00E1FFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				078D6C9919D9923F00E1FFAC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		078D6CBF19D9DF8800E1FFAC /* Persistencia */ = {
+			isa = PBXGroup;
+			children = (
+				078D6CC319D9E01C00E1FFAC /* BrandModel.h */,
+				078D6CC419D9E01C00E1FFAC /* BrandModel.m */,
+				078D6CE519DB11D500E1FFAC /* CarModel.h */,
+				078D6CE619DB11D500E1FFAC /* CarModel.m */,
+				078D6CF419DB4C0400E1FFAC /* ClientModel.h */,
+				078D6CF519DB4C0400E1FFAC /* ClientModel.m */,
+			);
+			name = Persistencia;
+			sourceTree = "<group>";
+		};
+		078D6CC619D9FD1800E1FFAC /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E00F8D8319DF2228002D89C6 /* Car.h */,
+				E00F8D8419DF2228002D89C6 /* Car.m */,
+				E00F8D8019DF2228002D89C6 /* Client.h */,
+				E00F8D8119DF2228002D89C6 /* Client.m */,
+				E00F8D7D19DF2228002D89C6 /* Brand.h */,
+				E00F8D7E19DF2228002D89C6 /* Brand.m */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		078D6CF319DB4B7600E1FFAC /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				078D6CB019D9B8C400E1FFAC /* BrandTableViewController.h */,
+				078D6CB119D9B8C400E1FFAC /* BrandTableViewController.m */,
+				078D6CAD19D9B82200E1FFAC /* CarTableViewController.h */,
+				078D6CAE19D9B82200E1FFAC /* CarTableViewController.m */,
+				078D6CF019DB4B6A00E1FFAC /* ClientTableViewController.h */,
+				078D6CF119DB4B6A00E1FFAC /* ClientTableViewController.m */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		078D6CF719DB4D0500E1FFAC /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				078D6CBA19D9D50700E1FFAC /* BrandViewController.h */,
+				078D6CBB19D9D50700E1FFAC /* BrandViewController.m */,
+				078D6CBC19D9D50700E1FFAC /* BrandViewController.xib */,
+				078D6CEB19DB18B800E1FFAC /* CarViewController.h */,
+				078D6CEC19DB18B800E1FFAC /* CarViewController.m */,
+				078D6CED19DB18B800E1FFAC /* CarViewController.xib */,
+				078D6CF819DB4D2200E1FFAC /* ClientViewController.h */,
+				078D6CFC19DB4D3F00E1FFAC /* ClientViewController.m */,
+				078D6CFD19DB4D3F00E1FFAC /* ClientViewController.xib */,
+				078D6D1D19DDCD6200E1FFAC /* ClientCarViewController.h */,
+				078D6D1E19DDCD6200E1FFAC /* ClientCarViewController.m */,
+				078D6D1F19DDCD6200E1FFAC /* ClientCarViewController.xib */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		078D6C7719D9923F00E1FFAC /* semiNovos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078D6C9E19D9923F00E1FFAC /* Build configuration list for PBXNativeTarget "semiNovos" */;
+			buildPhases = (
+				078D6C7419D9923F00E1FFAC /* Sources */,
+				078D6C7519D9923F00E1FFAC /* Frameworks */,
+				078D6C7619D9923F00E1FFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = semiNovos;
+			productName = semiNovos;
+			productReference = 078D6C7819D9923F00E1FFAC /* semiNovos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		078D6C9319D9923F00E1FFAC /* semiNovosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078D6CA119D9923F00E1FFAC /* Build configuration list for PBXNativeTarget "semiNovosTests" */;
+			buildPhases = (
+				078D6C9019D9923F00E1FFAC /* Sources */,
+				078D6C9119D9923F00E1FFAC /* Frameworks */,
+				078D6C9219D9923F00E1FFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078D6C9619D9923F00E1FFAC /* PBXTargetDependency */,
+			);
+			name = semiNovosTests;
+			productName = semiNovosTests;
+			productReference = 078D6C9419D9923F00E1FFAC /* semiNovosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078D6C7019D9923F00E1FFAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Phelippe Augusto de Amorim";
+				TargetAttributes = {
+					078D6C7719D9923F00E1FFAC = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					078D6C9319D9923F00E1FFAC = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 078D6C7719D9923F00E1FFAC;
+					};
+				};
+			};
+			buildConfigurationList = 078D6C7319D9923F00E1FFAC /* Build configuration list for PBXProject "semiNovos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078D6C6F19D9923F00E1FFAC;
+			productRefGroup = 078D6C7919D9923F00E1FFAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078D6C7719D9923F00E1FFAC /* semiNovos */,
+				078D6C9319D9923F00E1FFAC /* semiNovosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		078D6C7619D9923F00E1FFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078D6C8A19D9923F00E1FFAC /* Main.storyboard in Resources */,
+				078D6CEF19DB18B800E1FFAC /* CarViewController.xib in Resources */,
+				078D6C8F19D9923F00E1FFAC /* LaunchScreen.xib in Resources */,
+				078D6CBE19D9D50700E1FFAC /* BrandViewController.xib in Resources */,
+				078D6D2119DDCD6200E1FFAC /* ClientCarViewController.xib in Resources */,
+				078D6C8C19D9923F00E1FFAC /* Images.xcassets in Resources */,
+				078D6CFF19DB4D3F00E1FFAC /* ClientViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078D6C9219D9923F00E1FFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078D6C7419D9923F00E1FFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00F8D8519DF2228002D89C6 /* Car.m in Sources */,
+				078D6D2019DDCD6200E1FFAC /* ClientCarViewController.m in Sources */,
+				078D6CF219DB4B6A00E1FFAC /* ClientTableViewController.m in Sources */,
+				078D6CB519D9D16F00E1FFAC /* MainTabBarController.m in Sources */,
+				078D6C8119D9923F00E1FFAC /* AppDelegate.m in Sources */,
+				E00F8D7C19DF1FEA002D89C6 /* ImageTransformer.m in Sources */,
+				078D6CC519D9E01C00E1FFAC /* BrandModel.m in Sources */,
+				078D6C8419D9923F00E1FFAC /* semiNovos.xcdatamodeld in Sources */,
+				078D6CAF19D9B82200E1FFAC /* CarTableViewController.m in Sources */,
+				078D6CB219D9B8C400E1FFAC /* BrandTableViewController.m in Sources */,
+				E00F8D8219DF2228002D89C6 /* Client.m in Sources */,
+				E00F8D7F19DF2228002D89C6 /* Brand.m in Sources */,
+				078D6CE719DB11D500E1FFAC /* CarModel.m in Sources */,
+				078D6CBD19D9D50700E1FFAC /* BrandViewController.m in Sources */,
+				078D6CF619DB4C0400E1FFAC /* ClientModel.m in Sources */,
+				078D6C7E19D9923F00E1FFAC /* main.m in Sources */,
+				078D6CEE19DB18B800E1FFAC /* CarViewController.m in Sources */,
+				078D6CFE19DB4D3F00E1FFAC /* ClientViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		078D6C9019D9923F00E1FFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078D6C9B19D9923F00E1FFAC /* semiNovosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		078D6C9619D9923F00E1FFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078D6C7719D9923F00E1FFAC /* semiNovos */;
+			targetProxy = 078D6C9519D9923F00E1FFAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		078D6C8819D9923F00E1FFAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078D6C8919D9923F00E1FFAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		078D6C8D19D9923F00E1FFAC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				078D6C8E19D9923F00E1FFAC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		078D6C9C19D9923F00E1FFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		078D6C9D19D9923F00E1FFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		078D6C9F19D9923F00E1FFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = semiNovos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		078D6CA019D9923F00E1FFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = semiNovos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		078D6CA219D9923F00E1FFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = semiNovosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/semiNovos.app/semiNovos";
+			};
+			name = Debug;
+		};
+		078D6CA319D9923F00E1FFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = semiNovosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/semiNovos.app/semiNovos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078D6C7319D9923F00E1FFAC /* Build configuration list for PBXProject "semiNovos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078D6C9C19D9923F00E1FFAC /* Debug */,
+				078D6C9D19D9923F00E1FFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078D6C9E19D9923F00E1FFAC /* Build configuration list for PBXNativeTarget "semiNovos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078D6C9F19D9923F00E1FFAC /* Debug */,
+				078D6CA019D9923F00E1FFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078D6CA119D9923F00E1FFAC /* Build configuration list for PBXNativeTarget "semiNovosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078D6CA219D9923F00E1FFAC /* Debug */,
+				078D6CA319D9923F00E1FFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		078D6C8219D9923F00E1FFAC /* semiNovos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				078D6C8319D9923F00E1FFAC /* semiNovos.xcdatamodel */,
+			);
+			currentVersion = 078D6C8319D9923F00E1FFAC /* semiNovos.xcdatamodel */;
+			path = semiNovos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 078D6C7019D9923F00E1FFAC /* Project object */;
+}

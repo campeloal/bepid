@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define TRIANGLES 60662
+#define TRIANGLES 12
 #define VERTICES_PER_TRIANGLE 3
 #define VERTEX_COORDINATES 3
 #define NORMALS_COORDINATES 3
