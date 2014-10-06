@@ -71,7 +71,6 @@
     NSFetchRequest *request = [[NSFetchRequest alloc]init];
     
     request.entity = entity;
-    request.resultType = NSDictionaryResultType;
     
     NSError *error;
     

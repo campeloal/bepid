@@ -9,7 +9,6 @@
 #import "CarViewController.h"
 #import "CarModel.h"
 #import "Car.h"
-
 #import "BrandModel.h"
 #import "Brand.h"
 
@@ -72,8 +71,13 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     BrandModel *brandModel = [BrandModel sharedModel];
-    
-    return [brandModel.allBrands objectAtIndex:row];
+    Brand *brand = [brandModel.allBrands objectAtIndex:row];
+
+    return brand.brand;
+}
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.view endEditing:YES];
 }
 
 @end

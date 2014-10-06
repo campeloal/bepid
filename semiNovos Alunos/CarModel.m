@@ -74,7 +74,6 @@
     NSFetchRequest *request = [[NSFetchRequest alloc]init];
     
     request.entity = entity;
-    request.resultType = NSDictionaryResultType;
    
     NSError *error;
     
@@ -107,6 +106,11 @@
             [self.context deleteObject:obj];
         }
     }
+}
+
+-(void) addCars:(NSArray *)objects
+{
+    [self.privateCars addObjectsFromArray:objects];
 }
 
 - (NSArray *)allCars

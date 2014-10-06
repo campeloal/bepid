@@ -67,7 +67,6 @@
     NSFetchRequest *request = [[NSFetchRequest alloc]init];
     
     request.entity = entity;
-    request.resultType = NSDictionaryResultType;
     
     NSError *error;
     
@@ -78,6 +77,7 @@
     }
     
     _privateBrands = [[NSMutableArray alloc] initWithArray:result];
+    
 }
 
 - (NSArray *)allBrands

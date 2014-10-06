@@ -14,4 +14,6 @@
 
 @property Car *car;
 
+- (IBAction)dismissKeyboard:(id)sender;
+
 @end

@@ -45,11 +45,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     
     if(cell == nil)
     {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
     
     ClientModel *clientModel = [ClientModel sharedModel];
@@ -57,6 +57,10 @@
     Client *client = [clients objectAtIndex:indexPath.row];
     
     cell.textLabel.text = client.name;
+    cell.imageView.image = client.thumbnail;
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd"];
+    cell.detailTextLabel.text = [formatter stringFromDate: client.birthDate];
     
     return cell;
 }

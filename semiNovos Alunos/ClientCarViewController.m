@@ -34,16 +34,58 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-// Retornar o número de carros do cliente caso a tableView seja a do cliente
-// Retornar o número de carros disponíveis caso a tableView seja a de carros disponíveis
-    return 1;
+    if (tableView == self.availableTableView) {
+        return [[[CarModel sharedModel] allCars] count];
+    }
+    else if (tableView == self.acquiredTableView)
+    {
+        return [self.acquired count];
+    }
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-// Caso a tabelView seja a do cliente, retorne uma UITableViewCell preenchida com os dados do carro do cliente.
-// Caso a tabelView seja a de carros disponíveis, retorne uma UITableViewCell preenchida com os dados do carro disponível.
-    return nil;
+    static NSString *cellIdentifier = @"Cell";
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    
+    if(cell == nil)
+    {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    
+    if (tableView == self.acquiredTableView)
+    {
+        if ([self.acquired count] > 0)
+        {
+        
+        Car *car = [self.acquired objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = car.model;
+        cell.detailTextLabel.text = car.modelYear;
+            
+        }
+        
+    }
+    
+    else if (tableView == self.availableTableView)
+    {
+        if ([self.avaliable count] > 0) {
+         
+            Car *car = [self.avaliable objectAtIndex:indexPath.row];
+            
+            cell.textLabel.text = car.model;
+            cell.detailTextLabel.text = car.modelYear;
+            
+            
+        }
+    }
+    else
+    {
+        cell.textLabel.text = @"";
+    }
+    
+    return cell;
 }
 
 - (IBAction)addButtonClick:(id)sender {
@@ -55,10 +97,14 @@
         [self.avaliable removeObject:c];
         [self.acquired addObject:c];
         
-        [self.availableTableView deleteRowsAtIndexPaths:@[selectedIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self.availableTableView reloadData];
         
-        NSIndexPath *addIndexPath = [NSIndexPath indexPathForItem:self.acquired.count - 1 inSection:0];
-        [self.acquiredTableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self.acquiredTableView reloadData];
+        
+//        [self.availableTableView deleteRowsAtIndexPaths:@[selectedIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+//
+//        NSIndexPath *addIndexPath = [NSIndexPath indexPathForItem:self.acquired.count - 1 inSection:0];
+//        [self.acquiredTableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 
@@ -75,10 +121,18 @@
         [self.acquired removeObject:c];
         [self.avaliable addObject:c];
         
-        [self.acquiredTableView deleteRowsAtIndexPaths:@[selectedIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [[CarModel sharedModel] addCars:self.avaliable];
         
-        NSIndexPath *addIndexPath = [NSIndexPath indexPathForItem:self.avaliable.count - 1 inSection:0];
-        [self.availableTableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+        [self.acquiredTableView reloadData];
+        [self.availableTableView reloadData];
+        
+        
+        
+//        [self.acquiredTableView deleteRowsAtIndexPaths:@[selectedIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+//        
+//        NSIndexPath *addIndexPath = [NSIndexPath indexPathForItem:self.avaliable.count - 1 inSection:0];
+//        [self.availableTableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
 }
 

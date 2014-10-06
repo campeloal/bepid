@@ -56,11 +56,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     static NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     
     if(cell == nil)
     {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     
     CarModel *carModel = [CarModel sharedModel];
@@ -68,6 +68,7 @@
     Car *car = [cars objectAtIndex:indexPath.row];
     
     cell.textLabel.text = car.model;
+    cell.detailTextLabel.text = car.modelYear;
     
     return cell;
 
@@ -86,7 +87,6 @@
 
 - (void)createItem
 {
-    NSLog(@"oi");
     CarViewController *cvc = [[CarViewController alloc] init];
     
     [self.navigationController pushViewController:cvc animated:YES];

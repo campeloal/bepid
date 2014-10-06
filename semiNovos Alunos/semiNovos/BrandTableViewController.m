@@ -54,9 +54,9 @@
     
     BrandModel *brandModel = [BrandModel sharedModel];
     NSMutableArray *brands = [[NSMutableArray alloc] initWithArray:brandModel.allBrands];
-    Brand *brand = [brands objectAtIndex:indexPath.row];
+    Brand *currentBrand = [brands objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = brand.brand;
+    cell.textLabel.text = currentBrand.brand;
     
     return cell;
 

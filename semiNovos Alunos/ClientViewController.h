@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ClientCarViewController.h"
 
 @class Client;
 
 @interface ClientViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property Client *client;
+
+- (IBAction)dismissKeyboard:(id)sender;
 
 @end

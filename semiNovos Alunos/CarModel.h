@@ -18,5 +18,6 @@
 
 - (Car *)createCar;
 - (void)removeCars:(NSArray *)objects fromCoreData:(BOOL)remove;
+- (void)addCars: (NSArray *)object;
 
 @end

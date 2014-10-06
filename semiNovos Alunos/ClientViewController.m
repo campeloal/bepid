@@ -10,8 +10,6 @@
 #import "ClientModel.h"
 #import "Client.h"
 
-#import "ClientCarViewController.h"
-
 #import "CarModel.h"
 
 @interface ClientViewController ()
@@ -40,16 +38,19 @@
     if (self.client) {
         _nameTextField.text = _client.name;
         _photoImageView.image = _client.photo;
-        
-//Preencher o self.cars com os dados do self.client.own
+        self.cars = [[NSMutableArray alloc] initWithArray:[_client.own allObjects]];
+        [_client setThumbnailFromImage:_photoImageView.image];
+    }
+    else
+    {
+        self.cars = [[NSMutableArray alloc] init];
     }
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    NSLog(@"Cars: %@", self.cars);
+
 }
 
 - (void)saveClient:(id)sender
@@ -58,15 +59,14 @@
     if (!self.client) {
         ClientModel *clientModel = [ClientModel sharedModel];
         _client = [clientModel createClient];
-        
-        // Preencher o self.client.own com os dados do self.cars
     }
 
     _client.name = _nameTextField.text;
     _client.photo = _photoImageView.image;
-    //_client.thumbnail
+    _client.own = [NSSet setWithArray:self.cars];
+    [_client setThumbnailFromImage:_photoImageView.image];
     
-    [[CarModel sharedModel] removeCars:self.cars fromCoreData:NO];
+   // [[CarModel sharedModel] removeCars:self.cars fromCoreData:NO];
     
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -98,11 +98,16 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 - (IBAction)carList:(id)sender {
     if (!self.ccvc) {
         self.ccvc = [[ClientCarViewController alloc] init];
-        
         self.ccvc.acquired = self.cars;
     }
     
     [self.navigationController pushViewController:self.ccvc animated:YES];
 }
+
+
+- (IBAction)dismissKeyboard:(id)sender {
+    [self.view endEditing:YES];
+}
+
 
 @end

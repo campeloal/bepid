@@ -15,4 +15,5 @@
 @property (nonatomic, retain) NSString * brand;
 @property (nonatomic, retain) NSSet *car;
 
+
 @end
