@@ -1,41 +1,109 @@
 import sys
 import numpy as np
 
-def  readFaces():
-	print 'faces'
+vertexBuffer = []
+positions = []
+normals = []
+textures = []
+onlyVertices = []
+hasTexture = False
 
-def readObj(name):
+def  readFaces(line):
+
+        triangle = []
+        splitFactor = '' 
+                
+        for vertex in line:
+                texIndex = 0
+                
+                if hasTexture:
+                        triangle = vertex.split('/')
+                        texIndex = int(triangle[2])
+                else:
+                        triangle = vertex.split('//')
+                
+                posIndex = int(triangle[0])
+                normalIndex = int(triangle[1])
+                
+
+                posStartIndex = (posIndex*3) - 3
+                normStartIndex = (normalIndex*3) - 3
+                texStartIndex = (texIndex*2) - 2
+
+                vertexBuffer.append(positions[posStartIndex])
+                vertexBuffer.append(positions[posStartIndex + 1])
+                vertexBuffer.append(positions[posStartIndex + 2])
+                onlyVertices.append(positions[posStartIndex])
+                onlyVertices.append(positions[posStartIndex + 1])
+                onlyVertices.append(positions[posStartIndex + 2])
+                vertexBuffer.append(normals[normStartIndex])
+                vertexBuffer.append(normals[normStartIndex + 1])
+                vertexBuffer.append(normals[normStartIndex + 2])
+
+                if hasTexture:
+                        texIndex = triangle[2]
+                        vertexBuffer.append(textures[texStartIndex])
+                        vertexBuffer.append(textures[texStartIndex + 1])
 
 
-	file = open(name, 'r')
-	lines = file.readlines()
-	file.close()
+def readObj(path):
 
-	for line in lines:
+	file = open(path, 'r')
+	lines  = []
 
-		line = np.asarray(line)
-		line = line.split()
+	for line in file:
+                lineArgs = []
+                lineArgs = line.split()
+                
 
-		print line
+		if len(lineArgs) >= 3:
+                        verticeType = lineArgs[0]
+			if verticeType == 'v':
+                                positions.append(lineArgs[1])
+				positions.append(lineArgs[2])
+				positions.append(lineArgs[3])
 
-		if len(line) > 0:
-			if line[0] == 'v':
-				vertices = line.split()
-				print 'vertice'
+			elif verticeType == 'vn':
+				normals.append(lineArgs[1])
+                                normals.append(lineArgs[2])
+                                normals.append(lineArgs[3])
 
-			elif line[0] == 'vn':
-				normals = line.split()
+			elif verticeType == 'vt':
+				textures.append(lineArgs[1])
+				textures.append(lineArgs[2])
+				textures.append(lineArgs[3])
+				hasTexture = True
 
-				print 'normals'
+			elif verticeType == 'f':
+                                del lineArgs[0]
+				readFaces(lineArgs)
+        file.close()
 
-			elif line[0] == 'vt':
-				texture = line.split()
-				print 'texture'
+def writeFile(path):
+        file = open(path, 'w')
+        vertexBufferString = ''
+        file.write("vertexBuffer[] = {")
+        
+        for coordinate in vertexBuffer:
+                vertexBufferString += coordinate
+                vertexBufferString += ','
 
-			elif line[0] == 'f':
-				readFaces
+        #remove last ,
+        vertexBufferString = vertexBufferString[:-1]
+        file.write(vertexBufferString)
+        file.write("};\n")
+        file.write("onlyVertices[] = {")
 
+        onlyVertString = ''
+        
+        for coordinate in onlyVertices:
+                onlyVertString += coordinate
+                onlyVertString += ','
 
+        file.write(onlyVertString)
+        file.write('};')
+
+        file.close()
 
 if len(sys.argv) > 1:
 
@@ -43,7 +111,8 @@ if len(sys.argv) > 1:
 	fileOutput = sys.argv[2]
 
 	readObj(fileInput)
+        writeFile(fileOutput)
 
-
+        print 'File created.' 
 
 
