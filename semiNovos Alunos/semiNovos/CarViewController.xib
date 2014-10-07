@@ -111,6 +111,25 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hWr-Av-gN3">
+                    <rect key="frame" x="-8" y="371" width="385" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="68O-vt-kVl"/>
+                        <constraint firstAttribute="width" constant="385" id="ymQ-1t-eC1"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem systemItem="camera" id="2wg-1e-cqt">
+                            <connections>
+                                <action selector="takePhoto:" destination="-1" id="2pu-5J-96w"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Gallery" id="M5g-Am-NkH">
+                            <connections>
+                                <action selector="showCollection:" destination="-1" id="uUy-8j-MFk"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -131,11 +150,13 @@
                 <constraint firstItem="wqP-a4-UTu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Y8G-X1-Q9I"/>
                 <constraint firstItem="wqP-a4-UTu" firstAttribute="top" secondItem="lcI-E4-gYO" secondAttribute="bottom" constant="17" id="ajA-Ha-ebY"/>
                 <constraint firstItem="7Mc-UK-dlL" firstAttribute="leading" secondItem="STc-Se-WGh" secondAttribute="trailing" constant="8" id="eAv-Dq-7e6"/>
+                <constraint firstItem="hWr-Av-gN3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="371" id="gnM-hy-h2e"/>
                 <constraint firstItem="ng6-XJ-TAj" firstAttribute="top" secondItem="wqP-a4-UTu" secondAttribute="bottom" constant="17" id="hml-PA-aoD"/>
                 <constraint firstItem="8Yw-Wl-YPZ" firstAttribute="leading" secondItem="ng6-XJ-TAj" secondAttribute="trailing" constant="8" id="iMU-8z-pLR"/>
                 <constraint firstAttribute="trailing" secondItem="7Mc-UK-dlL" secondAttribute="trailing" constant="8" id="jBV-zz-xAI"/>
                 <constraint firstItem="TNo-he-pGt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="ofB-d4-mSo"/>
                 <constraint firstItem="KrC-aW-0u8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="oyH-hx-GQx"/>
+                <constraint firstItem="hWr-Av-gN3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-8" id="uh2-7b-Gvk"/>
                 <constraint firstAttribute="trailing" secondItem="SHk-C9-H2K" secondAttribute="trailing" constant="8" id="xdE-4S-r08"/>
                 <constraint firstItem="8Yw-Wl-YPZ" firstAttribute="top" secondItem="am9-b8-PGh" secondAttribute="bottom" constant="8" id="xyb-Tk-Otc"/>
                 <constraint firstItem="am9-b8-PGh" firstAttribute="top" secondItem="SHk-C9-H2K" secondAttribute="bottom" constant="8" id="y3j-vP-yn4"/>

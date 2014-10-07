@@ -10,6 +10,7 @@
 #import "ClientViewController.h"
 #import "ClientModel.h"
 #import "Client.h"
+#import "CarModel.h"
 
 @interface ClientTableViewController ()
 
@@ -73,6 +74,7 @@
     
     ClientViewController *clientVC = [[ClientViewController alloc] init];
     clientVC.client = client;
+    NSLog(@"available1 %@", [CarModel sharedModel].allCars);
     [self.navigationController pushViewController: clientVC  animated: YES];
 }
 

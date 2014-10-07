@@ -11,6 +11,9 @@
 #import "Car.h"
 #import "BrandModel.h"
 #import "Brand.h"
+#import "CarsCollectionViewController.h"
+#import "Photo.h"
+#import "PhotoModel.h"
 
 @interface CarViewController ()
 @property (weak, nonatomic) IBOutlet UIPickerView *brandPicker;
@@ -18,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *colorTextField;
 @property (weak, nonatomic) IBOutlet UITextField *modelYearTextField;
 @property (weak, nonatomic) IBOutlet UITextField *manufactureYearTextField;
+@property (nonatomic) NSMutableArray *carPhotos;
 
 @end
 
@@ -26,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"Adcionar Carro";
+    self.navigationItem.title = @"Adicionar Carro";
     
     UIBarButtonItem *saveBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave
                                                                              target:self
@@ -38,7 +42,13 @@
         _colorTextField.text = _car.color;
         _modelYearTextField.text = _car.modelYear;
         _manufactureYearTextField.text = _car.manufacteredYear;
+        _carPhotos = [[NSMutableArray alloc] initWithArray:[_car.hasPhotos allObjects]];
     }
+    else
+    {
+        _carPhotos = [[NSMutableArray alloc] init];
+    }
+    
 }
 
 - (void)saveCar:(id)sender
@@ -53,6 +63,7 @@
     _car.color = _colorTextField.text;
     _car.modelYear = _modelYearTextField.text;
     _car.manufacteredYear = _manufactureYearTextField.text;
+    _car.hasPhotos = [NSSet setWithArray:_carPhotos];
     
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -78,6 +89,52 @@
 
 - (IBAction)dismissKeyboard:(id)sender {
     [self.view endEditing:YES];
+}
+
+- (IBAction)takePhoto:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    imagePicker.delegate = self;
+    
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
+    
+    PhotoModel *photoModel = [PhotoModel sharedModel];
+    
+    Photo *photo = [photoModel createPhoto];
+    photo.photo = image;
+    
+    
+    [_carPhotos addObject: photo];
+    
+    CarsCollectionViewController *carsCollec = [[CarsCollectionViewController alloc] init];
+    
+    carsCollec.carPhotos = _carPhotos;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self.navigationController pushViewController:carsCollec animated:YES];
+    
+}
+
+- (IBAction) showCollection:(id)sender {
+    
+    CarsCollectionViewController *carsCollec = [[CarsCollectionViewController alloc] init];
+    carsCollec.carPhotos = _carPhotos;
+    
+    [self.navigationController pushViewController:carsCollec animated:YES];
+
 }
 
 @end

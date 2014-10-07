@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class Car;
 
 @interface ClientCarViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property NSMutableArray *acquired;
+@property NSMutableArray *avaliable;
+
+-(BOOL) checkCarExists: (Car*) checkCar;
 
 @end

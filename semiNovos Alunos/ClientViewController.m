@@ -45,6 +45,7 @@
     {
         self.cars = [[NSMutableArray alloc] init];
     }
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -66,7 +67,17 @@
     _client.own = [NSSet setWithArray:self.cars];
     [_client setThumbnailFromImage:_photoImageView.image];
     
-   // [[CarModel sharedModel] removeCars:self.cars fromCoreData:NO];
+    [[CarModel sharedModel] removeCars:self.cars fromCoreData:NO];
+    
+    if (self.ccvc) {
+        
+        [[CarModel sharedModel] removeCars:[CarModel sharedModel].allCars fromCoreData:NO];
+        
+        [[CarModel sharedModel] addCars:_ccvc.avaliable];
+        
+    }
+    
+    
     
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -100,6 +111,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
         self.ccvc = [[ClientCarViewController alloc] init];
         self.ccvc.acquired = self.cars;
     }
+    
+    NSLog(@"available2 %@", [CarModel sharedModel].allCars);
     
     [self.navigationController pushViewController:self.ccvc animated:YES];
 }

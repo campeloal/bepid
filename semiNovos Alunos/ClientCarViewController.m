@@ -14,8 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *acquiredTableView;
 @property (weak, nonatomic) IBOutlet UITableView *availableTableView;
 
-@property NSMutableArray *avaliable;
-
 @end
 
 @implementation ClientCarViewController
@@ -56,13 +54,16 @@
     
     if (tableView == self.acquiredTableView)
     {
-        if ([self.acquired count] > 0)
+        if ( indexPath.row < [self.acquired count])
         {
         
         Car *car = [self.acquired objectAtIndex:indexPath.row];
-        
-        cell.textLabel.text = car.model;
-        cell.detailTextLabel.text = car.modelYear;
+            
+        if (car)
+        {
+            cell.textLabel.text = car.model;
+            cell.detailTextLabel.text = car.modelYear;
+        }
             
         }
         
@@ -70,12 +71,13 @@
     
     else if (tableView == self.availableTableView)
     {
-        if ([self.avaliable count] > 0) {
-         
+        if (indexPath.row < [self.avaliable count]) {
             Car *car = [self.avaliable objectAtIndex:indexPath.row];
             
-            cell.textLabel.text = car.model;
-            cell.detailTextLabel.text = car.modelYear;
+            if (car) {
+                cell.textLabel.text = car.model;
+                cell.detailTextLabel.text = car.modelYear;
+            }
             
             
         }
@@ -90,6 +92,10 @@
 
 - (IBAction)addButtonClick:(id)sender {
     NSIndexPath *selectedIndexPath = [self.availableTableView indexPathForSelectedRow];
+    NSLog(@"Available %@", self.avaliable);
+    
+    NSLog(@"Acquired %@", self.acquired);
+    
     
     if (selectedIndexPath) {
         Car *c = [self.avaliable objectAtIndex:selectedIndexPath.row];
@@ -134,6 +140,17 @@
 //        NSIndexPath *addIndexPath = [NSIndexPath indexPathForItem:self.avaliable.count - 1 inSection:0];
 //        [self.availableTableView insertRowsAtIndexPaths:@[addIndexPath] withRowAnimation:UITableViewRowAnimationFade];
     }
+}
+
+-(BOOL) checkCarExists: (Car*) checkCar
+{
+    for (Car *car in self.avaliable) {
+        if (checkCar == car) {
+            return YES;
+        }
+    }
+    
+    return NO;
 }
 
 @end
