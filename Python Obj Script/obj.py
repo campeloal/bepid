@@ -7,6 +7,7 @@ normals = []
 textures = []
 onlyVertices = []
 hasTexture = False
+numberIndices = 0
 
 def  readFaces(line):
 
@@ -76,6 +77,8 @@ def readObj(path):
 
 			elif verticeType == 'f':
                                 del lineArgs[0]
+                                global numberIndices
+                                numberIndices+=1
 				readFaces(lineArgs)
         file.close()
 
@@ -101,8 +104,15 @@ def writeFile(path):
                 onlyVertString += ','
 
         file.write(onlyVertString)
-        file.write('};')
+        file.write('};\n')
 
+        global numberIndices
+        numberIndices= numberIndices*3
+
+        file.write('int numberIndices = ')
+
+        file.write(str(numberIndices))
+        file.write(';')
         file.close()
 
 if len(sys.argv) > 1:
