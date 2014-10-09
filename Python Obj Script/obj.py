@@ -85,7 +85,7 @@ def readObj(path):
 def writeFile(path):
         file = open(path, 'w')
         vertexBufferString = ''
-        file.write("vertexBuffer[] = {")
+        file.write("float vertexBuffer[] = {")
         
         for coordinate in vertexBuffer:
                 vertexBufferString += coordinate
@@ -94,8 +94,8 @@ def writeFile(path):
         #remove last ,
         vertexBufferString = vertexBufferString[:-1]
         file.write(vertexBufferString)
-        file.write("};\n")
-        file.write("onlyVertices[] = {")
+        file.write("};\n\n")
+        file.write("float vertCoordinates[] = {")
 
         onlyVertString = ''
         
@@ -103,8 +103,9 @@ def writeFile(path):
                 onlyVertString += coordinate
                 onlyVertString += ','
 
+        onlyVertString = onlyVertString[:-1]
         file.write(onlyVertString)
-        file.write('};\n')
+        file.write('};\n\n')
 
         global numberIndices
         numberIndices= numberIndices*3
