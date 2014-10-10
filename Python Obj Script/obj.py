@@ -8,6 +8,7 @@ textures = []
 onlyVertices = []
 hasTexture = False
 numberIndices = 0
+objName = ''
 
 def  readFaces(line):
 
@@ -83,9 +84,10 @@ def readObj(path):
         file.close()
 
 def writeFile(path):
+	global objName
         file = open(path, 'w')
         vertexBufferString = ''
-        file.write("float vertexBuffer[] = {")
+        file.write('float ' + objName + 'VertexBuffer[] = {')
         
         for coordinate in vertexBuffer:
                 vertexBufferString += coordinate
@@ -95,7 +97,7 @@ def writeFile(path):
         vertexBufferString = vertexBufferString[:-1]
         file.write(vertexBufferString)
         file.write("};\n\n")
-        file.write("float vertCoordinates[] = {")
+        file.write("float " + objName + "VertCoordinates[] = {")
 
         onlyVertString = ''
         
@@ -106,20 +108,29 @@ def writeFile(path):
         onlyVertString = onlyVertString[:-1]
         file.write(onlyVertString)
         file.write('};\n\n')
-
+	
         global numberIndices
         numberIndices= numberIndices*3
 
-        file.write('int numberIndices = ')
+        file.write('int ' + objName + 'NumberIndices = ')
 
         file.write(str(numberIndices))
-        file.write(';')
+        file.write(';\n\n')
+	
+	file.write('int ' + objName + 'BufferSize = ')
+	file.write(str(len(vertexBuffer)))
+	file.write(';\n\n')
+
+	file.write('int ' + objName + 'VertSize = ')
+	file.write(str(len(onlyVertices)))
+	file.write(';')
         file.close()
 
 if len(sys.argv) > 1:
 
 	fileInput = sys.argv[1]
 	fileOutput = sys.argv[2]
+	objName = sys.argv[2]
 
 	readObj(fileInput)
         writeFile(fileOutput)

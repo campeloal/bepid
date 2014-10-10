@@ -99,6 +99,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		128C2EBC19E74CDA00B8E8B8 /* ballCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ballCoordinates.h; sourceTree = "<group>"; };
+		128C2EBD19E74CEA00B8E8B8 /* cubeCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeCoordinates.h; sourceTree = "<group>"; };
 		12985CE4193E933900DC212C /* iOSShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12985CE7193E933900DC212C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12985CE9193E933900DC212C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -358,6 +360,8 @@
 		E0AD018E19D2F81700585781 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				128C2EBD19E74CEA00B8E8B8 /* cubeCoordinates.h */,
+				128C2EBC19E74CDA00B8E8B8 /* ballCoordinates.h */,
 				E0AD018F19D2F82800585781 /* Ball.h */,
 				E0AD019019D2F82800585781 /* Ball.m */,
 				E0AF813C19D6015200D2C9A8 /* Cube.h */,

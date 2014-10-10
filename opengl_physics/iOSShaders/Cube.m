@@ -7,15 +7,21 @@
 //
 
 #import "Cube.h"
+#import "cubeCoordinates.h"
 
 @implementation Cube
 
 - (instancetype)init
 {
-    self = [super initWithObject:@"cube" Shader:@"gouraud"];
+    self = [super init];
     if (self) {
-        
-        
+
+        [self setVb:cubeVertexBuffer];
+        [self setVertCoordinates:cubeVertCoordinates];
+        [self setNumberIndices:cubeNumberIndices];
+        [self setBufferSize:cubeBufferSize];
+        [self setVertSize:cubeVertSize];
+        [self createObj:@"cube" Shader:@"gouraud"];
         
     }
     

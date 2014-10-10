@@ -8,7 +8,6 @@
 
 #import "RObject.h"
 #import "Shader.h"
-#import "Object.h"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
@@ -36,7 +35,6 @@ enum
     GLuint _vertexBuffer;
     
     NSMutableArray *objects;
-    Object *object;
     Shader *shader;
     
     GLint uniforms[NUM_UNIFORMS];
@@ -47,35 +45,26 @@ enum
 
 @implementation RObject
 
-- (instancetype)initWithObject: (NSString*) objectName Shader: (NSString*) shaderName
-{
-    self = [super init];
-    if (self) {
-        object = [[Object alloc] init];
-        [object loadObj:objectName];
-        
-        shader = [[Shader alloc] init];
-        [shader loadShadersName:shaderName];
-        [shader readParams];
-        
-        [self createBuffer];
-        
-        _position = GLKVector3Make(0, 0, 0);
-        _rotationY = 0.0;
-        _rotationX = 0.0;
-        _rotationZ = 0.0;
-        _scale = 1.0;
-        
 
-    }
-    return self;
+-(void) createObj:(NSString*) objectName Shader: (NSString*) shaderName
+{
+    
+    shader = [[Shader alloc] init];
+    [shader loadShadersName:shaderName];
+    [shader readParams];
+    
+    [self createBuffer];
+    
+    _position = GLKVector3Make(0, 0, 0);
+    _rotationY = 0.0;
+    _rotationX = 0.0;
+    _rotationZ = 0.0;
+    _scale = 1.0;
 }
 
 -(void) createBuffer
 {
-    GLfloat *ar = [object generateArray];
-    
-    _numberPositionVertices = [object totalNumberPositionVertices];
+    GLfloat *ar = _vb;
     
     glEnable(GL_DEPTH_TEST);
     
@@ -84,7 +73,7 @@ enum
     
     glGenBuffers(1, &_vertexBuffer);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
-    glBufferData(GL_ARRAY_BUFFER, NUMBER_POLYGONS*4, ar, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, _bufferSize*sizeof(float), ar, GL_STATIC_DRAW);
     
     glEnableVertexAttribArray(GLKVertexAttribPosition);
     glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
@@ -144,15 +133,13 @@ enum
     glUniform3fv(eyePosAddr, 1, eyePos);
     
     
-    glDrawArrays(GL_TRIANGLES, 0, [object totalNumberVertices]);
+    glDrawArrays(GL_TRIANGLES, 0, _numberIndices);
     
 }
 
 -(void) update
 {
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(65.0f), _aspect, 0.1f, 100.0f);
-    
-    NSLog(@"rot %f", _rotationX);
     
     // Compute the model view matrix for the object rendered with GLKit
     GLKMatrix4 modelViewMatrix = GLKMatrix4MakeTranslation(0.0f, 0.0f, -1.5f);
@@ -179,9 +166,5 @@ enum
 
 }
 
--(GLfloat*) getVertices
-{
-    return [object generateOnlyVertices];
-}
 
 @end

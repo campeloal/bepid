@@ -56,7 +56,7 @@
     _world = new btDiscreteDynamicsWorld(_dispatcher, _broadphase, _solver, _collisionConfiguration);
     
     
-    _world->setGravity(btVector3(0, 9.8, 0));
+    _world->setGravity(btVector3(0, -9.8, 0));
     
     
 }
@@ -104,10 +104,9 @@
     {
         int numberCoordinates = 3;
         shape = new btConvexHullShape();
-        for (int i = 0; i < vertexCount; i++)
+
+        for (int i = 0; i < vertexCount/3; i++)
         {
-            NSLog(@"coordinate x %f y %f z %f", vertices[i*numberCoordinates + 0],vertices[i*numberCoordinates + 1],vertices[i*numberCoordinates + 2]);
-            // i*vertexCount + 0
             btVector3 btv = btVector3(vertices[i*numberCoordinates + 0], vertices[i*numberCoordinates + 1], vertices[i*numberCoordinates + 2]);
             ((btConvexHullShape*)shape)->addPoint(btv);
         }

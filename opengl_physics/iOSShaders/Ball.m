@@ -7,19 +7,26 @@
 //
 
 #import "Ball.h"
+#import "ballCoordinates.h"
 
 @implementation Ball
 
 - (instancetype)init
 {
-    self = [super initWithObject:@"cube" Shader:@"gouraud"];
+    self = [super init];
     if (self) {
         
-        
+        [self setVb:ballVertexBuffer];
+        [self setVertCoordinates:ballVertCoordinates];
+        [self setNumberIndices:ballNumberIndices];
+        [self setBufferSize:ballBufferSize];
+        [self setVertSize:ballVertSize];
+        [self createObj:@"ball_200" Shader:@"gouraud"];
         
     }
     
     return self;
 }
+
 
 @end

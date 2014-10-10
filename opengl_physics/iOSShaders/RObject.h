@@ -20,11 +20,15 @@
 @property (nonatomic) float rotationZ;
 @property (nonatomic, assign) GLKVector3 position;
 @property (nonatomic) float scale;
+@property (nonatomic) float *vb;
+@property (nonatomic) float *vertCoordinates;
+@property (nonatomic) int numberIndices;
+@property (nonatomic) int bufferSize;
+@property (nonatomic) int vertSize;
 
-- (instancetype)initWithObject: (NSString*) objectName Shader: (NSString*) shaderName;
+-(void) createObj:(NSString*) objectName Shader: (NSString*) shaderName;
 -(void) drawObject;
 -(void) tearDownGL;
 -(void) update;
--(GLfloat*) getVertices;
 
 @end
