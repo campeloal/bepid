@@ -335,6 +335,43 @@
     
 }
 
+- (void)setVelocity:(GLKVector3)aVelocity
+                 forObject: (NSString*) tag;
+{
+    NSMutableArray *prop = [_objects valueForKey:tag];
+    NSValue *bodyValue = [prop objectAtIndex:RIGID_BODY];
+    btRigidBody* localBody = (btRigidBody*)[bodyValue pointerValue];
+        
+    if(NULL != localBody)
+    {
+        btVector3 velocity(aVelocity.x,
+                           aVelocity.y,
+                           aVelocity.z);
+            
+            localBody->setLinearVelocity(velocity);
+    }
+}
+
+-(GLKVector3) getVelocityForObject: (NSString*) tag
+{
+    NSMutableArray *prop = [_objects valueForKey:tag];
+    NSValue *bodyValue = [prop objectAtIndex:RIGID_BODY];
+    btRigidBody* localBody = (btRigidBody*)[bodyValue pointerValue];
+    
+    GLKVector3 result = {0.0f, 0.0f, 0.0f};
+
+    if(NULL != localBody)
+    {
+        btVector3 velocity = localBody->getLinearVelocity();
+        
+        result.x = velocity.x();
+        result.y = velocity.y();
+        result.z = velocity.z();
+    }
+    
+    return result;
+}
+
 
 -(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ ForObject: (NSString*) tag
 {

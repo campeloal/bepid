@@ -32,5 +32,7 @@
 -(void)setRotationY:(float)rotationX ForObject: (NSString*) tag;
 -(void)setRotationZ:(float)rotationX ForObject: (NSString*) tag;
 -(void) setScaleX: (float) scaleX Y: (float) scaleY Z: (float) scaleZ ForObject: (NSString*) tag;
+- (void)setVelocity:(GLKVector3)aVelocity forObject: (NSString*) tag;
+-(GLKVector3) getVelocityForObject: (NSString*) tag;
 
 @end

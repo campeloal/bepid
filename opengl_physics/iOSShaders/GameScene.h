@@ -19,5 +19,6 @@
 - (void)updatePhysicsWithDelta:(GLfloat)aDelta;
 -(void) increaseRotationX;
 -(void) decreaseRotationX;
+-(void) test;
 
 @end

@@ -46,6 +46,9 @@
     
     [self setupGL];
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(test)];
+    [view addGestureRecognizer:tap];
+    
    
 }
 
@@ -85,6 +88,11 @@
     
     [self.view addGestureRecognizer:tap];
 
+}
+
+-(void) test
+{
+    [_gameScene test];
 }
 
 -(void) increaseRotation

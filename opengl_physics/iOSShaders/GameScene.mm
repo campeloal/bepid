@@ -44,13 +44,13 @@
         
         _physics = [[Physics alloc] init];
         
-        [self addObject:_ball WithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:YES Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(-0.6, 1.3, -4)];
+        [self addObject:_ball WithTag:@"ball" Vertices:ballVer VertexCount:ballNumberVer isConvex:YES Mass:10.0 RotationX:0.0 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, 1.3, -4)];
         
         
         [self addObject:_cube WithTag:@"cube" Vertices:cubeVer VertexCount:cubeNumberVer isConvex:YES Mass:0.0 RotationX:M_PI_4*4 RotationY:0.0 RotationZ:0.0 Position:GLKVector3Make(0.0, -1.0, -4)];
     
         [self setScale:1.0];
-        
+
         
 
     }
@@ -157,6 +157,12 @@
     //Render
     _ball.scale = scale;
     
+}
+
+-(void) test
+{
+    [_physics setVelocity:GLKVector3Make(10, 0, 0) forObject:@"ball"];
+    NSLog(@"velocity x: %f", [_physics getVelocityForObject:@"ball"].x);
 }
 
 @end
