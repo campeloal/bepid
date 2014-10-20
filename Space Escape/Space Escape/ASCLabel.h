@@ -10,4 +10,6 @@
 
 @interface ASCLabel : SKLabelNode
 
+-(void) update;
+
 @end

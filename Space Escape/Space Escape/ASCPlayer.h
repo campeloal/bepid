@@ -7,7 +7,15 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "ASCBullet.h"
 
 @interface ASCPlayer : SKSpriteNode
+
+-(instancetype) initWithPosition: (CGPoint) position;
+-(void) destroyPlayer;
+-(void) removeBullets;
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+-(void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event;
+-(void)update:(CFTimeInterval)currentTime;
 
 @end

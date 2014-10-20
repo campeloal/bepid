@@ -10,4 +10,9 @@
 
 @interface ASCBullet : SKSpriteNode
 
+-(instancetype) initWithPosition:(CGPoint)position bulletSpeed: (float)speed angle: (float) angleDegrees andImageNamed: (NSString*) imageName;
+-(void) destroyBullet;
+
+@property (nonatomic) float bulletSpeed;
+
 @end

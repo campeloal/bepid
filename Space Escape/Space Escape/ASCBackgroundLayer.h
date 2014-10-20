@@ -10,4 +10,9 @@
 
 @interface ASCBackgroundLayer : SKSpriteNode
 
+@property (nonatomic) SKEmitterNode *layer1;
+@property (nonatomic) SKEmitterNode *layer2;
+
+-(instancetype) initWithSize:(CGSize) size;
+
 @end

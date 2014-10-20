@@ -10,4 +10,14 @@
 
 @interface ASCGameState : NSObject
 
+@property (nonatomic) NSUInteger score;
+@property (nonatomic) NSUInteger highScore;
+
++(ASCGameState *) sharedState;
+
+-(void) addScore:(NSUInteger) score;
+-(void) resetScore;
+-(void) saveState;
+
+
 @end

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E06A5A3019E727FE00DEA7D2 /* ASCBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A5A2F19E727FE00DEA7D2 /* ASCBackgroundLayer.m */; };
+		E06A5A3319E7299F00DEA7D2 /* ASCGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A5A3219E7299F00DEA7D2 /* ASCGameState.m */; };
+		E06A5A3619E72BE100DEA7D2 /* ASCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E06A5A3519E72BE100DEA7D2 /* ASCLabel.m */; };
+		E0ADE27619E6F85900888D8D /* ASCBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ADE27519E6F85900888D8D /* ASCBullet.m */; };
+		E0ADE27919E7002900888D8D /* ASCEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ADE27819E7002900888D8D /* ASCEnemy.m */; };
 		E0AFCECF19E5AEFB00848348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AFCECE19E5AEFB00848348 /* Foundation.framework */; };
 		E0AFCED119E5AEFB00848348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AFCED019E5AEFB00848348 /* CoreGraphics.framework */; };
 		E0AFCED319E5AEFB00848348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AFCED219E5AEFB00848348 /* UIKit.framework */; };
@@ -24,6 +29,24 @@
 		E0AFCEF719E5AEFB00848348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0AFCED219E5AEFB00848348 /* UIKit.framework */; };
 		E0AFCEFF19E5AEFB00848348 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCEFD19E5AEFB00848348 /* InfoPlist.strings */; };
 		E0AFCF0119E5AEFB00848348 /* Space_EscapeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AFCF0019E5AEFB00848348 /* Space_EscapeTests.m */; };
+		E0AFCF1A19E5B96000848348 /* estrela@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF0A19E5B96000848348 /* estrela@2x.png */; };
+		E0AFCF1B19E5B96000848348 /* inimigo1.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF0B19E5B96000848348 /* inimigo1.png */; };
+		E0AFCF1C19E5B96000848348 /* inimigo1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF0C19E5B96000848348 /* inimigo1@2x.png */; };
+		E0AFCF1D19E5B96000848348 /* inimigo2.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF0D19E5B96000848348 /* inimigo2.png */; };
+		E0AFCF1E19E5B96000848348 /* inimigo2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF0E19E5B96000848348 /* inimigo2@2x.png */; };
+		E0AFCF1F19E5B96000848348 /* inimigo3.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF0F19E5B96000848348 /* inimigo3.png */; };
+		E0AFCF2019E5B96000848348 /* inimigo3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1019E5B96000848348 /* inimigo3@2x.png */; };
+		E0AFCF2119E5B96000848348 /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1119E5B96000848348 /* player.png */; };
+		E0AFCF2219E5B96000848348 /* player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1219E5B96000848348 /* player@2x.png */; };
+		E0AFCF2319E5B96000848348 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1319E5B96000848348 /* spark.png */; };
+		E0AFCF2419E5B96000848348 /* StarLayer1.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1419E5B96000848348 /* StarLayer1.sks */; };
+		E0AFCF2519E5B96000848348 /* StarLayer2.sks in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1519E5B96000848348 /* StarLayer2.sks */; };
+		E0AFCF2619E5B96000848348 /* tiro_inimigo.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1619E5B96000848348 /* tiro_inimigo.png */; };
+		E0AFCF2719E5B96000848348 /* tiro_inimigo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1719E5B96000848348 /* tiro_inimigo@2x.png */; };
+		E0AFCF2819E5B96000848348 /* tiro_player.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1819E5B96000848348 /* tiro_player.png */; };
+		E0AFCF2919E5B96000848348 /* tiro_player@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0AFCF1919E5B96000848348 /* tiro_player@2x.png */; };
+		E0AFCF2D19E5B9E400848348 /* ASCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AFCF2C19E5B9E400848348 /* ASCPlayer.m */; };
+		E0B1A4F719E87253009378BA /* retry.png in Resources */ = {isa = PBXBuildFile; fileRef = E0B1A4F619E87253009378BA /* retry.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +60,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E06A5A2E19E727FE00DEA7D2 /* ASCBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCBackgroundLayer.h; sourceTree = "<group>"; };
+		E06A5A2F19E727FE00DEA7D2 /* ASCBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCBackgroundLayer.m; sourceTree = "<group>"; };
+		E06A5A3119E7299F00DEA7D2 /* ASCGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCGameState.h; sourceTree = "<group>"; };
+		E06A5A3219E7299F00DEA7D2 /* ASCGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCGameState.m; sourceTree = "<group>"; };
+		E06A5A3419E72BE100DEA7D2 /* ASCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCLabel.h; sourceTree = "<group>"; };
+		E06A5A3519E72BE100DEA7D2 /* ASCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCLabel.m; sourceTree = "<group>"; };
+		E0ADE27419E6F85900888D8D /* ASCBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCBullet.h; sourceTree = "<group>"; };
+		E0ADE27519E6F85900888D8D /* ASCBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCBullet.m; sourceTree = "<group>"; };
+		E0ADE27719E7002900888D8D /* ASCEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCEnemy.h; sourceTree = "<group>"; };
+		E0ADE27819E7002900888D8D /* ASCEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCEnemy.m; sourceTree = "<group>"; };
+		E0ADE27A19E7139E00888D8D /* PhysicsCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsCategories.h; sourceTree = "<group>"; };
 		E0AFCECB19E5AEFB00848348 /* Space Escape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Escape.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AFCECE19E5AEFB00848348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0AFCED019E5AEFB00848348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,6 +94,25 @@
 		E0AFCEFC19E5AEFB00848348 /* Space EscapeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space EscapeTests-Info.plist"; sourceTree = "<group>"; };
 		E0AFCEFE19E5AEFB00848348 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E0AFCF0019E5AEFB00848348 /* Space_EscapeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_EscapeTests.m; sourceTree = "<group>"; };
+		E0AFCF0A19E5B96000848348 /* estrela@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estrela@2x.png"; sourceTree = "<group>"; };
+		E0AFCF0B19E5B96000848348 /* inimigo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inimigo1.png; sourceTree = "<group>"; };
+		E0AFCF0C19E5B96000848348 /* inimigo1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inimigo1@2x.png"; sourceTree = "<group>"; };
+		E0AFCF0D19E5B96000848348 /* inimigo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inimigo2.png; sourceTree = "<group>"; };
+		E0AFCF0E19E5B96000848348 /* inimigo2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inimigo2@2x.png"; sourceTree = "<group>"; };
+		E0AFCF0F19E5B96000848348 /* inimigo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inimigo3.png; sourceTree = "<group>"; };
+		E0AFCF1019E5B96000848348 /* inimigo3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inimigo3@2x.png"; sourceTree = "<group>"; };
+		E0AFCF1119E5B96000848348 /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		E0AFCF1219E5B96000848348 /* player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player@2x.png"; sourceTree = "<group>"; };
+		E0AFCF1319E5B96000848348 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		E0AFCF1419E5B96000848348 /* StarLayer1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarLayer1.sks; sourceTree = "<group>"; };
+		E0AFCF1519E5B96000848348 /* StarLayer2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarLayer2.sks; sourceTree = "<group>"; };
+		E0AFCF1619E5B96000848348 /* tiro_inimigo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiro_inimigo.png; sourceTree = "<group>"; };
+		E0AFCF1719E5B96000848348 /* tiro_inimigo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiro_inimigo@2x.png"; sourceTree = "<group>"; };
+		E0AFCF1819E5B96000848348 /* tiro_player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiro_player.png; sourceTree = "<group>"; };
+		E0AFCF1919E5B96000848348 /* tiro_player@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tiro_player@2x.png"; sourceTree = "<group>"; };
+		E0AFCF2B19E5B9E400848348 /* ASCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASCPlayer.h; sourceTree = "<group>"; };
+		E0AFCF2C19E5B9E400848348 /* ASCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASCPlayer.m; sourceTree = "<group>"; };
+		E0B1A4F619E87253009378BA /* retry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retry.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +174,7 @@
 		E0AFCED619E5AEFB00848348 /* Space Escape */ = {
 			isa = PBXGroup;
 			children = (
+				E0AFCF2A19E5B96400848348 /* Resources */,
 				E0AFCEDF19E5AEFB00848348 /* ASCAppDelegate.h */,
 				E0AFCEE019E5AEFB00848348 /* ASCAppDelegate.m */,
 				E0AFCEE219E5AEFB00848348 /* Main.storyboard */,
@@ -131,6 +185,19 @@
 				E0AFCEEB19E5AEFB00848348 /* Spaceship.png */,
 				E0AFCEED19E5AEFB00848348 /* Images.xcassets */,
 				E0AFCED719E5AEFB00848348 /* Supporting Files */,
+				E0AFCF2B19E5B9E400848348 /* ASCPlayer.h */,
+				E0AFCF2C19E5B9E400848348 /* ASCPlayer.m */,
+				E0ADE27419E6F85900888D8D /* ASCBullet.h */,
+				E0ADE27519E6F85900888D8D /* ASCBullet.m */,
+				E0ADE27719E7002900888D8D /* ASCEnemy.h */,
+				E0ADE27819E7002900888D8D /* ASCEnemy.m */,
+				E0ADE27A19E7139E00888D8D /* PhysicsCategories.h */,
+				E06A5A2E19E727FE00DEA7D2 /* ASCBackgroundLayer.h */,
+				E06A5A2F19E727FE00DEA7D2 /* ASCBackgroundLayer.m */,
+				E06A5A3119E7299F00DEA7D2 /* ASCGameState.h */,
+				E06A5A3219E7299F00DEA7D2 /* ASCGameState.m */,
+				E06A5A3419E72BE100DEA7D2 /* ASCLabel.h */,
+				E06A5A3519E72BE100DEA7D2 /* ASCLabel.m */,
 			);
 			path = "Space Escape";
 			sourceTree = "<group>";
@@ -162,6 +229,30 @@
 				E0AFCEFD19E5AEFB00848348 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0AFCF2A19E5B96400848348 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0B1A4F619E87253009378BA /* retry.png */,
+				E0AFCF1619E5B96000848348 /* tiro_inimigo.png */,
+				E0AFCF1719E5B96000848348 /* tiro_inimigo@2x.png */,
+				E0AFCF1819E5B96000848348 /* tiro_player.png */,
+				E0AFCF1919E5B96000848348 /* tiro_player@2x.png */,
+				E0AFCF1519E5B96000848348 /* StarLayer2.sks */,
+				E0AFCF1419E5B96000848348 /* StarLayer1.sks */,
+				E0AFCF0B19E5B96000848348 /* inimigo1.png */,
+				E0AFCF0C19E5B96000848348 /* inimigo1@2x.png */,
+				E0AFCF0D19E5B96000848348 /* inimigo2.png */,
+				E0AFCF0E19E5B96000848348 /* inimigo2@2x.png */,
+				E0AFCF0F19E5B96000848348 /* inimigo3.png */,
+				E0AFCF1019E5B96000848348 /* inimigo3@2x.png */,
+				E0AFCF1119E5B96000848348 /* player.png */,
+				E0AFCF1219E5B96000848348 /* player@2x.png */,
+				E0AFCF1319E5B96000848348 /* spark.png */,
+				E0AFCF0A19E5B96000848348 /* estrela@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +303,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Alex De Souza Campelo Lima";
 				TargetAttributes = {
+					E0AFCECA19E5AEFB00848348 = {
+						DevelopmentTeam = Q7GBU8Y7UC;
+					};
 					E0AFCEF219E5AEFB00848348 = {
 						TestTargetID = E0AFCECA19E5AEFB00848348;
 					};
@@ -241,9 +335,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0AFCF2819E5B96000848348 /* tiro_player.png in Resources */,
+				E0AFCF1F19E5B96000848348 /* inimigo3.png in Resources */,
+				E0AFCF1E19E5B96000848348 /* inimigo2@2x.png in Resources */,
+				E0AFCF2119E5B96000848348 /* player.png in Resources */,
+				E0AFCF2319E5B96000848348 /* spark.png in Resources */,
 				E0AFCEDB19E5AEFB00848348 /* InfoPlist.strings in Resources */,
+				E0AFCF1C19E5B96000848348 /* inimigo1@2x.png in Resources */,
+				E0AFCF2519E5B96000848348 /* StarLayer2.sks in Resources */,
 				E0AFCEEE19E5AEFB00848348 /* Images.xcassets in Resources */,
+				E0AFCF2419E5B96000848348 /* StarLayer1.sks in Resources */,
+				E0B1A4F719E87253009378BA /* retry.png in Resources */,
+				E0AFCF1B19E5B96000848348 /* inimigo1.png in Resources */,
 				E0AFCEEC19E5AEFB00848348 /* Spaceship.png in Resources */,
+				E0AFCF2719E5B96000848348 /* tiro_inimigo@2x.png in Resources */,
+				E0AFCF1D19E5B96000848348 /* inimigo2.png in Resources */,
+				E0AFCF2619E5B96000848348 /* tiro_inimigo.png in Resources */,
+				E0AFCF2019E5B96000848348 /* inimigo3@2x.png in Resources */,
+				E0AFCF1A19E5B96000848348 /* estrela@2x.png in Resources */,
+				E0AFCF2919E5B96000848348 /* tiro_player@2x.png in Resources */,
+				E0AFCF2219E5B96000848348 /* player@2x.png in Resources */,
 				E0AFCEE419E5AEFB00848348 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +375,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0AFCEE119E5AEFB00848348 /* ASCAppDelegate.m in Sources */,
+				E0ADE27619E6F85900888D8D /* ASCBullet.m in Sources */,
 				E0AFCEDD19E5AEFB00848348 /* main.m in Sources */,
+				E06A5A3019E727FE00DEA7D2 /* ASCBackgroundLayer.m in Sources */,
+				E06A5A3619E72BE100DEA7D2 /* ASCLabel.m in Sources */,
+				E0AFCF2D19E5B9E400848348 /* ASCPlayer.m in Sources */,
+				E06A5A3319E7299F00DEA7D2 /* ASCGameState.m in Sources */,
+				E0ADE27919E7002900888D8D /* ASCEnemy.m in Sources */,
 				E0AFCEEA19E5AEFB00848348 /* ASCMyScene.m in Sources */,
 				E0AFCEE719E5AEFB00848348 /* ASCViewController.m in Sources */,
 			);
@@ -391,10 +508,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Space Escape/Space Escape-Prefix.pch";
 				INFOPLIST_FILE = "Space Escape/Space Escape-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -405,10 +525,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Space Escape/Space Escape-Prefix.pch";
 				INFOPLIST_FILE = "Space Escape/Space Escape-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -473,6 +596,7 @@
 				E0AFCF0619E5AEFB00848348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E0AFCF0719E5AEFB00848348 /* Build configuration list for PBXNativeTarget "Space EscapeTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +605,7 @@
 				E0AFCF0919E5AEFB00848348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

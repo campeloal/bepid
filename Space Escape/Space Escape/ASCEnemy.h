@@ -10,4 +10,11 @@
 
 @interface ASCEnemy : SKSpriteNode
 
++(SKTexture*) generateTexture;
+-(instancetype) initWithPosition: (CGPoint) position;
+-(SKAction*) moveHorizontally;
+-(void) destroyEnemy;
+-(void)update:(CFTimeInterval)currentTime;
+
+
 @end

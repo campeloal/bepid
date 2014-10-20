@@ -7,7 +7,25 @@
 //
 
 #import "ASCLabel.h"
+#import "ASCGameState.h"
 
 @implementation ASCLabel
+
+-(instancetype) initWithFontNamed:(NSString *)fontName
+{
+    self = [super initWithFontNamed:fontName];
+    
+    if (self) {
+        self.horizontalAlignmentMode = SKLabelHorizontalAlignmentModeCenter;
+        self.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
+    }
+    
+    return self;
+}
+
+-(void) update
+{
+    self.text = [NSString stringWithFormat:@"%lu",(unsigned long) [ASCGameState sharedState].score];
+}
 
 @end
