@@ -21,7 +21,8 @@
         [self setNumberIndices:ballNumberIndices];
         [self setBufferSize:ballBufferSize];
         [self setVertSize:ballVertSize];
-        [self createObj:@"ball_200" Shader:@"gouraud"];
+        [self setHasTexture:ballHasTexture];
+        [self createObj:@"ball_200" Shader:@"toon"];
         
     }
     

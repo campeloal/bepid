@@ -21,6 +21,7 @@
         [self setNumberIndices:cubeNumberIndices];
         [self setBufferSize:cubeBufferSize];
         [self setVertSize:cubeVertSize];
+        [self setHasTexture:cubeHasTexture];
         [self createObj:@"cube" Shader:@"gouraud"];
         
     }

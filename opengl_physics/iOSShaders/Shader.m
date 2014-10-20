@@ -26,6 +26,7 @@
     
     // Create and compile vertex shader.
     vertShaderPathname = [[NSBundle mainBundle] pathForResource:shaderName ofType:@"vsh"];
+
     if (![self compileShader:&vertShader type:GL_VERTEX_SHADER file:vertShaderPathname]) {
         NSLog(@"Failed to compile vertex shader");
         return NO;
@@ -130,10 +131,6 @@
 
 -(BOOL) readParams
 {
-    
-    glBindAttribLocation(_program, GLKVertexAttribPosition, "position");
-    
-    glBindAttribLocation(_program, GLKVertexAttribNormal, "normal");
     
     // Link program.
     if (![self linkProgram:_program]) {

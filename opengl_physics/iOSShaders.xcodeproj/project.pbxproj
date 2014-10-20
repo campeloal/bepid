@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1287D2DE19F4B99B009BD83E /* tex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 1287D2DA19F4A080009BD83E /* tex.vsh */; };
+		1287D2DF19F4B9AA009BD83E /* tex.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 1287D2DC19F4A09C009BD83E /* tex.fsh */; };
 		12985CE8193E933900DC212C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12985CE7193E933900DC212C /* UIKit.framework */; };
 		12985CEA193E933900DC212C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12985CE9193E933900DC212C /* Foundation.framework */; };
 		12985CEC193E933900DC212C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12985CEB193E933900DC212C /* CoreGraphics.framework */; };
@@ -99,6 +101,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1287D2DA19F4A080009BD83E /* tex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = tex.vsh; sourceTree = "<group>"; };
+		1287D2DC19F4A09C009BD83E /* tex.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = tex.fsh; sourceTree = "<group>"; };
 		128C2EBC19E74CDA00B8E8B8 /* ballCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ballCoordinates.h; sourceTree = "<group>"; };
 		128C2EBD19E74CEA00B8E8B8 /* cubeCoordinates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cubeCoordinates.h; sourceTree = "<group>"; };
 		12985CE4193E933900DC212C /* iOSShaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSShaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +306,8 @@
 				12985D4A193EBEB100DC212C /* toon.vsh */,
 				12985D03193E933900DC212C /* Shader.fsh */,
 				12985D05193E933900DC212C /* Shader.vsh */,
+				1287D2DA19F4A080009BD83E /* tex.vsh */,
+				1287D2DC19F4A09C009BD83E /* tex.fsh */,
 			);
 			name = Shaders;
 			sourceTree = "<group>";
@@ -462,6 +468,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1287D2DF19F4B9AA009BD83E /* tex.fsh in Resources */,
+				1287D2DE19F4B99B009BD83E /* tex.vsh in Resources */,
 				12985CF6193E933900DC212C /* InfoPlist.strings in Resources */,
 				12985CFE193E933900DC212C /* Default.png in Resources */,
 				12985D00193E933900DC212C /* Default@2x.png in Resources */,

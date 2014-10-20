@@ -33,6 +33,7 @@ enum
     
     GLuint _vertexArray;
     GLuint _vertexBuffer;
+    GLuint _texture,_textureAddr;
     
     NSMutableArray *objects;
     Shader *shader;
@@ -51,9 +52,19 @@ enum
     
     shader = [[Shader alloc] init];
     [shader loadShadersName:shaderName];
-    [shader readParams];
     
     [self createBuffer];
+    
+    [shader readParams];
+    
+    glUseProgram([shader program]);
+    
+    if (_hasTexture) {
+        _texture = [self setupTexture:@"add.png"];
+//        _textureAddr = glGetAttribLocation([shader program], "textCoord");
+//        glEnableVertexAttribArray(_textureAddr);
+    }
+    
     
     _position = GLKVector3Make(0, 0, 0);
     _rotationY = 0.0;
@@ -75,12 +86,28 @@ enum
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBuffer);
     glBufferData(GL_ARRAY_BUFFER, _bufferSize*sizeof(float), ar, GL_STATIC_DRAW);
     
-    glEnableVertexAttribArray(GLKVertexAttribPosition);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(0));
-    glEnableVertexAttribArray(GLKVertexAttribNormal);
-    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, 24, BUFFER_OFFSET(12));
+    glBindAttribLocation([shader program], GLKVertexAttribPosition, "position");
+    glBindAttribLocation([shader program], GLKVertexAttribNormal, "normal");
     
-    glBindVertexArrayOES(0);
+    int numberCoordinates = 0; 
+    
+    if (_hasTexture) {
+        numberCoordinates = 8; //3 positions + 3 normals + 2 textures
+        glBindAttribLocation([shader program], GLKVertexAttribTexCoord0, "textCoord");
+        glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+        glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, numberCoordinates*sizeof(float), BUFFER_OFFSET(6*sizeof(float)));
+    }
+    else
+    {
+        numberCoordinates = 6; //3 positions + 3 normals
+    }
+    
+    glEnableVertexAttribArray(GLKVertexAttribPosition);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, numberCoordinates*sizeof(float), BUFFER_OFFSET(0));
+    glEnableVertexAttribArray(GLKVertexAttribNormal);
+    glVertexAttribPointer(GLKVertexAttribNormal, 3, GL_FLOAT, GL_FALSE, numberCoordinates*sizeof(float), BUFFER_OFFSET(3*sizeof(float)));
+    
+    glBindVertexArrayOES(_vertexArray);
 
 }
 
@@ -132,6 +159,18 @@ enum
     float eyePos[3] = {-5.0,0.0,0.0};
     glUniform3fv(eyePosAddr, 1, eyePos);
     
+    if (_hasTexture) {
+        
+        //glVertexAttribPointer(_textureAddr, 2, GL_FLOAT, GL_FALSE, 32, BUFFER_OFFSET(24));
+        
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, _texture);
+        
+        int texAddr = glGetUniformLocation([shader program], "texture");
+        glUniform1i(texAddr, 0);
+        
+    
+    }
     
     glDrawArrays(GL_TRIANGLES, 0, _numberIndices);
     
@@ -164,6 +203,41 @@ enum
         [shader setProgram:0];
     }
 
+}
+
+- (GLuint)setupTexture:(NSString *)fileName {
+    // 1
+    CGImageRef spriteImage = [UIImage imageNamed:fileName].CGImage;
+    if (!spriteImage) {
+        NSLog(@"Failed to load image %@", fileName);
+        exit(1);
+    }
+    
+    // 2
+    size_t width = CGImageGetWidth(spriteImage);
+    size_t height = CGImageGetHeight(spriteImage);
+    
+    GLubyte * spriteData = (GLubyte *) calloc(width*height*4, sizeof(GLubyte));
+    
+    CGContextRef spriteContext = CGBitmapContextCreate(spriteData, width, height, 8, width*4,
+                                                       CGImageGetColorSpace(spriteImage), kCGImageAlphaPremultipliedLast);
+    
+    // 3
+    CGContextDrawImage(spriteContext, CGRectMake(0, 0, width, height), spriteImage);
+    
+    CGContextRelease(spriteContext);
+    
+    // 4
+    GLuint texName;
+    glGenTextures(1, &texName);
+    glBindTexture(GL_TEXTURE_2D, texName);
+    
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, spriteData);
+    
+    free(spriteData);        
+    return texName;    
 }
 
 

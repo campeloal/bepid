@@ -25,6 +25,7 @@
 @property (nonatomic) int numberIndices;
 @property (nonatomic) int bufferSize;
 @property (nonatomic) int vertSize;
+@property (nonatomic) BOOL hasTexture;
 
 -(void) createObj:(NSString*) objectName Shader: (NSString*) shaderName;
 -(void) drawObject;

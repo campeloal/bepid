@@ -17,15 +17,19 @@ def  readFaces(line):
                 
         for vertex in line:
                 texIndex = 0
+                posIndex = 0
+                normalIndex = 0
                 
+
                 if hasTexture:
                         triangle = vertex.split('/')
-                        texIndex = int(triangle[2])
+                        posIndex = int(triangle[0])
+                        texIndex = int(triangle[1])
+                        normalIndex = int(triangle[2])
                 else:
                         triangle = vertex.split('//')
-                
-                posIndex = int(triangle[0])
-                normalIndex = int(triangle[1])
+                        posIndex = int(triangle[0])
+                        normalIndex = int(triangle[1])
                 
 
                 posStartIndex = (posIndex*3) - 3
@@ -43,7 +47,7 @@ def  readFaces(line):
                 vertexBuffer.append(normals[normStartIndex + 2])
 
                 if hasTexture:
-                        texIndex = triangle[2]
+                
                         vertexBuffer.append(textures[texStartIndex])
                         vertexBuffer.append(textures[texStartIndex + 1])
 
@@ -73,7 +77,8 @@ def readObj(path):
 			elif verticeType == 'vt':
 				textures.append(lineArgs[1])
 				textures.append(lineArgs[2])
-				textures.append(lineArgs[3])
+                
+                                global hasTexture
 				hasTexture = True
 
 			elif verticeType == 'f':

@@ -7,3 +7,5 @@ int ballNumberIndices = 594;
 int ballBufferSize = 3564;
 
 int ballVertSize = 1782;
+
+int ballHasTexture = NO;
