@@ -170,6 +170,7 @@
         //5
         trans.setRotation(rot);
         _body->setWorldTransform(trans);
+        
     }
 }
 
@@ -205,8 +206,7 @@
         
         trans.setRotation(rot);
         _body->setWorldTransform(trans);
-        
-        NSLog(@"oi");
+    
     }
 }
 
@@ -217,7 +217,6 @@
         btMatrix3x3 rotMatrix = btMatrix3x3(_body->getWorldTransform().getRotation());
         float z,y,x;
         rotMatrix.getEulerZYX(z,y,x);
-        NSLog(@"porra y: %f", y);
         return y;
     }
     

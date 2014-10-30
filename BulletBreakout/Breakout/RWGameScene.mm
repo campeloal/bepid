@@ -62,11 +62,11 @@
     _ball = [[RWBall alloc] initWithShader:shader];
     _ball.position = GLKVector3Make(_gameArea.width/2, _gameArea.height * 0.1, 0);
     _ball.diffuseColor = GLKVector4Make(0.5, 0.9, 0, 1);
-    //_ballVelocityX = 10;
-    //_ballVelocityY = 10;
+    _ballVelocityX = 100;
+    _ballVelocityY = 100;
     [self.children addObject:_ball];
       _world->addRigidBody(_ball.body);
-      //_ball.body->setLinearVelocity(btVector3(15,15,0));
+      _ball.body->setLinearVelocity(btVector3(15,15,0));
       _desiredVelocity = _ball.body->getLinearVelocity().length();
       _ball.body->setRestitution(0.0);
       
@@ -219,11 +219,11 @@
     //2
     _world->stepSimulation(aDelta);
     
-//    if (_ball.position.y < 0)
-//    {
-//        [RWDirector sharedInstance].scene = [[RWGameOverScene alloc] initWithShader:self.shader win:NO];
-//        return;
-//    }
+    if (_ball.position.y < 0)
+    {
+        [RWDirector sharedInstance].scene = [[RWGameOverScene alloc] initWithShader:self.shader win:NO];
+        return;
+    }
     
     int numManifolds = _world->getDispatcher()->getNumManifolds();
     for (int i=0;i<numManifolds;i++)
@@ -267,7 +267,7 @@
     }
     
     _angle+=10;
-    _paddle.rotationX = GLKMathDegreesToRadians(-_angle);
+   // _paddle.rotationX = GLKMathDegreesToRadians(-_angle);
 }
 
 - (void)destroyBrickAndCheckVictory:(PNode*)brick
